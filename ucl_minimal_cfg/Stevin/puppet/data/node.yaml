@@ -1,0 +1,9 @@
+---
+name: Stevin
+bird6::routing_id: 4.0.0.6
+bgp: None
+bird6::ospfv3:
+  hello_itfs:  # Activate OSPFv3 only on these interfaces
+    - Stevin-eth0
+    - Stevin-eth1
+  stub_itfs: [] # Passive interfaces (e.g., LANs)
