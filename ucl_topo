@@ -14,7 +14,7 @@
 
 # You can override any of these settings on a per-topology basis
 # Group number
-GROUPNUMBER=42
+GROUPNUMBER=4
 # Node configs
 CONFIGDIR=ucl_minimal_cfg
 # boot script name

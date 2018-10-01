@@ -10,5 +10,5 @@ bird6::ospfv3:
 bird6::bgp:
   state: ok
   local_as: 4
-  neighbor_ip: fd00:300::b
-  neighbor_as: 300
+  neighbor_ip: fd00:200::b
+  neighbor_as: 200
