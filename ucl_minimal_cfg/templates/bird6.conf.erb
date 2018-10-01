@@ -28,11 +28,11 @@ protocol ospf {
     };
 }
 
-<%- if @bgp != "None" -%>
+<%- if @bgp["state"] != "None" -%>
 /* Define one bgp session block per peer */
-protocol bgp provider200 {
+protocol bgp bgp_provider {
 	local as 4;
-	neighbor fd00:200::b as 200;
+	neighbor <%= @bgp["neighbor_ip"] %> as <%= @bgp["neighbor_as"] %>;
 	import all;
 	export all;
 }

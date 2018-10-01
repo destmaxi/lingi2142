@@ -1,6 +1,5 @@
 ---
 name: Halles
-bgp: ok
 bird6::routing_id: 4.0.0.2
 bird6::ospfv3:
   hello_itfs:  # Activate OSPFv3 only on these interfaces
@@ -8,3 +7,8 @@ bird6::ospfv3:
     - Halles-eth1
   stub_itfs: [] # Passive interfaces (e.g., LANs)
 # BGP data to be added !
+bird6::bgp:
+  state: ok
+  local_as: 4
+  neighbor_ip: fd00:300::b
+  neighbor_as: 300
