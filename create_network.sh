@@ -183,11 +183,11 @@ function bridge_node {
     info "Bridged $1 [$3] to interface $2 [${BR}/$in]"
 }
 
-function info { 
+function info {
     echo "[INFO] $*"
 }
 
-function warn { 
+function warn {
     echo "[WARN] $*"
 }
 
@@ -202,7 +202,7 @@ fi
 _dname=$(dirname "$0")
 BDIR=$(cd "$_dname"; pwd -P)
 # Group number
-GROUPNUMBER=255
+GROUPNUMBER=4
 # Node configs  
 CONFIGDIR=cfg
 # boot script name
