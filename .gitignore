@@ -1,3 +1,4 @@
 .vagrant
 ucl_minimal_cfg/*/mtab
 tags
+.idea/
