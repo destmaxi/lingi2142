@@ -2,3 +2,4 @@
 ucl_minimal_cfg/*/mtab
 tags
 .idea/
+ucl_minimal_cfg/*/firewall/*
