@@ -6,23 +6,23 @@ class firewall (
   String $type
 ) {
 
-  $prefix_a = fd00:300:4
-  $prefix_b = fd00:200:4
+  $prefix_a = "fd00:300:4"
+  $prefix_b = "fd00:200:4"
 
   # Create directory with correct permissions
   file {"/etc/firewall":
     ensure => directory,
-    owner  => vagrant,
-    group  => vagrant,
+    owner  => bird,
+    group  => bird,
   }
   # Fill the template file and place the result in "/etc/firewall/firewall.conf"
   file {"/etc/firewall/firewall.sh":
     require => File["/etc/firewall"],
     ensure => file,
     content => template("/templates/firewall.conf.erb"),
-    owner  => vagrant,
-    group  => vagrant,
-    mode   => 'ug+x',
+    owner  => bird,
+    group  => bird,
+    mode   => 'a+x',
   }
 
   # Start bird6 when the template is created
