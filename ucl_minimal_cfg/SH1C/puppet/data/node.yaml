@@ -8,3 +8,6 @@ bird6::ospfv3:
   stub_itfs: [] # Passive interfaces (e.g., LANs)
 bird6::bgp:
   state: None
+firewall::interface: "None"
+firewall::prefix: "None"
+firewall::state: "None"
