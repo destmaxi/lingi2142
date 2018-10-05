@@ -6,8 +6,3 @@ bird6::ospfv3:
     - Michotte-eth0
     - Michotte-eth1
   stub_itfs: [] # Passive interfaces (e.g., LANs)
-bird6::bgp:
-  state: None
-firewall::interface: None
-firewall::prefix: None
-firewall::type: None

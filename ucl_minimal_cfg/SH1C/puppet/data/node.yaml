@@ -6,8 +6,3 @@ bird6::ospfv3:
     - SH1C-eth0
     - SH1C-eth1
   stub_itfs: [] # Passive interfaces (e.g., LANs)
-bird6::bgp:
-  state: None
-firewall::interface: None
-firewall::prefix: None
-firewall::type: None

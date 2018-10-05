@@ -7,8 +7,3 @@ bird6::ospfv3:
     - Carnoy-eth1
     - Carnoy-eth2
   stub_itfs: [] # Passive interfaces (e.g., LANs)
-bird6::bgp:
-  state: None
-firewall::interface: None
-firewall::prefix: None
-firewall::type: None
