@@ -12,6 +12,6 @@ bird6::bgp:
   local_as: 4
   neighbor_ip: fd00:300::b
   neighbor_as: 300
-firewall::interface: "belneta"
-firewall::prefix: "fd00:300:4"
-firewall::state: "border"
+firewall::interface: belneta
+firewall::prefix: fd00:300:4
+firewall::type: border
