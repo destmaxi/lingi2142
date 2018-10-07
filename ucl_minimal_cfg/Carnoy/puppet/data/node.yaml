@@ -7,3 +7,8 @@ bird6::ospfv3:
     - Carnoy-eth1
     - Carnoy-eth2
   stub_itfs: [] # Passive interfaces (e.g., LANs)
+static_routes::id: 1
+static_routes::interfaces:
+  - { 'interface'=> CARN-eth0, 'route'=> 0f16 }
+  - { 'interface'=> CARN-eth1, 'route'=> 0f14 }
+  - { 'interface'=> CARN-eth2, 'route'=> 0f31 }

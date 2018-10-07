@@ -15,3 +15,8 @@ bird6::bgp:
 firewall::interface: belneta
 firewall::prefix: fd00:300:4
 firewall::type: border
+static_routes::id: 4
+static_routes::interfaces:
+  - { 'interface'=> PYTH-eth0, 'route'=> 0f24 }
+  - { 'interface'=> PYTH-eth1, 'route'=> 0f14 }
+  - { 'interface'=> PYTH-eth2, 'route'=> 0f64 }

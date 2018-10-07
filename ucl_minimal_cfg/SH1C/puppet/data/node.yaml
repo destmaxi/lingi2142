@@ -6,3 +6,7 @@ bird6::ospfv3:
     - SH1C-eth0
     - SH1C-eth1
   stub_itfs: [] # Passive interfaces (e.g., LANs)
+static_routes::id: 5
+static_routes::interfaces:
+  - { 'interface'=> SH1C-eth0, 'route'=> 0f53 }
+  - { 'interface'=> SH1C-eth1, 'route'=> 0f25 }
