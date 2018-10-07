@@ -17,5 +17,5 @@ firewall::prefix: fd00:200:4
 firewall::type: border
 static_routes::id: 2
 static_routes::interfaces:
-  - { 'interface'=> HALL-eth0, 'route'=> 0f25 }
-  - { 'interface'=> HALL-eth1, 'route'=> 0f24 }
+  - {interface: HALL-eth0, route: 0f25}
+  - {interface: HALL-eth1, route: 0f24}

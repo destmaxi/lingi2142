@@ -1,11 +1,10 @@
 # Puppet looks in data/node.yaml for firewall::interface, firewall::state and firewall::prefix automatically
 # These variables are now accessible in the template
 class static_routes (
-  String $id,
-  Hash $static_routes
+  Integer $id,
+  Array $interfaces
 ) {
 
-  $GROUPNUMBER = "4"
   $prefix_a = "fd00:300"
   $prefix_b = "fd00:200"
 
@@ -26,8 +25,8 @@ class static_routes (
   }
 
   # Start bird6 when the template is created
-  exec { "firewall-launch":
-    require => File["/etc/firewall/firewall.sh"], # Force to execute the command after
+  exec { "static_routes-launch":
+    require => File["/etc/static_routes/static_routes.sh"], # Force to execute the command after
     command => "/etc/static_routes/static_routes.sh",
   }
 }
