@@ -18,7 +18,7 @@ class static_routes (
   file {"/etc/static_routes/static_routes.sh":
     require => File["/etc/static_routes"],
     ensure => file,
-    content => template("/templates/static.conf.erb"),
+    content => template("/templates/static_routes.conf.erb"),
     owner  => bird,
     group  => bird,
     mode   => 'a+x',

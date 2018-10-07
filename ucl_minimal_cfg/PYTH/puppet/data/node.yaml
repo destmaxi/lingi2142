@@ -1,11 +1,11 @@
 ---
-name: Pythagore
+name: PYTH
 bird6::routing_id: 4.0.0.4
 bird6::ospfv3:
   hello_itfs:  # Activate OSPFv3 only on these interfaces
-    - Pythagore-eth0
-    - Pythagore-eth1
-    - Pythagore-eth2
+    - PYTH-eth0
+    - PYTH-eth1
+    - PYTH-eth2
   stub_itfs: [] # Passive interfaces (e.g., LANs)
 bird6::bgp:
   state: ok
