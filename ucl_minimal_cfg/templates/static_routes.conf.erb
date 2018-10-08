@@ -4,9 +4,9 @@
 ######################################################################
 
 <%- @interfaces.each do |val| -%>
-  ip link set dev <%= val["interface"] %> up
-  ip address add dev <%= val["interface"] %> <%= @prefix_b %>:0004:<%= val["route"] %>::<%= @id %>/64
-  ip address add dev <%= val["interface"] %> <%= @prefix_a %>:0004:<%= val["route"] %>::<%= @id %>/64
+ip link set dev <%= val["interface"] %> up
+ip address add dev <%= val["interface"] %> <%= @prefix_b %>:0004:<%= val["route"] %>::<%= @id %>/64
+ip address add dev <%= val["interface"] %> <%= @prefix_a %>:0004:<%= val["route"] %>::<%= @id %>/64
 
 <%- end -%>
 
