@@ -8,5 +8,5 @@ bird6::ospfv3:
   stub_itfs: [] # Passive interfaces (e.g., LANs)
 static_routes::id: 6
 static_routes::interfaces:
-  - {interface: STEV-eth0, route: 0f64}
-  - {interface: STEV-eth1, route: 0f16}
+  - {interface: STEV-eth0, route: 0f16}
+  - {interface: STEV-eth1, route: 0f64}
