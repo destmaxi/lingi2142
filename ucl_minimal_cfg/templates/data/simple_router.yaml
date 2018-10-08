@@ -1,0 +1,5 @@
+bird6::bgp:
+  state: None
+firewall::interface: None
+firewall::prefix: None
+firewall::type: None

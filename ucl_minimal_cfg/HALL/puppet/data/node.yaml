@@ -1,0 +1,21 @@
+---
+name: HALL
+bird6::routing_id: 4.0.0.2
+bird6::ospfv3:
+  hello_itfs:  # Activate OSPFv3 only on these interfaces
+    - HALL-eth0
+    - HALL-eth1
+  stub_itfs: [] # Passive interfaces (e.g., LANs)
+# BGP data to be added !
+bird6::bgp:
+  state: ok
+  local_as: 4
+  neighbor_ip: fd00:200::b
+  neighbor_as: 200
+firewall::interface: belnetb
+firewall::prefix: fd00:200:4
+firewall::type: border
+static_routes::id: 2
+static_routes::interfaces:
+  - {interface: HALL-eth0, route: 0f25}
+  - {interface: HALL-eth1, route: 0f24}
