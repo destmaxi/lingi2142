@@ -10,3 +10,4 @@ static_routes::id: 3
 static_routes::interfaces:
   - {interface: MICH-eth0, route: 0f53}
   - {interface: MICH-eth1, route: 0f31}
+script::id: 3

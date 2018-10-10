@@ -20,3 +20,4 @@ static_routes::interfaces:
   - {interface: PYTH-eth0, route: 0f24}
   - {interface: PYTH-eth1, route: 0f14}
   - {interface: PYTH-eth2, route: 0f64}
+script::id: 4

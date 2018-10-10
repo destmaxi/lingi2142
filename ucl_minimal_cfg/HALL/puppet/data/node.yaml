@@ -19,3 +19,4 @@ static_routes::id: 2
 static_routes::interfaces:
   - {interface: HALL-eth0, route: 0f25}
   - {interface: HALL-eth1, route: 0f24}
+script::id: 2

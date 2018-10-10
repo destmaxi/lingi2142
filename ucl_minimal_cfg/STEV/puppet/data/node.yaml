@@ -10,3 +10,4 @@ static_routes::id: 6
 static_routes::interfaces:
   - {interface: STEV-eth0, route: 0f16}
   - {interface: STEV-eth1, route: 0f64}
+script::id: 6
