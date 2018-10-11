@@ -1,9 +1,9 @@
 # Puppet looks in data/node.yaml for firewall::interface, firewall::state and firewall::prefix automatically
 # These variables are now accessible in the template
-class static_routes (
-  Integer $id,
-  Array $interfaces
-) {
+class script(
+  Integer $id
+)
+{
 
   $prefix_a = "fd00:300"
   $prefix_b = "fd00:200"
