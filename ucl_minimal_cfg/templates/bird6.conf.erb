@@ -7,6 +7,7 @@
 router id <%= @routing_id %>;
 
 log "/etc/log/bird_log" all;
+debug protocols all;
 
 protocol kernel {
  	learn;
@@ -27,10 +28,11 @@ filter export_OSPF {
      # redistribute default route
      accept;
   }
+  reject;
 }
 
 protocol ospf {
-  export filter export_ospf; # select export filter
+  export filter export_OSPF; # select export filter
 	area 0.0.0.0 {
 		<%- @ospfv3["hello_itfs"].each do |val| -%>
 			interface "<%= val %>" {
@@ -52,11 +54,10 @@ protocol static static_netprefix {
         route fd00:<%= @bgp["pop"] %>:0004::/52 reject;
 }
 
-/* Define one bgp session block per peer */
 protocol bgp bgp_provider {
 	local as 4;
 	neighbor <%= @bgp["neighbor_ip"] %> as <%= @bgp["neighbor_as"] %>;
 	import where net = ::/0;
-	export static_netprefix;
+	export where proto = "static_netprefix";
 }
 <%- end -%>
