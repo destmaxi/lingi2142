@@ -7,106 +7,113 @@
 
 <%- @carn_link.each do |val| -%>
 
-ping6 -q -c1 <%= @prefix_b %>:0004:val::<%= @carn %> > /dev/null
+ping6 -q -c1 <%= @prefix_b %>:0004:<%= val %>::<%= @carn %> > /dev/null
 if [ $? -ne 0 ]
 then
-        echo "ERREUR PING From <%= @id %> to <%= @prefix_b %>:0004:val::<%= @carn %>"
+        echo "ERREUR PING From <%= @id %> to <%= @prefix_b %>:0004:<%= val %>::<%= @carn %>"
 fi
 
-ping6 -q -c1 <%= @prefix_a %>:0004:val::<%= @carn %> > /dev/null
+ping6 -q -c1 <%= @prefix_a %>:0004:<%= val %>::<%= @carn %> > /dev/null
 if [ $? -ne 0 ]
 then
-        echo "ERREUR PING From <%= @id %> to <%= @prefix_a %>:0004:val::<%= @carn %>"
+        echo "ERREUR PING From <%= @id %> to <%= @prefix_a %>:0004:<%= val %>::<%= @carn %>"
 fi
 
+<%- end -%>
 <%- end -%>
 
 <%- if @id != 2 -%>
 
 <%- @hall_link.each do |val| -%>
 
-ping6 -q -c1 <%= @prefix_b %>:0004:val::<%= @hall %> > /dev/null
+ping6 -q -c1 <%= @prefix_b %>:0004:<%= val %>::<%= @hall %> > /dev/null
 if [ $? -ne 0 ]
 then
-        echo "ERREUR PING From <%= @id %> to <%= @prefix_b %>:0004:val::<%= @hall %>"
+        echo "ERREUR PING From <%= @id %> to <%= @prefix_b %>:0004:<%= val %>::<%= @hall %>"
 fi
 
-ping6 -q -c1 <%= @prefix_a %>:0004:val::<%= @hall %> > /dev/null
+ping6 -q -c1 <%= @prefix_a %>:0004:<%= val %>::<%= @hall %> > /dev/null
 if [ $? -ne 0 ]
 then
-        echo "ERREUR PING From <%= @id %> to <%= @prefix_a %>:0004:val::<%= @hall %>"
+        echo "ERREUR PING From <%= @id %> to <%= @prefix_a %>:0004:<%= val %>::<%= @hall %>"
 fi
 
 <%- end -%>
+<%- end -%>
+
 
 <%- if @id != 3 -%>
 
 <%- @mich_link.each do |val| -%>
 
-ping6 -q -c1 <%= @prefix_b %>:0004:val::<%= @mich %> > /dev/null
+ping6 -q -c1 <%= @prefix_b %>:0004:<%= val %>::<%= @mich %> > /dev/null
 if [ $? -ne 0 ]
 then
-        echo "ERREUR PING From <%= @id %> to <%= @prefix_b %>:0004:val::<%= @mich %>"
+        echo "ERREUR PING From <%= @id %> to <%= @prefix_b %>:0004:<%= val %>::<%= @mich %>"
 fi
 
-ping6 -q -c1 <%= @prefix_a %>:0004:val::<%= @mich %> > /dev/null
+ping6 -q -c1 <%= @prefix_a %>:0004:<%= val %>::<%= @mich %> > /dev/null
 if [ $? -ne 0 ]
 then
-        echo "ERREUR PING From <%= @id %> to <%= @prefix_a %>:0004:val::<%= @mich %>"
+        echo "ERREUR PING From <%= @id %> to <%= @prefix_a %>:0004:<%= val %>::<%= @mich %>"
 fi
 
 <%- end -%>
+<%- end -%>
+
 
 <%- if @id != 4 -%>
 
 <%- @pyth_link.each do |val| -%>
 
-ping6 -q -c1 <%= @prefix_b %>:0004:val::<%= @pyth %> > /dev/null
+ping6 -q -c1 <%= @prefix_b %>:0004:<%= val %>::<%= @pyth %> > /dev/null
 if [ $? -ne 0 ]
 then
-        echo "ERREUR PING From <%= @id %> to <%= @prefix_b %>:0004:val::<%= @pyth %>"
+        echo "ERREUR PING From <%= @id %> to <%= @prefix_b %>:0004:<%= val %>::<%= @pyth %>"
 fi
 
-ping6 -q -c1 <%= @prefix_a %>:0004:val::<%= @pyth %> > /dev/null
+ping6 -q -c1 <%= @prefix_a %>:0004:<%= val %>::<%= @pyth %> > /dev/null
 if [ $? -ne 0 ]
 then
-        echo "ERREUR PING From <%= @id %> to <%= @prefix_a %>:0004:val::<%= @pyth %>"
+        echo "ERREUR PING From <%= @id %> to <%= @prefix_a %>:0004:<%= val %>::<%= @pyth %>"
 fi
 
+<%- end -%>
 <%- end -%>
 
 <%- if @id != 5 -%>
 
 <%- @sh1c_link.each do |val| -%>
 
-ping6 -q -c1 <%= @prefix_b %>:0004:val::<%= @sh1c %> > /dev/null
+ping6 -q -c1 <%= @prefix_b %>:0004:<%= val %>::<%= @sh1c %> > /dev/null
 if [ $? -ne 0 ]
 then
-        echo "ERREUR PING From <%= @id %> to <%= @prefix_b %>:0004:val::<%= @sh1c %>"
+        echo "ERREUR PING From <%= @id %> to <%= @prefix_b %>:0004:<%= val %>::<%= @sh1c %>"
 fi
 
-ping6 -q -c1 <%= @prefix_a %>:0004:val::<%= @sh1c %> > /dev/null
+ping6 -q -c1 <%= @prefix_a %>:0004:<%= val %>::<%= @sh1c %> > /dev/null
 if [ $? -ne 0 ]
 then
-        echo "ERREUR PING From <%= @id %> to <%= @prefix_a %>:0004:val::<%= @sh1c %>"
+        echo "ERREUR PING From <%= @id %> to <%= @prefix_a %>:0004:<%= val %>::<%= @sh1c %>"
 fi
 
+<%- end -%>
 <%- end -%>
 
 <%- if @id != 6 -%>
 
 <%- @stev_link.each do |val| -%>
 
-ping6 -q -c1 <%= @prefix_b %>:0004:val::<%= @stev %> > /dev/null
+ping6 -q -c1 <%= @prefix_b %>:0004:<%= val %>::<%= @stev %> > /dev/null
 if [ $? -ne 0 ]
 then
-        echo "ERREUR PING From <%= @id %> to <%= @prefix_b %>:0004:val::<%= @stev %>"
+        echo "ERREUR PING From <%= @id %> to <%= @prefix_b %>:0004:<%= val %>::<%= @stev %>"
 fi
 
-ping6 -q -c1 <%= @prefix_a %>:0004:val::<%= @stev %> > /dev/null
+ping6 -q -c1 <%= @prefix_a %>:0004:<%= val %>::<%= @stev %> > /dev/null
 if [ $? -ne 0 ]
 then
-        echo "ERREUR PING From <%= @id %> to <%= @prefix_a %>:0004:val::<%= @stev %>"
+        echo "ERREUR PING From <%= @id %> to <%= @prefix_a %>:0004:<%= val %>::<%= @stev %>"
 fi
 
 <%- end -%>
