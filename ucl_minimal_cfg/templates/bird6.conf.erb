@@ -1,5 +1,12 @@
 <%# ERB template https://puppet.com/docs/puppet/5.3/lang_template_erb.html -%>
+
+#########################################################
+#		            OSPF configuration                 	#
+#########################################################
+
 router id <%= @routing_id %>;
+
+log "/etc/log/bird_log" all;
 
 protocol kernel {
  	learn;
@@ -11,8 +18,19 @@ protocol device {
 	scan time 10;
 }
 
-protocol ospf {
+filter export_OSPF {
+  if ( source = RTS_INHERIT ) then {
+     # advertise routes from kernel
+     accept;
+  }
+  else if (net = ::/0 ) then {
+     # redistribute default route
+     accept;
+  }
+}
 
+protocol ospf {
+  export filter export_ospf; # select export filter
 	area 0.0.0.0 {
 		<%- @ospfv3["hello_itfs"].each do |val| -%>
 			interface "<%= val %>" {
@@ -29,11 +47,16 @@ protocol ospf {
 }
 
 <%- if @bgp["state"] != "None" -%>
+## Prefix exported
+protocol static static_netprefix {
+        route fd00:<%= @bgp["pop"] %>:0004::/52 reject;
+}
+
 /* Define one bgp session block per peer */
 protocol bgp bgp_provider {
 	local as 4;
 	neighbor <%= @bgp["neighbor_ip"] %> as <%= @bgp["neighbor_as"] %>;
-	import all;
-	export all;
+	import where net = ::/0;
+	export static_netprefix;
 }
 <%- end -%>
