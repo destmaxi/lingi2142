@@ -3,3 +3,7 @@ ucl_minimal_cfg/*/mtab
 tags
 .idea/
 ucl_minimal_cfg/*/firewall/*
+ucl_minimal_cfg/*/log/*
+ucl_minimal_cfg/*/bird/*
+ucl_minimal_cfg/*/static_routes/*
+ucl_minimal_cfg/*/script/*
