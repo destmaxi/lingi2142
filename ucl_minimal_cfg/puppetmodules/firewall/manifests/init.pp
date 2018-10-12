@@ -6,6 +6,7 @@ class firewall (
   String $type
 ) {
 
+  $router_name = lookup("name")
   $prefix_a = "fd00:300:4"
   $prefix_b = "fd00:200:4"
 
