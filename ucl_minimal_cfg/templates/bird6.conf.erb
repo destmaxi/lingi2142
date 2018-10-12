@@ -20,7 +20,7 @@ protocol device {
 }
 
 <%- if @bgp["state"] != "None" -%>
-filter export_OSPF {
+protocol static export_OSPF {
   import all;
 
   route ::/0 via <%= @bgp["neighbor_ip"] %>;
@@ -28,7 +28,9 @@ filter export_OSPF {
 <%- end -%>
 
 protocol ospf {
-  export filter export_OSPF; # select export filter
+  <%- if @bgp["state"] != "None" -%>
+  export where proto = "export_OSPF"; # select export filter
+  <%- end -%>
 	area 0.0.0.0 {
 		<%- @ospfv3["hello_itfs"].each do |val| -%>
 			interface "<%= val %>" {
