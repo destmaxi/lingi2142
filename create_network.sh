@@ -1,8 +1,7 @@
 #!/bin/bash
 
 # List here all files from /etc that should be copied
-ETC_IMPORT=(hosts passwd group manpath.config services)
-
+ETC_IMPORT=(hosts passwd group manpath.config services alternatives)
 ## See the bottom for the bootstrap
 
 # Execute a script from the node's config dir
@@ -37,7 +36,13 @@ function mk_node {
     mkdir -p "$CDIR"
     [ ! -f "${CDIR}/hostname" ] && echo "$1" > "${CDIR}/hostname"
     for file in "${ETC_IMPORT[@]}"; do
-        [ ! -f "${CDIR}/${file}" ] && cp "/etc/${file}" "${CDIR}/${file}"
+      if [ -f "${CDIR}/${file}" ] || [ -d "${CDIR}/${file}" ]; then
+                continue
+      elif [ -f "/etc/${file}" ]; then
+                cp "/etc/${file}" "${CDIR}/${file}"
+      elif [ -d "/etc/${file}" ]; then
+                cp -r "/etc/${file}" "${CDIR}/${file}"
+      fi
     done
     # Enable the loopback in the net NS, quite a few programs require it
     ip netns exec "$1" ip link set dev lo up
@@ -203,7 +208,7 @@ _dname=$(dirname "$0")
 BDIR=$(cd "$_dname"; pwd -P)
 # Group number
 GROUPNUMBER=4
-# Node configs  
+# Node configs
 CONFIGDIR=cfg
 # boot script name
 BOOT="boot"
