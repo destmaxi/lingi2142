@@ -19,6 +19,10 @@ ip6tables -A OUTPUT  -o <%= @interface %> -p icmpv6 --icmpv6-type time-exceeded 
 ip6tables -A FORWARD -o <%= @interface %> -p icmpv6 --icmpv6-type time-exceeded -j DROP comment --comment "icmpv6 timed out"
 <%- end -%>
 
+ip6tables -A INPUT -p icmpv6 -j ACCEPT
+ip6tables -A OUTPUT -p icmpv6 -j ACCEPT
+ip6tables -A FORWARD -p icmpv6 -j ACCEPT
+
 # Allow packets coming from related and established connections
 ip6tables -A OUTPUT -m state --state ESTABLISHED,RELATED -j ACCEPT
 ip6tables -A OUTPUT -o lo -j ACCEPT #Accept loopback
