@@ -1,4 +1,4 @@
-#make dirs
+#make dirs if non exist
 mkdir -p ucl_minimal_cfg/HALL/log
 mkdir -p ucl_minimal_cfg/MICH/log
 mkdir -p ucl_minimal_cfg/PYTH/log

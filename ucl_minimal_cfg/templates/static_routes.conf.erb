@@ -12,10 +12,10 @@ ip address add dev <%= val["interface"] %> <%= @prefix_a %>:0004:<%= val["route"
 
 <%- if @id == 2 -%>
 ip link set dev belnetb up
-ip address add dev belnetb <%= @prefix_b %>::4/64
+ip address add dev belnetb <%= @prefix_b %>::4/48
 
 <%- elsif @id == 4 -%>
 ip link set dev belneta up
-ip address add dev belneta <%= @prefix_a %>::4/64
+ip address add dev belneta <%= @prefix_a %>::4/48
 
 <%- end -%>

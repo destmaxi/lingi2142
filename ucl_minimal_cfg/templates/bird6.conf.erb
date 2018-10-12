@@ -19,17 +19,13 @@ protocol device {
 	scan time 10;
 }
 
+<%- if @bgp["state"] != "None" -%>
 filter export_OSPF {
-  if ( source = RTS_INHERIT ) then {
-     # advertise routes from kernel
-     accept;
-  }
-  else if (net = ::/0 ) then {
-     # redistribute default route
-     accept;
-  }
-  reject;
+  import all;
+
+  route ::/0 via <%= @bgp["neighbor_ip"] %>;
 }
+<%- end -%>
 
 protocol ospf {
   export filter export_OSPF; # select export filter
