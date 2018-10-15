@@ -1,5 +1,6 @@
 #!/bin/bash
 
+>>>>>>> 1467283... Remove bird6.conf files
 # Begin by flushing any default rules to create them from scratch:
 #ip6tables -F INPUT
 #ip6tables -F OUTPUT
@@ -41,4 +42,4 @@
 #ip6tables -A FORWARD -i <%= @interface %> -p 89 -j DROP
 #ip6tables -A FORWARD -o <%= @interface %> -p 89 -j DROP
 #ip6tables -A OUTPUT  -o <%= @interface %> -p 89 -j DROP
-<%- end -%>
+
