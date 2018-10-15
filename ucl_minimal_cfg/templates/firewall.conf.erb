@@ -1,9 +1,11 @@
 #!/bin/bash
 
 # Log the dropped packets !
-ip6tables -A INPUT -j NFLOG --nflog-prefix "[GOT-INPUT]<%= @router_name %>"
-ip6tables -A FORWARD -j NFLOG --nflog-prefix "[GOT-FORWARD]<%= @router_name %>"
-ip6tables -A OUTPUT -j NFLOG --nflog-prefix "[GOT-OUTPUT]<%= @router_name %>"
+iptables -N LOGGING
+iptables -A INPUT -j LOGGING
+iptables -A OUTPUT -j LOGGING
+iptables -A LOGGING -m limit --limit 2/min -j LOG --log-prefix "IPTables-Dropped: " --log-level 4
+iptables -A LOGGING -j DROP
 
 # Begin by flushing any default rules to create them from scratch:
 ip6tables -F INPUT
