@@ -1,9 +1,9 @@
 #!/bin/bash
 
 # Log the dropped packets !
-ip6tables -A INPUT -j ULOG --nflog-prefix "[GOT-INPUT]<%= @router_name %>"
-ip6tables -A FORWARD -j ULOG --nflog-prefix "[GOT-FORWARD]<%= @router_name %>"
-ip6tables -A OUTPUT -j ULOG --nflog-prefix "[GOT-OUTPUT]<%= @router_name %>"
+ip6tables -A INPUT -j NFLOG --nflog-prefix "[GOT-INPUT]<%= @router_name %>"
+ip6tables -A FORWARD -j NFLOG --nflog-prefix "[GOT-FORWARD]<%= @router_name %>"
+ip6tables -A OUTPUT -j NFLOG --nflog-prefix "[GOT-OUTPUT]<%= @router_name %>"
 
 # Begin by flushing any default rules to create them from scratch:
 ip6tables -F INPUT
@@ -66,6 +66,6 @@ ip6tables -A FORWARD -p icmpv6 -i <%= @interface %> -j DROP
 ip6tables -A OUTPUT -p icmpv6 -j ACCEPT
 
 # Log the dropped packets !
-ip6tables -A INPUT -j ULOG --nflog-prefix "[DROP-INPUT]<%= @router_name %>"
-ip6tables -A FORWARD -j ULOG --nflog-prefix "[DROP-FORWARD]<%= @router_name %>"
-ip6tables -A OUTPUT -j ULOG --nflog-prefix "[DROP-OUTPUT]<%= @router_name %>"
+ip6tables -A INPUT -j NFLOG --nflog-prefix "[DROP-INPUT]<%= @router_name %>"
+ip6tables -A FORWARD -j NFLOG --nflog-prefix "[DROP-FORWARD]<%= @router_name %>"
+ip6tables -A OUTPUT -j NFLOG --nflog-prefix "[DROP-OUTPUT]<%= @router_name %>"
