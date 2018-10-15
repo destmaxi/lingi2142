@@ -7,3 +7,4 @@ ucl_minimal_cfg/*/log/*
 ucl_minimal_cfg/*/bird/*
 ucl_minimal_cfg/*/static_routes/*
 ucl_minimal_cfg/*/script/*
+ucl_minimal_cfg/alternatives/*
