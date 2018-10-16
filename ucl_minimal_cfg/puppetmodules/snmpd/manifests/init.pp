@@ -1,6 +1,6 @@
 # Puppet looks in data/node.yaml for snmp automatically
 # These variables are now accessible in the template
-class snmp (
+class snmpd (
     String $agentaddress,
     String $ro_community6,
     String $rw_community6,
@@ -27,6 +27,6 @@ class snmp (
   # Start snmpd when the template is created
   exec { "snmpd-launch":
     require => File["/etc/snmp/snmpd.conf"], # Force to execute the command after
-    command => "service snmpd start", # IS THAT REALLY CORRECT ???????
+    #command => "service snmpd start", # IS THAT REALLY CORRECT ???????
   }
 }
