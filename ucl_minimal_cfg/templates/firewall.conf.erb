@@ -59,18 +59,22 @@ ip6tables -A OUTPUT -o <%= @interface %> -p tcp --dport 179 -j ACCEPT
 # TODO: Allow dhcp packets
 
 # Allow ospf
-ip6tables -A INPUT   -p ospf -j ACCEPT
-ip6tables -A FORWARD -p ospf -j ACCEPT
+ip6tables -A INPUT    -p ospf -j ACCEPT
+ip6tables -A FORWARD  -p ospf -j ACCEPT
 ip6tables -A OUTPUT   -p ospf -j ACCEPT
 
 # Accept icmpv6 when it comes from our network
-ip6tables -A INPUT -p icmpv6 -j ACCEPT
+ip6tables -A INPUT   -p icmpv6 -j ACCEPT
 ip6tables -A FORWARD -p icmpv6 -j ACCEPT
 <%- if @type == "border" -%>
 # Don't allow forwarding of pings, only border routers can be pinged
 ip6tables -A FORWARD -p icmpv6 -i <%= @interface %> -j DROP
 <%- end -%>
-ip6tables -A OUTPUT -p icmpv6 -j ACCEPT
+ip6tables -A OUTPUT  -p icmpv6 -j ACCEPT
+
+ip6tables -A INPUT   -p udp --dport 33434:33534 -j ACCEPT
+ip6tables -A OUTPUT  -p udp --dport 33434:33534 -j ACCEPT
+ip6tables -A FORWARD -p udp --dport 33434:33534 -j ACCEPT
 
 # Log the dropped packets !
 ip6tables -A INPUT -j NFLOG --nflog-prefix "[DROP-INPUT]<%= @router_name %>"
