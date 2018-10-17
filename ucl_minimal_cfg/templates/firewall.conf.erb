@@ -1,12 +1,5 @@
 #!/bin/bash
 
-# Log the dropped packets !
-iptables -N LOGGING
-iptables -A INPUT -j LOGGING
-iptables -A OUTPUT -j LOGGING
-iptables -A LOGGING -m limit --limit 2/min -j LOG --log-prefix "IPTables-Dropped: " --log-level 4
-iptables -A LOGGING -j DROP
-
 # Begin by flushing any default rules to create them from scratch:
 ip6tables -F INPUT
 ip6tables -F OUTPUT
@@ -20,9 +13,18 @@ ip6tables -P FORWARD DROP
 ip6tables -P OUTPUT DROP
 
 # Allow packets coming from related and established connections
-ip6tables -A INPUT -m state --state ESTABLISHED,RELATED -j ACCEPT
+ip6tables -A INPUT   -m state --state ESTABLISHED,RELATED -j ACCEPT
 ip6tables -A FORWARD -m state --state RELATED,ESTABLISHED -j ACCEPT
-ip6tables -A OUTPUT -m state --state ESTABLISHED,RELATED -j ACCEPT
+ip6tables -A OUTPUT  -m state --state ESTABLISHED,RELATED -j ACCEPT
+
+# Allow loopback
+ip6tables -A INPUT -i lo -j ACCEPT
+ip6tables -A OUPUT -o lo -j ACCEPT
+
+# Drop invalid packets
+ip6tables -A INPUT   -m state --state INVALID -j DROP
+ip6tables -A FORWARD -m state --state INVALID -j DROP
+ip6tables -A OUTPUT  -m state --state INVALID -j DROP
 
 <% if @type == "border" %>
 # Border router: block incomming packets that have a source ip from our network (spoofed source ip).
@@ -31,34 +33,37 @@ ip6tables -A INPUT   -i <%= @interface %> -s <%= @prefix_b %>::/52 -j DROP -m co
 ip6tables -A FORWARD -i <%= @interface %> -s <%= @prefix_a %>::/52 -j DROP -m comment --comment "forwarding packet with source ip from our network"
 ip6tables -A FORWARD -i <%= @interface %> -s <%= @prefix_b %>::/52 -j DROP -m comment --comment "forwarding packet with source ip from our network"
 
-# Allow bgp on this border router on the interface where bgp should be enabled
-ip6tables -A INPUT  -i <%= @interface %> -p tcp --dport 179 -j ACCEPT
-ip6tables -A OUTPUT -o <%= @interface %> -p tcp --dport 179 -j ACCEPT
-
 # Block ospf (in both direction) on interface $interface as we should not receive such
 # packet from internet and it permits to avoid by error to send or ospf packet to the internet.
-ip6tables -A INPUT   -i <%= @interface %> -p 89 -j DROP -m comment --comment "block incomming ospf packets"
-ip6tables -A FORWARD -i <%= @interface %> -p 89 -j DROP -m comment --comment "block incomming forwarding ospf packets"
-ip6tables -A FORWARD -o <%= @interface %> -p 89 -j DROP -m comment --comment "block outgoing forwarding ospf packets"
-ip6tables -A OUTPUT  -o <%= @interface %> -p 89 -j DROP -m comment --comment "block outgoing ospf packets"
+ip6tables -A INPUT   -i <%= @interface %> -p ospf -j DROP -m comment --comment "block incomming ospf packets"
+ip6tables -A FORWARD -i <%= @interface %> -p ospf -j DROP -m comment --comment "block incomming forwarding ospf packets"
+ip6tables -A FORWARD -o <%= @interface %> -p ospf -j DROP -m comment --comment "block outgoing forwarding ospf packets"
+ip6tables -A OUTPUT  -o <%= @interface %> -p ospf -j DROP -m comment --comment "block outgoing ospf packets"
 
 # Block dhcp from leaving our network
 ip6tables -A INPUT   -p udp -i <%= @interface %> -m multiport --dports 546,547 -j DROP
 ip6tables -A FORWARD -p udp -i <%= @interface %> -m multiport --dports 546,547 -j DROP
 ip6tables -A FORWARD -p udp -o <%= @interface %> -m multiport --dports 546,547 -j DROP
 ip6tables -A OUTPUT  -p udp -o <%= @interface %> -m multiport --dports 546,547 -j DROP
-<%- end -%>
 
-# Allow local traffic
-ip6tables -A INPUT -i lo -j ACCEPT #Accept loopback
-ip6tables -A OUTPUT -o lo -j ACCEPT #Accept loopback
+# This router is a 'border router': there is a BGP session running on the interface.
+# We block hop limit exceeded towards outside network (rule against topology discovery with traceroute)
+ip6tables -A OUTPUT  -o <%= @interface %> -p icmpv6 --icmpv6-type time-exceeded -j DROP
+ip6tables -A FORWARD -o <%= @interface %> -p icmpv6 --icmpv6-type time-exceeded -j DROP
+
+# Allow bgp on this border router on the interface where bgp should be enabled
+ip6tables -A INPUT  -i <%= @interface %> -p tcp --dport 179 -j ACCEPT
+ip6tables -A OUTPUT -o <%= @interface %> -p tcp --dport 179 -j ACCEPT
+<%- end -%>
 
 # TODO: Allow dhcp packets
 
 # Allow ospf
-ip6tables -A INPUT -p 89 -j ACCEPT
-ip6tables -A OUPUT -p 89 -j ACCEPT
+ip6tables -A INPUT   -p ospf -j ACCEPT
+ip6tables -A FORWARD -p ospf -j ACCEPT
+ip6tables -A OUPUT   -p ospf -j ACCEPT
 
+# Accept icmpv6 when it comes from our network
 ip6tables -A INPUT -p icmpv6 -j ACCEPT
 ip6tables -A FORWARD -p icmpv6 -j ACCEPT
 <%- if @type == "border" -%>
