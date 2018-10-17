@@ -22,9 +22,10 @@ ip6tables -A INPUT -i lo -j ACCEPT
 ip6tables -A OUPUT -o lo -j ACCEPT
 
 # Drop invalid packets
-ip6tables -A INPUT   -m state --state INVALID -j DROP
-ip6tables -A FORWARD -m state --state INVALID -j DROP
-ip6tables -A OUTPUT  -m state --state INVALID -j DROP
+# For some reason reply pings from outside the network have an INVALID state
+#ip6tables -A INPUT   -m state --state INVALID -j DROP
+#ip6tables -A FORWARD -m state --state INVALID -j DROP
+#ip6tables -A OUTPUT  -m state --state INVALID -j DROP
 
 <% if @type == "border" %>
 # Border router: block incomming packets that have a source ip from our network (spoofed source ip).
