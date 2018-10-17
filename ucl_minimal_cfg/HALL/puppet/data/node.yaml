@@ -12,7 +12,6 @@ bird6::bgp:
   local_as: 4
   neighbor_ip: fd00:200::b
   neighbor_as: 200
-  pop: 0200
 firewall::interface: belnetb
 firewall::prefix: fd00:200:4
 firewall::type: border

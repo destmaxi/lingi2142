@@ -49,7 +49,7 @@ protocol ospf {
 <%- if @bgp["state"] != "None" -%>
 ## Prefix exported
 protocol static static_netprefix {
-        route fd00:<%= @bgp["pop"] %>:0004::/52 reject;
+        route fd00:<%= @bgp["neighbor_as"] %>:0004::/52 reject;
 }
 
 protocol bgp bgp_provider {
