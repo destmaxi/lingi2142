@@ -61,7 +61,7 @@ ip6tables -A OUTPUT -o <%= @interface %> -p tcp --dport 179 -j ACCEPT
 # Allow ospf
 ip6tables -A INPUT   -p ospf -j ACCEPT
 ip6tables -A FORWARD -p ospf -j ACCEPT
-ip6tables -A OUPUT   -p ospf -j ACCEPT
+ip6tables -A OUTPUT   -p ospf -j ACCEPT
 
 # Accept icmpv6 when it comes from our network
 ip6tables -A INPUT -p icmpv6 -j ACCEPT
