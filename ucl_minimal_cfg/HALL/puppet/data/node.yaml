@@ -15,6 +15,7 @@ bird6::bgp:
 firewall::interface: belnetb
 firewall::wrong_prefix: fd00:300:4
 firewall::type: border
+firewall::prefix: fd00:300:4
 static_routes::id: 2
 static_routes::interfaces:
   - {interface: HALL-eth0, route: 0f25}

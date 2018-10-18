@@ -39,6 +39,10 @@ ip6tables -A INPUT   -i <%= @interface %> -s <%= @prefix_b %>::/52 -j DROP -m co
 ip6tables -A FORWARD -i <%= @interface %> -s <%= @prefix_a %>::/52 -j DROP -m comment --comment "forwarding packet with source ip from our network"
 ip6tables -A FORWARD -i <%= @interface %> -s <%= @prefix_b %>::/52 -j DROP -m comment --comment "forwarding packet with source ip from our network"
 
+# Block traffic comming from outside the network towards a router (prevent against topology discovery and neighbor discovery)
+ip6tables -A INPUT   -i <%= @interface %> -d <%= @prefix %>:0f00::/56 -j DROP
+ip6tables -A FORWARD -i <%= @interface %> -d <%= @prefix %>:0f00::/56 -j DROP
+
 # Block ospf (in both direction) on interface $interface as we should not receive such
 # packet from internet and it permits to avoid by error to send or ospf packet to the internet.
 ip6tables -A INPUT   -i <%= @interface %> -p ospf -j DROP -m comment --comment "block incomming ospf packets"

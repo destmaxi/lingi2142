@@ -3,3 +3,4 @@ bird6::bgp:
 firewall::interface: None
 firewall::wrong_prefix: None
 firewall::type: None
+firewall::type: None
