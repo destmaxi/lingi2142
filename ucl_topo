@@ -41,6 +41,7 @@ function mk_topo {
     add_link CARN PYTH   # Carnoy-eth1   <-> Pythagore-eth1
     add_link CARN STEV      # Carnoy-eth2   <-> Stevin-eth0
     add_link STEV PYTH   # Stevin-eth1   <-> Pythagore-eth2
+    add_link CARN SNMP_SERVER
 
     echo "@@ Adding LANs"
     # You can add your LANs here
