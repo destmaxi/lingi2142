@@ -16,7 +16,7 @@
 # Group number
 GROUPNUMBER=4
 # Node configs
-CONFIGDIR=ucl_minimal_cfg
+CONFIGDIR=gr4_cfg
 # boot script name
 BOOT="boot.sh"
 # startup script name
@@ -44,6 +44,7 @@ function mk_topo {
 
     echo "@@ Adding LANs"
     # You can add your LANs here
+    mk_LAN CARN DNS1
 
     echo "@@ Bridging the network"
     # Connect to belneta and belnetb
