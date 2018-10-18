@@ -19,6 +19,14 @@ class snmpd () {
     group  => bird,
   }
 
+  file {"/etc/snmp/snmp.conf":
+    require => File["/etc/snmp"],
+    ensure => file,
+    content => template("/templates/snmp.conf.erb"),
+    owner  => bird,
+    group  => bird,
+  }
+
   # Start snmpd when the template is created
   exec { "snmpd-launch":
     require => File["/etc/snmp/snmpd.conf"], # Force to execute the command after
