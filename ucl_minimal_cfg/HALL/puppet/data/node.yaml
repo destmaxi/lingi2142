@@ -20,10 +20,3 @@ static_routes::interfaces:
   - {interface: HALL-eth0, route: 0f25}
   - {interface: HALL-eth1, route: 0f24}
 script::id: 2
-snmpd::agentaddress: [ udp:127.0.0.1:161, udp6:[::1]:161 ]
-snmpd::rocommunity: public
-snmpd::rwcommunity: none
-snmpd::sys:
-  location: Unknown
-  contact: Unknown
-  services: 72
