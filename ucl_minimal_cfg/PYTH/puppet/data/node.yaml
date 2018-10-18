@@ -13,7 +13,7 @@ bird6::bgp:
   neighbor_ip: fd00:300::b
   neighbor_as: 300
 firewall::interface: belneta
-firewall::prefix: fd00:300:4
+firewall::wrong_prefix: fd00:200:4
 firewall::type: border
 static_routes::id: 4
 static_routes::interfaces:

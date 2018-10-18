@@ -2,7 +2,7 @@
 # These variables are now accessible in the template
 class firewall (
   String $interface,
-  String $prefix,
+  String $wrong_prefix,
   String $type
 ) {
 

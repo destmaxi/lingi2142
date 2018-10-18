@@ -28,7 +28,12 @@ ip6tables -A OUPUT -o lo -j ACCEPT
 #ip6tables -A OUTPUT  -m state --state INVALID -j DROP
 
 <% if @type == "border" %>
-# Border router: block incomming packets that have a source ip from our network (spoofed source ip).
+
+# Block traffic going to wrong AS
+ip6tables -A FORWARD -o <%= @interface %> -s <%= @wrong_prefix %>::/48 -j DROP
+ip6tables -A OUTPUT  -o <%= @interface %> -s <%= @wrong_prefix %>::/48 -j DROP
+
+# Block incomming packets that have a source ip from our network (spoofed source ip).
 ip6tables -A INPUT   -i <%= @interface %> -s <%= @prefix_a %>::/52 -j DROP -m comment --comment "incomming packet with source ip from our network"
 ip6tables -A INPUT   -i <%= @interface %> -s <%= @prefix_b %>::/52 -j DROP -m comment --comment "incomming packet with source ip from our network"
 ip6tables -A FORWARD -i <%= @interface %> -s <%= @prefix_a %>::/52 -j DROP -m comment --comment "forwarding packet with source ip from our network"
@@ -47,7 +52,6 @@ ip6tables -A FORWARD -p udp -i <%= @interface %> -m multiport --dports 546,547 -
 ip6tables -A FORWARD -p udp -o <%= @interface %> -m multiport --dports 546,547 -j DROP
 ip6tables -A OUTPUT  -p udp -o <%= @interface %> -m multiport --dports 546,547 -j DROP
 
-# This router is a 'border router': there is a BGP session running on the interface.
 # We block hop limit exceeded towards outside network (rule against topology discovery with traceroute)
 ip6tables -A OUTPUT  -o <%= @interface %> -p icmpv6 --icmpv6-type time-exceeded -j DROP
 ip6tables -A FORWARD -o <%= @interface %> -p icmpv6 --icmpv6-type time-exceeded -j DROP
@@ -73,6 +77,7 @@ ip6tables -A FORWARD -p icmpv6 -i <%= @interface %> -j DROP
 <%- end -%>
 ip6tables -A OUTPUT  -p icmpv6 -j ACCEPT
 
+# Allow traceroute
 ip6tables -A INPUT   -p udp --dport 33434:33534 -j ACCEPT
 ip6tables -A OUTPUT  -p udp --dport 33434:33534 -j ACCEPT
 ip6tables -A FORWARD -p udp --dport 33434:33534 -j ACCEPT
