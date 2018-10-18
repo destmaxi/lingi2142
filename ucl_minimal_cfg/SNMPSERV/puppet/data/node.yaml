@@ -1,0 +1,11 @@
+---
+name: SNMPSERV
+bird6::routing_id: 4.0.0.1 # Should be changed for your group (for instance 42 -> your group number)
+bird6::ospfv3:
+  hello_itfs:  # Activate OSPFv3 only on these interfaces
+    - SNMPSERV-eth0
+  stub_itfs: [] # Passive interfaces (e.g., LANs)
+static_routes::id: 1
+static_routes::interfaces:
+  - {interface: SNMPSERV-eth0, route: 0f31}
+script::id: 1
