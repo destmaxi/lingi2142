@@ -27,10 +27,28 @@ protocol static export_OSPF {
 }
 <%- end -%>
 
+protocol static static_loopback {
+        route fd00:300:4:f00::<%= @id %>/128 reject;
+}
+
+filter export_OSPF {
+     if(proto = "static_loopback") then {
+        # advertise loopback
+        accept;
+     }
+     <%- if @bgp["state"] != "None" -%>
+     else if(proto = "export_OSPF") then {
+        # advertise default route
+        accept;
+     }
+     <%- end -%>
+     reject;
+}
+
 protocol ospf {
-  <%- if @bgp["state"] != "None" -%>
-  export where proto = "export_OSPF"; # select export filter
-  <%- end -%>
+
+  export filter export_OSPF;
+
 	area 0.0.0.0 {
 		<%- @ospfv3["hello_itfs"].each do |val| -%>
 			interface "<%= val %>" {

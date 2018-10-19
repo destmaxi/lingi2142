@@ -7,6 +7,7 @@ bird6::ospfv3:
     - MICH-eth1
     - MICH-lan0
   stub_itfs: [] # Passive interfaces (e.g., LANs)
+bird6::id: 3
 static_routes::id: 3
 static_routes::interfaces:
   - {interface: MICH-eth0, route: 0f53}

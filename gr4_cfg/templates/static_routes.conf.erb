@@ -10,6 +10,8 @@ ip address add dev <%= val["interface"] %> <%= @prefix_a %>:0004:<%= val["route"
 
 <%- end -%>
 
+ip -6 addr add fd00:300:4:f00::<%= @id %> dev lo #ajoute l'adress ip du routeur
+
 <%- if @id == 2 -%>
 ip link set dev belnetb up
 ip address add dev belnetb <%= @prefix_b %>::4/48
