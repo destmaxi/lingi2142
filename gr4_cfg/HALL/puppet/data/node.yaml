@@ -11,7 +11,7 @@ bird6::bgp:
   state: ok
   local_as: 4
   neighbor_ip: fd00:200::b
-  neighbor_as:
+  neighbor_as: 200
 bird6::id: 2
 firewall::interface: belnetb
 firewall::wrong_prefix: fd00:300:4

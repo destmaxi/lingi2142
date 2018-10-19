@@ -20,7 +20,7 @@ protocol device {
 }
 
 <%- if @bgp["state"] != "None" -%>
-protocol static export_OSPF {
+protocol static export_default {
   import all;
 
   route ::/0 via <%= @bgp["neighbor_ip"] %>;
@@ -37,7 +37,7 @@ filter export_OSPF {
         accept;
      }
      <%- if @bgp["state"] != "None" -%>
-     else if(proto = "export_OSPF") then {
+     else if(proto = "export_default") then {
         # advertise default route
         accept;
      }
