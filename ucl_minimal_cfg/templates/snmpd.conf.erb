@@ -14,9 +14,9 @@
 #  AGENT BEHAVIOUR
 #
 
-agentAddress udp:127.0.0.1:161 #Listen for connections from the local system only ? Logique ?
-createUser adminUser SHA temp_password AES
-rwuser adminUser priv
+agentAddress udp:127.0.0.1:161 #Listen for connections from the local system only ? Logique ? Mettre le serveur
+createUser adminUser MD5 temp_password DES
+rwuser adminUser auth
 
 
 #
@@ -24,10 +24,10 @@ rwuser adminUser priv
 #
 
                                                  #  system + hrSystem groups only
-view   systemonly  included   .1.3.6.1.2.1.1
-view   systemonly  included   .1.3.6.1.2.1.25.1
+#view   systemonly  included   .1.3.6.1.2.1.1
+#view   systemonly  included   .1.3.6.1.2.1.25.1
 
-rouser   authOnlyUser
+#rouser   authOnlyUser
 #  Full write access for encrypted requests
 #     Remember to activate the 'createUser' lines above
 #rwuser   adminUser   priv
