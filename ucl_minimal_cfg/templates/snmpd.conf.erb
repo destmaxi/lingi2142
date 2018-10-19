@@ -14,9 +14,9 @@
 #  AGENT BEHAVIOUR
 #
 
-agentAddress udp:127.0.0.1:161 #Listen for connections from the local system only ? Logique ? Mettre le serveur
+agentAddress udp:127.0.0.1:161 #Listen for connections from the local system only ? Logique ?
 createUser adminUser MD5 temp_password DES
-rwuser adminUser auth
+rwuser adminUser priv
 
 
 #
@@ -37,6 +37,6 @@ rwuser adminUser auth
 #  SYSTEM INFORMATION
 #
 
-sysName <%=@location%>
-sysContact Jeremy <jeremy.minet@student.uclouvain.be>
-sysServices    72
+#sysName <%=@location%>
+#sysContact Jeremy <jeremy.minet@student.uclouvain.be>
+#sysServices    72
