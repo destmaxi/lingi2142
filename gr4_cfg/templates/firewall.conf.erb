@@ -239,13 +239,13 @@ ip6tables -A OUTPUT --dst <%= @prefix_b %>::/52 -p udp --match multiport \
 # Administrators have access to all services
 #
 
-ip6tables -A INPUT   --src <%= @prefix_a %>:a::/56 -j ACCEPT -m comment \
+ip6tables -A INPUT   --src <%= @prefix_a %>:0a00::/56 -j ACCEPT -m comment \
   --comment "User type: a"
-ip6tables -A INPUT   --src <%= @prefix_b %>:a::/56 -j ACCEPT -m comment \
+ip6tables -A INPUT   --src <%= @prefix_b %>:0a00::/56 -j ACCEPT -m comment \
   --comment "User type: a"
-ip6tables -A FORWARD --src <%= @prefix_a %>:a::/56 -j ACCEPT -m comment \
+ip6tables -A FORWARD --src <%= @prefix_a %>:0a00::/56 -j ACCEPT -m comment \
   --comment "User type: a"
-ip6tables -A FORWARD --src <%= @prefix_b %>:a::/56 -j ACCEPT -m comment \
+ip6tables -A FORWARD --src <%= @prefix_b %>:0a00::/56 -j ACCEPT -m comment \
   --comment "User type: a"
 
 
@@ -258,24 +258,24 @@ ip6tables -A FORWARD --src <%= @prefix_b %>:a::/56 -j ACCEPT -m comment \
 # A student should not host a service so we DROP all traffic going to a student
 #
 
-ip6tables -A FORWARD --dst <%= @prefix_a %>:b::/56 -j DROP -m comment \
+ip6tables -A FORWARD --dst <%= @prefix_a %>:0b00::/56 -j DROP -m comment \
   --comment "Student should not host services"
-ip6tables -A FORWARD --dst <%= @prefix_b %>:b::/56 -j DROP -m comment \
+ip6tables -A FORWARD --dst <%= @prefix_b %>:0b00::/56 -j DROP -m comment \
   --comment "Student should not host services"
 
 #
 # You can find more information about why we allow those ports in our report
 #
 
-ip6tables -A FORWARD --src <%= @prefix_a %>:b::/56 -p tcp --match multiport \
+ip6tables -A FORWARD --src <%= @prefix_a %>:0b00::/56 -p tcp --match multiport \
   --dports 22,25,53,80,109,110,143,220,443,993,995,5001 -j ACCEPT -m comment \
   --comment "User type: b"
-ip6tables -A FORWARD --src <%= @prefix_b %>:b::/56 -p tcp --match multiport \
+ip6tables -A FORWARD --src <%= @prefix_b %>:0b00::/56 -p tcp --match multiport \
   --dports 22,25,53,80,109,110,143,220,443,993,995,5001 -j ACCEPT -m comment \
   --comment "User type: b"
-ip6tables -A FORWARD --src <% @prefix_a %>:b::/56 -p udp --dport 53 -j ACCEPT \
+ip6tables -A FORWARD --src <% @prefix_a %>:0b00::/56 -p udp --dport 53 -j ACCEPT \
   -m comment --comment "User type: b"
-ip6tables -A FORWARD --src <% @prefix_b %>:b::/56 -p udp --dport 53 -j ACCEPT \
+ip6tables -A FORWARD --src <% @prefix_b %>:0b00::/56 -p udp --dport 53 -j ACCEPT \
   -m comment --comment "User type: b"
 
 
@@ -288,15 +288,15 @@ ip6tables -A FORWARD --src <% @prefix_b %>:b::/56 -p udp --dport 53 -j ACCEPT \
 # You can find more information about why we allow those ports in our report
 #
 
-ip6tables -A FORWARD --src <%= @prefix_a %>:b::/56 -p tcp --match multiport \
+ip6tables -A FORWARD --src <%= @prefix_a %>:0900::/56 -p tcp --match multiport \
   --dports 22,25,53,80,109,110,143,220,443,993,995,5001 -j ACCEPT -m comment \
   --comment "User type: 9"
-ip6tables -A FORWARD --src <%= @prefix_b %>:b::/56 -p tcp --match multiport \
+ip6tables -A FORWARD --src <%= @prefix_b %>:0900::/56 -p tcp --match multiport \
   --dports 22,25,53,80,109,110,143,220,443,993,995,5001 -j ACCEPT -m comment \
   --comment "User type: 9"
-ip6tables -A FORWARD --src <% @prefix_a %>:b::/56 -p udp --dport 53 -j ACCEPT \
+ip6tables -A FORWARD --src <% @prefix_a %>:0900::/56 -p udp --dport 53 -j ACCEPT \
   -m comment --comment "User type: 9"
-ip6tables -A FORWARD --src <% @prefix_b %>:b::/56 -p udp --dport 53 -j ACCEPT \
+ip6tables -A FORWARD --src <% @prefix_b %>:0900::/56 -p udp --dport 53 -j ACCEPT \
   -m comment --comment "User type: 9"
 
 
@@ -309,15 +309,15 @@ ip6tables -A FORWARD --src <% @prefix_b %>:b::/56 -p udp --dport 53 -j ACCEPT \
 # You can find more information about why we allow those ports in our report
 #
 
-ip6tables -A FORWARD --src <%= @prefix_a %>:e::/56 -p tcp --match multiport \
+ip6tables -A FORWARD --src <%= @prefix_a %>:0e00::/56 -p tcp --match multiport \
   --dports 22,25,53,80,109,110,143,161,162,220,443,993,995,5001 -j ACCEPT -m comment \
   --comment "User type: e"
-ip6tables -A FORWARD --src <%= @prefix_b %>:e::/56 -p tcp --match multiport \
+ip6tables -A FORWARD --src <%= @prefix_b %>:0e00::/56 -p tcp --match multiport \
   --dports 22,25,53,80,109,110,143,220,443,993,995,5001 -j ACCEPT -m comment \
   --comment "User type: e"
-ip6tables -A FORWARD --src <%= @prefix_a %>:e::/56 -p udp --dport 53 -j ACCEPT \
+ip6tables -A FORWARD --src <%= @prefix_a %>:0e00::/56 -p udp --dport 53 -j ACCEPT \
   -m comment --comment "User type: e"
-ip6tables -A FORWARD --src <%= @prefix_b %>:e::/56 -p upd --dport 53 -j ACCEPT \
+ip6tables -A FORWARD --src <%= @prefix_b %>:0e00::/56 -p upd --dport 53 -j ACCEPT \
   -m comment --comment "User type: e"
 
 
@@ -330,17 +330,16 @@ ip6tables -A FORWARD --src <%= @prefix_b %>:e::/56 -p upd --dport 53 -j ACCEPT \
 # You can find more information about why we allow those ports in our report
 #
 
-ip6tables -A FORWARD --src <%= @prefix_a %>:d::/56 -p tcp --match multiport \
+ip6tables -A FORWARD --src <%= @prefix_a %>:0d00::/56 -p tcp --match multiport \
   --dports 53,2302,5001,5060,5061 -j ACCEPT -m comment --comment "User type: d"
-ip6tables -A FORWARD --src <%= @prefix_b %>:d::/56 -p tcp --match multiport \
+ip6tables -A FORWARD --src <%= @prefix_b %>:0d00::/56 -p tcp --match multiport \
   --dports 53,2302,5001,5060,5061 -j ACCEPT -m comment --comment "User type: d"
-ip6tables -A FORWARD --src <%= @prefix_a %>:d::/56 -p udp --match multiport \
+ip6tables -A FORWARD --src <%= @prefix_a %>:0d00::/56 -p udp --match multiport \
   --dports 53,5060,5061 -j ACCEPT -m commen --comment "User type: d"
-ip6tables -A FORWARD --src <%= @prefix_b %>:d::/56 -p udp --match multiport \
+ip6tables -A FORWARD --src <%= @prefix_b %>:0d00::/56 -p udp --match multiport \
   --dports 53,5060,5061 -j ACCEPT -m commen --comment "User type: d"
-ip6tables -A FORWARD --src <%= @prefix_a %>:d::/56 -p udp --dport 16384:16472 \
+ip6tables -A FORWARD --src <%= @prefix_a %>:0d00::/56 -p udp --dport 16384:16472 \
   -j ACCEPT -m comment --comment "User type: d"
-
 
 
 
@@ -351,9 +350,9 @@ ip6tables -A FORWARD --src <%= @prefix_a %>:d::/56 -p udp --dport 16384:16472 \
 # A guest should not host a service so we DROP all traffic going to a student
 #
 
-ip6tables -A FORWARD --dst <%= @prefix_a %>:b::/56 -j DROP -m comment \
+ip6tables -A FORWARD --dst <%= @prefix_a %>:0c00::/56 -j DROP -m comment \
   --comment "Student should not host services"
-ip6tables -A FORWARD --dst <%= @prefix_b %>:b::/56 -j DROP -m comment \
+ip6tables -A FORWARD --dst <%= @prefix_b %>:0c00::/56 -j DROP -m comment \
   --comment "Student should not host services"
 
 #
@@ -366,19 +365,19 @@ ip6tables -A FORWARD --dst <%= @prefix_b %>:b::/56 -j DROP -m comment \
 
 
 ################################################################################
-#                       Log the dropped packets !                              #
+#                   Allowed ports for external users                           #
 ################################################################################
 
-ip6tables -A FORWARD --dst <%= @prefix_a %>::/56 -p tcp --match multiport \
+ip6tables -A FORWARD --dst <%= @prefix_a %>::/48 -p tcp --match multiport \
   --dports 22,25,53,80,443 -j ACCEPT -m comment --comment "comming from outside"
-ip6tables -A FORWARD --dst <%= @prefix_b %>::/56 -p tcp --match multiport \
+ip6tables -A FORWARD --dst <%= @prefix_b %>::/48 -p tcp --match multiport \
   --dports 22,25,53,80,443 -j ACCEPT -m comment --comment "comming from outside"
-ip6tables -A FORWARD --dst <%= @prefix_a %>::/56 -p udp --dport 53 -j ACCEPT \
+ip6tables -A FORWARD --dst <%= @prefix_a %>::/48 -p udp --dport 53 -j ACCEPT \
   -m comment --comments "comming from outside"
-ip6tables -A FORWARD --dst <%= @prefix_b %>::/56 -p udp --dport 53 -j ACCEPT \
+ip6tables -A FORWARD --dst <%= @prefix_b %>::/48 -p udp --dport 53 -j ACCEPT \
   -m comment --comments "comming from outside"
 
-  
+
 
 
 ################################################################################
