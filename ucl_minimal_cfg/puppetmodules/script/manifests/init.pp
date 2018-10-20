@@ -5,6 +5,8 @@ class script(
 )
 {
 
+  $node_name = lookup("name")
+
   $prefix_a = "fd00:300"
   $prefix_b = "fd00:200"
   $hall = 2
