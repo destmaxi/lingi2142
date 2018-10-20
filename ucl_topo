@@ -44,7 +44,7 @@ function mk_topo {
 
     echo "@@ Adding LANs"
     # You can add your LANs here
-    mk_LAN Carnoy MONITOR
+    mk_LAN CARN MONI
 
     echo "@@ Bridging the network"
     # Connect to belneta and belnetb
