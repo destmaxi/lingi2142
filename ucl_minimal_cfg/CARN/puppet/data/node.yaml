@@ -6,7 +6,7 @@ bird6::ospfv3:
     - CARN-eth0
     - CARN-eth1
     - CARN-eth2
-    - CARN-eth3
+    - CARN-lan0
   stub_itfs: [] # Passive interfaces (e.g., LANs)
 static_routes::id: 1
 static_routes::interfaces:
