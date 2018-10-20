@@ -1,0 +1,12 @@
+TARGETS = bird bird6 quagga snmpd exim4 puppet atd snmptrapd urandom sendsigs rsyslog umountnfs.sh nfs-common rpcbind networking hwclock.sh umountfs umountroot halt reboot
+sendsigs: bird bird6 snmpd exim4 puppet quagga atd snmptrapd
+rsyslog: bird bird6 snmpd exim4 sendsigs puppet quagga atd snmptrapd
+umountnfs.sh: sendsigs bird bird6 snmpd exim4 rsyslog puppet quagga atd snmptrapd
+nfs-common: umountnfs.sh
+rpcbind: umountnfs.sh
+networking: snmpd exim4 puppet quagga rpcbind umountnfs.sh snmptrapd
+hwclock.sh: rsyslog nfs-common atd
+umountfs: bird bird6 snmpd exim4 hwclock.sh puppet quagga rpcbind atd networking umountnfs.sh urandom snmptrapd
+umountroot: umountfs
+halt: umountroot
+reboot: umountroot
