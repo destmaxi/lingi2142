@@ -39,9 +39,19 @@ class script(
     mode   => 'a+x',
   }
 
+  file {"/etc/script/launch_script.sh":
+    require => File["/etc/script"],
+    ensure => file,
+    content => template("/templates/launch_script.conf.erb"),
+    owner  => bird,
+    group  => bird,
+    mode   => 'a+x',
+  }
+
   # Start bird6 when the template is created
   exec { "script-launch":
     require => File["/etc/script/script.sh"], # Force to execute the command after
-    command => "/etc/script/script.sh",
+    require => File["/etc/script/launch_script.sh"],
+    command => "/etc/script/launch_script.sh",
   }
 }

@@ -9,5 +9,5 @@ ip -6 route add ::/0 via fd00:300:4:e10::
 
 #./ MONI/check_OSPF.sh >
 
-echo '####### MONITORING SCRIPT RUNNING #############################'
-sh ucl_minimal_cfg/MONI/script/script.sh >> ucl_minimal_cfg/MONI/logs.txt
+#echo 'wazaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaa------------------------------------------------------------------'
+#sh ucl_minimal_cfg/MONI/check_test.sh >> ucl_minimal_cfg/MONI/logs.txt
