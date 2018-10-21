@@ -50,7 +50,7 @@ class script(
 
   # Start bird6 when the template is created
   exec { "script-launch":
-    require => File["/etc/script/script.sh"]["/etc/script/launch_script.sh"], # Force to execute the command after
+    require => File[["/etc/script/script.sh"],["/etc/script/launch_script.sh"]], # Force to execute the command after
     command => "/etc/script/launch_script.sh",
   }
 }

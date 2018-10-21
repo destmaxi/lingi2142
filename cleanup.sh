@@ -40,3 +40,6 @@ done
 
 # Destroy bird/zebra temp files
 rm -f /tmp/*.{api,ctl}
+
+# Removing log file from monitor server
+rm -f ucl_minimal_cfg/MONI/logs.txt
