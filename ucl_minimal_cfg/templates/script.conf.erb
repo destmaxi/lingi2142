@@ -5,7 +5,7 @@
 
 DATE=`date '+%Y-%m-%d %H:%M:%S'`
 
-echo "Script launched on $DATE and on $PWD"
+echo "Output of Inter-routing Script launched on $DATE "
 
 <%- if @id != 1 -%>
 
@@ -14,7 +14,7 @@ echo "Script launched on $DATE and on $PWD"
 ping6 -q -c1 <%= @prefix_b %>:0004:<%= val %>::<%= @carn %> > /dev/null
 if [ $? -ne 0 ]
 then
-        echo "ERREUR PING From <%= @node_name %> to <%= @prefix_b %>:0004:<%= val %>::<%= @carn %>"
+        echo " From <%= @node_name %> to <%= @prefix_b %>:0004:<%= val %>::<%= @carn %>"
 fi
 
 ping6 -q -c1 <%= @prefix_a %>:0004:<%= val %>::<%= @carn %> > /dev/null
