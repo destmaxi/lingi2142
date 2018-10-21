@@ -7,6 +7,8 @@ DATE=`date '+%Y-%m-%d %H:%M:%S'`
 
 echo "Script launched on $DATE and on $PWD"
 
+echo "######################################################################"
+
 <%- if @id != 1 -%>
 
 <%- @carn_link.each do |val| -%>
@@ -14,13 +16,13 @@ echo "Script launched on $DATE and on $PWD"
 ping6 -q -c1 <%= @prefix_b %>:0004:<%= val %>::<%= @carn %> > /dev/null
 if [ $? -ne 0 ]
 then
-        echo "ERREUR PING From <%= @node_name %> to <%= @prefix_b %>:0004:<%= val %>::<%= @carn %>"
+        echo "Ping error from <%= @node_name %> to <%= @prefix_b %>:0004:<%= val %>::<%= @carn %>"
 fi
 
 ping6 -q -c1 <%= @prefix_a %>:0004:<%= val %>::<%= @carn %> > /dev/null
 if [ $? -ne 0 ]
 then
-        echo "ERREUR PING From <%= @node_name %> to <%= @prefix_a %>:0004:<%= val %>::<%= @carn %>"
+        echo "Ping error from <%= @node_name %> to <%= @prefix_a %>:0004:<%= val %>::<%= @carn %>"
 fi
 
 <%- end -%>
@@ -33,13 +35,13 @@ fi
 ping6 -q -c1 <%= @prefix_b %>:0004:<%= val %>::<%= @hall %> > /dev/null
 if [ $? -ne 0 ]
 then
-        echo "ERREUR PING From <%= @node_name %> to <%= @prefix_b %>:0004:<%= val %>::<%= @hall %>"
+        echo "Ping error from <%= @node_name %> to <%= @prefix_b %>:0004:<%= val %>::<%= @hall %>"
 fi
 
 ping6 -q -c1 <%= @prefix_a %>:0004:<%= val %>::<%= @hall %> > /dev/null
 if [ $? -ne 0 ]
 then
-        echo "ERREUR PING From <%= @node_name %> to <%= @prefix_a %>:0004:<%= val %>::<%= @hall %>"
+        echo "Ping error from <%= @node_name %> to <%= @prefix_a %>:0004:<%= val %>::<%= @hall %>"
 fi
 
 <%- end -%>
@@ -53,13 +55,13 @@ fi
 ping6 -q -c1 <%= @prefix_b %>:0004:<%= val %>::<%= @mich %> > /dev/null
 if [ $? -ne 0 ]
 then
-        echo "ERREUR PING From <%= @node_name %> to <%= @prefix_b %>:0004:<%= val %>::<%= @mich %>"
+        echo "Ping error from <%= @node_name %> to <%= @prefix_b %>:0004:<%= val %>::<%= @mich %>"
 fi
 
 ping6 -q -c1 <%= @prefix_a %>:0004:<%= val %>::<%= @mich %> > /dev/null
 if [ $? -ne 0 ]
 then
-        echo "ERREUR PING From <%= @node_name %> to <%= @prefix_a %>:0004:<%= val %>::<%= @mich %>"
+        echo "Ping error from <%= @node_name %> to <%= @prefix_a %>:0004:<%= val %>::<%= @mich %>"
 fi
 
 <%- end -%>
@@ -73,13 +75,13 @@ fi
 ping6 -q -c1 <%= @prefix_b %>:0004:<%= val %>::<%= @pyth %> > /dev/null
 if [ $? -ne 0 ]
 then
-        echo "ERREUR PING From <%= @node_name %> to <%= @prefix_b %>:0004:<%= val %>::<%= @pyth %>"
+        echo "Ping error from <%= @node_name %> to <%= @prefix_b %>:0004:<%= val %>::<%= @pyth %>"
 fi
 
 ping6 -q -c1 <%= @prefix_a %>:0004:<%= val %>::<%= @pyth %> > /dev/null
 if [ $? -ne 0 ]
 then
-        echo "ERREUR PING From <%= @node_name %> to <%= @prefix_a %>:0004:<%= val %>::<%= @pyth %>"
+        echo "Ping error from <%= @node_name %> to <%= @prefix_a %>:0004:<%= val %>::<%= @pyth %>"
 fi
 
 <%- end -%>
@@ -92,13 +94,13 @@ fi
 ping6 -q -c1 <%= @prefix_b %>:0004:<%= val %>::<%= @sh1c %> > /dev/null
 if [ $? -ne 0 ]
 then
-        echo "ERREUR PING From <%= @node_name %> to <%= @prefix_b %>:0004:<%= val %>::<%= @sh1c %>"
+        echo "Ping error from <%= @node_name %> to <%= @prefix_b %>:0004:<%= val %>::<%= @sh1c %>"
 fi
 
 ping6 -q -c1 <%= @prefix_a %>:0004:<%= val %>::<%= @sh1c %> > /dev/null
 if [ $? -ne 0 ]
 then
-        echo "ERREUR PING From <%= @node_name %> to <%= @prefix_a %>:0004:<%= val %>::<%= @sh1c %>"
+        echo "Ping error from <%= @node_name %> to <%= @prefix_a %>:0004:<%= val %>::<%= @sh1c %>"
 fi
 
 <%- end -%>
@@ -111,14 +113,16 @@ fi
 ping6 -q -c1 <%= @prefix_b %>:0004:<%= val %>::<%= @stev %> > /dev/null
 if [ $? -ne 0 ]
 then
-        echo "ERREUR PING From <%= @node_name %> to <%= @prefix_b %>:0004:<%= val %>::<%= @stev %>"
+        echo "Ping error from <%= @node_name %> to <%= @prefix_b %>:0004:<%= val %>::<%= @stev %>"
 fi
 
 ping6 -q -c1 <%= @prefix_a %>:0004:<%= val %>::<%= @stev %> > /dev/null
 if [ $? -ne 0 ]
 then
-        echo "ERREUR PING From <%= @node_name %> to <%= @prefix_a %>:0004:<%= val %>::<%= @stev %>"
+        echo "Ping error from <%= @node_name %> to <%= @prefix_a %>:0004:<%= val %>::<%= @stev %>"
 fi
 
 <%- end -%>
 <%- end -%>
+
+echo "######################################################################"
