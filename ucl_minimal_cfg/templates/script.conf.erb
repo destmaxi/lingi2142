@@ -3,6 +3,10 @@
 #              Making Script Inter-routeur Ping                      #
 ######################################################################
 
+DATE=`date '+%Y-%m-%d %H:%M:%S'`
+
+echo "Script launched on $DATE and on $PWD"
+
 <%- if @id != 1 -%>
 
 <%- @carn_link.each do |val| -%>
