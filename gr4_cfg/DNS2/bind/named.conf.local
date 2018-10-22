@@ -7,13 +7,12 @@
 //include "/etc/bind/zones.rfc1918";
 
 zone "group4.ingi" IN {
-     type master;
-     file "/etc/bind/db.group4.ingi";
-     allow-transfer {fd00:300:4:e33::1; };
+     type slave;
+     masters {fd00:300:4:e11::1; };
+     allow-notify {fd00:300:4:e11::1; };
 };
 
 zone "4.0.0.0.0.0.3.0.0.0.d.f.ip6.arpa" {
-     type master;
-     file "/etc/bind/db.300.ingi";
-     allow-transfer {fd00:300:4:e33::1; };
+     type slave;
+     masters {fd00:300:4:e11::1; };
 };

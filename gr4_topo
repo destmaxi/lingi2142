@@ -45,7 +45,11 @@ function mk_topo {
     echo "@@ Adding LANs"
     # You can add your LANs here
     mk_LAN CARN DNS1
+<<<<<<< Updated upstream
     mk_LAN MICH MAX
+=======
+    mk_LAN MICH DNS2
+>>>>>>> Stashed changes
 
     echo "@@ Bridging the network"
     # Connect to belneta and belnetb
