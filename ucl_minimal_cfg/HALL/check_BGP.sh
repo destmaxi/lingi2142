@@ -12,7 +12,7 @@ res=$(birdc -s /tmp/$1_bird6.ctl "show protocol all bgp_provider" | sed -n 3p | 
 
 if [ "$res" != "Established" ];
 then
-        echo "BGP ERROR : Session not established on $1, status is $res"
+        exit 0
 else
-        echo "BGP is fine on $1"
+        exit 1
 fi
