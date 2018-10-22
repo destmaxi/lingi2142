@@ -44,7 +44,7 @@ function mk_topo {
 
     echo "@@ Adding LANs"
     # You can add your LANs here
-    mk_LAN CARN DNS1 TEST
+    mk_LAN CARN DNS1 TEST JUL
     mk_LAN MICH MAX DNS2
 
     echo "@@ Bridging the network"

@@ -13,5 +13,5 @@ static_routes::interfaces:
   - {interface: CARN-eth0, route: 0f31}
   - {interface: CARN-eth1, route: 0f14}
   - {interface: CARN-eth2, route: 0f16}
-  - {interface: CARN-lan0, route: 0a11}
+  - {interface: CARN-lan0, route: 0b10}
 script::id: 1

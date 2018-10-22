@@ -80,6 +80,9 @@ ip6tables -A FORWARD -i <%= @interface %> -s <%= @prefix_b %>::/52 -j DROP \
 
 
 
+
+
+
 ################################################################################
 #     Block traffic comming from outside the network towards a router          #
 #       (prevent against topology discovery and neighbor discovery)            #
@@ -87,6 +90,8 @@ ip6tables -A FORWARD -i <%= @interface %> -s <%= @prefix_b %>::/52 -j DROP \
 
 ip6tables -A INPUT   -i <%= @interface %> -d <%= @prefix %>:0f00::/56 -j DROP
 ip6tables -A FORWARD -i <%= @interface %> -d <%= @prefix %>:0f00::/56 -j DROP
+ip6tables -A INPUT   -i PYTH-lan0 -d <%= @prefix %>:0f00::/56 -j DROP
+ip6tables -A FORWARD -i PYTH-lan0 -d <%= @prefix %>:0f00::/56 -j DROP
 
 
 
@@ -151,6 +156,9 @@ ip6tables -A FORWARD -o <%= @interface %> -p icmpv6 --icmpv6-type time-exceeded 
 
 ip6tables -A INPUT   -i <%= @interface %> -p udp --dport 33434:33534 -j DROP
 ip6tables -A FORWARD -i <%= @interface %> -p udp --dport 33434:33534 -j DROP
+ip6tables -A INPUT   -i PYTH-lan0 -p udp --dport 33434:33534 -j DROP
+ip6tables -A FORWARD -i PYTH-lan0 -p udp --dport 33434:33534 -j DROP
+
 
 
 
@@ -195,6 +203,7 @@ ip6tables -A INPUT   -p icmpv6 -j ACCEPT
 # This is a border router, don't allow forwarding of pings, only border routers
 # can be pinged
 ip6tables -A FORWARD -p icmpv6 -i <%= @interface %> -j DROP
+ip6tables -A FORWARD -p icmpv6 -i PYTH-lan0 -j DROP
 <%- end -%>
 ip6tables -A FORWARD -p icmpv6 -j ACCEPT
 ip6tables -A OUTPUT  -p icmpv6 -j ACCEPT
@@ -278,9 +287,9 @@ ip6tables -A FORWARD --src <%= @prefix_a %>:0b00::/56 -p tcp --match multiport \
 ip6tables -A FORWARD --src <%= @prefix_b %>:0b00::/56 -p tcp --match multiport \
   --dports 22,25,53,80,109,110,143,220,443,993,995,5001 -j ACCEPT -m comment \
   --comment "User type: b"
-ip6tables -A FORWARD --src <% @prefix_a %>:0b00::/56 -p udp --dport 53 -j ACCEPT \
+ip6tables -A FORWARD --src <%= @prefix_a %>:0b00::/56 -p udp --dport 53 -j ACCEPT \
   -m comment --comment "User type: b"
-ip6tables -A FORWARD --src <% @prefix_b %>:0b00::/56 -p udp --dport 53 -j ACCEPT \
+ip6tables -A FORWARD --src <%= @prefix_b %>:0b00::/56 -p udp --dport 53 -j ACCEPT \
   -m comment --comment "User type: b"
 
 
@@ -299,9 +308,9 @@ ip6tables -A FORWARD --src <%= @prefix_a %>:0900::/56 -p tcp --match multiport \
 ip6tables -A FORWARD --src <%= @prefix_b %>:0900::/56 -p tcp --match multiport \
   --dports 22,25,53,80,109,110,143,220,443,993,995,5001 -j ACCEPT -m comment \
   --comment "User type: 9"
-ip6tables -A FORWARD --src <% @prefix_a %>:0900::/56 -p udp --dport 53 -j ACCEPT \
+ip6tables -A FORWARD --src <%= @prefix_a %>:0900::/56 -p udp --dport 53 -j ACCEPT \
   -m comment --comment "User type: 9"
-ip6tables -A FORWARD --src <% @prefix_b %>:0900::/56 -p udp --dport 53 -j ACCEPT \
+ip6tables -A FORWARD --src <%= @prefix_b %>:0900::/56 -p udp --dport 53 -j ACCEPT \
   -m comment --comment "User type: 9"
 
 

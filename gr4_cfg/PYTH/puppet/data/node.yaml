@@ -6,6 +6,7 @@ bird6::ospfv3:
     - PYTH-eth0
     - PYTH-eth1
     - PYTH-eth2
+    - PYTH-lan0
   stub_itfs: [] # Passive interfaces (e.g., LANs)
 bird6::bgp:
   state: ok
