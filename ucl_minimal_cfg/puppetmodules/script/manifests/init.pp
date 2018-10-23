@@ -62,9 +62,9 @@ class script(
     mode   => 'a+x',
   }
 
-  # Start command  when the template is created
+  #Start command  when the template is created
   #exec { "script-launch":
-  #  require => File[["/etc/script/script.sh"],["/etc/script/launch_script.sh"]], # Force to execute the command after
-  #  command => "/etc/script/launch_script.sh",
+  #  require => File[["/etc/script/check_BGP.sh"],["/etc/script/check_OSPF.sh"],["/etc/script/ask_if_up.sh"]], # Force to execute the command after
+  #  command => "/home/vagrant/lingi2142/monit_tests/script_launcher.sh",
   #}
 }

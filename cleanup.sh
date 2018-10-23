@@ -44,8 +44,8 @@ rm -f /tmp/*.{api,ctl}
 # Removing generated files from routers
 declare source="ucl_minimal_cfg/"
 declare -a rout=("HALL/" "PYTH/" "STEV/" "MICH/" "CARN/" "SH1C/" "MONI/")
-#declare -a fold=("init.d" "snmp" "script" "firewall" "bird" "static_routes" "services" "alternatives" "logs")
-declare -a fold=("snmp" "init.d")
+declare -a fold=("init.d" "snmp" "script" "firewall" "bird" "static_routes" "services" "alternatives" "logs")
+#declare -a fold=("snmp" "init.d")
 
 for r in "${rout[@]}"
 do

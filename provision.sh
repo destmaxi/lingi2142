@@ -15,13 +15,15 @@ apt-get -y -qq --force-yes update
 
 apt-get -y -qq --force-yes install git bash vim-nox tcpdump nano\
                                           bird6 quagga inotify-tools\
-                                          iperf
-					  snmp
-					  snmp-mibs-downloader
-					  smitools libsmi
-					  snmptrapd
-					  libsmi2-dev
-					  python3
+                                          iperf\
+					  snmp\
+					  snmp-mibs-downloader\
+					  snmptrapd\
+					  python3\
+					  python3-pip\
+
+pip install pysnmp
+
 # dependencies for puppet
 # apt-get -y -qq --force-yes install ruby ruby-dev libboost-all-dev gettext curl libcurl4-openssl-dev libyaml-cpp-dev
 apt-get -y -qq --force-yes install puppet # TODO Get more recent version of puppet
@@ -30,10 +32,12 @@ apt-get -y -qq --force-yes install puppet # TODO Get more recent version of pupp
 update-rc.d quagga disable &> /dev/null || true
 update-rc.d bird disable &> /dev/null || true
 update-rc.d bird6 disable &> /dev/null || true
+update-rc.d snmpd disable $> /dev/null || true
 
 service quagga stop
 service bird stop
 service bird6 stop
+service snmpd stop
 
 (cd /sbin && ln -s /usr/lib/quagga/* .)
 

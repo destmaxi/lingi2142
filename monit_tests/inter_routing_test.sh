@@ -16,3 +16,4 @@ sudo ip netns exec SH1C /home/vagrant/lingi2142/ucl_minimal_cfg/SH1C/script/chec
 
 sudo ip netns exec MICH /home/vagrant/lingi2142/ucl_minimal_cfg/MICH/script/check_OSPF.sh
 
+echo "OSPF script terminated"
