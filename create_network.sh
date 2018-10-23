@@ -1,7 +1,7 @@
 #!/bin/bash
 
 # List here all files from /etc that should be copied
-ETC_IMPORT=(hosts passwd group manpath.config services alternatives)
+ETC_IMPORT=(hosts passwd group manpath.config services alternatives init.d)
 ## See the bottom for the bootstrap
 
 # Execute a script from the node's config dir

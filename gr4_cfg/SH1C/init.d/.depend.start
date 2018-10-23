@@ -1,0 +1,15 @@
+TARGETS = rsyslog killprocs motd bind9 atd dbus acpid ssh radvd exim4 puppet bootlogs rsync cron single rmnologin rc.local
+INTERACTIVE =
+bind9: rsyslog
+atd: rsyslog
+dbus: rsyslog
+acpid: rsyslog
+ssh: rsyslog
+radvd: rsyslog
+exim4: rsyslog bind9
+puppet: bind9 rsyslog
+rsync: rsyslog bind9
+cron: rsyslog bind9
+single: killprocs bootlogs motd
+rmnologin: rsyslog exim4 bind9 puppet atd bootlogs motd dbus rsync acpid cron ssh radvd
+rc.local: rsyslog exim4 bind9 puppet atd bootlogs motd dbus rsync acpid cron ssh radvd

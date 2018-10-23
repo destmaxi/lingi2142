@@ -9,6 +9,7 @@
 zone "group4.ingi" IN {
      type slave;
      masters {fd00:300:4:e11::1; };
+     file "/etc/bind/db.group4.ingi";
      allow-notify {fd00:300:4:e11::1; };
 };
 
