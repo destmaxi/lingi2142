@@ -41,5 +41,17 @@ done
 # Destroy bird/zebra temp files
 rm -f /tmp/*.{api,ctl}
 
-# Removing log file from monitor server
-rm -f ucl_minimal_cfg/MONI/script/logs.txt
+# Removing generated files from routers
+declare source="ucl_minimal_cfg/"
+declare -a rout=("HALL/" "PYTH/" "STEV/" "MICH/" "CARN/" "SH1C/" "MONI/")
+#declare -a fold=("init.d" "snmp" "script" "firewall" "bird" "static_routes" "services" "alternatives" "logs")
+declare -a fold=("snmp" "init.d")
+
+for r in "${rout[@]}"
+do
+	for f in "${fold[@]}"
+	do
+		echo "Removing $f from $r"
+		rm -rf "$source$r$f"
+	done
+done

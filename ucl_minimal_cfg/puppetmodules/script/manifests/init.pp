@@ -1,4 +1,3 @@
-# Puppet looks in data/node.yaml for firewall::interface, firewall::state and firewall::prefix automatically
 # These variables are now accessible in the template
 class script(
   Integer $id
@@ -29,8 +28,14 @@ class script(
     owner  => bird,
     group  => bird,
   }
-  # Fill the template file and place the result in "/etc/firewall/firewall.conf"
-  file {"/etc/script/script.sh":
+
+  file {"/etc/logs":
+    ensure => directory,
+    owner  => bird,
+    group  => bird,
+  }
+  
+  file {"/etc/script/check_OSPF.sh":
     require => File["/etc/script"],
     ensure => file,
     content => template("/templates/script.conf.erb"),
@@ -39,18 +44,27 @@ class script(
     mode   => 'a+x',
   }
 
-  file {"/etc/script/launch_script.sh":
+  file {"/etc/script/check_BGP.sh":
     require => File["/etc/script"],
     ensure => file,
-    content => template("/templates/launch_script.conf.erb"),
+    content => file("/home/vagrant/lingi2142/router_scripts/check_BGP.sh"),
     owner  => bird,
     group  => bird,
     mode   => 'a+x',
   }
 
-  # Start bird6 when the template is created
-  exec { "script-launch":
-    require => File[["/etc/script/script.sh"],["/etc/script/launch_script.sh"]], # Force to execute the command after
-    command => "/etc/script/launch_script.sh",
+  file {"/etc/script/ask_if_up.sh":
+    require => File["/etc/script"],
+    ensure => file,
+    content => file("/home/vagrant/lingi2142/router_scripts/ask_if_up.sh"),
+    owner  => bird,
+    group  => bird,
+    mode   => 'a+x',
   }
+
+  # Start command  when the template is created
+  #exec { "script-launch":
+  #  require => File[["/etc/script/script.sh"],["/etc/script/launch_script.sh"]], # Force to execute the command after
+  #  command => "/etc/script/launch_script.sh",
+  #}
 }
