@@ -90,8 +90,6 @@ ip6tables -A FORWARD -i <%= @interface %> -s <%= @prefix_b %>::/52 -j DROP \
 
 ip6tables -A INPUT   -i <%= @interface %> -d <%= @prefix %>:0f00::/56 -j DROP
 ip6tables -A FORWARD -i <%= @interface %> -d <%= @prefix %>:0f00::/56 -j DROP
-ip6tables -A INPUT   -i PYTH-lan0 -d <%= @prefix %>:0f00::/56 -j DROP
-ip6tables -A FORWARD -i PYTH-lan0 -d <%= @prefix %>:0f00::/56 -j DROP
 
 
 
@@ -156,8 +154,6 @@ ip6tables -A FORWARD -o <%= @interface %> -p icmpv6 --icmpv6-type time-exceeded 
 
 ip6tables -A INPUT   -i <%= @interface %> -p udp --dport 33434:33534 -j DROP
 ip6tables -A FORWARD -i <%= @interface %> -p udp --dport 33434:33534 -j DROP
-ip6tables -A INPUT   -i PYTH-lan0 -p udp --dport 33434:33534 -j DROP
-ip6tables -A FORWARD -i PYTH-lan0 -p udp --dport 33434:33534 -j DROP
 
 
 
