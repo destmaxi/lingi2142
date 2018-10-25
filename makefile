@@ -1,7 +1,7 @@
 all: config_log create_network
 
 config_log:
-	sudo ./util/create_config.sh
+	sudo ./util/create_configs.sh
 
 create_network:
 	sudo ./create_network.sh gr4_topo

@@ -1,4 +1,4 @@
-import sys, glob,, random
+import sys, glob, random, os
 import helpers
 
 main_dir = os.path.dirname(__file__) + '/main'
@@ -10,8 +10,8 @@ target_files = [main_dir + "/" + x + ".py" for x in targets]
 
 def usage():
     print("Please select one target in")
-    print("     all")
-    print("     ".join(targets))
+    print("     all_tests")
+    print("     " + ",".join(targets))
     sys.exit(1)
 
 
@@ -25,7 +25,7 @@ target = sys.argv[1]
 
 print("Target " + str(target) + " selected")
 
-if target == "all":
+if target == "all_tests":
     for x in targets:
         helpers.title(x)
         test(target_files[targets.index(x)])

@@ -5,10 +5,12 @@ bird6::ospfv3:
   hello_itfs:  # Activate OSPFv3 only on these interfaces
     - STEV-eth0
     - STEV-eth1
+    - STEV-lan0
   stub_itfs: [] # Passive interfaces (e.g., LANs)
 bird6::id: 6
 static_routes::id: 6
 static_routes::interfaces:
   - {interface: STEV-eth0, route: 0f16}
   - {interface: STEV-eth1, route: 0f64}
+  - {interface: STEV-lan0, route: 0a60}
 script::id: 6
