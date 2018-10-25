@@ -30,6 +30,8 @@ if target == "all_tests":
     for x in targets:
         helpers.title(x)
         test(target_files[targets.index(x)])
+elif target =="help":
+    usage()
 elif target in targets:
     print("Target " + str(target) + " selected")
     helpers.title(target)
