@@ -1,4 +1,5 @@
-import sys, glob, random, os
+import glob, random
+from helpers import *
 import helpers
 
 main_dir = os.path.dirname(__file__) + '/main'
@@ -23,13 +24,14 @@ if len(sys.argv) <= 1:
 
 target = sys.argv[1]
 
-print("Target " + str(target) + " selected")
 
 if target == "all_tests":
+    print("Target " + str(target) + " selected")
     for x in targets:
         helpers.title(x)
         test(target_files[targets.index(x)])
 elif target in targets:
+    print("Target " + str(target) + " selected")
     helpers.title(target)
     test(target_files[targets.index(target)])
 else:

@@ -1,10 +1,9 @@
 import unittest
-import os, sys, inspect
-import subprocess
-
+import os, inspect, sys
 curdir = os.path.dirname(os.path.abspath(inspect.getfile(inspect.currentframe())))
 pardir = os.path.dirname(curdir)
 sys.path.insert(0,pardir)
+from helpers import *
 import helpers
 
 google = "2a00:1450:400e:80c::2003"
@@ -12,11 +11,6 @@ STUD1  = "fd00:300:4:b40::1"
 ADM1   = "fd00:300:4:a20::1"
 ADM2   = "fd00:300:4:a60::1"
 MICH   = "fd00:300:4:f31::3"
-
-def execute(command):
-	p = subprocess.Popen( command, stdout=subprocess.PIPE, stderr=subprocess.PIPE, shell=True)
-	output, err = p.communicate()
-	return output.decode("utf-8")
 
 
 class TestFirewall(unittest.TestCase):
