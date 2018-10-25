@@ -47,6 +47,7 @@ function mk_topo {
     mk_LAN CARN DNS1 TEST JUL
     mk_LAN MICH MAX DNS2
     mk_LAN PYTH STUD1
+    mk_LAN HALL ADM1
 
     echo "@@ Bridging the network"
     # Connect to belneta and belnetb
