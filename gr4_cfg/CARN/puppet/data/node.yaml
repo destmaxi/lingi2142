@@ -1,0 +1,23 @@
+---
+name: CARN
+bird6::routing_id: 4.0.0.1 # Should be changed for your group (for instance 42 -> your group number)
+bird6::ospfv3:
+  hello_itfs:  # Activate OSPFv3 only on these interfaces
+    - CARN-eth0
+    - CARN-eth1
+    - CARN-eth2
+    - CARN-lan0
+  stub_itfs: [] # Passive interfaces (e.g., LANs)
+bird6::id: 1
+static_routes::id: 1
+static_routes::interfaces:
+  - {interface: CARN-eth0, route: 0f31}
+  - {interface: CARN-eth1, route: 0f14}
+  - {interface: CARN-eth2, route: 0f16}
+<<<<<<< HEAD:ucl_minimal_cfg/CARN/puppet/data/node.yaml
+  - {interface: CARN-lan0, route: 0e10}
+script::id: 1
+=======
+  - {interface: CARN-lan0, route: 0b10}
+script::id: 1
+>>>>>>> origin/dev:gr4_cfg/CARN/puppet/data/node.yaml

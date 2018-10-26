@@ -29,6 +29,8 @@ pip install pysnmp
 apt-get -y -qq --force-yes install puppet # TODO Get more recent version of puppet
 #gem install puppet -f
 
+apt-get -y -qq --force-yes install nmap
+
 update-rc.d quagga disable &> /dev/null || true
 update-rc.d bird disable &> /dev/null || true
 update-rc.d bird6 disable &> /dev/null || true

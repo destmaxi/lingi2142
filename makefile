@@ -1,10 +1,16 @@
-all: create_network
+all: config_log create_network
+
+config_log:
+	sudo ./util/create_configs.sh
 
 create_network:
-	sudo ./create_network.sh ucl_topo
+	sudo ./create_network.sh gr4_topo
 
 connect:
-	sudo ./connect_to.sh ucl_minimal_cfg/ $(filter-out $@,$(MAKECMDGOALS))
+	sudo ./connect_to.sh gr4_cfg/ $(filter-out $@,$(MAKECMDGOALS))
+
+test:
+	sudo python tests/main_tests.py $(filter-out $@,$(MAKECMDGOALS))
 
 %:
 	@:

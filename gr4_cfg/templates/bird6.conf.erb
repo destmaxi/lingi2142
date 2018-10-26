@@ -1,0 +1,79 @@
+<%# ERB template https://puppet.com/docs/puppet/5.3/lang_template_erb.html -%>
+
+#########################################################
+#		            OSPF configuration                 	#
+#########################################################
+
+router id <%= @routing_id %>;
+
+log "/etc/log/bird_log" all;
+debug protocols all;
+
+protocol kernel {
+ 	learn;
+	scan time 20;
+	export all;
+}
+
+protocol device {
+	scan time 10;
+}
+
+<%- if @bgp["state"] != "None" -%>
+protocol static export_default {
+  import all;
+
+  route ::/0 via <%= @bgp["neighbor_ip"] %>;
+}
+<%- end -%>
+
+protocol static static_loopback {
+        route fd00:300:4:f00::<%= @id %>/128 reject;
+}
+
+filter export_OSPF {
+     if(proto = "static_loopback") then {
+        # advertise loopback
+        accept;
+     }
+     <%- if @bgp["state"] != "None" -%>
+     else if(proto = "export_default") then {
+        # advertise default route
+        accept;
+     }
+     <%- end -%>
+     reject;
+}
+
+protocol ospf {
+
+  export filter export_OSPF;
+
+	area 0.0.0.0 {
+		<%- @ospfv3["hello_itfs"].each do |val| -%>
+			interface "<%= val %>" {
+				hello 1;
+				dead 3;
+			};
+		<%- end -%>
+		<%- @ospfv3["stub_itfs"].each do |val| -%>
+			interface "<%= val %>" {
+				stub 1;
+			};
+		<%- end -%>
+    };
+}
+
+<%- if @bgp["state"] != "None" -%>
+## Prefix exported
+protocol static static_netprefix {
+        route fd00:<%= @bgp["neighbor_as"] %>:0004::/52 reject;
+}
+
+protocol bgp bgp_provider {
+	local as 4;
+	neighbor <%= @bgp["neighbor_ip"] %> as <%= @bgp["neighbor_as"] %>;
+	import where net = ::/0;
+	export where proto = "static_netprefix";
+}
+<%- end -%>

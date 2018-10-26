@@ -1,0 +1,396 @@
+#!/bin/bash
+
+
+################################################################################
+################################################################################
+##                                   FIREWALL                                 ##
+################################################################################
+################################################################################
+
+
+
+
+################################################################################
+#      Begin by flushing any default rules to create them from scratch         #
+################################################################################
+
+ip6tables -F INPUT
+ip6tables -F OUTPUT
+ip6tables -F FORWARD
+ip6tables -F
+
+
+
+
+################################################################################
+#                           Whitelisting policy                                #
+################################################################################
+
+ip6tables -P INPUT DROP
+ip6tables -P FORWARD DROP
+ip6tables -P OUTPUT DROP
+
+
+
+
+################################################################################
+#      Allow packets coming from related and established connections           #
+################################################################################
+
+ip6tables -A INPUT   -m state --state ESTABLISHED,RELATED -j ACCEPT
+ip6tables -A FORWARD -m state --state RELATED,ESTABLISHED -j ACCEPT
+ip6tables -A OUTPUT  -m state --state ESTABLISHED,RELATED -j ACCEPT
+
+
+
+
+################################################################################
+#                                Allow loopback                                #
+################################################################################
+
+ip6tables -A INPUT -i lo -j ACCEPT
+ip6tables -A OUPUT -o lo -j ACCEPT
+
+
+
+<% if @type == "border" %>
+################################################################################
+#                       Block traffic going to wrong AS                        #
+################################################################################
+
+ip6tables -A FORWARD -o <%= @interface %> -s <%= @wrong_prefix %>::/48 -j DROP
+ip6tables -A OUTPUT  -o <%= @interface %> -s <%= @wrong_prefix %>::/48 -j DROP
+
+
+
+
+################################################################################
+#                             Block spoofed source ip                          #
+################################################################################
+
+ip6tables -A INPUT   -i <%= @interface %> -s <%= @prefix_a %>::/52 -j DROP \
+  -m comment --comment "incomming packet with source ip from our network"
+ip6tables -A INPUT   -i <%= @interface %> -s <%= @prefix_b %>::/52 -j DROP \
+  -m comment --comment "incomming packet with source ip from our network"
+ip6tables -A FORWARD -i <%= @interface %> -s <%= @prefix_a %>::/52 -j DROP \
+  -m comment --comment "forwarding packet with source ip from our network"
+ip6tables -A FORWARD -i <%= @interface %> -s <%= @prefix_b %>::/52 -j DROP \
+  -m comment --comment "forwarding packet with source ip from our network"
+
+
+
+
+
+
+
+################################################################################
+#     Block traffic comming from outside the network towards a router          #
+#       (prevent against topology discovery and neighbor discovery)            #
+################################################################################
+
+ip6tables -A INPUT   -i <%= @interface %> -d <%= @prefix %>:0f00::/56 -j DROP
+ip6tables -A FORWARD -i <%= @interface %> -d <%= @prefix %>:0f00::/56 -j DROP
+
+
+
+
+################################################################################
+#  Block incomming and outgoing ospf packets towards / from <%= @interface %>  #
+################################################################################
+
+ip6tables -A INPUT   -i <%= @interface %> -p ospf -j DROP -m comment --comment \
+  "block incomming ospf packets"
+ip6tables -A FORWARD -i <%= @interface %> -p ospf -j DROP -m comment --comment \
+  "block incomming forwarding ospf packets"
+ip6tables -A FORWARD -o <%= @interface %> -p ospf -j DROP -m comment --comment \
+  "block outgoing forwarding ospf packets"
+ip6tables -A OUTPUT  -o <%= @interface %> -p ospf -j DROP -m comment --comment \
+  "block outgoing ospf packets"
+
+
+
+
+################################################################################
+#         Block router advertisement from leaving our network,                 #
+#                     icmpv6 packets  type 134/0                               #
+################################################################################
+
+ip6tables -A INPUT   -i <%= @interface %> -p icmpv6 --icmpv6-type 134/0 -j DROP
+ip6tables -A FORWARD -i <%= @interface %> -p icmpv6 --icmpv6-type 134/0 -j DROP
+ip6tables -A FORWARD -o <%= @interface %> -p icmpv6 --icmpv6-type 134/0 -j DROP
+ip6tables -A OUTPUT  -o <%= @interface %> -p icmpv6 --icmpv6-type 134/0 -j DROP
+
+
+
+
+################################################################################
+#                   Block dhcp from incomming our network                      #
+################################################################################
+
+ip6tables -A INPUT   -p udp -i <%= @interface %> -m multiport --dports 546,547 \
+  -j DROP
+ip6tables -A FORWARD -p udp -i <%= @interface %> -m multiport --dports 546,547 \
+  -j DROP
+
+
+
+
+################################################################################
+#           We block hop limit exceeded towards outside network                #
+#            (rule against topology discovery with traceroute)                 #
+################################################################################
+
+ip6tables -A OUTPUT  -o <%= @interface %> -p icmpv6 --icmpv6-type time-exceeded \
+  -j DROP
+ip6tables -A FORWARD -o <%= @interface %> -p icmpv6 --icmpv6-type time-exceeded \
+  -j DROP
+
+
+
+
+################################################################################
+#               block traceroute on the interface belneta                      #
+################################################################################
+
+ip6tables -A INPUT   -i <%= @interface %> -p udp --dport 33434:33534 -j DROP
+ip6tables -A FORWARD -i <%= @interface %> -p udp --dport 33434:33534 -j DROP
+
+
+
+
+
+################################################################################
+#                     Allow bgp on <%= @interface %>                           #
+################################################################################
+
+ip6tables -A INPUT  -i <%= @interface %> -p tcp --dport 179 -j ACCEPT
+ip6tables -A OUTPUT -o <%= @interface %> -p tcp --dport 179 -j ACCEPT
+<%- end -%>
+
+
+
+################################################################################
+#                                 Allow ospf                                   #
+################################################################################
+
+ip6tables -A INPUT    -p ospf -j ACCEPT
+ip6tables -A FORWARD  -p ospf -j ACCEPT
+ip6tables -A OUTPUT   -p ospf -j ACCEPT
+
+
+
+
+################################################################################
+#               Neighbor Solicitation limitation to avoid DoS                  #
+################################################################################
+
+ip6tables -A INPUT -p icmpv6 --icmpv6-type 135/0 -j ACCEPT --match limit \
+  --limit 10/minute
+
+
+
+
+################################################################################
+#             Accept icmpv6 when it comes from our network                     #
+################################################################################
+
+ip6tables -A INPUT   -p icmpv6 -j ACCEPT
+<%- if @type == "border" -%>
+# This is a border router, don't allow forwarding of pings, only border routers
+# can be pinged
+ip6tables -A FORWARD -p icmpv6 -i <%= @interface %> -j DROP
+<%- end -%>
+ip6tables -A FORWARD -p icmpv6 -j ACCEPT
+ip6tables -A OUTPUT  -p icmpv6 -j ACCEPT
+
+
+
+
+################################################################################
+#                         Allow traceroute                                     #
+################################################################################
+
+ip6tables -A INPUT   -p udp --dport 33434:33534 -j ACCEPT
+ip6tables -A OUTPUT  -p udp --dport 33434:33534 -j ACCEPT
+ip6tables -A FORWARD -p udp --dport 33434:33534 -j ACCEPT
+
+
+################################################################################
+#                    Allow router to send DNS requests                         #
+################################################################################
+
+ip6tables -A OUTPUT --dst <%= @prefix_a %>::/48 -p udp --dport 53 -j ACCEPT -m \
+  comment --comment "Allow DNS"
+ip6tables -A OUTPUT --dst <%= @prefix_b %>::/48 -p udp --dport 53 -j ACCEPT -m \
+  comment --comment "Allow DNS"
+ip6tables -A OUTPUT --dst <%= @prefix_a %>::/48 -p tcp --dport 53 -j ACCEPT -m \
+  comment --comment "Allow DNS"
+ip6tables -A OUTPUT --dst <%= @prefix_b %>::/48 -p tcp --dport 53 -j ACCEPT -m \
+  comment --comment "Allow DNS"
+
+
+################################################################################
+#                    Allow router to send SNMP requests                        #
+################################################################################
+
+ip6tables -A OUTPUT --dst <%= @prefix_a %>::/52 -p udp --match multiport \
+  --dports 161,162 -j ACCEPT
+ip6tables -A OUTPUT --dst <%= @prefix_b %>::/52 -p udp --match multiport \
+  --dports 161,162 -j ACCEPT
+
+
+
+
+################################################################################
+#                      User type: 'a' reserved for administrators              #
+################################################################################
+#
+# Administrators have access to all services
+#
+
+ip6tables -A INPUT   --src <%= @prefix_a %>:0a00::/56 -j ACCEPT -m comment \
+  --comment "User type: a"
+ip6tables -A INPUT   --src <%= @prefix_b %>:0a00::/56 -j ACCEPT -m comment \
+  --comment "User type: a"
+ip6tables -A FORWARD --src <%= @prefix_a %>:0a00::/56 -j ACCEPT -m comment \
+  --comment "User type: a"
+ip6tables -A FORWARD --src <%= @prefix_b %>:0a00::/56 -j ACCEPT -m comment \
+  --comment "User type: a"
+
+
+
+
+################################################################################
+#                     User type: 'b' reserved for students                     #
+################################################################################
+#
+# A student should not host a service so we DROP all traffic going to a student
+#
+
+ip6tables -A FORWARD --dst <%= @prefix_a %>:0b00::/56 -j DROP -m comment \
+  --comment "Student should not host services"
+ip6tables -A FORWARD --dst <%= @prefix_b %>:0b00::/56 -j DROP -m comment \
+  --comment "Student should not host services"
+
+#
+# You can find more information about why we allow those ports in our report
+#
+
+ip6tables -A FORWARD --src <%= @prefix_a %>:0b00::/56 -p tcp --match multiport \
+  --dports 22,25,53,80,109,110,143,220,443,993,995,5001 -j ACCEPT -m comment \
+  --comment "User type: b"
+ip6tables -A FORWARD --src <%= @prefix_b %>:0b00::/56 -p tcp --match multiport \
+  --dports 22,25,53,80,109,110,143,220,443,993,995,5001 -j ACCEPT -m comment \
+  --comment "User type: b"
+ip6tables -A FORWARD --src <%= @prefix_a %>:0b00::/56 -p udp --dport 53 -j ACCEPT \
+  -m comment --comment "User type: b"
+ip6tables -A FORWARD --src <%= @prefix_b %>:0b00::/56 -p udp --dport 53 -j ACCEPT \
+  -m comment --comment "User type: b"
+
+
+
+
+################################################################################
+#                     User type: '9' reserved for teachers                     #
+################################################################################
+#
+# You can find more information about why we allow those ports in our report
+#
+
+ip6tables -A FORWARD --src <%= @prefix_a %>:0900::/56 -p tcp --match multiport \
+  --dports 22,25,53,80,109,110,143,220,443,993,995,5001 -j ACCEPT -m comment \
+  --comment "User type: 9"
+ip6tables -A FORWARD --src <%= @prefix_b %>:0900::/56 -p tcp --match multiport \
+  --dports 22,25,53,80,109,110,143,220,443,993,995,5001 -j ACCEPT -m comment \
+  --comment "User type: 9"
+ip6tables -A FORWARD --src <%= @prefix_a %>:0900::/56 -p udp --dport 53 -j ACCEPT \
+  -m comment --comment "User type: 9"
+ip6tables -A FORWARD --src <%= @prefix_b %>:0900::/56 -p udp --dport 53 -j ACCEPT \
+  -m comment --comment "User type: 9"
+
+
+
+
+################################################################################
+#                     User type: 'e' reserved for servers                      #
+################################################################################
+#
+# You can find more information about why we allow those ports in our report
+#
+
+ip6tables -A FORWARD --src <%= @prefix_a %>:0e00::/56 -p tcp --match multiport \
+  --dports 22,25,53,80,109,110,143,161,162,220,443,993,995,5001 -j ACCEPT -m comment \
+  --comment "User type: e"
+ip6tables -A FORWARD --src <%= @prefix_b %>:0e00::/56 -p tcp --match multiport \
+  --dports 22,25,53,80,109,110,143,220,443,993,995,5001 -j ACCEPT -m comment \
+  --comment "User type: e"
+ip6tables -A FORWARD --src <%= @prefix_a %>:0e00::/56 -p udp --dport 53 -j ACCEPT \
+  -m comment --comment "User type: e"
+ip6tables -A FORWARD --src <%= @prefix_b %>:0e00::/56 -p upd --dport 53 -j ACCEPT \
+  -m comment --comment "User type: e"
+
+
+
+
+################################################################################
+#                     User type: 'd' reserved for services                     #
+################################################################################
+#
+# You can find more information about why we allow those ports in our report
+#
+
+ip6tables -A FORWARD --src <%= @prefix_a %>:0d00::/56 -p tcp --match multiport \
+  --dports 53,2302,5001,5060,5061 -j ACCEPT -m comment --comment "User type: d"
+ip6tables -A FORWARD --src <%= @prefix_b %>:0d00::/56 -p tcp --match multiport \
+  --dports 53,2302,5001,5060,5061 -j ACCEPT -m comment --comment "User type: d"
+ip6tables -A FORWARD --src <%= @prefix_a %>:0d00::/56 -p udp --match multiport \
+  --dports 53,5060,5061 -j ACCEPT -m commen --comment "User type: d"
+ip6tables -A FORWARD --src <%= @prefix_b %>:0d00::/56 -p udp --match multiport \
+  --dports 53,5060,5061 -j ACCEPT -m commen --comment "User type: d"
+ip6tables -A FORWARD --src <%= @prefix_a %>:0d00::/56 -p udp --dport 16384:16472 \
+  -j ACCEPT -m comment --comment "User type: d"
+
+
+
+################################################################################
+#                     User type: 'c' reserved for guests                       #
+################################################################################
+#
+# A guest should not host a service so we DROP all traffic going to a student
+#
+
+ip6tables -A FORWARD --dst <%= @prefix_a %>:0c00::/56 -j DROP -m comment \
+  --comment "Student should not host services"
+ip6tables -A FORWARD --dst <%= @prefix_b %>:0c00::/56 -j DROP -m comment \
+  --comment "Student should not host services"
+
+#
+# You can find more information about why we allow those ports in our report
+#
+
+
+
+
+################################################################################
+#                   Allowed ports for external users                           #
+################################################################################
+
+ip6tables -A FORWARD --dst <%= @prefix_a %>::/48 -p tcp --match multiport \
+  --dports 22,25,53,80,443 -j ACCEPT -m comment --comment "comming from outside"
+ip6tables -A FORWARD --dst <%= @prefix_b %>::/48 -p tcp --match multiport \
+  --dports 22,25,53,80,443 -j ACCEPT -m comment --comment "comming from outside"
+ip6tables -A FORWARD --dst <%= @prefix_a %>::/48 -p udp --dport 53 -j ACCEPT \
+  -m comment --comments "comming from outside"
+ip6tables -A FORWARD --dst <%= @prefix_b %>::/48 -p udp --dport 53 -j ACCEPT \
+  -m comment --comments "comming from outside"
+
+
+
+
+################################################################################
+#                       Log the dropped packets !                              #
+################################################################################
+
+ip6tables -A INPUT -j NFLOG --nflog-prefix "[DROP-INPUT]<%= @router_name %>"
+ip6tables -A FORWARD -j NFLOG --nflog-prefix "[DROP-FORWARD]<%= @router_name %>"
+ip6tables -A OUTPUT -j NFLOG --nflog-prefix "[DROP-OUTPUT]<%= @router_name %>"

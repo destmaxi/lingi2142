@@ -1,0 +1,1 @@
+Those tests are unittest writtin in python. If you want to add some tests for your module please create a new file in test/main with "module_name".py. In each test start with helpers.entete("some text explaining the test"). Don't forget to import the helpers module (see in test/main/firewall.py how to do so). You are free to add some test to an existing module. 
