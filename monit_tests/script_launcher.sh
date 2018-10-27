@@ -16,3 +16,6 @@ echo "launch_snmp.sh"
 
 echo "check_link_failure.sh"
 /home/vagrant/lingi2142/monit_tests/check_link_failure.sh >> /home/vagrant/lingi2142/gr4_cfg/MONI/logs/interfaces_logs.txt
+
+echo "dns_test.sh"
+/home/vagrant/lingi2142/monit_tests/dns_test.sh >> /home/vagrant/lingi2142/gr4_cfg/MONI/logs/dns_logs.txt

@@ -14,4 +14,6 @@ tags
 **/firewall/
 **/static_routes/
 **/script/
+**/snmpd/
+**/bgp_script/
 !**/puppetmodules/*

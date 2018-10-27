@@ -1,0 +1,71 @@
+#!/bin/sh
+######################################################################
+#              Making Script Inter-routeur DNS                       #
+######################################################################
+
+DATE=`date '+%Y-%m-%d %H:%M:%S'`
+
+echo "Output of DNS check script launched on <%= @node_name %> at $DATE"
+
+echo "################################################"
+
+
+<%- if @id != 1 -%>
+
+res=$(dig carn.group4.ingi)
+
+echo "From <%= @node_name %> digging carn.group4.ingi : $res"
+
+<%- end -%>
+
+
+<%- if @id != 2 -%>
+
+res2=$(dig hall.group4.ingi)
+
+echo "From <%= @node_name %> digging hall.group4.ingi : $res"
+
+<%- end -%>
+
+
+<%- if @id != 3 -%>
+
+res=$(dig mich.group4.ingi)
+
+echo "From <%= @node_name %> digging mich.group4.ingi : $res"
+
+<%- end -%>
+
+
+<%- if @id != 4 -%>
+
+res=$(dig pyth.group4.ingi)
+
+echo "From <%= @node_name %> digging pyth.group4.ingi : $res"
+
+<%- end -%>
+
+
+<%- if @id != 5 -%>
+
+res=$(dig sh1c.group4.ingi)
+
+echo "From <%= @node_name %> digging sh1c.group4.ingi : $res"
+
+<%- end -%>
+
+
+<%- if @id != 6 -%>
+
+res=$(dig stev.group4.ingi)
+
+echo "From <%= @node_name %> digging stev.group4.ingi : $res"
+
+<%- end -%>
+
+
+res=$(dig ns.group4.ingi)
+
+echo "From <%= @node_name %> digging ns.group4.ingi : $res"
+
+echo "################################################"

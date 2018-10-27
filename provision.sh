@@ -14,13 +14,13 @@ apt-get -y -qq --force-yes update
 #apt-get -y -qq --force-yes update
 
 apt-get -y -qq --force-yes install git bash vim-nox tcpdump nano\
-                                          bird6 quagga inotify-tools\
-                                          iperf\
-					  snmp\
-					  snmp-mibs-downloader\
-					  snmptrapd\
-					  python3\
-					  python3-pip\
+                                        bird6 quagga inotify-tools\
+                                    	iperf\
+										snmp\
+										snmp-mibs-downloader\
+										snmptrapd\
+										python\
+										python-pip\
 
 pip install pysnmp
 

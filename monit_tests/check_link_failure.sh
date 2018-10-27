@@ -14,7 +14,7 @@ sleep 30
 
 echo "Checking if PYTH-HALL link fails [$DATE]"
 
-sudo ip netns exec HALL /home/vagrant/lingi2142/ucl_minimal_cfg/HALL/script/ask_if_up.sh HALL eth1
+sudo ip netns exec HALL /home/vagrant/lingi2142/gr4_cfg/HALL/bgp_script/ask_if_up.sh HALL eth1
 
 if [ $? -ne 1 ]
 then
@@ -35,7 +35,7 @@ sleep 30
 
 echo "Checking if PYTH-HALL link fails [$DATE]"
 
-sudo ip netns exec HALL /home/vagrant/lingi2142/ucl_minimal_cfg/HALL/script/ask_if_up.sh HALL eth1
+sudo ip netns exec HALL /home/vagrant/lingi2142/gr4_cfg/HALL/bgp_script/ask_if_up.sh HALL eth1
 
 if [ $? -ne 1 ]
 then
@@ -58,7 +58,7 @@ sleep 30
 
 echo "Checking if PYTH-HALL link fails [$DATE]"
 
-sudo ip netns exec PYTH /home/vagrant/lingi2142/ucl_minimal_cfg/PYTH/script/ask_if_up.sh PYTH eth0
+sudo ip netns exec PYTH /home/vagrant/lingi2142/gr4_cfg/PYTH/bgp_script/ask_if_up.sh PYTH eth0
 
 if [ $? -ne 1 ]
 then
@@ -79,7 +79,7 @@ sleep 30
 
 echo "Checking if PYTH-HALL link fails [$DATE]"
 
-sudo ip netns exec PYTH /home/vagrant/lingi2142/ucl_minimal_cfg/PYTH/script/ask_if_up.sh PYTH eth0
+sudo ip netns exec PYTH /home/vagrant/lingi2142/gr4_cfg/PYTH/bgp_script/ask_if_up.sh PYTH eth0
 
 if [ $? -ne 1 ]
 then
@@ -88,3 +88,4 @@ else
         echo "eth0 on PYTH is up"
 fi
 
+echo "Check link failure script terminated"
