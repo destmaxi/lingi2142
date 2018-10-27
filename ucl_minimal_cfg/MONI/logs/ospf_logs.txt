@@ -1,19 +1,161 @@
 Waiting 40 sec for network creation
-Output of OSPF check script launched on PYTH at 2018-10-23 09:42:54
+Output of OSPF check script launched on PYTH at 2018-10-27 13:53:52
 ################################################
+OK
+OK
+OK
+OK
+OK
+OK
+OK
+OK
+OK
+OK
+OK
+OK
+OK
+OK
+OK
+OK
+OK
+OK
+OK
+OK
+OK
+OK
 ################################################
-Output of OSPF check script launched on HALL at 2018-10-23 09:42:55
+Output of OSPF check script launched on HALL at 2018-10-27 13:53:52
 ################################################
+OK
+OK
+OK
+OK
+OK
+OK
+OK
+OK
+OK
+OK
+OK
+OK
+OK
+OK
+OK
+OK
+OK
+OK
+OK
+OK
+OK
+OK
+OK
+OK
 ################################################
-Output of OSPF check script launched on STEV at 2018-10-23 09:42:55
+Output of OSPF check script launched on STEV at 2018-10-27 13:53:52
 ################################################
+OK
+OK
+OK
+OK
+OK
+OK
+OK
+OK
+OK
+OK
+OK
+OK
+OK
+OK
+OK
+OK
+OK
+OK
+OK
+OK
+OK
+OK
+OK
+OK
 ################################################
-Output of OSPF check script launched on CARN at 2018-10-23 09:42:55
+Output of OSPF check script launched on CARN at 2018-10-27 13:53:53
 ################################################
+OK
+OK
+OK
+OK
+OK
+OK
+OK
+OK
+OK
+OK
+OK
+OK
+OK
+OK
+OK
+OK
+OK
+OK
+OK
+OK
+OK
+OK
 ################################################
-Output of OSPF check script launched on SH1C at 2018-10-23 09:42:55
+Output of OSPF check script launched on SH1C at 2018-10-27 13:53:53
 ################################################
+OK
+OK
+OK
+OK
+OK
+OK
+OK
+OK
+OK
+OK
+OK
+OK
+OK
+OK
+OK
+OK
+OK
+OK
+OK
+OK
+OK
+OK
+OK
+OK
 ################################################
-Output of OSPF check script launched on MICH at 2018-10-23 09:42:55
+Output of OSPF check script launched on MICH at 2018-10-27 13:53:53
 ################################################
+OK
+OK
+OK
+OK
+OK
+OK
+OK
+OK
+OK
+OK
+OK
+OK
+OK
+OK
+OK
+OK
+OK
+OK
+OK
+OK
+OK
+OK
+OK
+OK
 ################################################
+OSPF script terminated
+Waiting 40 sec for network creation

@@ -1,6 +1,6 @@
-Output of BGP check script launched on 2018-10-23 09:42:14
-################################################
+Checking BGP status on boarder routers [2018-10-27 13:53:11]
 BGP ERROR : session not established on PYTH
-Output of BGP check script launched on 2018-10-23 09:42:14
-################################################
+BGP ERROR : session not established on HALL
+Checking BGP status on boarder routers [2018-10-27 14:04:32]
+BGP ERROR : session not established on PYTH
 BGP ERROR : session not established on HALL

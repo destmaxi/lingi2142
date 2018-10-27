@@ -149,18 +149,5 @@ fi
 <%- end -%>
 <%- end -%>
 
-<%- if @id == 7 -%>
-
-ping6 -q -c1 fd00:200:3:8888:: > /dev/null #ping to Google
-if [ $? -ne 0 ]
-then
-        echo "Ping error from <%= @node_name %> to Google on fd00:200:3:8888::"
-else
-        echo "OK"
-fi
-
-<%- end -%>
-
-
 echo "################################################"
 

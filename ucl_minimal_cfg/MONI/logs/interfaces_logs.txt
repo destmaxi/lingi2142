@@ -1,0 +1,10 @@
+Setting HALL-eth1 down
+Waiting stabilization
+Checking if PYTH-HALL link fails [2018-10-27 13:53:53]
+WARNING : eth1 on HALL is down, maybe link failure !
+Setting HALL-eth1 up
+Waiting stabilization
+Checking if PYTH-HALL link fails [2018-10-27 13:53:53]
+eth1 on HALL is up
+Setting PYTH-eth0 down
+Waiting stabilization
