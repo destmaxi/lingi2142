@@ -7,8 +7,8 @@ from itertools import izip as zip
 USER = 'adminUser'
 AUTH_PWD = 'safe_password'
 PRIV_PWD = 'safe_password'
-RMT_HOST = ['fd00:300:4:f16::6','localhost'] #changer par tableau avec (adresses des) routeurs
-PORT_NBR = [161,161] #attention en faire un tableau de la meme taille que RMT_HOST
+RMT_HOST = ['fd00:300:4:f16::6','localhost','fd00:300:4:f53::5'] #changer par tableau avec (adresses des) routeurs
+PORT_NBR = [161,161,161] #attention en faire un tableau de la meme taille que RMT_HOST
 TIME_IN_SEC = 3 #delta of 5 min for calculations MUST BE CHANGED !!!!!
 
 #equivalent to snmpget
@@ -74,7 +74,7 @@ def get_list_of_itfs(hosts, ports):
     descr_oid = 'ifDescr'
 
     for h, p in zip(hosts, ports):
-        print(h,p)
+        #print(h,p)
         oid_list = {}
         for x, y in zip(walk(h, p, mib, ind_oid),walk(h, p, mib, descr_oid)):
             oid_list[x] = y
@@ -85,9 +85,9 @@ def get_list_of_itfs(hosts, ports):
 def get_list_of_itfs_nbr(itfs):
     list_of_res = []
     for host_values in itfs.values():
-        print(host_values.keys())
+        #print(host_values.keys())
         list_of_res.append(host_values.keys())
-    print(str(list_of_res))
+    #print(str(list_of_res))
     return list_of_res
 
 def get_list_of_datas(hosts, ports, itfs):
@@ -156,6 +156,11 @@ def apply_formula(results):
         list_of_res[host] = list_of_for_one_itf
     return list_of_res
 
+def printer(tab):
+    for i in range(0,len(tab)):
+	print(tab[i])
+        print("\n")
+
 
 if __name__ == '__main__':
     #test = walk('localhost', 161, 'IF-MIB', 'ifIndex')
@@ -168,24 +173,24 @@ if __name__ == '__main__':
     #print(str(first_datas))
     time.sleep(TIME_IN_SEC)
     second_data = get_list_of_datas(RMT_HOST, PORT_NBR, list_of_itfs_nbr)
-    print(str(second_data))
+    #print(str(second_data))
 
     #printing the different results
 
     #legend
-    print("Interface number-name association :")
+    print("----------LEGEND----------")
     print(str(list_of_itfs))
 
     #bandwith
-    print("Bandwith :")
+    print("----------BANDWITH----------")
     print(str(compute_results(first_datas, second_data, 0, 1)))
 
     #errors
-    print("Errors :")
-    print(compute_results(first_datas, second_data, 2, 3))
+    print("----------ERRORS----------")
+    print(str(compute_results(first_datas, second_data, 2, 3)))
 
     #discarded packets
-    print("Discarded packets :")
-    print(compute_results(first_datas, second_data, 4, 5))
+    print("----------DISCARDED PACKETS----------")
+    print(str(compute_results(first_datas, second_data, 4, 5)))
 
 
