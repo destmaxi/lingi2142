@@ -24,3 +24,4 @@ static_routes::interfaces:
   - {interface: HALL-eth1, route: 0f24}
   - {interface: HALL-lan0, route: 0a20}
 script::id: 2
+bgp_script::id: 4

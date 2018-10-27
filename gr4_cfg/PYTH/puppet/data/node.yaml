@@ -25,3 +25,4 @@ static_routes::interfaces:
   - {interface: PYTH-eth2, route: 0f64}
   - {interface: PYTH-lan0, route: 0b40}
 script::id: 4
+bgp_script::id: 4
