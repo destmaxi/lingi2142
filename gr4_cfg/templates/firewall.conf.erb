@@ -249,6 +249,21 @@ ip6tables -A OUTPUT --dst <%= @prefix_b %>::/48 -p tcp --dport 53 -j ACCEPT -m \
   comment --comment "Allow DNS"
 
 
+
+################################################################################
+#                    Allow router to send SNMP requests                        #
+################################################################################
+
+ip6tables -A FORWARD --dst <%= @prefix_a %>::/48 -p icmpv6 --icmpv6-type 133/0 \
+j ACCEPT -m comment --comment "Allow router Solicitation"
+ip6tables -A FORWARD --dst <%= @prefix_b %>::/48 -p icmpv6 --icmpv6-type 133/0 \
+j ACCEPT -m comment --comment "Allow router Solicitation"
+
+ip6tables -A OUTPUT --dst <%= @prefix_a %>::/48 -p icmpv6 --icmpv6-type 133/0 \
+j ACCEPT -m comment --comment "Allow router Solicitation"
+ip6tables -A OUTPUT --dst <%= @prefix_b %>::/48 -p icmpv6 --icmpv6-type 133/0 \
+j ACCEPT -m comment --comment "Allow router Solicitation"
+
 ################################################################################
 #                    Allow router to send SNMP requests                        #
 ################################################################################
