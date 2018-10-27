@@ -179,6 +179,16 @@ ip6tables -A OUTPUT   -p ospf -j ACCEPT
 
 
 
+################################################################################
+#                                 Allow RA                                     #
+################################################################################
+
+ip6tables -A INPUT   -p icmpv6 --icmpv6-type 134/0 -j ACCEPT -m comment \
+  --comment "Allow router advertisement"
+ip6tables -A OUTPUT  -p icmpv6 --icmpv6-type 134/0 -j ACCEPT -m comment \
+  --comment "Allow router advertisement"
+ip6tables -A FORWARD -p icmpv6 --icmpv6-type 134/0 -j ACCEPT -m comment \
+  --comment "Allow router advertisement"
 
 ################################################################################
 #               Neighbor Solicitation limitation to avoid DoS                  #
@@ -229,6 +239,7 @@ ip6tables -A FORWARD --dst <%= @prefix_a %>::/48 -p tcp --dport 53 -j ACCEPT -m 
 ip6tables -A FORWARD --dst <%= @prefix_b %>::/48 -p tcp --dport 53 -j ACCEPT -m \
   comment --comment "Allow DNS"
 
+ip6tables -A OUTPUT --dst <%= @prefix_b %>::/48 -p udp --dport 53 -j ACCEPT -m \
   comment --comment "Allow DNS"
 ip6tables -A OUTPUT --dst <%= @prefix_b %>::/48 -p udp --dport 53 -j ACCEPT -m \
   comment --comment "Allow DNS"
