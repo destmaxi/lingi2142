@@ -219,7 +219,16 @@ ip6tables -A FORWARD -p udp --dport 33434:33534 -j ACCEPT
 #                    Allow router to send DNS requests                         #
 ################################################################################
 
-ip6tables -A OUTPUT --dst <%= @prefix_a %>::/48 -p udp --dport 53 -j ACCEPT -m \
+ip6tables -A FORWARD --dst <%= @prefix_a %>::/48 -p udp --dport 53 -j ACCEPT -m \
+ip6tables -A FORWARD --dst <%= @prefix_a %>::/48 -p udp --dport 53 -j ACCEPT -m \
+  comment --comment "Allow DNS"
+ip6tables -A FORWARD --dst <%= @prefix_b %>::/48 -p udp --dport 53 -j ACCEPT -m \
+  comment --comment "Allow DNS"
+ip6tables -A FORWARD --dst <%= @prefix_a %>::/48 -p tcp --dport 53 -j ACCEPT -m \
+  comment --comment "Allow DNS"
+ip6tables -A FORWARD --dst <%= @prefix_b %>::/48 -p tcp --dport 53 -j ACCEPT -m \
+  comment --comment "Allow DNS"
+
   comment --comment "Allow DNS"
 ip6tables -A OUTPUT --dst <%= @prefix_b %>::/48 -p udp --dport 53 -j ACCEPT -m \
   comment --comment "Allow DNS"
@@ -233,9 +242,13 @@ ip6tables -A OUTPUT --dst <%= @prefix_b %>::/48 -p tcp --dport 53 -j ACCEPT -m \
 #                    Allow router to send SNMP requests                        #
 ################################################################################
 
-ip6tables -A OUTPUT --dst <%= @prefix_a %>::/52 -p udp --match multiport \
+ip6tables -A INPUT --dst <%= @prefix_a %>::/52 -p udp --match multiport \
   --dports 161,162 -j ACCEPT
-ip6tables -A OUTPUT --dst <%= @prefix_b %>::/52 -p udp --match multiport \
+ip6tables -A INPUT --dst <%= @prefix_b %>::/52 -p udp --match multiport \
+  --dports 161,162 -j ACCEPT
+ip6tables -A FORWARD --dst <%= @prefix_a %>::/52 -p udp --match multiport \
+  --dports 161,162 -j ACCEPT
+ip6tables -A FORWARD --dst <%= @prefix_b %>::/52 -p udp --match multiport \
   --dports 161,162 -j ACCEPT
 
 
