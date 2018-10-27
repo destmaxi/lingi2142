@@ -219,7 +219,16 @@ ip6tables -A FORWARD -p udp --dport 33434:33534 -j ACCEPT
 #                    Allow router to send DNS requests                         #
 ################################################################################
 
-ip6tables -A OUTPUT --dst <%= @prefix_a %>::/48 -p udp --dport 53 -j ACCEPT -m \
+ip6tables -A FORWARD --dst <%= @prefix_a %>::/48 -p udp --dport 53 -j ACCEPT -m \
+ip6tables -A FORWARD --dst <%= @prefix_a %>::/48 -p udp --dport 53 -j ACCEPT -m \
+  comment --comment "Allow DNS"
+ip6tables -A FORWARD --dst <%= @prefix_b %>::/48 -p udp --dport 53 -j ACCEPT -m \
+  comment --comment "Allow DNS"
+ip6tables -A FORWARD --dst <%= @prefix_a %>::/48 -p tcp --dport 53 -j ACCEPT -m \
+  comment --comment "Allow DNS"
+ip6tables -A FORWARD --dst <%= @prefix_b %>::/48 -p tcp --dport 53 -j ACCEPT -m \
+  comment --comment "Allow DNS"
+
   comment --comment "Allow DNS"
 ip6tables -A OUTPUT --dst <%= @prefix_b %>::/48 -p udp --dport 53 -j ACCEPT -m \
   comment --comment "Allow DNS"
