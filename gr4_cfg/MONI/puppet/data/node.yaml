@@ -1,11 +1,3 @@
 ---
 name: MONI
-bird6::routing_id: 4.0.0.7 # Should be changed for your group (for instance 42 -> your group number)
-bird6::ospfv3:
-  hello_itfs:  # Activate OSPFv3 only on these interfaces
-    - MONI-eth0
-  stub_itfs: [] # Passive interfaces (e.g., LANs)
-static_routes::id: 7
-static_routes::interfaces:
-  - {interface: MONI-eth0, route: 0e10}
-script::id: 7
+id: 7
