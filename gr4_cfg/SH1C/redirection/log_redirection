@@ -66,3 +66,8 @@ wait 60sec
 wait 60sec
 wait 60sec
 wait 60sec
+ERREUR PING From 5 to fd00:300:f24::4
+link down
+ERREUR PING From 5 to fd00:300:f24::4
+ERREUR PING From 5 to fd00:300:f24::2
+link reOk
