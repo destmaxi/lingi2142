@@ -10,7 +10,10 @@ google = "2a00:1450:400e:80c::2003"
 STUD1  = "fd00:300:4:b40::1"
 ADM1   = "fd00:300:4:a20::1"
 ADM2   = "fd00:300:4:a60::1"
-MICH   = "fd00:300:4:f31::3"
+MICH   = "fd00:300:4:f00::3"
+CARN   = "fd00:300:4:f00::6"
+GST1   = "fd00:300:4:c60::1"
+TCH1   = "fd00:300:4:960::1"
 
 
 class TestFirewall(unittest.TestCase):
@@ -49,9 +52,36 @@ class TestFirewall(unittest.TestCase):
 		result = self.checkStatus(list_results[0].split(" "))
 		self.assertFalse(result)
 
+	def test_guest_not_host(self):
+		helpers.entete("Ensure that a guest can't host a service")
+		output = execute("sudo ip netns exec ADM1 nmap -6 -Pn T:22 %s" % (GST1))
+		list_results = output.split("\n")
+		self.deleteUselessLines(list_results)
+
+		result = self.checkStatus(list_results[0].split(" "))
+		self.assertFalse(result)
+
+	def test_guest_not_ssh(self):
+		helpers.entete("Ensure that a guest can't use ssh over our network")
+		output = execute("sudo ip netns exec GST1 nmap -6 -Pn T:22 %s" % (ADM1))
+		list_results = output.split("\n")
+		self.deleteUselessLines(list_results)
+
+		result = self.checkStatus(list_results[0].split(" "))
+		self.assertFalse(result)
+
 	def test_admin_can_host(self):
 		helpers.entete("Ensure that an admin can host a service")
 		output = execute("sudo ip netns exec ADM2 nmap -6 -Pn T:22 %s" % (ADM1))
+		list_results = output.split("\n")
+		self.deleteUselessLines(list_results)
+
+		result = self.checkStatus(list_results[0].split(" "))
+		self.assertFalse(result)
+
+	def test_teacher_can_host(self):
+		helpers.entete("Ensure that an teacher can host a service")
+		output = execute("sudo ip netns exec ADM2 nmap -6 -Pn T:22 %s" % (TCH1))
 		list_results = output.split("\n")
 		self.deleteUselessLines(list_results)
 

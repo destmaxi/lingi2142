@@ -1,7 +1,7 @@
 class bgp_script(
-    Integer $id
 )
 {
+    $id = lookup("id")
     $node_name = lookup("name")
 
     # Create directory with correct permissions

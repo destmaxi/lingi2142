@@ -1,17 +1,16 @@
 ---
 name: MICH
+id: 3
 bird6::routing_id: 4.0.0.3
 bird6::ospfv3:
   hello_itfs:  # Activate OSPFv3 only on these interfaces
     - MICH-eth0
     - MICH-eth1
     - MICH-lan0
+    - MICH-lan1
   stub_itfs: [] # Passive interfaces (e.g., LANs)
-bird6::id: 3
-static_routes::id: 3
 static_routes::interfaces:
   - {interface: MICH-eth0, route: 0f53}
   - {interface: MICH-eth1, route: 0f31}
   - {interface: MICH-lan0, route: 0b30}
-script::id: 3
-redirection::id: 3
+  - {interface: MICH-lan1, route: 0e31}

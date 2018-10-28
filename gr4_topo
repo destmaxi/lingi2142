@@ -45,10 +45,14 @@ function mk_topo {
     echo "@@ Adding LANs"
     # You can add your LANs here
     mk_LAN CARN DNS1 TEST JUL MONI
-    mk_LAN MICH MAX DNS2
+    mk_LAN CARN DNS1
+    mk_LAN MICH MAX
+    mk_LAN MICH DNS2
     mk_LAN PYTH STUD1
     mk_LAN HALL ADM1
     mk_LAN STEV ADM2
+    mk_LAN STEV TCH1
+    mk_LAN STEV GST1
 
     echo "@@ Bridging the network"
     # Connect to belneta and belnetb

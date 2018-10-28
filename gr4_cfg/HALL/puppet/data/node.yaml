@@ -1,5 +1,6 @@
 ---
 name: HALL
+id: 2
 bird6::routing_id: 4.0.0.2
 bird6::ospfv3:
   hello_itfs:  # Activate OSPFv3 only on these interfaces
@@ -13,16 +14,11 @@ bird6::bgp:
   local_as: 4
   neighbor_ip: fd00:200::b
   neighbor_as: 200
-bird6::id: 2
 firewall::interface: belnetb
 firewall::wrong_prefix: fd00:300:4
 firewall::type: border
 firewall::prefix: fd00:300:4
-static_routes::id: 2
 static_routes::interfaces:
   - {interface: HALL-eth0, route: 0f25}
   - {interface: HALL-eth1, route: 0f24}
   - {interface: HALL-lan0, route: 0a20}
-script::id: 2
-bgp_script::id: 2
-redirection::id: 2

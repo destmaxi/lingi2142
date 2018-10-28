@@ -9,11 +9,11 @@
 zone "group4.ingi" IN {
      type master;
      file "/etc/bind/db.group4.ingi";
-     allow-transfer {fd00:300:4:e33::1; };
+     allow-transfer {fd00:300:4:e31::2; };
 };
 
 zone "4.0.0.0.0.0.3.0.0.0.d.f.ip6.arpa" {
      type master;
      file "/etc/bind/db.300.ingi";
-     allow-transfer {fd00:300:4:e33::1; };
+     allow-transfer {fd00:300:4:e31::2; };
 };

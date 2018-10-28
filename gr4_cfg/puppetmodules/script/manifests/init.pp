@@ -1,10 +1,10 @@
 # These variables are now accessible in the template
 class script(
-  Integer $id
 )
 {
 
   $node_name = lookup("name")
+  $id = lookup("id")
 
   $prefix_a = "fd00:300"
   $prefix_b = "fd00:200"
