@@ -53,6 +53,7 @@ ip6tables -A OUPUT -o lo -j ACCEPT
 
 
 
+
 <% if @type == "border" %>
 ################################################################################
 #                       Block traffic going to wrong AS                        #
@@ -76,9 +77,6 @@ ip6tables -A FORWARD -i <%= @interface %> -s <%= @prefix_a %>::/52 -j DROP \
   -m comment --comment "forwarding packet with source ip from our network"
 ip6tables -A FORWARD -i <%= @interface %> -s <%= @prefix_b %>::/52 -j DROP \
   -m comment --comment "forwarding packet with source ip from our network"
-
-
-
 
 
 
@@ -158,7 +156,6 @@ ip6tables -A FORWARD -i <%= @interface %> -p udp --dport 33434:33534 -j DROP
 
 
 
-
 ################################################################################
 #                     Allow bgp on <%= @interface %>                           #
 ################################################################################
@@ -166,6 +163,7 @@ ip6tables -A FORWARD -i <%= @interface %> -p udp --dport 33434:33534 -j DROP
 ip6tables -A INPUT  -i <%= @interface %> -p tcp --dport 179 -j ACCEPT
 ip6tables -A OUTPUT -o <%= @interface %> -p tcp --dport 179 -j ACCEPT
 <%- end -%>
+
 
 
 
@@ -189,6 +187,9 @@ ip6tables -A OUTPUT  -p icmpv6 --icmpv6-type 134/0 -j ACCEPT -m comment \
   --comment "Allow router advertisement"
 ip6tables -A FORWARD -p icmpv6 --icmpv6-type 134/0 -j ACCEPT -m comment \
   --comment "Allow router advertisement"
+
+
+
 
 ################################################################################
 #               Neighbor Solicitation limitation to avoid DoS                  #
@@ -223,6 +224,8 @@ ip6tables -A OUTPUT  -p icmpv6 -j ACCEPT
 ip6tables -A INPUT   -p udp --dport 33434:33534 -j ACCEPT
 ip6tables -A OUTPUT  -p udp --dport 33434:33534 -j ACCEPT
 ip6tables -A FORWARD -p udp --dport 33434:33534 -j ACCEPT
+
+
 
 
 ################################################################################
@@ -269,8 +272,9 @@ ip6tables -A OUTPUT --dst <%= @prefix_b %>::/48 -p tcp --sport 53 -j ACCEPT -m \
   comment --comment "Allow DNS"
 
 
+
 ################################################################################
-#                    Allow router to send SNMP requests                        #
+#                                 Allow RS                                     #
 ################################################################################
 
 ip6tables -A FORWARD --dst <%= @prefix_a %>::/48 -p icmpv6 --icmpv6-type 133/0 \
@@ -282,6 +286,9 @@ ip6tables -A OUTPUT --dst <%= @prefix_a %>::/48 -p icmpv6 --icmpv6-type 133/0 \
 j ACCEPT -m comment --comment "Allow router Solicitation"
 ip6tables -A OUTPUT --dst <%= @prefix_b %>::/48 -p icmpv6 --icmpv6-type 133/0 \
 j ACCEPT -m comment --comment "Allow router Solicitation"
+
+
+
 
 ################################################################################
 #                    Allow router to send SNMP requests                        #
@@ -295,6 +302,17 @@ ip6tables -A FORWARD --dst <%= @prefix_a %>::/52 -p udp --match multiport \
   --dports 161,162 -j ACCEPT
 ip6tables -A FORWARD --dst <%= @prefix_b %>::/52 -p udp --match multiport \
   --dports 161,162 -j ACCEPT
+
+
+
+
+################################################################################
+#                           Allow tunneling                                    #
+################################################################################
+
+ip6tables -A INPUT  -p 41 -j ACCEPT -m comment --comment "tunneling by prot"
+ip6tables -A FORWARD  -p 41 -j ACCEPT -m comment --comment "tunneling by prot"
+ip6tables -A OUTPUT -p 41 -j ACCEPT -m comment --comment "tunneling by prot"
 
 
 

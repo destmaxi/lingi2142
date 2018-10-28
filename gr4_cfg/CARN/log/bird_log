@@ -3396,3 +3396,1101 @@
 2018-10-28 13:48:11 <TRACE> ospf1: HELLO packet received from fe80::5c64:f7ff:fe1e:abe1 via CARN-eth2
 2018-10-28 13:48:11 <TRACE> ospf1: HELLO packet received from fe80::3467:a3ff:fe7f:3cea via CARN-eth1
 2018-10-28 13:48:11 <TRACE> ospf1: HELLO packet received from fe80::f0c6:9eff:fe7e:8ae7 via CARN-eth0
+2018-10-28 13:48:11 <TRACE> ospf1: HELLO packet received from fe80::5c64:f7ff:fe1e:abe1 via CARN-eth2
+2018-10-28 13:48:11 <TRACE> ospf1: HELLO packet received from fe80::f0c6:9eff:fe7e:8ae7 via CARN-eth0
+2018-10-28 13:48:12 <TRACE> ospf1: HELLO packet sent via CARN-eth2
+2018-10-28 13:48:12 <TRACE> ospf1: HELLO packet sent via CARN-eth1
+2018-10-28 13:48:12 <TRACE> ospf1: HELLO packet sent via CARN-eth0
+2018-10-28 13:48:12 <TRACE> ospf1: HELLO packet sent via CARN-lan1
+2018-10-28 13:48:12 <TRACE> ospf1: HELLO packet sent via CARN-lan0
+2018-10-28 13:48:12 <TRACE> device1: Scanning interfaces
+2018-10-28 13:48:12 <TRACE> kernel1: Scanning routing table
+2018-10-28 13:48:12 <TRACE> kernel1: fd00:200:4:a20::/64: seen
+2018-10-28 13:48:12 <TRACE> kernel1: fd00:200:4:a60::/64: seen
+2018-10-28 13:48:12 <TRACE> kernel1: fd00:200:4:b30::/64: seen
+2018-10-28 13:48:12 <TRACE> kernel1: fd00:200:4:b40::/64: seen
+2018-10-28 13:48:12 <TRACE> kernel1: fd00:200:4:e31::/64: seen
+2018-10-28 13:48:12 <TRACE> kernel1: fd00:200:4:f24::/64: seen
+2018-10-28 13:48:12 <TRACE> kernel1: fd00:200:4:f25::/64: seen
+2018-10-28 13:48:12 <TRACE> kernel1: fd00:200:4:f53::/64: seen
+2018-10-28 13:48:12 <TRACE> kernel1: fd00:200:4:f64::/64: seen
+2018-10-28 13:48:12 <TRACE> kernel1: fd00:300:4:a20::/64: seen
+2018-10-28 13:48:12 <TRACE> kernel1: fd00:300:4:a60::/64: seen
+2018-10-28 13:48:12 <TRACE> kernel1: fd00:300:4:b30::/64: seen
+2018-10-28 13:48:12 <TRACE> kernel1: fd00:300:4:b40::/64: seen
+2018-10-28 13:48:12 <TRACE> kernel1: fd00:300:4:e31::/64: seen
+2018-10-28 13:48:12 <TRACE> kernel1: fd00:300:4:e33::/64: seen
+2018-10-28 13:48:12 <TRACE> kernel1: fd00:300:4:f00::1/128: seen
+2018-10-28 13:48:12 <TRACE> kernel1: fd00:300:4:f00::2/128: seen
+2018-10-28 13:48:12 <TRACE> kernel1: fd00:300:4:f00::3/128: seen
+2018-10-28 13:48:12 <TRACE> kernel1: fd00:300:4:f00::4/128: seen
+2018-10-28 13:48:12 <TRACE> kernel1: fd00:300:4:f00::5/128: seen
+2018-10-28 13:48:12 <TRACE> kernel1: fd00:300:4:f00::6/128: seen
+2018-10-28 13:48:12 <TRACE> kernel1: fd00:300:4:f24::/64: seen
+2018-10-28 13:48:12 <TRACE> kernel1: fd00:300:4:f25::/64: seen
+2018-10-28 13:48:12 <TRACE> kernel1: fd00:300:4:f53::/64: seen
+2018-10-28 13:48:12 <TRACE> kernel1: fd00:300:4:f64::/64: seen
+2018-10-28 13:48:12 <TRACE> kernel1: ::/0: seen
+2018-10-28 13:48:12 <TRACE> kernel1: Pruning table master
+2018-10-28 13:48:12 <TRACE> kernel1: Pruning inherited routes
+2018-10-28 13:48:12 <TRACE> ospf1: HELLO packet received from fe80::3467:a3ff:fe7f:3cea via CARN-eth1
+2018-10-28 13:48:12 <TRACE> ospf1: HELLO packet received from fe80::5c64:f7ff:fe1e:abe1 via CARN-eth2
+2018-10-28 13:48:12 <TRACE> ospf1: HELLO packet received from fe80::3467:a3ff:fe7f:3cea via CARN-eth1
+2018-10-28 13:48:12 <TRACE> ospf1: HELLO packet received from fe80::f0c6:9eff:fe7e:8ae7 via CARN-eth0
+2018-10-28 13:48:13 <TRACE> ospf1: HELLO packet sent via CARN-lan0
+2018-10-28 13:48:13 <TRACE> ospf1: HELLO packet sent via CARN-lan1
+2018-10-28 13:48:13 <TRACE> ospf1: HELLO packet sent via CARN-eth0
+2018-10-28 13:48:13 <TRACE> ospf1: HELLO packet sent via CARN-eth1
+2018-10-28 13:48:13 <TRACE> ospf1: HELLO packet sent via CARN-eth2
+2018-10-28 13:48:13 <TRACE> ospf1: HELLO packet received from fe80::5c64:f7ff:fe1e:abe1 via CARN-eth2
+2018-10-28 13:48:13 <TRACE> ospf1: HELLO packet received from fe80::f0c6:9eff:fe7e:8ae7 via CARN-eth0
+2018-10-28 13:48:14 <TRACE> ospf1: HELLO packet sent via CARN-eth2
+2018-10-28 13:48:14 <TRACE> ospf1: HELLO packet sent via CARN-eth1
+2018-10-28 13:48:14 <TRACE> ospf1: HELLO packet sent via CARN-eth0
+2018-10-28 13:48:14 <TRACE> ospf1: HELLO packet sent via CARN-lan1
+2018-10-28 13:48:14 <TRACE> ospf1: HELLO packet sent via CARN-lan0
+2018-10-28 13:48:14 <TRACE> ospf1: HELLO packet received from fe80::3467:a3ff:fe7f:3cea via CARN-eth1
+2018-10-28 13:48:15 <TRACE> ospf1: HELLO packet sent via CARN-lan0
+2018-10-28 13:48:15 <TRACE> ospf1: HELLO packet sent via CARN-lan1
+2018-10-28 13:48:15 <TRACE> ospf1: HELLO packet sent via CARN-eth0
+2018-10-28 13:48:15 <TRACE> ospf1: HELLO packet sent via CARN-eth1
+2018-10-28 13:48:15 <TRACE> ospf1: HELLO packet sent via CARN-eth2
+2018-10-28 13:48:15 <TRACE> ospf1: HELLO packet received from fe80::3467:a3ff:fe7f:3cea via CARN-eth1
+2018-10-28 13:48:15 <TRACE> ospf1: HELLO packet received from fe80::5c64:f7ff:fe1e:abe1 via CARN-eth2
+2018-10-28 13:48:15 <TRACE> ospf1: HELLO packet received from fe80::f0c6:9eff:fe7e:8ae7 via CARN-eth0
+2018-10-28 13:48:16 <TRACE> ospf1: HELLO packet sent via CARN-eth2
+2018-10-28 13:48:16 <TRACE> ospf1: HELLO packet sent via CARN-eth1
+2018-10-28 13:48:16 <TRACE> ospf1: HELLO packet sent via CARN-eth0
+2018-10-28 13:48:16 <TRACE> ospf1: HELLO packet sent via CARN-lan1
+2018-10-28 13:48:16 <TRACE> ospf1: HELLO packet sent via CARN-lan0
+2018-10-28 13:48:16 <TRACE> ospf1: HELLO packet received from fe80::3467:a3ff:fe7f:3cea via CARN-eth1
+2018-10-28 13:48:16 <TRACE> ospf1: HELLO packet received from fe80::5c64:f7ff:fe1e:abe1 via CARN-eth2
+2018-10-28 13:48:16 <TRACE> ospf1: HELLO packet received from fe80::f0c6:9eff:fe7e:8ae7 via CARN-eth0
+2018-10-28 13:48:16 <TRACE> ospf1: HELLO packet received from fe80::3467:a3ff:fe7f:3cea via CARN-eth1
+2018-10-28 13:48:17 <TRACE> ospf1: HELLO packet sent via CARN-lan0
+2018-10-28 13:48:17 <TRACE> ospf1: HELLO packet sent via CARN-lan1
+2018-10-28 13:48:17 <TRACE> ospf1: HELLO packet sent via CARN-eth0
+2018-10-28 13:48:17 <TRACE> ospf1: HELLO packet sent via CARN-eth1
+2018-10-28 13:48:17 <TRACE> ospf1: HELLO packet sent via CARN-eth2
+2018-10-28 13:48:17 <TRACE> ospf1: HELLO packet received from fe80::5c64:f7ff:fe1e:abe1 via CARN-eth2
+2018-10-28 13:48:17 <TRACE> ospf1: HELLO packet received from fe80::f0c6:9eff:fe7e:8ae7 via CARN-eth0
+2018-10-28 13:48:17 <TRACE> ospf1: HELLO packet received from fe80::5c64:f7ff:fe1e:abe1 via CARN-eth2
+2018-10-28 13:48:17 <TRACE> ospf1: HELLO packet received from fe80::3467:a3ff:fe7f:3cea via CARN-eth1
+2018-10-28 13:48:17 <TRACE> ospf1: HELLO packet received from fe80::f0c6:9eff:fe7e:8ae7 via CARN-eth0
+2018-10-28 13:48:18 <TRACE> ospf1: HELLO packet sent via CARN-eth2
+2018-10-28 13:48:18 <TRACE> ospf1: HELLO packet sent via CARN-eth1
+2018-10-28 13:48:18 <TRACE> ospf1: HELLO packet sent via CARN-eth0
+2018-10-28 13:48:18 <TRACE> ospf1: HELLO packet sent via CARN-lan1
+2018-10-28 13:48:18 <TRACE> ospf1: HELLO packet sent via CARN-lan0
+2018-10-28 13:48:18 <TRACE> ospf1: HELLO packet received from fe80::5c64:f7ff:fe1e:abe1 via CARN-eth2
+2018-10-28 13:48:18 <TRACE> ospf1: HELLO packet received from fe80::f0c6:9eff:fe7e:8ae7 via CARN-eth0
+2018-10-28 13:48:19 <TRACE> ospf1: HELLO packet sent via CARN-lan0
+2018-10-28 13:48:19 <TRACE> ospf1: HELLO packet sent via CARN-lan1
+2018-10-28 13:48:19 <TRACE> ospf1: HELLO packet sent via CARN-eth0
+2018-10-28 13:48:19 <TRACE> ospf1: HELLO packet sent via CARN-eth1
+2018-10-28 13:48:19 <TRACE> ospf1: HELLO packet sent via CARN-eth2
+2018-10-28 13:48:19 <TRACE> ospf1: HELLO packet received from fe80::3467:a3ff:fe7f:3cea via CARN-eth1
+2018-10-28 13:48:19 <TRACE> ospf1: HELLO packet received from fe80::f0c6:9eff:fe7e:8ae7 via CARN-eth0
+2018-10-28 13:48:20 <TRACE> ospf1: HELLO packet sent via CARN-eth2
+2018-10-28 13:48:20 <TRACE> ospf1: HELLO packet sent via CARN-eth1
+2018-10-28 13:48:20 <TRACE> ospf1: HELLO packet sent via CARN-eth0
+2018-10-28 13:48:20 <TRACE> ospf1: HELLO packet sent via CARN-lan1
+2018-10-28 13:48:20 <TRACE> ospf1: HELLO packet sent via CARN-lan0
+2018-10-28 13:48:20 <TRACE> ospf1: HELLO packet received from fe80::5c64:f7ff:fe1e:abe1 via CARN-eth2
+2018-10-28 13:48:20 <TRACE> ospf1: HELLO packet received from fe80::3467:a3ff:fe7f:3cea via CARN-eth1
+2018-10-28 13:48:20 <TRACE> ospf1: HELLO packet received from fe80::3467:a3ff:fe7f:3cea via CARN-eth1
+2018-10-28 13:48:21 <TRACE> ospf1: HELLO packet sent via CARN-lan0
+2018-10-28 13:48:21 <TRACE> ospf1: HELLO packet sent via CARN-lan1
+2018-10-28 13:48:21 <TRACE> ospf1: HELLO packet sent via CARN-eth0
+2018-10-28 13:48:21 <TRACE> ospf1: HELLO packet sent via CARN-eth1
+2018-10-28 13:48:21 <TRACE> ospf1: HELLO packet sent via CARN-eth2
+2018-10-28 13:48:21 <TRACE> ospf1: HELLO packet received from fe80::5c64:f7ff:fe1e:abe1 via CARN-eth2
+2018-10-28 13:48:21 <TRACE> ospf1: HELLO packet received from fe80::f0c6:9eff:fe7e:8ae7 via CARN-eth0
+2018-10-28 13:48:21 <TRACE> ospf1: HELLO packet received from fe80::f0c6:9eff:fe7e:8ae7 via CARN-eth0
+2018-10-28 13:48:22 <TRACE> ospf1: HELLO packet sent via CARN-eth2
+2018-10-28 13:48:22 <TRACE> ospf1: HELLO packet sent via CARN-eth1
+2018-10-28 13:48:22 <TRACE> ospf1: HELLO packet sent via CARN-eth0
+2018-10-28 13:48:22 <TRACE> ospf1: HELLO packet sent via CARN-lan1
+2018-10-28 13:48:22 <TRACE> ospf1: HELLO packet sent via CARN-lan0
+2018-10-28 13:48:22 <TRACE> device1: Scanning interfaces
+2018-10-28 13:48:22 <TRACE> ospf1: HELLO packet received from fe80::5c64:f7ff:fe1e:abe1 via CARN-eth2
+2018-10-28 13:48:22 <TRACE> ospf1: HELLO packet received from fe80::3467:a3ff:fe7f:3cea via CARN-eth1
+2018-10-28 13:48:22 <TRACE> ospf1: HELLO packet received from fe80::5c64:f7ff:fe1e:abe1 via CARN-eth2
+2018-10-28 13:48:22 <TRACE> ospf1: HELLO packet received from fe80::3467:a3ff:fe7f:3cea via CARN-eth1
+2018-10-28 13:48:23 <TRACE> ospf1: HELLO packet sent via CARN-lan0
+2018-10-28 13:48:23 <TRACE> ospf1: HELLO packet sent via CARN-lan1
+2018-10-28 13:48:23 <TRACE> ospf1: HELLO packet sent via CARN-eth0
+2018-10-28 13:48:23 <TRACE> ospf1: HELLO packet sent via CARN-eth1
+2018-10-28 13:48:23 <TRACE> ospf1: HELLO packet sent via CARN-eth2
+2018-10-28 13:48:23 <TRACE> ospf1: HELLO packet received from fe80::f0c6:9eff:fe7e:8ae7 via CARN-eth0
+2018-10-28 13:48:23 <TRACE> ospf1: HELLO packet received from fe80::3467:a3ff:fe7f:3cea via CARN-eth1
+2018-10-28 13:48:24 <TRACE> ospf1: HELLO packet sent via CARN-eth2
+2018-10-28 13:48:24 <TRACE> ospf1: HELLO packet sent via CARN-eth1
+2018-10-28 13:48:24 <TRACE> ospf1: HELLO packet sent via CARN-eth0
+2018-10-28 13:48:24 <TRACE> ospf1: HELLO packet sent via CARN-lan1
+2018-10-28 13:48:24 <TRACE> ospf1: HELLO packet sent via CARN-lan0
+2018-10-28 13:48:24 <TRACE> ospf1: HELLO packet received from fe80::f0c6:9eff:fe7e:8ae7 via CARN-eth0
+2018-10-28 13:48:24 <TRACE> ospf1: HELLO packet received from fe80::5c64:f7ff:fe1e:abe1 via CARN-eth2
+2018-10-28 13:48:24 <TRACE> ospf1: HELLO packet received from fe80::f0c6:9eff:fe7e:8ae7 via CARN-eth0
+2018-10-28 13:48:25 <TRACE> ospf1: HELLO packet sent via CARN-lan0
+2018-10-28 13:48:25 <TRACE> ospf1: HELLO packet sent via CARN-lan1
+2018-10-28 13:48:25 <TRACE> ospf1: HELLO packet sent via CARN-eth0
+2018-10-28 13:48:25 <TRACE> ospf1: HELLO packet sent via CARN-eth1
+2018-10-28 13:48:25 <TRACE> ospf1: HELLO packet sent via CARN-eth2
+2018-10-28 13:48:25 <TRACE> ospf1: HELLO packet received from fe80::3467:a3ff:fe7f:3cea via CARN-eth1
+2018-10-28 13:48:25 <TRACE> ospf1: HELLO packet received from fe80::5c64:f7ff:fe1e:abe1 via CARN-eth2
+2018-10-28 13:48:25 <TRACE> ospf1: HELLO packet received from fe80::5c64:f7ff:fe1e:abe1 via CARN-eth2
+2018-10-28 13:48:25 <TRACE> ospf1: HELLO packet received from fe80::f0c6:9eff:fe7e:8ae7 via CARN-eth0
+2018-10-28 13:48:26 <TRACE> ospf1: HELLO packet sent via CARN-eth2
+2018-10-28 13:48:26 <TRACE> ospf1: HELLO packet sent via CARN-eth1
+2018-10-28 13:48:26 <TRACE> ospf1: HELLO packet sent via CARN-eth0
+2018-10-28 13:48:26 <TRACE> ospf1: HELLO packet sent via CARN-lan1
+2018-10-28 13:48:26 <TRACE> ospf1: HELLO packet sent via CARN-lan0
+2018-10-28 13:48:26 <TRACE> ospf1: HELLO packet received from fe80::3467:a3ff:fe7f:3cea via CARN-eth1
+2018-10-28 13:48:27 <TRACE> ospf1: HELLO packet sent via CARN-lan0
+2018-10-28 13:48:27 <TRACE> ospf1: HELLO packet sent via CARN-lan1
+2018-10-28 13:48:27 <TRACE> ospf1: HELLO packet sent via CARN-eth0
+2018-10-28 13:48:27 <TRACE> ospf1: HELLO packet sent via CARN-eth1
+2018-10-28 13:48:27 <TRACE> ospf1: HELLO packet sent via CARN-eth2
+2018-10-28 13:48:27 <TRACE> ospf1: HELLO packet received from fe80::5c64:f7ff:fe1e:abe1 via CARN-eth2
+2018-10-28 13:48:27 <TRACE> ospf1: HELLO packet received from fe80::3467:a3ff:fe7f:3cea via CARN-eth1
+2018-10-28 13:48:27 <TRACE> ospf1: HELLO packet received from fe80::f0c6:9eff:fe7e:8ae7 via CARN-eth0
+2018-10-28 13:48:27 <TRACE> ospf1: HELLO packet received from fe80::5c64:f7ff:fe1e:abe1 via CARN-eth2
+2018-10-28 13:48:27 <TRACE> ospf1: HELLO packet received from fe80::3467:a3ff:fe7f:3cea via CARN-eth1
+2018-10-28 13:48:27 <TRACE> ospf1: HELLO packet received from fe80::f0c6:9eff:fe7e:8ae7 via CARN-eth0
+2018-10-28 13:48:28 <TRACE> ospf1: HELLO packet sent via CARN-eth2
+2018-10-28 13:48:28 <TRACE> ospf1: HELLO packet sent via CARN-eth1
+2018-10-28 13:48:28 <TRACE> ospf1: HELLO packet sent via CARN-eth0
+2018-10-28 13:48:28 <TRACE> ospf1: HELLO packet sent via CARN-lan1
+2018-10-28 13:48:28 <TRACE> ospf1: HELLO packet sent via CARN-lan0
+2018-10-28 13:48:28 <TRACE> ospf1: HELLO packet received from fe80::5c64:f7ff:fe1e:abe1 via CARN-eth2
+2018-10-28 13:48:29 <TRACE> ospf1: HELLO packet sent via CARN-lan0
+2018-10-28 13:48:29 <TRACE> ospf1: HELLO packet sent via CARN-lan1
+2018-10-28 13:48:29 <TRACE> ospf1: HELLO packet sent via CARN-eth0
+2018-10-28 13:48:29 <TRACE> ospf1: HELLO packet sent via CARN-eth1
+2018-10-28 13:48:29 <TRACE> ospf1: HELLO packet sent via CARN-eth2
+2018-10-28 13:48:29 <TRACE> ospf1: HELLO packet received from fe80::3467:a3ff:fe7f:3cea via CARN-eth1
+2018-10-28 13:48:29 <TRACE> ospf1: HELLO packet received from fe80::f0c6:9eff:fe7e:8ae7 via CARN-eth0
+2018-10-28 13:48:29 <TRACE> ospf1: HELLO packet received from fe80::5c64:f7ff:fe1e:abe1 via CARN-eth2
+2018-10-28 13:48:30 <TRACE> ospf1: HELLO packet sent via CARN-eth2
+2018-10-28 13:48:30 <TRACE> ospf1: HELLO packet sent via CARN-eth1
+2018-10-28 13:48:30 <TRACE> ospf1: HELLO packet sent via CARN-eth0
+2018-10-28 13:48:30 <TRACE> ospf1: HELLO packet sent via CARN-lan1
+2018-10-28 13:48:30 <TRACE> ospf1: HELLO packet sent via CARN-lan0
+2018-10-28 13:48:30 <TRACE> ospf1: HELLO packet received from fe80::3467:a3ff:fe7f:3cea via CARN-eth1
+2018-10-28 13:48:30 <TRACE> ospf1: HELLO packet received from fe80::f0c6:9eff:fe7e:8ae7 via CARN-eth0
+2018-10-28 13:48:30 <TRACE> ospf1: HELLO packet received from fe80::5c64:f7ff:fe1e:abe1 via CARN-eth2
+2018-10-28 13:48:30 <TRACE> ospf1: HELLO packet received from fe80::3467:a3ff:fe7f:3cea via CARN-eth1
+2018-10-28 13:48:31 <TRACE> ospf1: HELLO packet sent via CARN-lan0
+2018-10-28 13:48:31 <TRACE> ospf1: HELLO packet sent via CARN-lan1
+2018-10-28 13:48:31 <TRACE> ospf1: HELLO packet sent via CARN-eth0
+2018-10-28 13:48:31 <TRACE> ospf1: HELLO packet sent via CARN-eth1
+2018-10-28 13:48:31 <TRACE> ospf1: HELLO packet sent via CARN-eth2
+2018-10-28 13:48:31 <TRACE> ospf1: HELLO packet received from fe80::f0c6:9eff:fe7e:8ae7 via CARN-eth0
+2018-10-28 13:48:31 <TRACE> ospf1: HELLO packet received from fe80::5c64:f7ff:fe1e:abe1 via CARN-eth2
+2018-10-28 13:48:32 <TRACE> ospf1: HELLO packet sent via CARN-eth2
+2018-10-28 13:48:32 <TRACE> ospf1: HELLO packet sent via CARN-eth1
+2018-10-28 13:48:32 <TRACE> ospf1: HELLO packet sent via CARN-eth0
+2018-10-28 13:48:32 <TRACE> ospf1: HELLO packet sent via CARN-lan1
+2018-10-28 13:48:32 <TRACE> ospf1: HELLO packet sent via CARN-lan0
+2018-10-28 13:48:32 <TRACE> device1: Scanning interfaces
+2018-10-28 13:48:32 <TRACE> kernel1: Scanning routing table
+2018-10-28 13:48:32 <TRACE> kernel1: fd00:200:4:a20::/64: seen
+2018-10-28 13:48:32 <TRACE> kernel1: fd00:200:4:a60::/64: seen
+2018-10-28 13:48:32 <TRACE> kernel1: fd00:200:4:b30::/64: seen
+2018-10-28 13:48:32 <TRACE> kernel1: fd00:200:4:b40::/64: seen
+2018-10-28 13:48:32 <TRACE> kernel1: fd00:200:4:e31::/64: seen
+2018-10-28 13:48:32 <TRACE> kernel1: fd00:200:4:f24::/64: seen
+2018-10-28 13:48:32 <TRACE> kernel1: fd00:200:4:f25::/64: seen
+2018-10-28 13:48:32 <TRACE> kernel1: fd00:200:4:f53::/64: seen
+2018-10-28 13:48:32 <TRACE> kernel1: fd00:200:4:f64::/64: seen
+2018-10-28 13:48:32 <TRACE> kernel1: fd00:300:4:a20::/64: seen
+2018-10-28 13:48:32 <TRACE> kernel1: fd00:300:4:a60::/64: seen
+2018-10-28 13:48:32 <TRACE> kernel1: fd00:300:4:b30::/64: seen
+2018-10-28 13:48:32 <TRACE> kernel1: fd00:300:4:b40::/64: seen
+2018-10-28 13:48:32 <TRACE> kernel1: fd00:300:4:e31::/64: seen
+2018-10-28 13:48:32 <TRACE> kernel1: fd00:300:4:e33::/64: seen
+2018-10-28 13:48:32 <TRACE> kernel1: fd00:300:4:f00::1/128: seen
+2018-10-28 13:48:32 <TRACE> kernel1: fd00:300:4:f00::2/128: seen
+2018-10-28 13:48:32 <TRACE> kernel1: fd00:300:4:f00::3/128: seen
+2018-10-28 13:48:32 <TRACE> kernel1: fd00:300:4:f00::4/128: seen
+2018-10-28 13:48:32 <TRACE> kernel1: fd00:300:4:f00::5/128: seen
+2018-10-28 13:48:32 <TRACE> kernel1: fd00:300:4:f00::6/128: seen
+2018-10-28 13:48:32 <TRACE> kernel1: fd00:300:4:f24::/64: seen
+2018-10-28 13:48:32 <TRACE> kernel1: fd00:300:4:f25::/64: seen
+2018-10-28 13:48:32 <TRACE> kernel1: fd00:300:4:f53::/64: seen
+2018-10-28 13:48:32 <TRACE> kernel1: fd00:300:4:f64::/64: seen
+2018-10-28 13:48:32 <TRACE> kernel1: ::/0: seen
+2018-10-28 13:48:32 <TRACE> kernel1: Pruning table master
+2018-10-28 13:48:32 <TRACE> kernel1: Pruning inherited routes
+2018-10-28 13:48:32 <TRACE> ospf1: HELLO packet received from fe80::f0c6:9eff:fe7e:8ae7 via CARN-eth0
+2018-10-28 13:48:32 <TRACE> ospf1: HELLO packet received from fe80::3467:a3ff:fe7f:3cea via CARN-eth1
+2018-10-28 13:48:32 <TRACE> ospf1: HELLO packet received from fe80::5c64:f7ff:fe1e:abe1 via CARN-eth2
+2018-10-28 13:48:32 <TRACE> ospf1: HELLO packet received from fe80::3467:a3ff:fe7f:3cea via CARN-eth1
+2018-10-28 13:48:32 <TRACE> ospf1: HELLO packet received from fe80::f0c6:9eff:fe7e:8ae7 via CARN-eth0
+2018-10-28 13:48:33 <TRACE> ospf1: HELLO packet sent via CARN-lan0
+2018-10-28 13:48:33 <TRACE> ospf1: HELLO packet sent via CARN-lan1
+2018-10-28 13:48:33 <TRACE> ospf1: HELLO packet sent via CARN-eth0
+2018-10-28 13:48:33 <TRACE> ospf1: HELLO packet sent via CARN-eth1
+2018-10-28 13:48:33 <TRACE> ospf1: HELLO packet sent via CARN-eth2
+2018-10-28 13:48:34 <TRACE> ospf1: HELLO packet sent via CARN-eth2
+2018-10-28 13:48:34 <TRACE> ospf1: HELLO packet sent via CARN-eth1
+2018-10-28 13:48:34 <TRACE> ospf1: HELLO packet sent via CARN-eth0
+2018-10-28 13:48:34 <TRACE> ospf1: HELLO packet sent via CARN-lan1
+2018-10-28 13:48:34 <TRACE> ospf1: HELLO packet sent via CARN-lan0
+2018-10-28 13:48:34 <TRACE> ospf1: HELLO packet received from fe80::5c64:f7ff:fe1e:abe1 via CARN-eth2
+2018-10-28 13:48:34 <TRACE> ospf1: HELLO packet received from fe80::f0c6:9eff:fe7e:8ae7 via CARN-eth0
+2018-10-28 13:48:34 <TRACE> ospf1: HELLO packet received from fe80::3467:a3ff:fe7f:3cea via CARN-eth1
+2018-10-28 13:48:34 <TRACE> ospf1: HELLO packet received from fe80::5c64:f7ff:fe1e:abe1 via CARN-eth2
+2018-10-28 13:48:35 <TRACE> ospf1: HELLO packet sent via CARN-lan0
+2018-10-28 13:48:35 <TRACE> ospf1: HELLO packet sent via CARN-lan1
+2018-10-28 13:48:35 <TRACE> ospf1: HELLO packet sent via CARN-eth0
+2018-10-28 13:48:35 <TRACE> ospf1: HELLO packet sent via CARN-eth1
+2018-10-28 13:48:35 <TRACE> ospf1: HELLO packet sent via CARN-eth2
+2018-10-28 13:48:35 <TRACE> ospf1: HELLO packet received from fe80::f0c6:9eff:fe7e:8ae7 via CARN-eth0
+2018-10-28 13:48:35 <TRACE> ospf1: HELLO packet received from fe80::3467:a3ff:fe7f:3cea via CARN-eth1
+2018-10-28 13:48:36 <TRACE> ospf1: HELLO packet sent via CARN-eth2
+2018-10-28 13:48:36 <TRACE> ospf1: HELLO packet sent via CARN-eth1
+2018-10-28 13:48:36 <TRACE> ospf1: HELLO packet sent via CARN-eth0
+2018-10-28 13:48:36 <TRACE> ospf1: HELLO packet sent via CARN-lan1
+2018-10-28 13:48:36 <TRACE> ospf1: HELLO packet sent via CARN-lan0
+2018-10-28 13:48:36 <TRACE> ospf1: HELLO packet received from fe80::5c64:f7ff:fe1e:abe1 via CARN-eth2
+2018-10-28 13:48:36 <TRACE> ospf1: HELLO packet received from fe80::3467:a3ff:fe7f:3cea via CARN-eth1
+2018-10-28 13:48:36 <TRACE> ospf1: HELLO packet received from fe80::f0c6:9eff:fe7e:8ae7 via CARN-eth0
+2018-10-28 13:48:36 <TRACE> ospf1: HELLO packet received from fe80::5c64:f7ff:fe1e:abe1 via CARN-eth2
+2018-10-28 13:48:37 <TRACE> ospf1: HELLO packet sent via CARN-lan0
+2018-10-28 13:48:37 <TRACE> ospf1: HELLO packet sent via CARN-lan1
+2018-10-28 13:48:37 <TRACE> ospf1: HELLO packet sent via CARN-eth0
+2018-10-28 13:48:37 <TRACE> ospf1: HELLO packet sent via CARN-eth1
+2018-10-28 13:48:37 <TRACE> ospf1: HELLO packet sent via CARN-eth2
+2018-10-28 13:48:37 <TRACE> ospf1: HELLO packet received from fe80::3467:a3ff:fe7f:3cea via CARN-eth1
+2018-10-28 13:48:37 <TRACE> ospf1: HELLO packet received from fe80::f0c6:9eff:fe7e:8ae7 via CARN-eth0
+2018-10-28 13:48:37 <TRACE> ospf1: HELLO packet received from fe80::5c64:f7ff:fe1e:abe1 via CARN-eth2
+2018-10-28 13:48:37 <TRACE> ospf1: HELLO packet received from fe80::3467:a3ff:fe7f:3cea via CARN-eth1
+2018-10-28 13:48:37 <TRACE> ospf1: HELLO packet received from fe80::f0c6:9eff:fe7e:8ae7 via CARN-eth0
+2018-10-28 13:48:38 <TRACE> ospf1: HELLO packet sent via CARN-eth2
+2018-10-28 13:48:38 <TRACE> ospf1: HELLO packet sent via CARN-eth1
+2018-10-28 13:48:38 <TRACE> ospf1: HELLO packet sent via CARN-eth0
+2018-10-28 13:48:38 <TRACE> ospf1: HELLO packet sent via CARN-lan1
+2018-10-28 13:48:38 <TRACE> ospf1: HELLO packet sent via CARN-lan0
+2018-10-28 13:48:39 <TRACE> ospf1: HELLO packet sent via CARN-lan0
+2018-10-28 13:48:39 <TRACE> ospf1: HELLO packet sent via CARN-lan1
+2018-10-28 13:48:39 <TRACE> ospf1: HELLO packet sent via CARN-eth0
+2018-10-28 13:48:39 <TRACE> ospf1: HELLO packet sent via CARN-eth1
+2018-10-28 13:48:39 <TRACE> ospf1: HELLO packet sent via CARN-eth2
+2018-10-28 13:48:39 <TRACE> ospf1: HELLO packet received from fe80::5c64:f7ff:fe1e:abe1 via CARN-eth2
+2018-10-28 13:48:39 <TRACE> ospf1: HELLO packet received from fe80::3467:a3ff:fe7f:3cea via CARN-eth1
+2018-10-28 13:48:39 <TRACE> ospf1: HELLO packet received from fe80::f0c6:9eff:fe7e:8ae7 via CARN-eth0
+2018-10-28 13:48:39 <TRACE> ospf1: HELLO packet received from fe80::5c64:f7ff:fe1e:abe1 via CARN-eth2
+2018-10-28 13:48:39 <TRACE> ospf1: HELLO packet received from fe80::f0c6:9eff:fe7e:8ae7 via CARN-eth0
+2018-10-28 13:48:40 <TRACE> ospf1: HELLO packet sent via CARN-eth2
+2018-10-28 13:48:40 <TRACE> ospf1: HELLO packet sent via CARN-eth1
+2018-10-28 13:48:40 <TRACE> ospf1: HELLO packet sent via CARN-eth0
+2018-10-28 13:48:40 <TRACE> ospf1: HELLO packet sent via CARN-lan1
+2018-10-28 13:48:40 <TRACE> ospf1: HELLO packet sent via CARN-lan0
+2018-10-28 13:48:40 <TRACE> ospf1: HELLO packet received from fe80::3467:a3ff:fe7f:3cea via CARN-eth1
+2018-10-28 13:48:40 <TRACE> ospf1: HELLO packet received from fe80::f0c6:9eff:fe7e:8ae7 via CARN-eth0
+2018-10-28 13:48:41 <TRACE> ospf1: HELLO packet sent via CARN-lan0
+2018-10-28 13:48:41 <TRACE> ospf1: HELLO packet sent via CARN-lan1
+2018-10-28 13:48:41 <TRACE> ospf1: HELLO packet sent via CARN-eth0
+2018-10-28 13:48:41 <TRACE> ospf1: HELLO packet sent via CARN-eth1
+2018-10-28 13:48:41 <TRACE> ospf1: HELLO packet sent via CARN-eth2
+2018-10-28 13:48:41 <TRACE> ospf1: HELLO packet received from fe80::5c64:f7ff:fe1e:abe1 via CARN-eth2
+2018-10-28 13:48:41 <TRACE> ospf1: HELLO packet received from fe80::3467:a3ff:fe7f:3cea via CARN-eth1
+2018-10-28 13:48:41 <TRACE> ospf1: HELLO packet received from fe80::f0c6:9eff:fe7e:8ae7 via CARN-eth0
+2018-10-28 13:48:42 <TRACE> ospf1: HELLO packet sent via CARN-eth2
+2018-10-28 13:48:42 <TRACE> ospf1: HELLO packet sent via CARN-eth1
+2018-10-28 13:48:42 <TRACE> ospf1: HELLO packet sent via CARN-eth0
+2018-10-28 13:48:42 <TRACE> ospf1: HELLO packet sent via CARN-lan1
+2018-10-28 13:48:42 <TRACE> ospf1: HELLO packet sent via CARN-lan0
+2018-10-28 13:48:42 <TRACE> device1: Scanning interfaces
+2018-10-28 13:48:42 <TRACE> ospf1: HELLO packet received from fe80::5c64:f7ff:fe1e:abe1 via CARN-eth2
+2018-10-28 13:48:42 <TRACE> ospf1: HELLO packet received from fe80::3467:a3ff:fe7f:3cea via CARN-eth1
+2018-10-28 13:48:42 <TRACE> ospf1: HELLO packet received from fe80::5c64:f7ff:fe1e:abe1 via CARN-eth2
+2018-10-28 13:48:42 <TRACE> ospf1: HELLO packet received from fe80::3467:a3ff:fe7f:3cea via CARN-eth1
+2018-10-28 13:48:43 <TRACE> ospf1: HELLO packet sent via CARN-lan0
+2018-10-28 13:48:43 <TRACE> ospf1: HELLO packet sent via CARN-lan1
+2018-10-28 13:48:43 <TRACE> ospf1: HELLO packet sent via CARN-eth0
+2018-10-28 13:48:43 <TRACE> ospf1: HELLO packet sent via CARN-eth1
+2018-10-28 13:48:43 <TRACE> ospf1: HELLO packet sent via CARN-eth2
+2018-10-28 13:48:43 <TRACE> ospf1: HELLO packet received from fe80::f0c6:9eff:fe7e:8ae7 via CARN-eth0
+2018-10-28 13:48:43 <TRACE> ospf1: HELLO packet received from fe80::f0c6:9eff:fe7e:8ae7 via CARN-eth0
+2018-10-28 13:48:44 <TRACE> ospf1: HELLO packet sent via CARN-eth2
+2018-10-28 13:48:44 <TRACE> ospf1: HELLO packet sent via CARN-eth1
+2018-10-28 13:48:44 <TRACE> ospf1: HELLO packet sent via CARN-eth0
+2018-10-28 13:48:44 <TRACE> ospf1: HELLO packet sent via CARN-lan1
+2018-10-28 13:48:44 <TRACE> ospf1: HELLO packet sent via CARN-lan0
+2018-10-28 13:48:44 <TRACE> ospf1: HELLO packet received from fe80::5c64:f7ff:fe1e:abe1 via CARN-eth2
+2018-10-28 13:48:44 <TRACE> ospf1: HELLO packet received from fe80::3467:a3ff:fe7f:3cea via CARN-eth1
+2018-10-28 13:48:44 <TRACE> ospf1: HELLO packet received from fe80::5c64:f7ff:fe1e:abe1 via CARN-eth2
+2018-10-28 13:48:44 <TRACE> ospf1: HELLO packet received from fe80::3467:a3ff:fe7f:3cea via CARN-eth1
+2018-10-28 13:48:44 <TRACE> ospf1: HELLO packet received from fe80::f0c6:9eff:fe7e:8ae7 via CARN-eth0
+2018-10-28 13:48:45 <TRACE> ospf1: HELLO packet sent via CARN-lan0
+2018-10-28 13:48:45 <TRACE> ospf1: HELLO packet sent via CARN-lan1
+2018-10-28 13:48:45 <TRACE> ospf1: HELLO packet sent via CARN-eth0
+2018-10-28 13:48:45 <TRACE> ospf1: HELLO packet sent via CARN-eth1
+2018-10-28 13:48:45 <TRACE> ospf1: HELLO packet sent via CARN-eth2
+2018-10-28 13:48:46 <TRACE> ospf1: HELLO packet sent via CARN-eth2
+2018-10-28 13:48:46 <TRACE> ospf1: HELLO packet sent via CARN-eth1
+2018-10-28 13:48:46 <TRACE> ospf1: HELLO packet sent via CARN-eth0
+2018-10-28 13:48:46 <TRACE> ospf1: HELLO packet sent via CARN-lan1
+2018-10-28 13:48:46 <TRACE> ospf1: HELLO packet sent via CARN-lan0
+2018-10-28 13:48:46 <TRACE> ospf1: HELLO packet received from fe80::5c64:f7ff:fe1e:abe1 via CARN-eth2
+2018-10-28 13:48:46 <TRACE> ospf1: HELLO packet received from fe80::3467:a3ff:fe7f:3cea via CARN-eth1
+2018-10-28 13:48:46 <TRACE> ospf1: HELLO packet received from fe80::f0c6:9eff:fe7e:8ae7 via CARN-eth0
+2018-10-28 13:48:46 <TRACE> ospf1: HELLO packet received from fe80::5c64:f7ff:fe1e:abe1 via CARN-eth2
+2018-10-28 13:48:47 <TRACE> ospf1: HELLO packet sent via CARN-lan0
+2018-10-28 13:48:47 <TRACE> ospf1: HELLO packet sent via CARN-lan1
+2018-10-28 13:48:47 <TRACE> ospf1: HELLO packet sent via CARN-eth0
+2018-10-28 13:48:47 <TRACE> ospf1: HELLO packet sent via CARN-eth1
+2018-10-28 13:48:47 <TRACE> ospf1: HELLO packet sent via CARN-eth2
+2018-10-28 13:48:47 <TRACE> ospf1: HELLO packet received from fe80::3467:a3ff:fe7f:3cea via CARN-eth1
+2018-10-28 13:48:47 <TRACE> ospf1: HELLO packet received from fe80::f0c6:9eff:fe7e:8ae7 via CARN-eth0
+2018-10-28 13:48:47 <TRACE> ospf1: HELLO packet received from fe80::5c64:f7ff:fe1e:abe1 via CARN-eth2
+2018-10-28 13:48:47 <TRACE> ospf1: HELLO packet received from fe80::3467:a3ff:fe7f:3cea via CARN-eth1
+2018-10-28 13:48:48 <TRACE> ospf1: HELLO packet sent via CARN-eth2
+2018-10-28 13:48:48 <TRACE> ospf1: HELLO packet sent via CARN-eth1
+2018-10-28 13:48:48 <TRACE> ospf1: HELLO packet sent via CARN-eth0
+2018-10-28 13:48:48 <TRACE> ospf1: HELLO packet sent via CARN-lan1
+2018-10-28 13:48:48 <TRACE> ospf1: HELLO packet sent via CARN-lan0
+2018-10-28 13:48:48 <TRACE> ospf1: HELLO packet received from fe80::f0c6:9eff:fe7e:8ae7 via CARN-eth0
+2018-10-28 13:48:48 <TRACE> ospf1: HELLO packet received from fe80::5c64:f7ff:fe1e:abe1 via CARN-eth2
+2018-10-28 13:48:48 <TRACE> ospf1: HELLO packet received from fe80::f0c6:9eff:fe7e:8ae7 via CARN-eth0
+2018-10-28 13:48:49 <TRACE> ospf1: HELLO packet sent via CARN-lan0
+2018-10-28 13:48:49 <TRACE> ospf1: HELLO packet sent via CARN-lan1
+2018-10-28 13:48:49 <TRACE> ospf1: HELLO packet sent via CARN-eth0
+2018-10-28 13:48:49 <TRACE> ospf1: HELLO packet sent via CARN-eth1
+2018-10-28 13:48:49 <TRACE> ospf1: HELLO packet sent via CARN-eth2
+2018-10-28 13:48:49 <TRACE> ospf1: HELLO packet received from fe80::3467:a3ff:fe7f:3cea via CARN-eth1
+2018-10-28 13:48:49 <TRACE> ospf1: HELLO packet received from fe80::5c64:f7ff:fe1e:abe1 via CARN-eth2
+2018-10-28 13:48:49 <TRACE> ospf1: HELLO packet received from fe80::f0c6:9eff:fe7e:8ae7 via CARN-eth0
+2018-10-28 13:48:50 <TRACE> ospf1: HELLO packet sent via CARN-eth2
+2018-10-28 13:48:50 <TRACE> ospf1: HELLO packet sent via CARN-eth1
+2018-10-28 13:48:50 <TRACE> ospf1: HELLO packet sent via CARN-eth0
+2018-10-28 13:48:50 <TRACE> ospf1: HELLO packet sent via CARN-lan1
+2018-10-28 13:48:50 <TRACE> ospf1: HELLO packet sent via CARN-lan0
+2018-10-28 13:48:50 <TRACE> ospf1: HELLO packet received from fe80::3467:a3ff:fe7f:3cea via CARN-eth1
+2018-10-28 13:48:50 <TRACE> ospf1: HELLO packet received from fe80::5c64:f7ff:fe1e:abe1 via CARN-eth2
+2018-10-28 13:48:51 <TRACE> ospf1: HELLO packet sent via CARN-lan0
+2018-10-28 13:48:51 <TRACE> ospf1: HELLO packet sent via CARN-lan1
+2018-10-28 13:48:51 <TRACE> ospf1: HELLO packet sent via CARN-eth0
+2018-10-28 13:48:51 <TRACE> ospf1: HELLO packet sent via CARN-eth1
+2018-10-28 13:48:51 <TRACE> ospf1: HELLO packet sent via CARN-eth2
+2018-10-28 13:48:51 <TRACE> ospf1: HELLO packet received from fe80::f0c6:9eff:fe7e:8ae7 via CARN-eth0
+2018-10-28 13:48:51 <TRACE> ospf1: HELLO packet received from fe80::3467:a3ff:fe7f:3cea via CARN-eth1
+2018-10-28 13:48:51 <TRACE> ospf1: HELLO packet received from fe80::f0c6:9eff:fe7e:8ae7 via CARN-eth0
+2018-10-28 13:48:52 <TRACE> ospf1: HELLO packet sent via CARN-eth2
+2018-10-28 13:48:52 <TRACE> ospf1: HELLO packet sent via CARN-eth1
+2018-10-28 13:48:52 <TRACE> ospf1: HELLO packet sent via CARN-eth0
+2018-10-28 13:48:52 <TRACE> ospf1: HELLO packet sent via CARN-lan1
+2018-10-28 13:48:52 <TRACE> ospf1: HELLO packet sent via CARN-lan0
+2018-10-28 13:48:52 <TRACE> device1: Scanning interfaces
+2018-10-28 13:48:52 <TRACE> kernel1: Scanning routing table
+2018-10-28 13:48:52 <TRACE> kernel1: fd00:200:4:a20::/64: seen
+2018-10-28 13:48:52 <TRACE> kernel1: fd00:200:4:a60::/64: seen
+2018-10-28 13:48:52 <TRACE> kernel1: fd00:200:4:b30::/64: seen
+2018-10-28 13:48:52 <TRACE> kernel1: fd00:200:4:b40::/64: seen
+2018-10-28 13:48:52 <TRACE> kernel1: fd00:200:4:e31::/64: seen
+2018-10-28 13:48:52 <TRACE> kernel1: fd00:200:4:f24::/64: seen
+2018-10-28 13:48:52 <TRACE> kernel1: fd00:200:4:f25::/64: seen
+2018-10-28 13:48:52 <TRACE> kernel1: fd00:200:4:f53::/64: seen
+2018-10-28 13:48:52 <TRACE> kernel1: fd00:200:4:f64::/64: seen
+2018-10-28 13:48:52 <TRACE> kernel1: fd00:300:4:a20::/64: seen
+2018-10-28 13:48:52 <TRACE> kernel1: fd00:300:4:a60::/64: seen
+2018-10-28 13:48:52 <TRACE> kernel1: fd00:300:4:b30::/64: seen
+2018-10-28 13:48:52 <TRACE> kernel1: fd00:300:4:b40::/64: seen
+2018-10-28 13:48:52 <TRACE> kernel1: fd00:300:4:e31::/64: seen
+2018-10-28 13:48:52 <TRACE> kernel1: fd00:300:4:e33::/64: seen
+2018-10-28 13:48:52 <TRACE> kernel1: fd00:300:4:f00::1/128: seen
+2018-10-28 13:48:52 <TRACE> kernel1: fd00:300:4:f00::2/128: seen
+2018-10-28 13:48:52 <TRACE> kernel1: fd00:300:4:f00::3/128: seen
+2018-10-28 13:48:52 <TRACE> kernel1: fd00:300:4:f00::4/128: seen
+2018-10-28 13:48:52 <TRACE> kernel1: fd00:300:4:f00::5/128: seen
+2018-10-28 13:48:52 <TRACE> kernel1: fd00:300:4:f00::6/128: seen
+2018-10-28 13:48:52 <TRACE> kernel1: fd00:300:4:f24::/64: seen
+2018-10-28 13:48:52 <TRACE> kernel1: fd00:300:4:f25::/64: seen
+2018-10-28 13:48:52 <TRACE> kernel1: fd00:300:4:f53::/64: seen
+2018-10-28 13:48:52 <TRACE> kernel1: fd00:300:4:f64::/64: seen
+2018-10-28 13:48:52 <TRACE> kernel1: ::/0: seen
+2018-10-28 13:48:52 <TRACE> kernel1: Pruning table master
+2018-10-28 13:48:52 <TRACE> kernel1: Pruning inherited routes
+2018-10-28 13:48:52 <TRACE> ospf1: HELLO packet received from fe80::5c64:f7ff:fe1e:abe1 via CARN-eth2
+2018-10-28 13:48:52 <TRACE> ospf1: HELLO packet received from fe80::3467:a3ff:fe7f:3cea via CARN-eth1
+2018-10-28 13:48:52 <TRACE> ospf1: HELLO packet received from fe80::5c64:f7ff:fe1e:abe1 via CARN-eth2
+2018-10-28 13:48:52 <TRACE> ospf1: HELLO packet received from fe80::f0c6:9eff:fe7e:8ae7 via CARN-eth0
+2018-10-28 13:48:53 <TRACE> ospf1: HELLO packet sent via CARN-lan0
+2018-10-28 13:48:53 <TRACE> ospf1: HELLO packet sent via CARN-lan1
+2018-10-28 13:48:53 <TRACE> ospf1: HELLO packet sent via CARN-eth0
+2018-10-28 13:48:53 <TRACE> ospf1: HELLO packet sent via CARN-eth1
+2018-10-28 13:48:53 <TRACE> ospf1: HELLO packet sent via CARN-eth2
+2018-10-28 13:48:53 <TRACE> ospf1: HELLO packet received from fe80::3467:a3ff:fe7f:3cea via CARN-eth1
+2018-10-28 13:48:53 <TRACE> ospf1: HELLO packet received from fe80::5c64:f7ff:fe1e:abe1 via CARN-eth2
+2018-10-28 13:48:53 <TRACE> ospf1: HELLO packet received from fe80::3467:a3ff:fe7f:3cea via CARN-eth1
+2018-10-28 13:48:53 <TRACE> ospf1: HELLO packet received from fe80::f0c6:9eff:fe7e:8ae7 via CARN-eth0
+2018-10-28 13:48:54 <TRACE> ospf1: HELLO packet sent via CARN-eth2
+2018-10-28 13:48:54 <TRACE> ospf1: HELLO packet sent via CARN-eth1
+2018-10-28 13:48:54 <TRACE> ospf1: HELLO packet sent via CARN-eth0
+2018-10-28 13:48:54 <TRACE> ospf1: HELLO packet sent via CARN-lan1
+2018-10-28 13:48:54 <TRACE> ospf1: HELLO packet sent via CARN-lan0
+2018-10-28 13:48:55 <TRACE> ospf1: HELLO packet sent via CARN-lan0
+2018-10-28 13:48:55 <TRACE> ospf1: HELLO packet sent via CARN-lan1
+2018-10-28 13:48:55 <TRACE> ospf1: HELLO packet sent via CARN-eth0
+2018-10-28 13:48:55 <TRACE> ospf1: HELLO packet sent via CARN-eth1
+2018-10-28 13:48:55 <TRACE> ospf1: HELLO packet sent via CARN-eth2
+2018-10-28 13:48:55 <TRACE> ospf1: HELLO packet received from fe80::f0c6:9eff:fe7e:8ae7 via CARN-eth0
+2018-10-28 13:48:55 <TRACE> ospf1: HELLO packet received from fe80::3467:a3ff:fe7f:3cea via CARN-eth1
+2018-10-28 13:48:55 <TRACE> ospf1: HELLO packet received from fe80::5c64:f7ff:fe1e:abe1 via CARN-eth2
+2018-10-28 13:48:56 <TRACE> ospf1: HELLO packet sent via CARN-eth2
+2018-10-28 13:48:56 <TRACE> ospf1: HELLO packet sent via CARN-eth1
+2018-10-28 13:48:56 <TRACE> ospf1: HELLO packet sent via CARN-eth0
+2018-10-28 13:48:56 <TRACE> ospf1: HELLO packet sent via CARN-lan1
+2018-10-28 13:48:56 <TRACE> ospf1: HELLO packet sent via CARN-lan0
+2018-10-28 13:48:56 <TRACE> ospf1: HELLO packet received from fe80::5c64:f7ff:fe1e:abe1 via CARN-eth2
+2018-10-28 13:48:56 <TRACE> ospf1: HELLO packet received from fe80::3467:a3ff:fe7f:3cea via CARN-eth1
+2018-10-28 13:48:56 <TRACE> ospf1: HELLO packet received from fe80::f0c6:9eff:fe7e:8ae7 via CARN-eth0
+2018-10-28 13:48:56 <TRACE> ospf1: HELLO packet received from fe80::5c64:f7ff:fe1e:abe1 via CARN-eth2
+2018-10-28 13:48:56 <TRACE> ospf1: HELLO packet received from fe80::3467:a3ff:fe7f:3cea via CARN-eth1
+2018-10-28 13:48:56 <TRACE> ospf1: HELLO packet received from fe80::f0c6:9eff:fe7e:8ae7 via CARN-eth0
+2018-10-28 13:48:57 <TRACE> ospf1: HELLO packet sent via CARN-lan0
+2018-10-28 13:48:57 <TRACE> ospf1: HELLO packet sent via CARN-lan1
+2018-10-28 13:48:57 <TRACE> ospf1: HELLO packet sent via CARN-eth0
+2018-10-28 13:48:57 <TRACE> ospf1: HELLO packet sent via CARN-eth1
+2018-10-28 13:48:57 <TRACE> ospf1: HELLO packet sent via CARN-eth2
+2018-10-28 13:48:58 <TRACE> ospf1: HELLO packet sent via CARN-eth2
+2018-10-28 13:48:58 <TRACE> ospf1: HELLO packet sent via CARN-eth1
+2018-10-28 13:48:58 <TRACE> ospf1: HELLO packet sent via CARN-eth0
+2018-10-28 13:48:58 <TRACE> ospf1: HELLO packet sent via CARN-lan1
+2018-10-28 13:48:58 <TRACE> ospf1: HELLO packet sent via CARN-lan0
+2018-10-28 13:48:58 <TRACE> ospf1: HELLO packet received from fe80::5c64:f7ff:fe1e:abe1 via CARN-eth2
+2018-10-28 13:48:58 <TRACE> ospf1: HELLO packet received from fe80::3467:a3ff:fe7f:3cea via CARN-eth1
+2018-10-28 13:48:58 <TRACE> ospf1: HELLO packet received from fe80::f0c6:9eff:fe7e:8ae7 via CARN-eth0
+2018-10-28 13:48:58 <TRACE> ospf1: HELLO packet received from fe80::5c64:f7ff:fe1e:abe1 via CARN-eth2
+2018-10-28 13:48:59 <TRACE> ospf1: HELLO packet sent via CARN-lan0
+2018-10-28 13:48:59 <TRACE> ospf1: HELLO packet sent via CARN-lan1
+2018-10-28 13:48:59 <TRACE> ospf1: HELLO packet sent via CARN-eth0
+2018-10-28 13:48:59 <TRACE> ospf1: HELLO packet sent via CARN-eth1
+2018-10-28 13:48:59 <TRACE> ospf1: HELLO packet sent via CARN-eth2
+2018-10-28 13:48:59 <TRACE> ospf1: HELLO packet received from fe80::3467:a3ff:fe7f:3cea via CARN-eth1
+2018-10-28 13:48:59 <TRACE> ospf1: HELLO packet received from fe80::f0c6:9eff:fe7e:8ae7 via CARN-eth0
+2018-10-28 13:48:59 <TRACE> ospf1: HELLO packet received from fe80::5c64:f7ff:fe1e:abe1 via CARN-eth2
+2018-10-28 13:48:59 <TRACE> ospf1: HELLO packet received from fe80::f0c6:9eff:fe7e:8ae7 via CARN-eth0
+2018-10-28 13:49:00 <TRACE> ospf1: HELLO packet sent via CARN-eth2
+2018-10-28 13:49:00 <TRACE> ospf1: HELLO packet sent via CARN-eth1
+2018-10-28 13:49:00 <TRACE> ospf1: HELLO packet sent via CARN-eth0
+2018-10-28 13:49:00 <TRACE> ospf1: HELLO packet sent via CARN-lan1
+2018-10-28 13:49:00 <TRACE> ospf1: HELLO packet sent via CARN-lan0
+2018-10-28 13:49:00 <TRACE> ospf1: HELLO packet received from fe80::3467:a3ff:fe7f:3cea via CARN-eth1
+2018-10-28 13:49:01 <TRACE> ospf1: HELLO packet sent via CARN-lan0
+2018-10-28 13:49:01 <TRACE> ospf1: HELLO packet sent via CARN-lan1
+2018-10-28 13:49:01 <TRACE> ospf1: HELLO packet sent via CARN-eth0
+2018-10-28 13:49:01 <TRACE> ospf1: HELLO packet sent via CARN-eth1
+2018-10-28 13:49:01 <TRACE> ospf1: HELLO packet sent via CARN-eth2
+2018-10-28 13:49:01 <TRACE> ospf1: HELLO packet received from fe80::5c64:f7ff:fe1e:abe1 via CARN-eth2
+2018-10-28 13:49:01 <TRACE> ospf1: HELLO packet received from fe80::3467:a3ff:fe7f:3cea via CARN-eth1
+2018-10-28 13:49:01 <TRACE> ospf1: HELLO packet received from fe80::f0c6:9eff:fe7e:8ae7 via CARN-eth0
+2018-10-28 13:49:01 <TRACE> ospf1: HELLO packet received from fe80::5c64:f7ff:fe1e:abe1 via CARN-eth2
+2018-10-28 13:49:01 <TRACE> ospf1: HELLO packet received from fe80::3467:a3ff:fe7f:3cea via CARN-eth1
+2018-10-28 13:49:02 <TRACE> ospf1: HELLO packet sent via CARN-eth2
+2018-10-28 13:49:02 <TRACE> ospf1: HELLO packet sent via CARN-eth1
+2018-10-28 13:49:02 <TRACE> ospf1: HELLO packet sent via CARN-eth0
+2018-10-28 13:49:02 <TRACE> ospf1: HELLO packet sent via CARN-lan1
+2018-10-28 13:49:02 <TRACE> ospf1: HELLO packet sent via CARN-lan0
+2018-10-28 13:49:02 <TRACE> device1: Scanning interfaces
+2018-10-28 13:49:02 <TRACE> ospf1: HELLO packet received from fe80::f0c6:9eff:fe7e:8ae7 via CARN-eth0
+2018-10-28 13:49:02 <TRACE> ospf1: HELLO packet received from fe80::5c64:f7ff:fe1e:abe1 via CARN-eth2
+2018-10-28 13:49:02 <TRACE> ospf1: HELLO packet received from fe80::f0c6:9eff:fe7e:8ae7 via CARN-eth0
+2018-10-28 13:49:03 <TRACE> ospf1: HELLO packet sent via CARN-lan0
+2018-10-28 13:49:03 <TRACE> ospf1: HELLO packet sent via CARN-lan1
+2018-10-28 13:49:03 <TRACE> ospf1: HELLO packet sent via CARN-eth0
+2018-10-28 13:49:03 <TRACE> ospf1: HELLO packet sent via CARN-eth1
+2018-10-28 13:49:03 <TRACE> ospf1: HELLO packet sent via CARN-eth2
+2018-10-28 13:49:03 <TRACE> ospf1: HELLO packet received from fe80::3467:a3ff:fe7f:3cea via CARN-eth1
+2018-10-28 13:49:03 <TRACE> ospf1: HELLO packet received from fe80::5c64:f7ff:fe1e:abe1 via CARN-eth2
+2018-10-28 13:49:03 <TRACE> ospf1: HELLO packet received from fe80::3467:a3ff:fe7f:3cea via CARN-eth1
+2018-10-28 13:49:03 <TRACE> ospf1: HELLO packet received from fe80::f0c6:9eff:fe7e:8ae7 via CARN-eth0
+2018-10-28 13:49:04 <TRACE> ospf1: HELLO packet sent via CARN-eth2
+2018-10-28 13:49:04 <TRACE> ospf1: HELLO packet sent via CARN-eth1
+2018-10-28 13:49:04 <TRACE> ospf1: HELLO packet sent via CARN-eth0
+2018-10-28 13:49:04 <TRACE> ospf1: HELLO packet sent via CARN-lan1
+2018-10-28 13:49:04 <TRACE> ospf1: HELLO packet sent via CARN-lan0
+2018-10-28 13:49:04 <TRACE> ospf1: HELLO packet received from fe80::5c64:f7ff:fe1e:abe1 via CARN-eth2
+2018-10-28 13:49:05 <TRACE> ospf1: HELLO packet sent via CARN-lan0
+2018-10-28 13:49:05 <TRACE> ospf1: HELLO packet sent via CARN-lan1
+2018-10-28 13:49:05 <TRACE> ospf1: HELLO packet sent via CARN-eth0
+2018-10-28 13:49:05 <TRACE> ospf1: HELLO packet sent via CARN-eth1
+2018-10-28 13:49:05 <TRACE> ospf1: HELLO packet sent via CARN-eth2
+2018-10-28 13:49:05 <TRACE> ospf1: HELLO packet received from fe80::3467:a3ff:fe7f:3cea via CARN-eth1
+2018-10-28 13:49:05 <TRACE> ospf1: HELLO packet received from fe80::f0c6:9eff:fe7e:8ae7 via CARN-eth0
+2018-10-28 13:49:05 <TRACE> ospf1: HELLO packet received from fe80::5c64:f7ff:fe1e:abe1 via CARN-eth2
+2018-10-28 13:49:06 <TRACE> ospf1: HELLO packet sent via CARN-eth2
+2018-10-28 13:49:06 <TRACE> ospf1: HELLO packet sent via CARN-eth1
+2018-10-28 13:49:06 <TRACE> ospf1: HELLO packet sent via CARN-eth0
+2018-10-28 13:49:06 <TRACE> ospf1: HELLO packet sent via CARN-lan1
+2018-10-28 13:49:06 <TRACE> ospf1: HELLO packet sent via CARN-lan0
+2018-10-28 13:49:06 <TRACE> ospf1: HELLO packet received from fe80::3467:a3ff:fe7f:3cea via CARN-eth1
+2018-10-28 13:49:06 <TRACE> ospf1: HELLO packet received from fe80::f0c6:9eff:fe7e:8ae7 via CARN-eth0
+2018-10-28 13:49:06 <TRACE> ospf1: HELLO packet received from fe80::5c64:f7ff:fe1e:abe1 via CARN-eth2
+2018-10-28 13:49:06 <TRACE> ospf1: HELLO packet received from fe80::3467:a3ff:fe7f:3cea via CARN-eth1
+2018-10-28 13:49:06 <TRACE> ospf1: HELLO packet received from fe80::f0c6:9eff:fe7e:8ae7 via CARN-eth0
+2018-10-28 13:49:07 <TRACE> ospf1: HELLO packet sent via CARN-lan0
+2018-10-28 13:49:07 <TRACE> ospf1: HELLO packet sent via CARN-lan1
+2018-10-28 13:49:07 <TRACE> ospf1: HELLO packet sent via CARN-eth0
+2018-10-28 13:49:07 <TRACE> ospf1: HELLO packet sent via CARN-eth1
+2018-10-28 13:49:07 <TRACE> ospf1: HELLO packet sent via CARN-eth2
+2018-10-28 13:49:07 <TRACE> ospf1: HELLO packet received from fe80::5c64:f7ff:fe1e:abe1 via CARN-eth2
+2018-10-28 13:49:07 <TRACE> ospf1: HELLO packet received from fe80::3467:a3ff:fe7f:3cea via CARN-eth1
+2018-10-28 13:49:07 <TRACE> ospf1: HELLO packet received from fe80::f0c6:9eff:fe7e:8ae7 via CARN-eth0
+2018-10-28 13:49:08 <TRACE> ospf1: HELLO packet sent via CARN-eth2
+2018-10-28 13:49:08 <TRACE> ospf1: HELLO packet sent via CARN-eth1
+2018-10-28 13:49:08 <TRACE> ospf1: HELLO packet sent via CARN-eth0
+2018-10-28 13:49:08 <TRACE> ospf1: HELLO packet sent via CARN-lan1
+2018-10-28 13:49:08 <TRACE> ospf1: HELLO packet sent via CARN-lan0
+2018-10-28 13:49:08 <TRACE> ospf1: HELLO packet received from fe80::f0c6:9eff:fe7e:8ae7 via CARN-eth0
+2018-10-28 13:49:09 <TRACE> ospf1: HELLO packet sent via CARN-lan0
+2018-10-28 13:49:09 <TRACE> ospf1: HELLO packet sent via CARN-lan1
+2018-10-28 13:49:09 <TRACE> ospf1: HELLO packet sent via CARN-eth0
+2018-10-28 13:49:09 <TRACE> ospf1: HELLO packet sent via CARN-eth1
+2018-10-28 13:49:09 <TRACE> ospf1: HELLO packet sent via CARN-eth2
+2018-10-28 13:49:09 <TRACE> ospf1: HELLO packet received from fe80::5c64:f7ff:fe1e:abe1 via CARN-eth2
+2018-10-28 13:49:09 <TRACE> ospf1: HELLO packet received from fe80::3467:a3ff:fe7f:3cea via CARN-eth1
+2018-10-28 13:49:09 <TRACE> ospf1: HELLO packet received from fe80::5c64:f7ff:fe1e:abe1 via CARN-eth2
+2018-10-28 13:49:09 <TRACE> ospf1: HELLO packet received from fe80::3467:a3ff:fe7f:3cea via CARN-eth1
+2018-10-28 13:49:10 <TRACE> ospf1: HELLO packet sent via CARN-eth2
+2018-10-28 13:49:10 <TRACE> ospf1: HELLO packet sent via CARN-eth1
+2018-10-28 13:49:10 <TRACE> ospf1: HELLO packet sent via CARN-eth0
+2018-10-28 13:49:10 <TRACE> ospf1: HELLO packet sent via CARN-lan1
+2018-10-28 13:49:10 <TRACE> ospf1: HELLO packet sent via CARN-lan0
+2018-10-28 13:49:10 <TRACE> ospf1: HELLO packet received from fe80::f0c6:9eff:fe7e:8ae7 via CARN-eth0
+2018-10-28 13:49:10 <TRACE> ospf1: HELLO packet received from fe80::5c64:f7ff:fe1e:abe1 via CARN-eth2
+2018-10-28 13:49:10 <TRACE> ospf1: HELLO packet received from fe80::3467:a3ff:fe7f:3cea via CARN-eth1
+2018-10-28 13:49:11 <TRACE> ospf1: HELLO packet sent via CARN-lan0
+2018-10-28 13:49:11 <TRACE> ospf1: HELLO packet sent via CARN-lan1
+2018-10-28 13:49:11 <TRACE> ospf1: HELLO packet sent via CARN-eth0
+2018-10-28 13:49:11 <TRACE> ospf1: HELLO packet sent via CARN-eth1
+2018-10-28 13:49:11 <TRACE> ospf1: HELLO packet sent via CARN-eth2
+2018-10-28 13:49:11 <TRACE> ospf1: HELLO packet received from fe80::f0c6:9eff:fe7e:8ae7 via CARN-eth0
+2018-10-28 13:49:11 <TRACE> ospf1: HELLO packet received from fe80::5c64:f7ff:fe1e:abe1 via CARN-eth2
+2018-10-28 13:49:11 <TRACE> ospf1: HELLO packet received from fe80::3467:a3ff:fe7f:3cea via CARN-eth1
+2018-10-28 13:49:11 <TRACE> ospf1: HELLO packet received from fe80::f0c6:9eff:fe7e:8ae7 via CARN-eth0
+2018-10-28 13:49:12 <TRACE> ospf1: HELLO packet sent via CARN-eth2
+2018-10-28 13:49:12 <TRACE> ospf1: HELLO packet sent via CARN-eth1
+2018-10-28 13:49:12 <TRACE> ospf1: HELLO packet sent via CARN-eth0
+2018-10-28 13:49:12 <TRACE> ospf1: HELLO packet sent via CARN-lan1
+2018-10-28 13:49:12 <TRACE> ospf1: HELLO packet sent via CARN-lan0
+2018-10-28 13:49:12 <TRACE> device1: Scanning interfaces
+2018-10-28 13:49:12 <TRACE> kernel1: Scanning routing table
+2018-10-28 13:49:12 <TRACE> kernel1: fd00:200:4:a20::/64: seen
+2018-10-28 13:49:12 <TRACE> kernel1: fd00:200:4:a60::/64: seen
+2018-10-28 13:49:12 <TRACE> kernel1: fd00:200:4:b30::/64: seen
+2018-10-28 13:49:12 <TRACE> kernel1: fd00:200:4:b40::/64: seen
+2018-10-28 13:49:12 <TRACE> kernel1: fd00:200:4:e31::/64: seen
+2018-10-28 13:49:12 <TRACE> kernel1: fd00:200:4:f24::/64: seen
+2018-10-28 13:49:12 <TRACE> kernel1: fd00:200:4:f25::/64: seen
+2018-10-28 13:49:12 <TRACE> kernel1: fd00:200:4:f53::/64: seen
+2018-10-28 13:49:12 <TRACE> kernel1: fd00:200:4:f64::/64: seen
+2018-10-28 13:49:12 <TRACE> kernel1: fd00:300:4:a20::/64: seen
+2018-10-28 13:49:12 <TRACE> kernel1: fd00:300:4:a60::/64: seen
+2018-10-28 13:49:12 <TRACE> kernel1: fd00:300:4:b30::/64: seen
+2018-10-28 13:49:12 <TRACE> kernel1: fd00:300:4:b40::/64: seen
+2018-10-28 13:49:12 <TRACE> kernel1: fd00:300:4:e31::/64: seen
+2018-10-28 13:49:12 <TRACE> kernel1: fd00:300:4:e33::/64: seen
+2018-10-28 13:49:12 <TRACE> kernel1: fd00:300:4:f00::1/128: seen
+2018-10-28 13:49:12 <TRACE> kernel1: fd00:300:4:f00::2/128: seen
+2018-10-28 13:49:12 <TRACE> kernel1: fd00:300:4:f00::3/128: seen
+2018-10-28 13:49:12 <TRACE> kernel1: fd00:300:4:f00::4/128: seen
+2018-10-28 13:49:12 <TRACE> kernel1: fd00:300:4:f00::5/128: seen
+2018-10-28 13:49:12 <TRACE> kernel1: fd00:300:4:f00::6/128: seen
+2018-10-28 13:49:12 <TRACE> kernel1: fd00:300:4:f24::/64: seen
+2018-10-28 13:49:12 <TRACE> kernel1: fd00:300:4:f25::/64: seen
+2018-10-28 13:49:12 <TRACE> kernel1: fd00:300:4:f53::/64: seen
+2018-10-28 13:49:12 <TRACE> kernel1: fd00:300:4:f64::/64: seen
+2018-10-28 13:49:12 <TRACE> kernel1: ::/0: seen
+2018-10-28 13:49:12 <TRACE> kernel1: Pruning table master
+2018-10-28 13:49:12 <TRACE> kernel1: Pruning inherited routes
+2018-10-28 13:49:13 <TRACE> ospf1: HELLO packet sent via CARN-lan0
+2018-10-28 13:49:13 <TRACE> ospf1: HELLO packet sent via CARN-lan1
+2018-10-28 13:49:13 <TRACE> ospf1: HELLO packet sent via CARN-eth0
+2018-10-28 13:49:13 <TRACE> ospf1: HELLO packet sent via CARN-eth1
+2018-10-28 13:49:13 <TRACE> ospf1: HELLO packet sent via CARN-eth2
+2018-10-28 13:49:13 <TRACE> ospf1: HELLO packet received from fe80::5c64:f7ff:fe1e:abe1 via CARN-eth2
+2018-10-28 13:49:13 <TRACE> ospf1: HELLO packet received from fe80::3467:a3ff:fe7f:3cea via CARN-eth1
+2018-10-28 13:49:13 <TRACE> ospf1: HELLO packet received from fe80::f0c6:9eff:fe7e:8ae7 via CARN-eth0
+2018-10-28 13:49:13 <TRACE> ospf1: HELLO packet received from fe80::5c64:f7ff:fe1e:abe1 via CARN-eth2
+2018-10-28 13:49:13 <TRACE> ospf1: HELLO packet received from fe80::3467:a3ff:fe7f:3cea via CARN-eth1
+2018-10-28 13:49:13 <TRACE> ospf1: HELLO packet received from fe80::f0c6:9eff:fe7e:8ae7 via CARN-eth0
+2018-10-28 13:49:14 <TRACE> ospf1: HELLO packet sent via CARN-eth2
+2018-10-28 13:49:14 <TRACE> ospf1: HELLO packet sent via CARN-eth1
+2018-10-28 13:49:14 <TRACE> ospf1: HELLO packet sent via CARN-eth0
+2018-10-28 13:49:14 <TRACE> ospf1: HELLO packet sent via CARN-lan1
+2018-10-28 13:49:14 <TRACE> ospf1: HELLO packet sent via CARN-lan0
+2018-10-28 13:49:14 <TRACE> ospf1: HELLO packet received from fe80::5c64:f7ff:fe1e:abe1 via CARN-eth2
+2018-10-28 13:49:15 <TRACE> ospf1: HELLO packet sent via CARN-lan0
+2018-10-28 13:49:15 <TRACE> ospf1: HELLO packet sent via CARN-lan1
+2018-10-28 13:49:15 <TRACE> ospf1: HELLO packet sent via CARN-eth0
+2018-10-28 13:49:15 <TRACE> ospf1: HELLO packet sent via CARN-eth1
+2018-10-28 13:49:15 <TRACE> ospf1: HELLO packet sent via CARN-eth2
+2018-10-28 13:49:15 <TRACE> ospf1: HELLO packet received from fe80::3467:a3ff:fe7f:3cea via CARN-eth1
+2018-10-28 13:49:15 <TRACE> ospf1: HELLO packet received from fe80::f0c6:9eff:fe7e:8ae7 via CARN-eth0
+2018-10-28 13:49:15 <TRACE> ospf1: HELLO packet received from fe80::5c64:f7ff:fe1e:abe1 via CARN-eth2
+2018-10-28 13:49:16 <TRACE> ospf1: HELLO packet sent via CARN-eth2
+2018-10-28 13:49:16 <TRACE> ospf1: HELLO packet sent via CARN-eth1
+2018-10-28 13:49:16 <TRACE> ospf1: HELLO packet sent via CARN-eth0
+2018-10-28 13:49:16 <TRACE> ospf1: HELLO packet sent via CARN-lan1
+2018-10-28 13:49:16 <TRACE> ospf1: HELLO packet sent via CARN-lan0
+2018-10-28 13:49:16 <TRACE> ospf1: HELLO packet received from fe80::3467:a3ff:fe7f:3cea via CARN-eth1
+2018-10-28 13:49:16 <TRACE> ospf1: HELLO packet received from fe80::f0c6:9eff:fe7e:8ae7 via CARN-eth0
+2018-10-28 13:49:16 <TRACE> ospf1: HELLO packet received from fe80::5c64:f7ff:fe1e:abe1 via CARN-eth2
+2018-10-28 13:49:16 <TRACE> ospf1: HELLO packet received from fe80::3467:a3ff:fe7f:3cea via CARN-eth1
+2018-10-28 13:49:16 <TRACE> ospf1: HELLO packet received from fe80::f0c6:9eff:fe7e:8ae7 via CARN-eth0
+2018-10-28 13:49:17 <TRACE> ospf1: HELLO packet sent via CARN-lan0
+2018-10-28 13:49:17 <TRACE> ospf1: HELLO packet sent via CARN-lan1
+2018-10-28 13:49:17 <TRACE> ospf1: HELLO packet sent via CARN-eth0
+2018-10-28 13:49:17 <TRACE> ospf1: HELLO packet sent via CARN-eth1
+2018-10-28 13:49:17 <TRACE> ospf1: HELLO packet sent via CARN-eth2
+2018-10-28 13:49:18 <TRACE> ospf1: HELLO packet sent via CARN-eth2
+2018-10-28 13:49:18 <TRACE> ospf1: HELLO packet sent via CARN-eth1
+2018-10-28 13:49:18 <TRACE> ospf1: HELLO packet sent via CARN-eth0
+2018-10-28 13:49:18 <TRACE> ospf1: HELLO packet sent via CARN-lan1
+2018-10-28 13:49:18 <TRACE> ospf1: HELLO packet sent via CARN-lan0
+2018-10-28 13:49:18 <TRACE> ospf1: HELLO packet received from fe80::5c64:f7ff:fe1e:abe1 via CARN-eth2
+2018-10-28 13:49:18 <TRACE> ospf1: HELLO packet received from fe80::3467:a3ff:fe7f:3cea via CARN-eth1
+2018-10-28 13:49:18 <TRACE> ospf1: HELLO packet received from fe80::f0c6:9eff:fe7e:8ae7 via CARN-eth0
+2018-10-28 13:49:18 <TRACE> ospf1: HELLO packet received from fe80::5c64:f7ff:fe1e:abe1 via CARN-eth2
+2018-10-28 13:49:18 <TRACE> ospf1: HELLO packet received from fe80::3467:a3ff:fe7f:3cea via CARN-eth1
+2018-10-28 13:49:18 <TRACE> ospf1: HELLO packet received from fe80::f0c6:9eff:fe7e:8ae7 via CARN-eth0
+2018-10-28 13:49:19 <TRACE> ospf1: HELLO packet sent via CARN-lan0
+2018-10-28 13:49:19 <TRACE> ospf1: HELLO packet sent via CARN-lan1
+2018-10-28 13:49:19 <TRACE> ospf1: HELLO packet sent via CARN-eth0
+2018-10-28 13:49:19 <TRACE> ospf1: HELLO packet sent via CARN-eth1
+2018-10-28 13:49:19 <TRACE> ospf1: HELLO packet sent via CARN-eth2
+2018-10-28 13:49:20 <TRACE> ospf1: HELLO packet sent via CARN-eth2
+2018-10-28 13:49:20 <TRACE> ospf1: HELLO packet sent via CARN-eth1
+2018-10-28 13:49:20 <TRACE> ospf1: HELLO packet sent via CARN-eth0
+2018-10-28 13:49:20 <TRACE> ospf1: HELLO packet sent via CARN-lan1
+2018-10-28 13:49:20 <TRACE> ospf1: HELLO packet sent via CARN-lan0
+2018-10-28 13:49:20 <TRACE> ospf1: HELLO packet received from fe80::5c64:f7ff:fe1e:abe1 via CARN-eth2
+2018-10-28 13:49:20 <TRACE> ospf1: HELLO packet received from fe80::3467:a3ff:fe7f:3cea via CARN-eth1
+2018-10-28 13:49:20 <TRACE> ospf1: HELLO packet received from fe80::f0c6:9eff:fe7e:8ae7 via CARN-eth0
+2018-10-28 13:49:20 <TRACE> ospf1: HELLO packet received from fe80::5c64:f7ff:fe1e:abe1 via CARN-eth2
+2018-10-28 13:49:20 <TRACE> ospf1: HELLO packet received from fe80::3467:a3ff:fe7f:3cea via CARN-eth1
+2018-10-28 13:49:20 <TRACE> ospf1: HELLO packet received from fe80::f0c6:9eff:fe7e:8ae7 via CARN-eth0
+2018-10-28 13:49:21 <TRACE> ospf1: HELLO packet sent via CARN-lan0
+2018-10-28 13:49:21 <TRACE> ospf1: HELLO packet sent via CARN-lan1
+2018-10-28 13:49:21 <TRACE> ospf1: HELLO packet sent via CARN-eth0
+2018-10-28 13:49:21 <TRACE> ospf1: HELLO packet sent via CARN-eth1
+2018-10-28 13:49:21 <TRACE> ospf1: HELLO packet sent via CARN-eth2
+2018-10-28 13:49:22 <TRACE> ospf1: HELLO packet sent via CARN-eth2
+2018-10-28 13:49:22 <TRACE> ospf1: HELLO packet sent via CARN-eth1
+2018-10-28 13:49:22 <TRACE> ospf1: HELLO packet sent via CARN-eth0
+2018-10-28 13:49:22 <TRACE> ospf1: HELLO packet sent via CARN-lan1
+2018-10-28 13:49:22 <TRACE> ospf1: HELLO packet sent via CARN-lan0
+2018-10-28 13:49:22 <TRACE> device1: Scanning interfaces
+2018-10-28 13:49:22 <TRACE> ospf1: HELLO packet received from fe80::5c64:f7ff:fe1e:abe1 via CARN-eth2
+2018-10-28 13:49:22 <TRACE> ospf1: HELLO packet received from fe80::3467:a3ff:fe7f:3cea via CARN-eth1
+2018-10-28 13:49:22 <TRACE> ospf1: HELLO packet received from fe80::f0c6:9eff:fe7e:8ae7 via CARN-eth0
+2018-10-28 13:49:22 <TRACE> ospf1: HELLO packet received from fe80::5c64:f7ff:fe1e:abe1 via CARN-eth2
+2018-10-28 13:49:22 <TRACE> ospf1: HELLO packet received from fe80::3467:a3ff:fe7f:3cea via CARN-eth1
+2018-10-28 13:49:22 <TRACE> ospf1: HELLO packet received from fe80::f0c6:9eff:fe7e:8ae7 via CARN-eth0
+2018-10-28 13:49:23 <TRACE> ospf1: HELLO packet sent via CARN-lan0
+2018-10-28 13:49:23 <TRACE> ospf1: HELLO packet sent via CARN-lan1
+2018-10-28 13:49:23 <TRACE> ospf1: HELLO packet sent via CARN-eth0
+2018-10-28 13:49:23 <TRACE> ospf1: HELLO packet sent via CARN-eth1
+2018-10-28 13:49:23 <TRACE> ospf1: HELLO packet sent via CARN-eth2
+2018-10-28 13:49:23 <TRACE> ospf1: HELLO packet received from fe80::5c64:f7ff:fe1e:abe1 via CARN-eth2
+2018-10-28 13:49:23 <TRACE> ospf1: HELLO packet received from fe80::3467:a3ff:fe7f:3cea via CARN-eth1
+2018-10-28 13:49:24 <TRACE> ospf1: HELLO packet sent via CARN-eth2
+2018-10-28 13:49:24 <TRACE> ospf1: HELLO packet sent via CARN-eth1
+2018-10-28 13:49:24 <TRACE> ospf1: HELLO packet sent via CARN-eth0
+2018-10-28 13:49:24 <TRACE> ospf1: HELLO packet sent via CARN-lan1
+2018-10-28 13:49:24 <TRACE> ospf1: HELLO packet sent via CARN-lan0
+2018-10-28 13:49:24 <TRACE> ospf1: HELLO packet received from fe80::f0c6:9eff:fe7e:8ae7 via CARN-eth0
+2018-10-28 13:49:24 <TRACE> ospf1: HELLO packet received from fe80::5c64:f7ff:fe1e:abe1 via CARN-eth2
+2018-10-28 13:49:25 <TRACE> ospf1: HELLO packet sent via CARN-lan0
+2018-10-28 13:49:25 <TRACE> ospf1: HELLO packet sent via CARN-lan1
+2018-10-28 13:49:25 <TRACE> ospf1: HELLO packet sent via CARN-eth0
+2018-10-28 13:49:25 <TRACE> ospf1: HELLO packet sent via CARN-eth1
+2018-10-28 13:49:25 <TRACE> ospf1: HELLO packet sent via CARN-eth2
+2018-10-28 13:49:25 <TRACE> ospf1: HELLO packet received from fe80::3467:a3ff:fe7f:3cea via CARN-eth1
+2018-10-28 13:49:25 <TRACE> ospf1: HELLO packet received from fe80::f0c6:9eff:fe7e:8ae7 via CARN-eth0
+2018-10-28 13:49:25 <TRACE> ospf1: HELLO packet received from fe80::5c64:f7ff:fe1e:abe1 via CARN-eth2
+2018-10-28 13:49:25 <TRACE> ospf1: HELLO packet received from fe80::3467:a3ff:fe7f:3cea via CARN-eth1
+2018-10-28 13:49:25 <TRACE> ospf1: HELLO packet received from fe80::f0c6:9eff:fe7e:8ae7 via CARN-eth0
+2018-10-28 13:49:26 <TRACE> ospf1: HELLO packet sent via CARN-eth2
+2018-10-28 13:49:26 <TRACE> ospf1: HELLO packet sent via CARN-eth1
+2018-10-28 13:49:26 <TRACE> ospf1: HELLO packet sent via CARN-eth0
+2018-10-28 13:49:26 <TRACE> ospf1: HELLO packet sent via CARN-lan1
+2018-10-28 13:49:26 <TRACE> ospf1: HELLO packet sent via CARN-lan0
+2018-10-28 13:49:27 <TRACE> ospf1: HELLO packet sent via CARN-lan0
+2018-10-28 13:49:27 <TRACE> ospf1: HELLO packet sent via CARN-lan1
+2018-10-28 13:49:27 <TRACE> ospf1: HELLO packet sent via CARN-eth0
+2018-10-28 13:49:27 <TRACE> ospf1: HELLO packet sent via CARN-eth1
+2018-10-28 13:49:27 <TRACE> ospf1: HELLO packet sent via CARN-eth2
+2018-10-28 13:49:27 <TRACE> ospf1: HELLO packet received from fe80::5c64:f7ff:fe1e:abe1 via CARN-eth2
+2018-10-28 13:49:27 <TRACE> ospf1: HELLO packet received from fe80::3467:a3ff:fe7f:3cea via CARN-eth1
+2018-10-28 13:49:27 <TRACE> ospf1: HELLO packet received from fe80::f0c6:9eff:fe7e:8ae7 via CARN-eth0
+2018-10-28 13:49:27 <TRACE> ospf1: HELLO packet received from fe80::5c64:f7ff:fe1e:abe1 via CARN-eth2
+2018-10-28 13:49:27 <TRACE> ospf1: HELLO packet received from fe80::3467:a3ff:fe7f:3cea via CARN-eth1
+2018-10-28 13:49:27 <TRACE> ospf1: HELLO packet received from fe80::f0c6:9eff:fe7e:8ae7 via CARN-eth0
+2018-10-28 13:49:28 <TRACE> ospf1: HELLO packet sent via CARN-eth2
+2018-10-28 13:49:28 <TRACE> ospf1: HELLO packet sent via CARN-eth1
+2018-10-28 13:49:28 <TRACE> ospf1: HELLO packet sent via CARN-eth0
+2018-10-28 13:49:28 <TRACE> ospf1: HELLO packet sent via CARN-lan1
+2018-10-28 13:49:28 <TRACE> ospf1: HELLO packet sent via CARN-lan0
+2018-10-28 13:49:28 <TRACE> ospf1: HELLO packet received from fe80::5c64:f7ff:fe1e:abe1 via CARN-eth2
+2018-10-28 13:49:29 <TRACE> ospf1: HELLO packet sent via CARN-lan0
+2018-10-28 13:49:29 <TRACE> ospf1: HELLO packet sent via CARN-lan1
+2018-10-28 13:49:29 <TRACE> ospf1: HELLO packet sent via CARN-eth0
+2018-10-28 13:49:29 <TRACE> ospf1: HELLO packet sent via CARN-eth1
+2018-10-28 13:49:29 <TRACE> ospf1: HELLO packet sent via CARN-eth2
+2018-10-28 13:49:29 <TRACE> ospf1: HELLO packet received from fe80::f0c6:9eff:fe7e:8ae7 via CARN-eth0
+2018-10-28 13:49:29 <TRACE> ospf1: HELLO packet received from fe80::3467:a3ff:fe7f:3cea via CARN-eth1
+2018-10-28 13:49:30 <TRACE> ospf1: HELLO packet sent via CARN-eth2
+2018-10-28 13:49:30 <TRACE> ospf1: HELLO packet sent via CARN-eth1
+2018-10-28 13:49:30 <TRACE> ospf1: HELLO packet sent via CARN-eth0
+2018-10-28 13:49:30 <TRACE> ospf1: HELLO packet sent via CARN-lan1
+2018-10-28 13:49:30 <TRACE> ospf1: HELLO packet sent via CARN-lan0
+2018-10-28 13:49:30 <TRACE> ospf1: HELLO packet received from fe80::5c64:f7ff:fe1e:abe1 via CARN-eth2
+2018-10-28 13:49:30 <TRACE> ospf1: HELLO packet received from fe80::f0c6:9eff:fe7e:8ae7 via CARN-eth0
+2018-10-28 13:49:30 <TRACE> ospf1: HELLO packet received from fe80::3467:a3ff:fe7f:3cea via CARN-eth1
+2018-10-28 13:49:30 <TRACE> ospf1: HELLO packet received from fe80::5c64:f7ff:fe1e:abe1 via CARN-eth2
+2018-10-28 13:49:30 <TRACE> ospf1: HELLO packet received from fe80::f0c6:9eff:fe7e:8ae7 via CARN-eth0
+2018-10-28 13:49:31 <TRACE> ospf1: HELLO packet sent via CARN-lan0
+2018-10-28 13:49:31 <TRACE> ospf1: HELLO packet sent via CARN-lan1
+2018-10-28 13:49:31 <TRACE> ospf1: HELLO packet sent via CARN-eth0
+2018-10-28 13:49:31 <TRACE> ospf1: HELLO packet sent via CARN-eth1
+2018-10-28 13:49:31 <TRACE> ospf1: HELLO packet sent via CARN-eth2
+2018-10-28 13:49:31 <TRACE> ospf1: HELLO packet received from fe80::3467:a3ff:fe7f:3cea via CARN-eth1
+2018-10-28 13:49:31 <TRACE> ospf1: HELLO packet received from fe80::5c64:f7ff:fe1e:abe1 via CARN-eth2
+2018-10-28 13:49:31 <TRACE> ospf1: HELLO packet received from fe80::3467:a3ff:fe7f:3cea via CARN-eth1
+2018-10-28 13:49:31 <TRACE> ospf1: HELLO packet received from fe80::f0c6:9eff:fe7e:8ae7 via CARN-eth0
+2018-10-28 13:49:32 <TRACE> ospf1: HELLO packet sent via CARN-eth2
+2018-10-28 13:49:32 <TRACE> ospf1: HELLO packet sent via CARN-eth1
+2018-10-28 13:49:32 <TRACE> ospf1: HELLO packet sent via CARN-eth0
+2018-10-28 13:49:32 <TRACE> ospf1: HELLO packet sent via CARN-lan1
+2018-10-28 13:49:32 <TRACE> ospf1: HELLO packet sent via CARN-lan0
+2018-10-28 13:49:32 <TRACE> device1: Scanning interfaces
+2018-10-28 13:49:32 <TRACE> kernel1: Scanning routing table
+2018-10-28 13:49:32 <TRACE> kernel1: fd00:200:4:a20::/64: seen
+2018-10-28 13:49:32 <TRACE> kernel1: fd00:200:4:a60::/64: seen
+2018-10-28 13:49:32 <TRACE> kernel1: fd00:200:4:b30::/64: seen
+2018-10-28 13:49:32 <TRACE> kernel1: fd00:200:4:b40::/64: seen
+2018-10-28 13:49:32 <TRACE> kernel1: fd00:200:4:e31::/64: seen
+2018-10-28 13:49:32 <TRACE> kernel1: fd00:200:4:f24::/64: seen
+2018-10-28 13:49:32 <TRACE> kernel1: fd00:200:4:f25::/64: seen
+2018-10-28 13:49:32 <TRACE> kernel1: fd00:200:4:f53::/64: seen
+2018-10-28 13:49:32 <TRACE> kernel1: fd00:200:4:f64::/64: seen
+2018-10-28 13:49:32 <TRACE> kernel1: fd00:300:4:a20::/64: seen
+2018-10-28 13:49:32 <TRACE> kernel1: fd00:300:4:a60::/64: seen
+2018-10-28 13:49:32 <TRACE> kernel1: fd00:300:4:b30::/64: seen
+2018-10-28 13:49:32 <TRACE> kernel1: fd00:300:4:b40::/64: seen
+2018-10-28 13:49:32 <TRACE> kernel1: fd00:300:4:e31::/64: seen
+2018-10-28 13:49:32 <TRACE> kernel1: fd00:300:4:e33::/64: seen
+2018-10-28 13:49:32 <TRACE> kernel1: fd00:300:4:f00::1/128: seen
+2018-10-28 13:49:32 <TRACE> kernel1: fd00:300:4:f00::2/128: seen
+2018-10-28 13:49:32 <TRACE> kernel1: fd00:300:4:f00::3/128: seen
+2018-10-28 13:49:32 <TRACE> kernel1: fd00:300:4:f00::4/128: seen
+2018-10-28 13:49:32 <TRACE> kernel1: fd00:300:4:f00::5/128: seen
+2018-10-28 13:49:32 <TRACE> kernel1: fd00:300:4:f00::6/128: seen
+2018-10-28 13:49:32 <TRACE> kernel1: fd00:300:4:f24::/64: seen
+2018-10-28 13:49:32 <TRACE> kernel1: fd00:300:4:f25::/64: seen
+2018-10-28 13:49:32 <TRACE> kernel1: fd00:300:4:f53::/64: seen
+2018-10-28 13:49:32 <TRACE> kernel1: fd00:300:4:f64::/64: seen
+2018-10-28 13:49:32 <TRACE> kernel1: ::/0: seen
+2018-10-28 13:49:32 <TRACE> kernel1: Pruning table master
+2018-10-28 13:49:32 <TRACE> kernel1: Pruning inherited routes
+2018-10-28 13:49:32 <TRACE> ospf1: HELLO packet received from fe80::3467:a3ff:fe7f:3cea via CARN-eth1
+2018-10-28 13:49:32 <TRACE> ospf1: HELLO packet received from fe80::f0c6:9eff:fe7e:8ae7 via CARN-eth0
+2018-10-28 13:49:33 <TRACE> ospf1: HELLO packet sent via CARN-lan0
+2018-10-28 13:49:33 <TRACE> ospf1: HELLO packet sent via CARN-lan1
+2018-10-28 13:49:33 <TRACE> ospf1: HELLO packet sent via CARN-eth0
+2018-10-28 13:49:33 <TRACE> ospf1: HELLO packet sent via CARN-eth1
+2018-10-28 13:49:33 <TRACE> ospf1: HELLO packet sent via CARN-eth2
+2018-10-28 13:49:33 <TRACE> ospf1: HELLO packet received from fe80::5c64:f7ff:fe1e:abe1 via CARN-eth2
+2018-10-28 13:49:34 <TRACE> ospf1: HELLO packet sent via CARN-eth2
+2018-10-28 13:49:34 <TRACE> ospf1: HELLO packet sent via CARN-eth1
+2018-10-28 13:49:34 <TRACE> ospf1: HELLO packet sent via CARN-eth0
+2018-10-28 13:49:34 <TRACE> ospf1: HELLO packet sent via CARN-lan1
+2018-10-28 13:49:34 <TRACE> ospf1: HELLO packet sent via CARN-lan0
+2018-10-28 13:49:34 <TRACE> ospf1: HELLO packet received from fe80::5c64:f7ff:fe1e:abe1 via CARN-eth2
+2018-10-28 13:49:34 <TRACE> ospf1: HELLO packet received from fe80::3467:a3ff:fe7f:3cea via CARN-eth1
+2018-10-28 13:49:34 <TRACE> ospf1: HELLO packet received from fe80::f0c6:9eff:fe7e:8ae7 via CARN-eth0
+2018-10-28 13:49:34 <TRACE> ospf1: HELLO packet received from fe80::5c64:f7ff:fe1e:abe1 via CARN-eth2
+2018-10-28 13:49:34 <TRACE> ospf1: HELLO packet received from fe80::3467:a3ff:fe7f:3cea via CARN-eth1
+2018-10-28 13:49:34 <TRACE> ospf1: HELLO packet received from fe80::f0c6:9eff:fe7e:8ae7 via CARN-eth0
+2018-10-28 13:49:35 <TRACE> ospf1: HELLO packet sent via CARN-lan0
+2018-10-28 13:49:35 <TRACE> ospf1: HELLO packet sent via CARN-lan1
+2018-10-28 13:49:35 <TRACE> ospf1: HELLO packet sent via CARN-eth0
+2018-10-28 13:49:35 <TRACE> ospf1: HELLO packet sent via CARN-eth1
+2018-10-28 13:49:35 <TRACE> ospf1: HELLO packet sent via CARN-eth2
+2018-10-28 13:49:35 <TRACE> ospf1: HELLO packet received from fe80::3467:a3ff:fe7f:3cea via CARN-eth1
+2018-10-28 13:49:36 <TRACE> ospf1: HELLO packet sent via CARN-eth2
+2018-10-28 13:49:36 <TRACE> ospf1: HELLO packet sent via CARN-eth1
+2018-10-28 13:49:36 <TRACE> ospf1: HELLO packet sent via CARN-eth0
+2018-10-28 13:49:36 <TRACE> ospf1: HELLO packet sent via CARN-lan1
+2018-10-28 13:49:36 <TRACE> ospf1: HELLO packet sent via CARN-lan0
+2018-10-28 13:49:36 <TRACE> ospf1: HELLO packet received from fe80::5c64:f7ff:fe1e:abe1 via CARN-eth2
+2018-10-28 13:49:36 <TRACE> ospf1: HELLO packet received from fe80::f0c6:9eff:fe7e:8ae7 via CARN-eth0
+2018-10-28 13:49:36 <TRACE> ospf1: HELLO packet received from fe80::5c64:f7ff:fe1e:abe1 via CARN-eth2
+2018-10-28 13:49:36 <TRACE> ospf1: HELLO packet received from fe80::f0c6:9eff:fe7e:8ae7 via CARN-eth0
+2018-10-28 13:49:37 <TRACE> ospf1: HELLO packet sent via CARN-lan0
+2018-10-28 13:49:37 <TRACE> ospf1: HELLO packet sent via CARN-lan1
+2018-10-28 13:49:37 <TRACE> ospf1: HELLO packet sent via CARN-eth0
+2018-10-28 13:49:37 <TRACE> ospf1: HELLO packet sent via CARN-eth1
+2018-10-28 13:49:37 <TRACE> ospf1: HELLO packet sent via CARN-eth2
+2018-10-28 13:49:37 <TRACE> ospf1: HELLO packet received from fe80::3467:a3ff:fe7f:3cea via CARN-eth1
+2018-10-28 13:49:37 <TRACE> ospf1: HELLO packet received from fe80::3467:a3ff:fe7f:3cea via CARN-eth1
+2018-10-28 13:49:38 <TRACE> ospf1: HELLO packet sent via CARN-eth2
+2018-10-28 13:49:38 <TRACE> ospf1: HELLO packet sent via CARN-eth1
+2018-10-28 13:49:38 <TRACE> ospf1: HELLO packet sent via CARN-eth0
+2018-10-28 13:49:38 <TRACE> ospf1: HELLO packet sent via CARN-lan1
+2018-10-28 13:49:38 <TRACE> ospf1: HELLO packet sent via CARN-lan0
+2018-10-28 13:49:38 <TRACE> ospf1: HELLO packet received from fe80::5c64:f7ff:fe1e:abe1 via CARN-eth2
+2018-10-28 13:49:38 <TRACE> ospf1: HELLO packet received from fe80::f0c6:9eff:fe7e:8ae7 via CARN-eth0
+2018-10-28 13:49:38 <TRACE> ospf1: HELLO packet received from fe80::5c64:f7ff:fe1e:abe1 via CARN-eth2
+2018-10-28 13:49:38 <TRACE> ospf1: HELLO packet received from fe80::3467:a3ff:fe7f:3cea via CARN-eth1
+2018-10-28 13:49:38 <TRACE> ospf1: HELLO packet received from fe80::f0c6:9eff:fe7e:8ae7 via CARN-eth0
+2018-10-28 13:49:39 <TRACE> ospf1: HELLO packet sent via CARN-lan0
+2018-10-28 13:49:39 <TRACE> ospf1: HELLO packet sent via CARN-lan1
+2018-10-28 13:49:39 <TRACE> ospf1: HELLO packet sent via CARN-eth0
+2018-10-28 13:49:39 <TRACE> ospf1: HELLO packet sent via CARN-eth1
+2018-10-28 13:49:39 <TRACE> ospf1: HELLO packet sent via CARN-eth2
+2018-10-28 13:49:39 <TRACE> ospf1: HELLO packet received from fe80::5c64:f7ff:fe1e:abe1 via CARN-eth2
+2018-10-28 13:49:40 <TRACE> ospf1: HELLO packet sent via CARN-eth2
+2018-10-28 13:49:40 <TRACE> ospf1: HELLO packet sent via CARN-eth1
+2018-10-28 13:49:40 <TRACE> ospf1: HELLO packet sent via CARN-eth0
+2018-10-28 13:49:40 <TRACE> ospf1: HELLO packet sent via CARN-lan1
+2018-10-28 13:49:40 <TRACE> ospf1: HELLO packet sent via CARN-lan0
+2018-10-28 13:49:40 <TRACE> ospf1: HELLO packet received from fe80::3467:a3ff:fe7f:3cea via CARN-eth1
+2018-10-28 13:49:40 <TRACE> ospf1: HELLO packet received from fe80::f0c6:9eff:fe7e:8ae7 via CARN-eth0
+2018-10-28 13:49:40 <TRACE> ospf1: HELLO packet received from fe80::5c64:f7ff:fe1e:abe1 via CARN-eth2
+2018-10-28 13:49:40 <TRACE> ospf1: HELLO packet received from fe80::3467:a3ff:fe7f:3cea via CARN-eth1
+2018-10-28 13:49:40 <TRACE> ospf1: HELLO packet received from fe80::f0c6:9eff:fe7e:8ae7 via CARN-eth0
+2018-10-28 13:49:41 <TRACE> ospf1: HELLO packet sent via CARN-lan0
+2018-10-28 13:49:41 <TRACE> ospf1: HELLO packet sent via CARN-lan1
+2018-10-28 13:49:41 <TRACE> ospf1: HELLO packet sent via CARN-eth0
+2018-10-28 13:49:41 <TRACE> ospf1: HELLO packet sent via CARN-eth1
+2018-10-28 13:49:41 <TRACE> ospf1: HELLO packet sent via CARN-eth2
+2018-10-28 13:49:42 <TRACE> ospf1: HELLO packet sent via CARN-eth2
+2018-10-28 13:49:42 <TRACE> ospf1: HELLO packet sent via CARN-eth1
+2018-10-28 13:49:42 <TRACE> ospf1: HELLO packet sent via CARN-eth0
+2018-10-28 13:49:42 <TRACE> ospf1: HELLO packet sent via CARN-lan1
+2018-10-28 13:49:42 <TRACE> ospf1: HELLO packet sent via CARN-lan0
+2018-10-28 13:49:42 <TRACE> device1: Scanning interfaces
+2018-10-28 13:49:42 <TRACE> ospf1: HELLO packet received from fe80::5c64:f7ff:fe1e:abe1 via CARN-eth2
+2018-10-28 13:49:42 <TRACE> ospf1: HELLO packet received from fe80::3467:a3ff:fe7f:3cea via CARN-eth1
+2018-10-28 13:49:42 <TRACE> ospf1: HELLO packet received from fe80::f0c6:9eff:fe7e:8ae7 via CARN-eth0
+2018-10-28 13:49:42 <TRACE> ospf1: HELLO packet received from fe80::f0c6:9eff:fe7e:8ae7 via CARN-eth0
+2018-10-28 13:49:43 <TRACE> ospf1: HELLO packet sent via CARN-lan0
+2018-10-28 13:49:43 <TRACE> ospf1: HELLO packet sent via CARN-lan1
+2018-10-28 13:49:43 <TRACE> ospf1: HELLO packet sent via CARN-eth0
+2018-10-28 13:49:43 <TRACE> ospf1: HELLO packet sent via CARN-eth1
+2018-10-28 13:49:43 <TRACE> ospf1: HELLO packet sent via CARN-eth2
+2018-10-28 13:49:43 <TRACE> ospf1: HELLO packet received from fe80::5c64:f7ff:fe1e:abe1 via CARN-eth2
+2018-10-28 13:49:43 <TRACE> ospf1: HELLO packet received from fe80::3467:a3ff:fe7f:3cea via CARN-eth1
+2018-10-28 13:49:43 <TRACE> ospf1: HELLO packet received from fe80::5c64:f7ff:fe1e:abe1 via CARN-eth2
+2018-10-28 13:49:43 <TRACE> ospf1: HELLO packet received from fe80::3467:a3ff:fe7f:3cea via CARN-eth1
+2018-10-28 13:49:44 <TRACE> ospf1: HELLO packet sent via CARN-eth2
+2018-10-28 13:49:44 <TRACE> ospf1: HELLO packet sent via CARN-eth1
+2018-10-28 13:49:44 <TRACE> ospf1: HELLO packet sent via CARN-eth0
+2018-10-28 13:49:44 <TRACE> ospf1: HELLO packet sent via CARN-lan1
+2018-10-28 13:49:44 <TRACE> ospf1: HELLO packet sent via CARN-lan0
+2018-10-28 13:49:44 <TRACE> ospf1: HELLO packet received from fe80::f0c6:9eff:fe7e:8ae7 via CARN-eth0
+2018-10-28 13:49:44 <TRACE> ospf1: HELLO packet received from fe80::3467:a3ff:fe7f:3cea via CARN-eth1
+2018-10-28 13:49:44 <TRACE> ospf1: HELLO packet received from fe80::f0c6:9eff:fe7e:8ae7 via CARN-eth0
+2018-10-28 13:49:45 <TRACE> ospf1: HELLO packet sent via CARN-lan0
+2018-10-28 13:49:45 <TRACE> ospf1: HELLO packet sent via CARN-lan1
+2018-10-28 13:49:45 <TRACE> ospf1: HELLO packet sent via CARN-eth0
+2018-10-28 13:49:45 <TRACE> ospf1: HELLO packet sent via CARN-eth1
+2018-10-28 13:49:45 <TRACE> ospf1: HELLO packet sent via CARN-eth2
+2018-10-28 13:49:45 <TRACE> ospf1: HELLO packet received from fe80::5c64:f7ff:fe1e:abe1 via CARN-eth2
+2018-10-28 13:49:45 <TRACE> ospf1: HELLO packet received from fe80::5c64:f7ff:fe1e:abe1 via CARN-eth2
+2018-10-28 13:49:45 <TRACE> ospf1: HELLO packet received from fe80::3467:a3ff:fe7f:3cea via CARN-eth1
+2018-10-28 13:49:45 <TRACE> ospf1: HELLO packet received from fe80::f0c6:9eff:fe7e:8ae7 via CARN-eth0
+2018-10-28 13:49:46 <TRACE> ospf1: HELLO packet sent via CARN-eth2
+2018-10-28 13:49:46 <TRACE> ospf1: HELLO packet sent via CARN-eth1
+2018-10-28 13:49:46 <TRACE> ospf1: HELLO packet sent via CARN-eth0
+2018-10-28 13:49:46 <TRACE> ospf1: HELLO packet sent via CARN-lan1
+2018-10-28 13:49:46 <TRACE> ospf1: HELLO packet sent via CARN-lan0
+2018-10-28 13:49:47 <TRACE> ospf1: HELLO packet sent via CARN-lan0
+2018-10-28 13:49:47 <TRACE> ospf1: HELLO packet sent via CARN-lan1
+2018-10-28 13:49:47 <TRACE> ospf1: HELLO packet sent via CARN-eth0
+2018-10-28 13:49:47 <TRACE> ospf1: HELLO packet sent via CARN-eth1
+2018-10-28 13:49:47 <TRACE> ospf1: HELLO packet sent via CARN-eth2
+2018-10-28 13:49:47 <TRACE> ospf1: HELLO packet received from fe80::5c64:f7ff:fe1e:abe1 via CARN-eth2
+2018-10-28 13:49:47 <TRACE> ospf1: HELLO packet received from fe80::3467:a3ff:fe7f:3cea via CARN-eth1
+2018-10-28 13:49:47 <TRACE> ospf1: HELLO packet received from fe80::f0c6:9eff:fe7e:8ae7 via CARN-eth0
+2018-10-28 13:49:47 <TRACE> ospf1: HELLO packet received from fe80::5c64:f7ff:fe1e:abe1 via CARN-eth2
+2018-10-28 13:49:47 <TRACE> ospf1: HELLO packet received from fe80::3467:a3ff:fe7f:3cea via CARN-eth1
+2018-10-28 13:49:47 <TRACE> ospf1: HELLO packet received from fe80::f0c6:9eff:fe7e:8ae7 via CARN-eth0
+2018-10-28 13:49:48 <TRACE> ospf1: HELLO packet sent via CARN-eth2
+2018-10-28 13:49:48 <TRACE> ospf1: HELLO packet sent via CARN-eth1
+2018-10-28 13:49:48 <TRACE> ospf1: HELLO packet sent via CARN-eth0
+2018-10-28 13:49:48 <TRACE> ospf1: HELLO packet sent via CARN-lan1
+2018-10-28 13:49:48 <TRACE> ospf1: HELLO packet sent via CARN-lan0
+2018-10-28 13:49:48 <TRACE> ospf1: HELLO packet received from fe80::5c64:f7ff:fe1e:abe1 via CARN-eth2
+2018-10-28 13:49:48 <TRACE> ospf1: HELLO packet received from fe80::f0c6:9eff:fe7e:8ae7 via CARN-eth0
+2018-10-28 13:49:49 <TRACE> ospf1: HELLO packet sent via CARN-lan0
+2018-10-28 13:49:49 <TRACE> ospf1: HELLO packet sent via CARN-lan1
+2018-10-28 13:49:49 <TRACE> ospf1: HELLO packet sent via CARN-eth0
+2018-10-28 13:49:49 <TRACE> ospf1: HELLO packet sent via CARN-eth1
+2018-10-28 13:49:49 <TRACE> ospf1: HELLO packet sent via CARN-eth2
+2018-10-28 13:49:49 <TRACE> ospf1: HELLO packet received from fe80::3467:a3ff:fe7f:3cea via CARN-eth1
+2018-10-28 13:49:49 <TRACE> ospf1: HELLO packet received from fe80::5c64:f7ff:fe1e:abe1 via CARN-eth2
+2018-10-28 13:49:50 <TRACE> ospf1: HELLO packet sent via CARN-eth2
+2018-10-28 13:49:50 <TRACE> ospf1: HELLO packet sent via CARN-eth1
+2018-10-28 13:49:50 <TRACE> ospf1: HELLO packet sent via CARN-eth0
+2018-10-28 13:49:50 <TRACE> ospf1: HELLO packet sent via CARN-lan1
+2018-10-28 13:49:50 <TRACE> ospf1: HELLO packet sent via CARN-lan0
+2018-10-28 13:49:50 <TRACE> ospf1: HELLO packet received from fe80::3467:a3ff:fe7f:3cea via CARN-eth1
+2018-10-28 13:49:50 <TRACE> ospf1: HELLO packet received from fe80::f0c6:9eff:fe7e:8ae7 via CARN-eth0
+2018-10-28 13:49:50 <TRACE> ospf1: HELLO packet received from fe80::5c64:f7ff:fe1e:abe1 via CARN-eth2
+2018-10-28 13:49:51 <TRACE> ospf1: HELLO packet sent via CARN-lan0
+2018-10-28 13:49:51 <TRACE> ospf1: HELLO packet sent via CARN-lan1
+2018-10-28 13:49:51 <TRACE> ospf1: HELLO packet sent via CARN-eth0
+2018-10-28 13:49:51 <TRACE> ospf1: HELLO packet sent via CARN-eth1
+2018-10-28 13:49:51 <TRACE> ospf1: HELLO packet sent via CARN-eth2
+2018-10-28 13:49:51 <TRACE> ospf1: HELLO packet received from fe80::3467:a3ff:fe7f:3cea via CARN-eth1
+2018-10-28 13:49:51 <TRACE> ospf1: HELLO packet received from fe80::f0c6:9eff:fe7e:8ae7 via CARN-eth0
+2018-10-28 13:49:51 <TRACE> ospf1: HELLO packet received from fe80::5c64:f7ff:fe1e:abe1 via CARN-eth2
+2018-10-28 13:49:51 <TRACE> ospf1: HELLO packet received from fe80::3467:a3ff:fe7f:3cea via CARN-eth1
+2018-10-28 13:49:52 <TRACE> ospf1: HELLO packet sent via CARN-eth2
+2018-10-28 13:49:52 <TRACE> ospf1: HELLO packet sent via CARN-eth1
+2018-10-28 13:49:52 <TRACE> ospf1: HELLO packet sent via CARN-eth0
+2018-10-28 13:49:52 <TRACE> ospf1: HELLO packet sent via CARN-lan1
+2018-10-28 13:49:52 <TRACE> ospf1: HELLO packet sent via CARN-lan0
+2018-10-28 13:49:52 <TRACE> device1: Scanning interfaces
+2018-10-28 13:49:52 <TRACE> kernel1: Scanning routing table
+2018-10-28 13:49:52 <TRACE> kernel1: fd00:200:4:a20::/64: seen
+2018-10-28 13:49:52 <TRACE> kernel1: fd00:200:4:a60::/64: seen
+2018-10-28 13:49:52 <TRACE> kernel1: fd00:200:4:b30::/64: seen
+2018-10-28 13:49:52 <TRACE> kernel1: fd00:200:4:b40::/64: seen
+2018-10-28 13:49:52 <TRACE> kernel1: fd00:200:4:e31::/64: seen
+2018-10-28 13:49:52 <TRACE> kernel1: fd00:200:4:f24::/64: seen
+2018-10-28 13:49:52 <TRACE> kernel1: fd00:200:4:f25::/64: seen
+2018-10-28 13:49:52 <TRACE> kernel1: fd00:200:4:f53::/64: seen
+2018-10-28 13:49:52 <TRACE> kernel1: fd00:200:4:f64::/64: seen
+2018-10-28 13:49:52 <TRACE> kernel1: fd00:300:4:a20::/64: seen
+2018-10-28 13:49:52 <TRACE> kernel1: fd00:300:4:a60::/64: seen
+2018-10-28 13:49:52 <TRACE> kernel1: fd00:300:4:b30::/64: seen
+2018-10-28 13:49:52 <TRACE> kernel1: fd00:300:4:b40::/64: seen
+2018-10-28 13:49:52 <TRACE> kernel1: fd00:300:4:e31::/64: seen
+2018-10-28 13:49:52 <TRACE> kernel1: fd00:300:4:e33::/64: seen
+2018-10-28 13:49:52 <TRACE> kernel1: fd00:300:4:f00::1/128: seen
+2018-10-28 13:49:52 <TRACE> kernel1: fd00:300:4:f00::2/128: seen
+2018-10-28 13:49:52 <TRACE> kernel1: fd00:300:4:f00::3/128: seen
+2018-10-28 13:49:52 <TRACE> kernel1: fd00:300:4:f00::4/128: seen
+2018-10-28 13:49:52 <TRACE> kernel1: fd00:300:4:f00::5/128: seen
+2018-10-28 13:49:52 <TRACE> kernel1: fd00:300:4:f00::6/128: seen
+2018-10-28 13:49:52 <TRACE> kernel1: fd00:300:4:f24::/64: seen
+2018-10-28 13:49:52 <TRACE> kernel1: fd00:300:4:f25::/64: seen
+2018-10-28 13:49:52 <TRACE> kernel1: fd00:300:4:f53::/64: seen
+2018-10-28 13:49:52 <TRACE> kernel1: fd00:300:4:f64::/64: seen
+2018-10-28 13:49:52 <TRACE> kernel1: ::/0: seen
+2018-10-28 13:49:52 <TRACE> kernel1: Pruning table master
+2018-10-28 13:49:52 <TRACE> kernel1: Pruning inherited routes
+2018-10-28 13:49:52 <TRACE> ospf1: HELLO packet received from fe80::f0c6:9eff:fe7e:8ae7 via CARN-eth0
+2018-10-28 13:49:52 <TRACE> ospf1: HELLO packet received from fe80::5c64:f7ff:fe1e:abe1 via CARN-eth2
+2018-10-28 13:49:52 <TRACE> ospf1: HELLO packet received from fe80::3467:a3ff:fe7f:3cea via CARN-eth1
+2018-10-28 13:49:53 <TRACE> ospf1: HELLO packet sent via CARN-lan0
+2018-10-28 13:49:53 <TRACE> ospf1: HELLO packet sent via CARN-lan1
+2018-10-28 13:49:53 <TRACE> ospf1: HELLO packet sent via CARN-eth0
+2018-10-28 13:49:53 <TRACE> ospf1: HELLO packet sent via CARN-eth1
+2018-10-28 13:49:53 <TRACE> ospf1: HELLO packet sent via CARN-eth2
+2018-10-28 13:49:53 <TRACE> ospf1: HELLO packet received from fe80::f0c6:9eff:fe7e:8ae7 via CARN-eth0
+2018-10-28 13:49:53 <TRACE> ospf1: HELLO packet received from fe80::5c64:f7ff:fe1e:abe1 via CARN-eth2
+2018-10-28 13:49:53 <TRACE> ospf1: HELLO packet received from fe80::f0c6:9eff:fe7e:8ae7 via CARN-eth0
+2018-10-28 13:49:54 <TRACE> ospf1: HELLO packet sent via CARN-eth2
+2018-10-28 13:49:54 <TRACE> ospf1: HELLO packet sent via CARN-eth1
+2018-10-28 13:49:54 <TRACE> ospf1: HELLO packet sent via CARN-eth0
+2018-10-28 13:49:54 <TRACE> ospf1: HELLO packet sent via CARN-lan1
+2018-10-28 13:49:54 <TRACE> ospf1: HELLO packet sent via CARN-lan0
+2018-10-28 13:49:54 <TRACE> ospf1: HELLO packet received from fe80::3467:a3ff:fe7f:3cea via CARN-eth1
+2018-10-28 13:49:54 <TRACE> ospf1: HELLO packet received from fe80::3467:a3ff:fe7f:3cea via CARN-eth1
+2018-10-28 13:49:55 <TRACE> ospf1: HELLO packet sent via CARN-lan0
+2018-10-28 13:49:55 <TRACE> ospf1: HELLO packet sent via CARN-lan1
+2018-10-28 13:49:55 <TRACE> ospf1: HELLO packet sent via CARN-eth0
+2018-10-28 13:49:55 <TRACE> ospf1: HELLO packet sent via CARN-eth1
+2018-10-28 13:49:55 <TRACE> ospf1: HELLO packet sent via CARN-eth2
+2018-10-28 13:49:55 <TRACE> ospf1: HELLO packet received from fe80::5c64:f7ff:fe1e:abe1 via CARN-eth2
+2018-10-28 13:49:55 <TRACE> ospf1: HELLO packet received from fe80::f0c6:9eff:fe7e:8ae7 via CARN-eth0
+2018-10-28 13:49:55 <TRACE> ospf1: HELLO packet received from fe80::5c64:f7ff:fe1e:abe1 via CARN-eth2
+2018-10-28 13:49:55 <TRACE> ospf1: HELLO packet received from fe80::f0c6:9eff:fe7e:8ae7 via CARN-eth0
+2018-10-28 13:49:56 <TRACE> ospf1: HELLO packet sent via CARN-eth2
+2018-10-28 13:49:56 <TRACE> ospf1: HELLO packet sent via CARN-eth1
+2018-10-28 13:49:56 <TRACE> ospf1: HELLO packet sent via CARN-eth0
+2018-10-28 13:49:56 <TRACE> ospf1: HELLO packet sent via CARN-lan1
+2018-10-28 13:49:56 <TRACE> ospf1: HELLO packet sent via CARN-lan0
+2018-10-28 13:49:56 <TRACE> ospf1: HELLO packet received from fe80::3467:a3ff:fe7f:3cea via CARN-eth1
+2018-10-28 13:49:56 <TRACE> ospf1: HELLO packet received from fe80::5c64:f7ff:fe1e:abe1 via CARN-eth2
+2018-10-28 13:49:56 <TRACE> ospf1: HELLO packet received from fe80::f0c6:9eff:fe7e:8ae7 via CARN-eth0
+2018-10-28 13:49:57 <TRACE> ospf1: HELLO packet sent via CARN-lan0
+2018-10-28 13:49:57 <TRACE> ospf1: HELLO packet sent via CARN-lan1
+2018-10-28 13:49:57 <TRACE> ospf1: HELLO packet sent via CARN-eth0
+2018-10-28 13:49:57 <TRACE> ospf1: HELLO packet sent via CARN-eth1
+2018-10-28 13:49:57 <TRACE> ospf1: HELLO packet sent via CARN-eth2
+2018-10-28 13:49:57 <TRACE> ospf1: HELLO packet received from fe80::3467:a3ff:fe7f:3cea via CARN-eth1
+2018-10-28 13:49:57 <TRACE> ospf1: HELLO packet received from fe80::5c64:f7ff:fe1e:abe1 via CARN-eth2
+2018-10-28 13:49:57 <TRACE> ospf1: HELLO packet received from fe80::3467:a3ff:fe7f:3cea via CARN-eth1
+2018-10-28 13:49:57 <TRACE> ospf1: HELLO packet received from fe80::f0c6:9eff:fe7e:8ae7 via CARN-eth0
+2018-10-28 13:49:58 <TRACE> ospf1: HELLO packet sent via CARN-eth2
+2018-10-28 13:49:58 <TRACE> ospf1: HELLO packet sent via CARN-eth1
+2018-10-28 13:49:58 <TRACE> ospf1: HELLO packet sent via CARN-eth0
+2018-10-28 13:49:58 <TRACE> ospf1: HELLO packet sent via CARN-lan1
+2018-10-28 13:49:58 <TRACE> ospf1: HELLO packet sent via CARN-lan0
+2018-10-28 13:49:58 <TRACE> ospf1: HELLO packet received from fe80::3467:a3ff:fe7f:3cea via CARN-eth1
+2018-10-28 13:49:59 <TRACE> ospf1: HELLO packet sent via CARN-lan0
+2018-10-28 13:49:59 <TRACE> ospf1: HELLO packet sent via CARN-lan1
+2018-10-28 13:49:59 <TRACE> ospf1: HELLO packet sent via CARN-eth0
+2018-10-28 13:49:59 <TRACE> ospf1: HELLO packet sent via CARN-eth1
+2018-10-28 13:49:59 <TRACE> ospf1: HELLO packet sent via CARN-eth2
+2018-10-28 13:49:59 <TRACE> ospf1: HELLO packet received from fe80::5c64:f7ff:fe1e:abe1 via CARN-eth2
+2018-10-28 13:49:59 <TRACE> ospf1: HELLO packet received from fe80::f0c6:9eff:fe7e:8ae7 via CARN-eth0
+2018-10-28 13:49:59 <TRACE> ospf1: HELLO packet received from fe80::5c64:f7ff:fe1e:abe1 via CARN-eth2
+2018-10-28 13:49:59 <TRACE> ospf1: HELLO packet received from fe80::f0c6:9eff:fe7e:8ae7 via CARN-eth0
+2018-10-28 13:50:00 <TRACE> ospf1: HELLO packet sent via CARN-eth2
+2018-10-28 13:50:00 <TRACE> ospf1: HELLO packet sent via CARN-eth1
+2018-10-28 13:50:00 <TRACE> ospf1: HELLO packet sent via CARN-eth0
+2018-10-28 13:50:00 <TRACE> ospf1: HELLO packet sent via CARN-lan1
+2018-10-28 13:50:00 <TRACE> ospf1: HELLO packet sent via CARN-lan0
+2018-10-28 13:50:00 <TRACE> ospf1: HELLO packet received from fe80::3467:a3ff:fe7f:3cea via CARN-eth1
+2018-10-28 13:50:00 <TRACE> ospf1: HELLO packet received from fe80::5c64:f7ff:fe1e:abe1 via CARN-eth2
+2018-10-28 13:50:00 <TRACE> ospf1: HELLO packet received from fe80::f0c6:9eff:fe7e:8ae7 via CARN-eth0
+2018-10-28 13:50:01 <TRACE> ospf1: HELLO packet sent via CARN-lan0
+2018-10-28 13:50:01 <TRACE> ospf1: HELLO packet sent via CARN-lan1
+2018-10-28 13:50:01 <TRACE> ospf1: HELLO packet sent via CARN-eth0
+2018-10-28 13:50:01 <TRACE> ospf1: HELLO packet sent via CARN-eth1
+2018-10-28 13:50:01 <TRACE> ospf1: HELLO packet sent via CARN-eth2
+2018-10-28 13:50:01 <TRACE> ospf1: HELLO packet received from fe80::3467:a3ff:fe7f:3cea via CARN-eth1
+2018-10-28 13:50:01 <TRACE> ospf1: HELLO packet received from fe80::3467:a3ff:fe7f:3cea via CARN-eth1
+2018-10-28 13:50:01 <TRACE> ospf1: HELLO packet received from fe80::f0c6:9eff:fe7e:8ae7 via CARN-eth0
+2018-10-28 13:50:02 <TRACE> ospf1: HELLO packet sent via CARN-eth2
+2018-10-28 13:50:02 <TRACE> ospf1: HELLO packet sent via CARN-eth1
+2018-10-28 13:50:02 <TRACE> ospf1: HELLO packet sent via CARN-eth0
+2018-10-28 13:50:02 <TRACE> ospf1: HELLO packet sent via CARN-lan1
+2018-10-28 13:50:02 <TRACE> ospf1: HELLO packet sent via CARN-lan0
+2018-10-28 13:50:02 <TRACE> device1: Scanning interfaces
+2018-10-28 13:50:02 <TRACE> ospf1: HELLO packet received from fe80::5c64:f7ff:fe1e:abe1 via CARN-eth2
+2018-10-28 13:50:02 <TRACE> ospf1: HELLO packet received from fe80::5c64:f7ff:fe1e:abe1 via CARN-eth2
+2018-10-28 13:50:02 <TRACE> ospf1: HELLO packet received from fe80::3467:a3ff:fe7f:3cea via CARN-eth1
+2018-10-28 13:50:03 <TRACE> ospf1: HELLO packet sent via CARN-lan0
+2018-10-28 13:50:03 <TRACE> ospf1: HELLO packet sent via CARN-lan1
+2018-10-28 13:50:03 <TRACE> ospf1: HELLO packet sent via CARN-eth0
+2018-10-28 13:50:03 <TRACE> ospf1: HELLO packet sent via CARN-eth1
+2018-10-28 13:50:03 <TRACE> ospf1: HELLO packet sent via CARN-eth2
+2018-10-28 13:50:03 <TRACE> ospf1: HELLO packet received from fe80::f0c6:9eff:fe7e:8ae7 via CARN-eth0
+2018-10-28 13:50:03 <TRACE> ospf1: HELLO packet received from fe80::3467:a3ff:fe7f:3cea via CARN-eth1
+2018-10-28 13:50:03 <TRACE> ospf1: HELLO packet received from fe80::f0c6:9eff:fe7e:8ae7 via CARN-eth0
+2018-10-28 13:50:04 <TRACE> ospf1: HELLO packet sent via CARN-eth2
+2018-10-28 13:50:04 <TRACE> ospf1: HELLO packet sent via CARN-eth1
+2018-10-28 13:50:04 <TRACE> ospf1: HELLO packet sent via CARN-eth0
+2018-10-28 13:50:04 <TRACE> ospf1: HELLO packet sent via CARN-lan1
+2018-10-28 13:50:04 <TRACE> ospf1: HELLO packet sent via CARN-lan0
+2018-10-28 13:50:04 <TRACE> ospf1: HELLO packet received from fe80::5c64:f7ff:fe1e:abe1 via CARN-eth2
+2018-10-28 13:50:04 <TRACE> ospf1: HELLO packet received from fe80::f0c6:9eff:fe7e:8ae7 via CARN-eth0
+2018-10-28 13:50:05 <TRACE> ospf1: HELLO packet sent via CARN-lan0
+2018-10-28 13:50:05 <TRACE> ospf1: HELLO packet sent via CARN-lan1
+2018-10-28 13:50:05 <TRACE> ospf1: HELLO packet sent via CARN-eth0
+2018-10-28 13:50:05 <TRACE> ospf1: HELLO packet sent via CARN-eth1
+2018-10-28 13:50:05 <TRACE> ospf1: HELLO packet sent via CARN-eth2
+2018-10-28 13:50:05 <TRACE> ospf1: HELLO packet received from fe80::5c64:f7ff:fe1e:abe1 via CARN-eth2
+2018-10-28 13:50:05 <TRACE> ospf1: HELLO packet received from fe80::3467:a3ff:fe7f:3cea via CARN-eth1
