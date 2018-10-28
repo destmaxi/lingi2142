@@ -432,7 +432,7 @@ ip6tables -A FORWARD --src <%= @prefix_a %>:0d00::/56 -p udp --dport 16384:16472
 #                     User type: 'c' reserved for guests                       #
 ################################################################################
 #
-# A guest should not host a service so we DROP all traffic going to a student
+# A guest should not host a service so we DROP all traffic going to a guest
 #
 
 ip6tables -A FORWARD --dst <%= @prefix_a %>:0c00::/56 -j DROP -m comment \
@@ -443,6 +443,17 @@ ip6tables -A FORWARD --dst <%= @prefix_b %>:0c00::/56 -j DROP -m comment \
 #
 # You can find more information about why we allow those ports in our report
 #
+
+ip6tables -A FORWARD --src <%= @prefix_a %>:0c00::/56 -p tcp --match multiport \
+  --dports 25,53,80,109,110,143,220,443,993,995,5001 -j ACCEPT -m comment \
+  --comment "User type: b"
+ip6tables -A FORWARD --src <%= @prefix_b %>:0c00::/56 -p tcp --match multiport \
+  --dports 25,53,80,109,110,143,220,443,993,995,5001 -j ACCEPT -m comment \
+  --comment "User type: b"
+ip6tables -A FORWARD --src <%= @prefix_a %>:0c00::/56 -p udp --dport 53 -j ACCEPT \
+  -m comment --comment "User type: b"
+ip6tables -A FORWARD --src <%= @prefix_b %>:0c00::/56 -p udp --dport 53 -j ACCEPT \
+  -m comment --comment "User type: b"
 
 
 
