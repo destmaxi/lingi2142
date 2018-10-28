@@ -6,6 +6,8 @@ bird6::ospfv3:
     - STEV-eth0
     - STEV-eth1
     - STEV-lan0
+    - STEV-lan1
+    - STEV-lan2
   stub_itfs: [] # Passive interfaces (e.g., LANs)
 bird6::id: 6
 static_routes::id: 6
@@ -13,5 +15,7 @@ static_routes::interfaces:
   - {interface: STEV-eth0, route: 0f16}
   - {interface: STEV-eth1, route: 0f64}
   - {interface: STEV-lan0, route: 0a60}
+  - {interface: STEV-lan1, route: '0960'}
+  - {interface: STEV-lan2, route: '0c60'}
 script::id: 6
 redirection::id: 6
