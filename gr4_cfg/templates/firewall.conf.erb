@@ -52,6 +52,9 @@ ip6tables -A INPUT -i lo -j ACCEPT
 ip6tables -A OUPUT -o lo -j ACCEPT
 
 
+ip6tables -A INPUT  -p 41 -j ACCEPT -m comment --comment "tunneling by prot"
+ip6tables -A FORWARD  -p 41 -j ACCEPT -m comment --comment "tunneling by prot"
+ip6tables -A OUTPUT -p 41 -j ACCEPT -m comment --comment "tunneling by prot"
 
 <% if @type == "border" %>
 ################################################################################
