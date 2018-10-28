@@ -44,8 +44,10 @@ function mk_topo {
 
     echo "@@ Adding LANs"
     # You can add your LANs here
-    mk_LAN CARN DNS1 TEST JUL
-    mk_LAN MICH MAX DNS2
+    mk_LAN CARN TEST JUL
+    mk_LAN CARN DNS1
+    mk_LAN MICH MAX
+    mk_LAN MICH DNS2 
     mk_LAN PYTH STUD1
     mk_LAN HALL ADM1
     mk_LAN STEV ADM2

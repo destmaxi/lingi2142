@@ -7,6 +7,7 @@ bird6::ospfv3:
     - CARN-eth1
     - CARN-eth2
     - CARN-lan0
+    - CARN-lan1
   stub_itfs: [] # Passive interfaces (e.g., LANs)
 bird6::id: 1
 static_routes::id: 1
@@ -15,5 +16,6 @@ static_routes::interfaces:
   - {interface: CARN-eth1, route: 0f14}
   - {interface: CARN-eth2, route: 0f16}
   - {interface: CARN-lan0, route: 0b10}
+  - {interface: CARN-lan1, route: 0e11}
 script::id: 1
 redirection::id: 1

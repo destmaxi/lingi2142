@@ -6,6 +6,7 @@ bird6::ospfv3:
     - MICH-eth0
     - MICH-eth1
     - MICH-lan0
+    - MICH-lan1
   stub_itfs: [] # Passive interfaces (e.g., LANs)
 bird6::id: 3
 static_routes::id: 3
@@ -13,5 +14,6 @@ static_routes::interfaces:
   - {interface: MICH-eth0, route: 0f53}
   - {interface: MICH-eth1, route: 0f31}
   - {interface: MICH-lan0, route: 0b30}
+  - {interface: MICH-lan1, route: 0e31}
 script::id: 3
 redirection::id: 3
