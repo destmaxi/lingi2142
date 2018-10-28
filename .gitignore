@@ -8,7 +8,6 @@ tags
 **/manpath.config
 **/passwd
 **/protocols
-**/reselv.conf
 **/services
 **/bird/
 **/firewall/

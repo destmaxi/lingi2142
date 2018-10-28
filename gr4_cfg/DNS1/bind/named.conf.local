@@ -9,8 +9,6 @@
 zone "group4.ingi" IN {
      type master;
      file "/etc/bind/db.group4.ingi";
-     notify yes;
-     also-notify {fd00:300:4:e31::2; };
      allow-transfer {fd00:300:4:e31::2; };
 };
 
