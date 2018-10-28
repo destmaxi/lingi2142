@@ -11614,3 +11614,1618 @@
 2018-10-28 14:06:45 <TRACE> ospf1: HELLO packet sent via STEV-lan0
 2018-10-28 14:06:45 <TRACE> ospf1: HELLO packet received from fe80::685c:8eff:fe4c:fb41 via STEV-eth0
 2018-10-28 14:06:45 <TRACE> ospf1: HELLO packet received from fe80::20f8:84ff:fe47:b8b5 via STEV-eth1
+2018-10-28 14:06:46 <TRACE> ospf1: HELLO packet sent via STEV-lan0
+2018-10-28 14:06:46 <TRACE> ospf1: HELLO packet sent via STEV-eth0
+2018-10-28 14:06:46 <TRACE> ospf1: HELLO packet sent via STEV-eth1
+2018-10-28 14:06:46 <TRACE> ospf1: HELLO packet received from fe80::685c:8eff:fe4c:fb41 via STEV-eth0
+2018-10-28 14:06:46 <TRACE> ospf1: HELLO packet received from fe80::20f8:84ff:fe47:b8b5 via STEV-eth1
+2018-10-28 14:06:46 <TRACE> ospf1: HELLO packet received from fe80::20f8:84ff:fe47:b8b5 via STEV-eth1
+2018-10-28 14:06:47 <TRACE> ospf1: HELLO packet sent via STEV-eth1
+2018-10-28 14:06:47 <TRACE> ospf1: HELLO packet sent via STEV-eth0
+2018-10-28 14:06:47 <TRACE> ospf1: HELLO packet sent via STEV-lan0
+2018-10-28 14:06:47 <TRACE> ospf1: HELLO packet received from fe80::685c:8eff:fe4c:fb41 via STEV-eth0
+2018-10-28 14:06:47 <TRACE> ospf1: HELLO packet received from fe80::685c:8eff:fe4c:fb41 via STEV-eth0
+2018-10-28 14:06:48 <TRACE> ospf1: HELLO packet sent via STEV-lan0
+2018-10-28 14:06:48 <TRACE> ospf1: HELLO packet sent via STEV-eth0
+2018-10-28 14:06:48 <TRACE> ospf1: HELLO packet sent via STEV-eth1
+2018-10-28 14:06:48 <TRACE> ospf1: HELLO packet received from fe80::20f8:84ff:fe47:b8b5 via STEV-eth1
+2018-10-28 14:06:49 <TRACE> ospf1: HELLO packet sent via STEV-eth1
+2018-10-28 14:06:49 <TRACE> ospf1: HELLO packet sent via STEV-eth0
+2018-10-28 14:06:49 <TRACE> ospf1: HELLO packet sent via STEV-lan0
+2018-10-28 14:06:49 <TRACE> ospf1: HELLO packet received from fe80::685c:8eff:fe4c:fb41 via STEV-eth0
+2018-10-28 14:06:49 <TRACE> ospf1: HELLO packet received from fe80::20f8:84ff:fe47:b8b5 via STEV-eth1
+2018-10-28 14:06:50 <TRACE> ospf1: HELLO packet sent via STEV-lan0
+2018-10-28 14:06:50 <TRACE> ospf1: HELLO packet sent via STEV-eth0
+2018-10-28 14:06:50 <TRACE> ospf1: HELLO packet sent via STEV-eth1
+2018-10-28 14:06:50 <TRACE> ospf1: HELLO packet received from fe80::685c:8eff:fe4c:fb41 via STEV-eth0
+2018-10-28 14:06:50 <TRACE> ospf1: HELLO packet received from fe80::20f8:84ff:fe47:b8b5 via STEV-eth1
+2018-10-28 14:06:50 <TRACE> ospf1: HELLO packet received from fe80::20f8:84ff:fe47:b8b5 via STEV-eth1
+2018-10-28 14:06:51 <TRACE> ospf1: HELLO packet sent via STEV-eth1
+2018-10-28 14:06:51 <TRACE> ospf1: HELLO packet sent via STEV-eth0
+2018-10-28 14:06:51 <TRACE> ospf1: HELLO packet sent via STEV-lan0
+2018-10-28 14:06:51 <TRACE> device1: Scanning interfaces
+2018-10-28 14:06:51 <TRACE> kernel1: Scanning routing table
+2018-10-28 14:06:51 <TRACE> kernel1: fd00:200:4:2::/64: seen
+2018-10-28 14:06:51 <TRACE> kernel1: fd00:200:4:a20::/64: seen
+2018-10-28 14:06:51 <TRACE> kernel1: fd00:200:4:b30::/64: seen
+2018-10-28 14:06:51 <TRACE> kernel1: fd00:200:4:b40::/64: seen
+2018-10-28 14:06:51 <TRACE> kernel1: fd00:200:4:e11::/64: seen
+2018-10-28 14:06:51 <TRACE> kernel1: fd00:200:4:e31::/64: seen
+2018-10-28 14:06:51 <TRACE> kernel1: fd00:200:4:f14::/64: seen
+2018-10-28 14:06:51 <TRACE> kernel1: fd00:200:4:f24::/64: seen
+2018-10-28 14:06:51 <TRACE> kernel1: fd00:200:4:f25::/64: seen
+2018-10-28 14:06:51 <TRACE> kernel1: fd00:200:4:f31::/64: seen
+2018-10-28 14:06:51 <TRACE> kernel1: fd00:200:4:f53::/64: seen
+2018-10-28 14:06:51 <TRACE> kernel1: fd00:300:4:2::/64: seen
+2018-10-28 14:06:51 <TRACE> kernel1: fd00:300:4:a20::/64: seen
+2018-10-28 14:06:51 <TRACE> kernel1: fd00:300:4:b30::/64: seen
+2018-10-28 14:06:51 <TRACE> kernel1: fd00:300:4:b40::/64: seen
+2018-10-28 14:06:51 <TRACE> kernel1: fd00:300:4:e11::/64: seen
+2018-10-28 14:06:51 <TRACE> kernel1: fd00:300:4:e31::/64: seen
+2018-10-28 14:06:51 <TRACE> kernel1: fd00:300:4:e33::/64: seen
+2018-10-28 14:06:51 <TRACE> kernel1: fd00:300:4:f00::1/128: seen
+2018-10-28 14:06:51 <TRACE> kernel1: fd00:300:4:f00::2/128: seen
+2018-10-28 14:06:51 <TRACE> kernel1: fd00:300:4:f00::3/128: seen
+2018-10-28 14:06:51 <TRACE> kernel1: fd00:300:4:f00::4/128: seen
+2018-10-28 14:06:51 <TRACE> kernel1: fd00:300:4:f00::5/128: seen
+2018-10-28 14:06:51 <TRACE> kernel1: fd00:300:4:f00::6/128: seen
+2018-10-28 14:06:51 <TRACE> kernel1: fd00:300:4:f14::/64: seen
+2018-10-28 14:06:51 <TRACE> kernel1: fd00:300:4:f24::/64: seen
+2018-10-28 14:06:51 <TRACE> kernel1: fd00:300:4:f25::/64: seen
+2018-10-28 14:06:51 <TRACE> kernel1: fd00:300:4:f31::/64: seen
+2018-10-28 14:06:51 <TRACE> kernel1: fd00:300:4:f53::/64: seen
+2018-10-28 14:06:51 <TRACE> kernel1: ::/0: seen
+2018-10-28 14:06:51 <TRACE> kernel1: Pruning table master
+2018-10-28 14:06:51 <TRACE> kernel1: Pruning inherited routes
+2018-10-28 14:06:51 <TRACE> ospf1: HELLO packet received from fe80::685c:8eff:fe4c:fb41 via STEV-eth0
+2018-10-28 14:06:51 <TRACE> ospf1: HELLO packet received from fe80::685c:8eff:fe4c:fb41 via STEV-eth0
+2018-10-28 14:06:52 <TRACE> ospf1: HELLO packet sent via STEV-lan0
+2018-10-28 14:06:52 <TRACE> ospf1: HELLO packet sent via STEV-eth0
+2018-10-28 14:06:52 <TRACE> ospf1: HELLO packet sent via STEV-eth1
+2018-10-28 14:06:52 <TRACE> ospf1: HELLO packet received from fe80::20f8:84ff:fe47:b8b5 via STEV-eth1
+2018-10-28 14:06:52 <TRACE> ospf1: HELLO packet received from fe80::20f8:84ff:fe47:b8b5 via STEV-eth1
+2018-10-28 14:06:53 <TRACE> ospf1: HELLO packet sent via STEV-eth1
+2018-10-28 14:06:53 <TRACE> ospf1: HELLO packet sent via STEV-eth0
+2018-10-28 14:06:53 <TRACE> ospf1: HELLO packet sent via STEV-lan0
+2018-10-28 14:06:53 <TRACE> ospf1: HELLO packet received from fe80::685c:8eff:fe4c:fb41 via STEV-eth0
+2018-10-28 14:06:54 <TRACE> ospf1: HELLO packet sent via STEV-lan0
+2018-10-28 14:06:54 <TRACE> ospf1: HELLO packet sent via STEV-eth0
+2018-10-28 14:06:54 <TRACE> ospf1: HELLO packet sent via STEV-eth1
+2018-10-28 14:06:54 <TRACE> ospf1: HELLO packet received from fe80::20f8:84ff:fe47:b8b5 via STEV-eth1
+2018-10-28 14:06:54 <TRACE> ospf1: HELLO packet received from fe80::685c:8eff:fe4c:fb41 via STEV-eth0
+2018-10-28 14:06:55 <TRACE> ospf1: HELLO packet sent via STEV-eth1
+2018-10-28 14:06:55 <TRACE> ospf1: HELLO packet sent via STEV-eth0
+2018-10-28 14:06:55 <TRACE> ospf1: HELLO packet sent via STEV-lan0
+2018-10-28 14:06:55 <TRACE> ospf1: HELLO packet received from fe80::20f8:84ff:fe47:b8b5 via STEV-eth1
+2018-10-28 14:06:55 <TRACE> ospf1: HELLO packet received from fe80::685c:8eff:fe4c:fb41 via STEV-eth0
+2018-10-28 14:06:55 <TRACE> ospf1: HELLO packet received from fe80::685c:8eff:fe4c:fb41 via STEV-eth0
+2018-10-28 14:06:56 <TRACE> ospf1: HELLO packet sent via STEV-lan0
+2018-10-28 14:06:56 <TRACE> ospf1: HELLO packet sent via STEV-eth0
+2018-10-28 14:06:56 <TRACE> ospf1: HELLO packet sent via STEV-eth1
+2018-10-28 14:06:56 <TRACE> ospf1: HELLO packet received from fe80::20f8:84ff:fe47:b8b5 via STEV-eth1
+2018-10-28 14:06:56 <TRACE> ospf1: HELLO packet received from fe80::20f8:84ff:fe47:b8b5 via STEV-eth1
+2018-10-28 14:06:57 <TRACE> ospf1: HELLO packet sent via STEV-eth1
+2018-10-28 14:06:57 <TRACE> ospf1: HELLO packet sent via STEV-eth0
+2018-10-28 14:06:57 <TRACE> ospf1: HELLO packet sent via STEV-lan0
+2018-10-28 14:06:57 <TRACE> ospf1: HELLO packet received from fe80::685c:8eff:fe4c:fb41 via STEV-eth0
+2018-10-28 14:06:58 <TRACE> ospf1: HELLO packet sent via STEV-lan0
+2018-10-28 14:06:58 <TRACE> ospf1: HELLO packet sent via STEV-eth0
+2018-10-28 14:06:58 <TRACE> ospf1: HELLO packet sent via STEV-eth1
+2018-10-28 14:06:58 <TRACE> ospf1: HELLO packet received from fe80::685c:8eff:fe4c:fb41 via STEV-eth0
+2018-10-28 14:06:58 <TRACE> ospf1: HELLO packet received from fe80::20f8:84ff:fe47:b8b5 via STEV-eth1
+2018-10-28 14:06:59 <TRACE> ospf1: HELLO packet sent via STEV-eth1
+2018-10-28 14:06:59 <TRACE> ospf1: HELLO packet sent via STEV-eth0
+2018-10-28 14:06:59 <TRACE> ospf1: HELLO packet sent via STEV-lan0
+2018-10-28 14:06:59 <TRACE> ospf1: HELLO packet received from fe80::685c:8eff:fe4c:fb41 via STEV-eth0
+2018-10-28 14:06:59 <TRACE> ospf1: HELLO packet received from fe80::20f8:84ff:fe47:b8b5 via STEV-eth1
+2018-10-28 14:07:00 <TRACE> ospf1: HELLO packet sent via STEV-lan0
+2018-10-28 14:07:00 <TRACE> ospf1: HELLO packet sent via STEV-eth0
+2018-10-28 14:07:00 <TRACE> ospf1: HELLO packet sent via STEV-eth1
+2018-10-28 14:07:00 <TRACE> ospf1: HELLO packet received from fe80::685c:8eff:fe4c:fb41 via STEV-eth0
+2018-10-28 14:07:00 <TRACE> ospf1: HELLO packet received from fe80::20f8:84ff:fe47:b8b5 via STEV-eth1
+2018-10-28 14:07:00 <TRACE> ospf1: HELLO packet received from fe80::20f8:84ff:fe47:b8b5 via STEV-eth1
+2018-10-28 14:07:00 <TRACE> ospf1: HELLO packet received from fe80::685c:8eff:fe4c:fb41 via STEV-eth0
+2018-10-28 14:07:01 <TRACE> ospf1: HELLO packet sent via STEV-eth1
+2018-10-28 14:07:01 <TRACE> ospf1: HELLO packet sent via STEV-eth0
+2018-10-28 14:07:01 <TRACE> ospf1: HELLO packet sent via STEV-lan0
+2018-10-28 14:07:01 <TRACE> device1: Scanning interfaces
+2018-10-28 14:07:02 <TRACE> ospf1: HELLO packet sent via STEV-lan0
+2018-10-28 14:07:02 <TRACE> ospf1: HELLO packet sent via STEV-eth0
+2018-10-28 14:07:02 <TRACE> ospf1: HELLO packet sent via STEV-eth1
+2018-10-28 14:07:02 <TRACE> ospf1: HELLO packet received from fe80::20f8:84ff:fe47:b8b5 via STEV-eth1
+2018-10-28 14:07:02 <TRACE> ospf1: HELLO packet received from fe80::685c:8eff:fe4c:fb41 via STEV-eth0
+2018-10-28 14:07:02 <TRACE> ospf1: HELLO packet received from fe80::20f8:84ff:fe47:b8b5 via STEV-eth1
+2018-10-28 14:07:03 <TRACE> ospf1: HELLO packet sent via STEV-eth1
+2018-10-28 14:07:03 <TRACE> ospf1: HELLO packet sent via STEV-eth0
+2018-10-28 14:07:03 <TRACE> ospf1: HELLO packet sent via STEV-lan0
+2018-10-28 14:07:03 <TRACE> ospf1: HELLO packet received from fe80::685c:8eff:fe4c:fb41 via STEV-eth0
+2018-10-28 14:07:03 <TRACE> ospf1: HELLO packet received from fe80::20f8:84ff:fe47:b8b5 via STEV-eth1
+2018-10-28 14:07:04 <TRACE> ospf1: HELLO packet sent via STEV-lan0
+2018-10-28 14:07:04 <TRACE> ospf1: HELLO packet sent via STEV-eth0
+2018-10-28 14:07:04 <TRACE> ospf1: HELLO packet sent via STEV-eth1
+2018-10-28 14:07:04 <TRACE> ospf1: HELLO packet received from fe80::685c:8eff:fe4c:fb41 via STEV-eth0
+2018-10-28 14:07:05 <TRACE> ospf1: HELLO packet sent via STEV-eth1
+2018-10-28 14:07:05 <TRACE> ospf1: HELLO packet sent via STEV-eth0
+2018-10-28 14:07:05 <TRACE> ospf1: HELLO packet sent via STEV-lan0
+2018-10-28 14:07:05 <TRACE> ospf1: HELLO packet received from fe80::20f8:84ff:fe47:b8b5 via STEV-eth1
+2018-10-28 14:07:05 <TRACE> ospf1: HELLO packet received from fe80::685c:8eff:fe4c:fb41 via STEV-eth0
+2018-10-28 14:07:05 <TRACE> ospf1: HELLO packet received from fe80::685c:8eff:fe4c:fb41 via STEV-eth0
+2018-10-28 14:07:06 <TRACE> ospf1: HELLO packet sent via STEV-lan0
+2018-10-28 14:07:06 <TRACE> ospf1: HELLO packet sent via STEV-eth0
+2018-10-28 14:07:06 <TRACE> ospf1: HELLO packet sent via STEV-eth1
+2018-10-28 14:07:06 <TRACE> ospf1: HELLO packet received from fe80::20f8:84ff:fe47:b8b5 via STEV-eth1
+2018-10-28 14:07:06 <TRACE> ospf1: HELLO packet received from fe80::20f8:84ff:fe47:b8b5 via STEV-eth1
+2018-10-28 14:07:07 <TRACE> ospf1: HELLO packet sent via STEV-eth1
+2018-10-28 14:07:07 <TRACE> ospf1: HELLO packet sent via STEV-eth0
+2018-10-28 14:07:07 <TRACE> ospf1: HELLO packet sent via STEV-lan0
+2018-10-28 14:07:07 <TRACE> ospf1: HELLO packet received from fe80::685c:8eff:fe4c:fb41 via STEV-eth0
+2018-10-28 14:07:08 <TRACE> ospf1: HELLO packet sent via STEV-lan0
+2018-10-28 14:07:08 <TRACE> ospf1: HELLO packet sent via STEV-eth0
+2018-10-28 14:07:08 <TRACE> ospf1: HELLO packet sent via STEV-eth1
+2018-10-28 14:07:08 <TRACE> ospf1: HELLO packet received from fe80::20f8:84ff:fe47:b8b5 via STEV-eth1
+2018-10-28 14:07:08 <TRACE> ospf1: HELLO packet received from fe80::685c:8eff:fe4c:fb41 via STEV-eth0
+2018-10-28 14:07:09 <TRACE> ospf1: HELLO packet sent via STEV-eth1
+2018-10-28 14:07:09 <TRACE> ospf1: HELLO packet sent via STEV-eth0
+2018-10-28 14:07:09 <TRACE> ospf1: HELLO packet sent via STEV-lan0
+2018-10-28 14:07:09 <TRACE> ospf1: HELLO packet received from fe80::20f8:84ff:fe47:b8b5 via STEV-eth1
+2018-10-28 14:07:09 <TRACE> ospf1: HELLO packet received from fe80::685c:8eff:fe4c:fb41 via STEV-eth0
+2018-10-28 14:07:09 <TRACE> ospf1: HELLO packet received from fe80::20f8:84ff:fe47:b8b5 via STEV-eth1
+2018-10-28 14:07:10 <TRACE> ospf1: HELLO packet sent via STEV-lan0
+2018-10-28 14:07:10 <TRACE> ospf1: HELLO packet sent via STEV-eth0
+2018-10-28 14:07:10 <TRACE> ospf1: HELLO packet sent via STEV-eth1
+2018-10-28 14:07:10 <TRACE> ospf1: HELLO packet received from fe80::685c:8eff:fe4c:fb41 via STEV-eth0
+2018-10-28 14:07:10 <TRACE> ospf1: HELLO packet received from fe80::20f8:84ff:fe47:b8b5 via STEV-eth1
+2018-10-28 14:07:10 <TRACE> ospf1: HELLO packet received from fe80::685c:8eff:fe4c:fb41 via STEV-eth0
+2018-10-28 14:07:11 <TRACE> ospf1: HELLO packet sent via STEV-eth1
+2018-10-28 14:07:11 <TRACE> ospf1: HELLO packet sent via STEV-eth0
+2018-10-28 14:07:11 <TRACE> ospf1: HELLO packet sent via STEV-lan0
+2018-10-28 14:07:11 <TRACE> device1: Scanning interfaces
+2018-10-28 14:07:11 <TRACE> kernel1: Scanning routing table
+2018-10-28 14:07:11 <TRACE> kernel1: fd00:200:4:2::/64: seen
+2018-10-28 14:07:11 <TRACE> kernel1: fd00:200:4:a20::/64: seen
+2018-10-28 14:07:11 <TRACE> kernel1: fd00:200:4:b30::/64: seen
+2018-10-28 14:07:11 <TRACE> kernel1: fd00:200:4:b40::/64: seen
+2018-10-28 14:07:11 <TRACE> kernel1: fd00:200:4:e11::/64: seen
+2018-10-28 14:07:11 <TRACE> kernel1: fd00:200:4:e31::/64: seen
+2018-10-28 14:07:11 <TRACE> kernel1: fd00:200:4:f14::/64: seen
+2018-10-28 14:07:11 <TRACE> kernel1: fd00:200:4:f24::/64: seen
+2018-10-28 14:07:11 <TRACE> kernel1: fd00:200:4:f25::/64: seen
+2018-10-28 14:07:11 <TRACE> kernel1: fd00:200:4:f31::/64: seen
+2018-10-28 14:07:11 <TRACE> kernel1: fd00:200:4:f53::/64: seen
+2018-10-28 14:07:11 <TRACE> kernel1: fd00:300:4:2::/64: seen
+2018-10-28 14:07:11 <TRACE> kernel1: fd00:300:4:a20::/64: seen
+2018-10-28 14:07:11 <TRACE> kernel1: fd00:300:4:b30::/64: seen
+2018-10-28 14:07:11 <TRACE> kernel1: fd00:300:4:b40::/64: seen
+2018-10-28 14:07:11 <TRACE> kernel1: fd00:300:4:e11::/64: seen
+2018-10-28 14:07:11 <TRACE> kernel1: fd00:300:4:e31::/64: seen
+2018-10-28 14:07:11 <TRACE> kernel1: fd00:300:4:e33::/64: seen
+2018-10-28 14:07:11 <TRACE> kernel1: fd00:300:4:f00::1/128: seen
+2018-10-28 14:07:11 <TRACE> kernel1: fd00:300:4:f00::2/128: seen
+2018-10-28 14:07:11 <TRACE> kernel1: fd00:300:4:f00::3/128: seen
+2018-10-28 14:07:11 <TRACE> kernel1: fd00:300:4:f00::4/128: seen
+2018-10-28 14:07:11 <TRACE> kernel1: fd00:300:4:f00::5/128: seen
+2018-10-28 14:07:11 <TRACE> kernel1: fd00:300:4:f00::6/128: seen
+2018-10-28 14:07:11 <TRACE> kernel1: fd00:300:4:f14::/64: seen
+2018-10-28 14:07:11 <TRACE> kernel1: fd00:300:4:f24::/64: seen
+2018-10-28 14:07:11 <TRACE> kernel1: fd00:300:4:f25::/64: seen
+2018-10-28 14:07:11 <TRACE> kernel1: fd00:300:4:f31::/64: seen
+2018-10-28 14:07:11 <TRACE> kernel1: fd00:300:4:f53::/64: seen
+2018-10-28 14:07:11 <TRACE> kernel1: ::/0: seen
+2018-10-28 14:07:11 <TRACE> kernel1: Pruning table master
+2018-10-28 14:07:11 <TRACE> kernel1: Pruning inherited routes
+2018-10-28 14:07:11 <TRACE> ospf1: HELLO packet received from fe80::685c:8eff:fe4c:fb41 via STEV-eth0
+2018-10-28 14:07:12 <TRACE> ospf1: HELLO packet sent via STEV-lan0
+2018-10-28 14:07:12 <TRACE> ospf1: HELLO packet sent via STEV-eth0
+2018-10-28 14:07:12 <TRACE> ospf1: HELLO packet sent via STEV-eth1
+2018-10-28 14:07:12 <TRACE> ospf1: HELLO packet received from fe80::20f8:84ff:fe47:b8b5 via STEV-eth1
+2018-10-28 14:07:13 <TRACE> ospf1: HELLO packet sent via STEV-eth1
+2018-10-28 14:07:13 <TRACE> ospf1: HELLO packet sent via STEV-eth0
+2018-10-28 14:07:13 <TRACE> ospf1: HELLO packet sent via STEV-lan0
+2018-10-28 14:07:13 <TRACE> ospf1: HELLO packet received from fe80::20f8:84ff:fe47:b8b5 via STEV-eth1
+2018-10-28 14:07:13 <TRACE> ospf1: HELLO packet received from fe80::685c:8eff:fe4c:fb41 via STEV-eth0
+2018-10-28 14:07:14 <TRACE> ospf1: HELLO packet sent via STEV-lan0
+2018-10-28 14:07:14 <TRACE> ospf1: HELLO packet sent via STEV-eth0
+2018-10-28 14:07:14 <TRACE> ospf1: HELLO packet sent via STEV-eth1
+2018-10-28 14:07:14 <TRACE> ospf1: HELLO packet received from fe80::20f8:84ff:fe47:b8b5 via STEV-eth1
+2018-10-28 14:07:14 <TRACE> ospf1: HELLO packet received from fe80::685c:8eff:fe4c:fb41 via STEV-eth0
+2018-10-28 14:07:15 <TRACE> ospf1: HELLO packet sent via STEV-eth1
+2018-10-28 14:07:15 <TRACE> ospf1: HELLO packet sent via STEV-eth0
+2018-10-28 14:07:15 <TRACE> ospf1: HELLO packet sent via STEV-lan0
+2018-10-28 14:07:15 <TRACE> ospf1: HELLO packet received from fe80::685c:8eff:fe4c:fb41 via STEV-eth0
+2018-10-28 14:07:15 <TRACE> ospf1: HELLO packet received from fe80::20f8:84ff:fe47:b8b5 via STEV-eth1
+2018-10-28 14:07:15 <TRACE> ospf1: HELLO packet received from fe80::20f8:84ff:fe47:b8b5 via STEV-eth1
+2018-10-28 14:07:16 <TRACE> ospf1: HELLO packet sent via STEV-lan0
+2018-10-28 14:07:16 <TRACE> ospf1: HELLO packet sent via STEV-eth0
+2018-10-28 14:07:16 <TRACE> ospf1: HELLO packet sent via STEV-eth1
+2018-10-28 14:07:16 <TRACE> ospf1: HELLO packet received from fe80::685c:8eff:fe4c:fb41 via STEV-eth0
+2018-10-28 14:07:16 <TRACE> ospf1: HELLO packet received from fe80::685c:8eff:fe4c:fb41 via STEV-eth0
+2018-10-28 14:07:17 <TRACE> ospf1: HELLO packet sent via STEV-eth1
+2018-10-28 14:07:17 <TRACE> ospf1: HELLO packet sent via STEV-eth0
+2018-10-28 14:07:17 <TRACE> ospf1: HELLO packet sent via STEV-lan0
+2018-10-28 14:07:17 <TRACE> ospf1: HELLO packet received from fe80::20f8:84ff:fe47:b8b5 via STEV-eth1
+2018-10-28 14:07:17 <TRACE> ospf1: HELLO packet received from fe80::20f8:84ff:fe47:b8b5 via STEV-eth1
+2018-10-28 14:07:18 <TRACE> ospf1: HELLO packet sent via STEV-lan0
+2018-10-28 14:07:18 <TRACE> ospf1: HELLO packet sent via STEV-eth0
+2018-10-28 14:07:18 <TRACE> ospf1: HELLO packet sent via STEV-eth1
+2018-10-28 14:07:18 <TRACE> ospf1: HELLO packet received from fe80::685c:8eff:fe4c:fb41 via STEV-eth0
+2018-10-28 14:07:19 <TRACE> ospf1: HELLO packet sent via STEV-eth1
+2018-10-28 14:07:19 <TRACE> ospf1: HELLO packet sent via STEV-eth0
+2018-10-28 14:07:19 <TRACE> ospf1: HELLO packet sent via STEV-lan0
+2018-10-28 14:07:19 <TRACE> ospf1: HELLO packet received from fe80::20f8:84ff:fe47:b8b5 via STEV-eth1
+2018-10-28 14:07:19 <TRACE> ospf1: HELLO packet received from fe80::685c:8eff:fe4c:fb41 via STEV-eth0
+2018-10-28 14:07:20 <TRACE> ospf1: HELLO packet sent via STEV-lan0
+2018-10-28 14:07:20 <TRACE> ospf1: HELLO packet sent via STEV-eth0
+2018-10-28 14:07:20 <TRACE> ospf1: HELLO packet sent via STEV-eth1
+2018-10-28 14:07:20 <TRACE> ospf1: HELLO packet received from fe80::20f8:84ff:fe47:b8b5 via STEV-eth1
+2018-10-28 14:07:20 <TRACE> ospf1: HELLO packet received from fe80::685c:8eff:fe4c:fb41 via STEV-eth0
+2018-10-28 14:07:20 <TRACE> ospf1: HELLO packet received from fe80::20f8:84ff:fe47:b8b5 via STEV-eth1
+2018-10-28 14:07:20 <TRACE> ospf1: HELLO packet received from fe80::685c:8eff:fe4c:fb41 via STEV-eth0
+2018-10-28 14:07:21 <TRACE> ospf1: HELLO packet sent via STEV-eth1
+2018-10-28 14:07:21 <TRACE> ospf1: HELLO packet sent via STEV-eth0
+2018-10-28 14:07:21 <TRACE> ospf1: HELLO packet sent via STEV-lan0
+2018-10-28 14:07:21 <TRACE> device1: Scanning interfaces
+2018-10-28 14:07:22 <TRACE> ospf1: HELLO packet sent via STEV-lan0
+2018-10-28 14:07:22 <TRACE> ospf1: HELLO packet sent via STEV-eth0
+2018-10-28 14:07:22 <TRACE> ospf1: HELLO packet sent via STEV-eth1
+2018-10-28 14:07:22 <TRACE> ospf1: HELLO packet received from fe80::20f8:84ff:fe47:b8b5 via STEV-eth1
+2018-10-28 14:07:22 <TRACE> ospf1: HELLO packet received from fe80::685c:8eff:fe4c:fb41 via STEV-eth0
+2018-10-28 14:07:23 <TRACE> ospf1: HELLO packet sent via STEV-eth1
+2018-10-28 14:07:23 <TRACE> ospf1: HELLO packet sent via STEV-eth0
+2018-10-28 14:07:23 <TRACE> ospf1: HELLO packet sent via STEV-lan0
+2018-10-28 14:07:23 <TRACE> ospf1: HELLO packet received from fe80::685c:8eff:fe4c:fb41 via STEV-eth0
+2018-10-28 14:07:23 <TRACE> ospf1: HELLO packet received from fe80::20f8:84ff:fe47:b8b5 via STEV-eth1
+2018-10-28 14:07:24 <TRACE> ospf1: HELLO packet sent via STEV-lan0
+2018-10-28 14:07:24 <TRACE> ospf1: HELLO packet sent via STEV-eth0
+2018-10-28 14:07:24 <TRACE> ospf1: HELLO packet sent via STEV-eth1
+2018-10-28 14:07:24 <TRACE> ospf1: HELLO packet received from fe80::685c:8eff:fe4c:fb41 via STEV-eth0
+2018-10-28 14:07:24 <TRACE> ospf1: HELLO packet received from fe80::20f8:84ff:fe47:b8b5 via STEV-eth1
+2018-10-28 14:07:25 <TRACE> ospf1: HELLO packet sent via STEV-eth1
+2018-10-28 14:07:25 <TRACE> ospf1: HELLO packet sent via STEV-eth0
+2018-10-28 14:07:25 <TRACE> ospf1: HELLO packet sent via STEV-lan0
+2018-10-28 14:07:25 <TRACE> ospf1: HELLO packet received from fe80::20f8:84ff:fe47:b8b5 via STEV-eth1
+2018-10-28 14:07:25 <TRACE> ospf1: HELLO packet received from fe80::685c:8eff:fe4c:fb41 via STEV-eth0
+2018-10-28 14:07:25 <TRACE> ospf1: HELLO packet received from fe80::685c:8eff:fe4c:fb41 via STEV-eth0
+2018-10-28 14:07:26 <TRACE> ospf1: HELLO packet sent via STEV-lan0
+2018-10-28 14:07:26 <TRACE> ospf1: HELLO packet sent via STEV-eth0
+2018-10-28 14:07:26 <TRACE> ospf1: HELLO packet sent via STEV-eth1
+2018-10-28 14:07:26 <TRACE> ospf1: HELLO packet received from fe80::20f8:84ff:fe47:b8b5 via STEV-eth1
+2018-10-28 14:07:26 <TRACE> ospf1: HELLO packet received from fe80::20f8:84ff:fe47:b8b5 via STEV-eth1
+2018-10-28 14:07:27 <TRACE> ospf1: HELLO packet sent via STEV-eth1
+2018-10-28 14:07:27 <TRACE> ospf1: HELLO packet sent via STEV-eth0
+2018-10-28 14:07:27 <TRACE> ospf1: HELLO packet sent via STEV-lan0
+2018-10-28 14:07:27 <TRACE> ospf1: HELLO packet received from fe80::685c:8eff:fe4c:fb41 via STEV-eth0
+2018-10-28 14:07:28 <TRACE> ospf1: HELLO packet sent via STEV-lan0
+2018-10-28 14:07:28 <TRACE> ospf1: HELLO packet sent via STEV-eth0
+2018-10-28 14:07:28 <TRACE> ospf1: HELLO packet sent via STEV-eth1
+2018-10-28 14:07:28 <TRACE> ospf1: HELLO packet received from fe80::20f8:84ff:fe47:b8b5 via STEV-eth1
+2018-10-28 14:07:28 <TRACE> ospf1: HELLO packet received from fe80::685c:8eff:fe4c:fb41 via STEV-eth0
+2018-10-28 14:07:29 <TRACE> ospf1: HELLO packet sent via STEV-eth1
+2018-10-28 14:07:29 <TRACE> ospf1: HELLO packet sent via STEV-eth0
+2018-10-28 14:07:29 <TRACE> ospf1: HELLO packet sent via STEV-lan0
+2018-10-28 14:07:29 <TRACE> ospf1: HELLO packet received from fe80::20f8:84ff:fe47:b8b5 via STEV-eth1
+2018-10-28 14:07:29 <TRACE> ospf1: HELLO packet received from fe80::685c:8eff:fe4c:fb41 via STEV-eth0
+2018-10-28 14:07:30 <TRACE> ospf1: HELLO packet sent via STEV-lan0
+2018-10-28 14:07:30 <TRACE> ospf1: HELLO packet sent via STEV-eth0
+2018-10-28 14:07:30 <TRACE> ospf1: HELLO packet sent via STEV-eth1
+2018-10-28 14:07:30 <TRACE> ospf1: HELLO packet received from fe80::20f8:84ff:fe47:b8b5 via STEV-eth1
+2018-10-28 14:07:30 <TRACE> ospf1: HELLO packet received from fe80::685c:8eff:fe4c:fb41 via STEV-eth0
+2018-10-28 14:07:30 <TRACE> ospf1: HELLO packet received from fe80::685c:8eff:fe4c:fb41 via STEV-eth0
+2018-10-28 14:07:31 <TRACE> ospf1: HELLO packet sent via STEV-eth1
+2018-10-28 14:07:31 <TRACE> ospf1: HELLO packet sent via STEV-eth0
+2018-10-28 14:07:31 <TRACE> ospf1: HELLO packet sent via STEV-lan0
+2018-10-28 14:07:31 <TRACE> device1: Scanning interfaces
+2018-10-28 14:07:31 <TRACE> kernel1: Scanning routing table
+2018-10-28 14:07:31 <TRACE> kernel1: fd00:200:4:2::/64: seen
+2018-10-28 14:07:31 <TRACE> kernel1: fd00:200:4:a20::/64: seen
+2018-10-28 14:07:31 <TRACE> kernel1: fd00:200:4:b30::/64: seen
+2018-10-28 14:07:31 <TRACE> kernel1: fd00:200:4:b40::/64: seen
+2018-10-28 14:07:31 <TRACE> kernel1: fd00:200:4:e11::/64: seen
+2018-10-28 14:07:31 <TRACE> kernel1: fd00:200:4:e31::/64: seen
+2018-10-28 14:07:31 <TRACE> kernel1: fd00:200:4:f14::/64: seen
+2018-10-28 14:07:31 <TRACE> kernel1: fd00:200:4:f24::/64: seen
+2018-10-28 14:07:31 <TRACE> kernel1: fd00:200:4:f25::/64: seen
+2018-10-28 14:07:31 <TRACE> kernel1: fd00:200:4:f31::/64: seen
+2018-10-28 14:07:31 <TRACE> kernel1: fd00:200:4:f53::/64: seen
+2018-10-28 14:07:31 <TRACE> kernel1: fd00:300:4:2::/64: seen
+2018-10-28 14:07:31 <TRACE> kernel1: fd00:300:4:a20::/64: seen
+2018-10-28 14:07:31 <TRACE> kernel1: fd00:300:4:b30::/64: seen
+2018-10-28 14:07:31 <TRACE> kernel1: fd00:300:4:b40::/64: seen
+2018-10-28 14:07:31 <TRACE> kernel1: fd00:300:4:e11::/64: seen
+2018-10-28 14:07:31 <TRACE> kernel1: fd00:300:4:e31::/64: seen
+2018-10-28 14:07:31 <TRACE> kernel1: fd00:300:4:e33::/64: seen
+2018-10-28 14:07:31 <TRACE> kernel1: fd00:300:4:f00::1/128: seen
+2018-10-28 14:07:31 <TRACE> kernel1: fd00:300:4:f00::2/128: seen
+2018-10-28 14:07:31 <TRACE> kernel1: fd00:300:4:f00::3/128: seen
+2018-10-28 14:07:31 <TRACE> kernel1: fd00:300:4:f00::4/128: seen
+2018-10-28 14:07:31 <TRACE> kernel1: fd00:300:4:f00::5/128: seen
+2018-10-28 14:07:31 <TRACE> kernel1: fd00:300:4:f00::6/128: seen
+2018-10-28 14:07:31 <TRACE> kernel1: fd00:300:4:f14::/64: seen
+2018-10-28 14:07:31 <TRACE> kernel1: fd00:300:4:f24::/64: seen
+2018-10-28 14:07:31 <TRACE> kernel1: fd00:300:4:f25::/64: seen
+2018-10-28 14:07:31 <TRACE> kernel1: fd00:300:4:f31::/64: seen
+2018-10-28 14:07:31 <TRACE> kernel1: fd00:300:4:f53::/64: seen
+2018-10-28 14:07:31 <TRACE> kernel1: ::/0: seen
+2018-10-28 14:07:31 <TRACE> kernel1: Pruning table master
+2018-10-28 14:07:31 <TRACE> kernel1: Pruning inherited routes
+2018-10-28 14:07:31 <TRACE> ospf1: HELLO packet received from fe80::20f8:84ff:fe47:b8b5 via STEV-eth1
+2018-10-28 14:07:31 <TRACE> ospf1: HELLO packet received from fe80::20f8:84ff:fe47:b8b5 via STEV-eth1
+2018-10-28 14:07:31 <TRACE> ospf1: HELLO packet received from fe80::685c:8eff:fe4c:fb41 via STEV-eth0
+2018-10-28 14:07:32 <TRACE> ospf1: HELLO packet sent via STEV-lan0
+2018-10-28 14:07:32 <TRACE> ospf1: HELLO packet sent via STEV-eth0
+2018-10-28 14:07:32 <TRACE> ospf1: HELLO packet sent via STEV-eth1
+2018-10-28 14:07:32 <TRACE> ospf1: HELLO packet received from fe80::20f8:84ff:fe47:b8b5 via STEV-eth1
+2018-10-28 14:07:33 <TRACE> ospf1: HELLO packet sent via STEV-eth1
+2018-10-28 14:07:33 <TRACE> ospf1: HELLO packet sent via STEV-eth0
+2018-10-28 14:07:33 <TRACE> ospf1: HELLO packet sent via STEV-lan0
+2018-10-28 14:07:33 <TRACE> ospf1: HELLO packet received from fe80::685c:8eff:fe4c:fb41 via STEV-eth0
+2018-10-28 14:07:34 <TRACE> ospf1: HELLO packet sent via STEV-lan0
+2018-10-28 14:07:34 <TRACE> ospf1: HELLO packet sent via STEV-eth0
+2018-10-28 14:07:34 <TRACE> ospf1: HELLO packet sent via STEV-eth1
+2018-10-28 14:07:34 <TRACE> ospf1: HELLO packet received from fe80::685c:8eff:fe4c:fb41 via STEV-eth0
+2018-10-28 14:07:34 <TRACE> ospf1: HELLO packet received from fe80::20f8:84ff:fe47:b8b5 via STEV-eth1
+2018-10-28 14:07:35 <TRACE> ospf1: HELLO packet sent via STEV-eth1
+2018-10-28 14:07:35 <TRACE> ospf1: HELLO packet sent via STEV-eth0
+2018-10-28 14:07:35 <TRACE> ospf1: HELLO packet sent via STEV-lan0
+2018-10-28 14:07:35 <TRACE> ospf1: HELLO packet received from fe80::20f8:84ff:fe47:b8b5 via STEV-eth1
+2018-10-28 14:07:35 <TRACE> ospf1: HELLO packet received from fe80::685c:8eff:fe4c:fb41 via STEV-eth0
+2018-10-28 14:07:35 <TRACE> ospf1: HELLO packet received from fe80::20f8:84ff:fe47:b8b5 via STEV-eth1
+2018-10-28 14:07:36 <TRACE> ospf1: HELLO packet sent via STEV-lan0
+2018-10-28 14:07:36 <TRACE> ospf1: HELLO packet sent via STEV-eth0
+2018-10-28 14:07:36 <TRACE> ospf1: HELLO packet sent via STEV-eth1
+2018-10-28 14:07:36 <TRACE> ospf1: HELLO packet received from fe80::685c:8eff:fe4c:fb41 via STEV-eth0
+2018-10-28 14:07:37 <TRACE> ospf1: HELLO packet sent via STEV-eth1
+2018-10-28 14:07:37 <TRACE> ospf1: HELLO packet sent via STEV-eth0
+2018-10-28 14:07:37 <TRACE> ospf1: HELLO packet sent via STEV-lan0
+2018-10-28 14:07:37 <TRACE> ospf1: HELLO packet received from fe80::20f8:84ff:fe47:b8b5 via STEV-eth1
+2018-10-28 14:07:37 <TRACE> ospf1: HELLO packet received from fe80::685c:8eff:fe4c:fb41 via STEV-eth0
+2018-10-28 14:07:38 <TRACE> ospf1: HELLO packet sent via STEV-lan0
+2018-10-28 14:07:38 <TRACE> ospf1: HELLO packet sent via STEV-eth0
+2018-10-28 14:07:38 <TRACE> ospf1: HELLO packet sent via STEV-eth1
+2018-10-28 14:07:38 <TRACE> ospf1: HELLO packet received from fe80::20f8:84ff:fe47:b8b5 via STEV-eth1
+2018-10-28 14:07:38 <TRACE> ospf1: HELLO packet received from fe80::685c:8eff:fe4c:fb41 via STEV-eth0
+2018-10-28 14:07:39 <TRACE> ospf1: HELLO packet sent via STEV-eth1
+2018-10-28 14:07:39 <TRACE> ospf1: HELLO packet sent via STEV-eth0
+2018-10-28 14:07:39 <TRACE> ospf1: HELLO packet sent via STEV-lan0
+2018-10-28 14:07:39 <TRACE> ospf1: HELLO packet received from fe80::20f8:84ff:fe47:b8b5 via STEV-eth1
+2018-10-28 14:07:39 <TRACE> ospf1: HELLO packet received from fe80::685c:8eff:fe4c:fb41 via STEV-eth0
+2018-10-28 14:07:40 <TRACE> ospf1: HELLO packet sent via STEV-lan0
+2018-10-28 14:07:40 <TRACE> ospf1: HELLO packet sent via STEV-eth0
+2018-10-28 14:07:40 <TRACE> ospf1: HELLO packet sent via STEV-eth1
+2018-10-28 14:07:40 <TRACE> ospf1: HELLO packet received from fe80::20f8:84ff:fe47:b8b5 via STEV-eth1
+2018-10-28 14:07:40 <TRACE> ospf1: HELLO packet received from fe80::685c:8eff:fe4c:fb41 via STEV-eth0
+2018-10-28 14:07:40 <TRACE> ospf1: HELLO packet received from fe80::20f8:84ff:fe47:b8b5 via STEV-eth1
+2018-10-28 14:07:41 <TRACE> ospf1: HELLO packet sent via STEV-eth1
+2018-10-28 14:07:41 <TRACE> ospf1: HELLO packet sent via STEV-eth0
+2018-10-28 14:07:41 <TRACE> ospf1: HELLO packet sent via STEV-lan0
+2018-10-28 14:07:41 <TRACE> device1: Scanning interfaces
+2018-10-28 14:07:41 <TRACE> ospf1: HELLO packet received from fe80::685c:8eff:fe4c:fb41 via STEV-eth0
+2018-10-28 14:07:41 <TRACE> ospf1: HELLO packet received from fe80::20f8:84ff:fe47:b8b5 via STEV-eth1
+2018-10-28 14:07:41 <TRACE> ospf1: HELLO packet received from fe80::685c:8eff:fe4c:fb41 via STEV-eth0
+2018-10-28 14:07:42 <TRACE> ospf1: HELLO packet sent via STEV-lan0
+2018-10-28 14:07:42 <TRACE> ospf1: HELLO packet sent via STEV-eth0
+2018-10-28 14:07:42 <TRACE> ospf1: HELLO packet sent via STEV-eth1
+2018-10-28 14:07:42 <TRACE> ospf1: HELLO packet received from fe80::20f8:84ff:fe47:b8b5 via STEV-eth1
+2018-10-28 14:07:43 <TRACE> ospf1: HELLO packet sent via STEV-eth1
+2018-10-28 14:07:43 <TRACE> ospf1: HELLO packet sent via STEV-eth0
+2018-10-28 14:07:43 <TRACE> ospf1: HELLO packet sent via STEV-lan0
+2018-10-28 14:07:43 <TRACE> ospf1: HELLO packet received from fe80::685c:8eff:fe4c:fb41 via STEV-eth0
+2018-10-28 14:07:43 <TRACE> ospf1: HELLO packet received from fe80::20f8:84ff:fe47:b8b5 via STEV-eth1
+2018-10-28 14:07:44 <TRACE> ospf1: HELLO packet sent via STEV-lan0
+2018-10-28 14:07:44 <TRACE> ospf1: HELLO packet sent via STEV-eth0
+2018-10-28 14:07:44 <TRACE> ospf1: HELLO packet sent via STEV-eth1
+2018-10-28 14:07:44 <TRACE> ospf1: HELLO packet received from fe80::685c:8eff:fe4c:fb41 via STEV-eth0
+2018-10-28 14:07:44 <TRACE> ospf1: HELLO packet received from fe80::20f8:84ff:fe47:b8b5 via STEV-eth1
+2018-10-28 14:07:45 <TRACE> ospf1: HELLO packet sent via STEV-eth1
+2018-10-28 14:07:45 <TRACE> ospf1: HELLO packet sent via STEV-eth0
+2018-10-28 14:07:45 <TRACE> ospf1: HELLO packet sent via STEV-lan0
+2018-10-28 14:07:45 <TRACE> ospf1: HELLO packet received from fe80::685c:8eff:fe4c:fb41 via STEV-eth0
+2018-10-28 14:07:45 <TRACE> ospf1: HELLO packet received from fe80::20f8:84ff:fe47:b8b5 via STEV-eth1
+2018-10-28 14:07:45 <TRACE> ospf1: HELLO packet received from fe80::685c:8eff:fe4c:fb41 via STEV-eth0
+2018-10-28 14:07:46 <TRACE> ospf1: HELLO packet sent via STEV-lan0
+2018-10-28 14:07:46 <TRACE> ospf1: HELLO packet sent via STEV-eth0
+2018-10-28 14:07:46 <TRACE> ospf1: HELLO packet sent via STEV-eth1
+2018-10-28 14:07:47 <TRACE> ospf1: HELLO packet sent via STEV-eth1
+2018-10-28 14:07:47 <TRACE> ospf1: HELLO packet sent via STEV-eth0
+2018-10-28 14:07:47 <TRACE> ospf1: HELLO packet sent via STEV-lan0
+2018-10-28 14:07:47 <TRACE> ospf1: HELLO packet received from fe80::20f8:84ff:fe47:b8b5 via STEV-eth1
+2018-10-28 14:07:47 <TRACE> ospf1: HELLO packet received from fe80::685c:8eff:fe4c:fb41 via STEV-eth0
+2018-10-28 14:07:47 <TRACE> ospf1: HELLO packet received from fe80::20f8:84ff:fe47:b8b5 via STEV-eth1
+2018-10-28 14:07:47 <TRACE> ospf1: HELLO packet received from fe80::685c:8eff:fe4c:fb41 via STEV-eth0
+2018-10-28 14:07:48 <TRACE> ospf1: HELLO packet sent via STEV-lan0
+2018-10-28 14:07:48 <TRACE> ospf1: HELLO packet sent via STEV-eth0
+2018-10-28 14:07:48 <TRACE> ospf1: HELLO packet sent via STEV-eth1
+2018-10-28 14:07:49 <TRACE> ospf1: HELLO packet sent via STEV-eth1
+2018-10-28 14:07:49 <TRACE> ospf1: HELLO packet sent via STEV-eth0
+2018-10-28 14:07:49 <TRACE> ospf1: HELLO packet sent via STEV-lan0
+2018-10-28 14:07:49 <TRACE> ospf1: HELLO packet received from fe80::20f8:84ff:fe47:b8b5 via STEV-eth1
+2018-10-28 14:07:49 <TRACE> ospf1: HELLO packet received from fe80::685c:8eff:fe4c:fb41 via STEV-eth0
+2018-10-28 14:07:50 <TRACE> ospf1: HELLO packet sent via STEV-lan0
+2018-10-28 14:07:50 <TRACE> ospf1: HELLO packet sent via STEV-eth0
+2018-10-28 14:07:50 <TRACE> ospf1: HELLO packet sent via STEV-eth1
+2018-10-28 14:07:50 <TRACE> ospf1: HELLO packet received from fe80::20f8:84ff:fe47:b8b5 via STEV-eth1
+2018-10-28 14:07:50 <TRACE> ospf1: HELLO packet received from fe80::685c:8eff:fe4c:fb41 via STEV-eth0
+2018-10-28 14:07:50 <TRACE> ospf1: HELLO packet received from fe80::20f8:84ff:fe47:b8b5 via STEV-eth1
+2018-10-28 14:07:51 <TRACE> ospf1: HELLO packet sent via STEV-eth1
+2018-10-28 14:07:51 <TRACE> ospf1: HELLO packet sent via STEV-eth0
+2018-10-28 14:07:51 <TRACE> ospf1: HELLO packet sent via STEV-lan0
+2018-10-28 14:07:51 <TRACE> device1: Scanning interfaces
+2018-10-28 14:07:51 <TRACE> kernel1: Scanning routing table
+2018-10-28 14:07:51 <TRACE> kernel1: fd00:200:4:2::/64: seen
+2018-10-28 14:07:51 <TRACE> kernel1: fd00:200:4:a20::/64: seen
+2018-10-28 14:07:51 <TRACE> kernel1: fd00:200:4:b30::/64: seen
+2018-10-28 14:07:51 <TRACE> kernel1: fd00:200:4:b40::/64: seen
+2018-10-28 14:07:51 <TRACE> kernel1: fd00:200:4:e11::/64: seen
+2018-10-28 14:07:51 <TRACE> kernel1: fd00:200:4:e31::/64: seen
+2018-10-28 14:07:51 <TRACE> kernel1: fd00:200:4:f14::/64: seen
+2018-10-28 14:07:51 <TRACE> kernel1: fd00:200:4:f24::/64: seen
+2018-10-28 14:07:51 <TRACE> kernel1: fd00:200:4:f25::/64: seen
+2018-10-28 14:07:51 <TRACE> kernel1: fd00:200:4:f31::/64: seen
+2018-10-28 14:07:51 <TRACE> kernel1: fd00:200:4:f53::/64: seen
+2018-10-28 14:07:51 <TRACE> kernel1: fd00:300:4:2::/64: seen
+2018-10-28 14:07:51 <TRACE> kernel1: fd00:300:4:a20::/64: seen
+2018-10-28 14:07:51 <TRACE> kernel1: fd00:300:4:b30::/64: seen
+2018-10-28 14:07:51 <TRACE> kernel1: fd00:300:4:b40::/64: seen
+2018-10-28 14:07:51 <TRACE> kernel1: fd00:300:4:e11::/64: seen
+2018-10-28 14:07:51 <TRACE> kernel1: fd00:300:4:e31::/64: seen
+2018-10-28 14:07:51 <TRACE> kernel1: fd00:300:4:e33::/64: seen
+2018-10-28 14:07:51 <TRACE> kernel1: fd00:300:4:f00::1/128: seen
+2018-10-28 14:07:51 <TRACE> kernel1: fd00:300:4:f00::2/128: seen
+2018-10-28 14:07:51 <TRACE> kernel1: fd00:300:4:f00::3/128: seen
+2018-10-28 14:07:51 <TRACE> kernel1: fd00:300:4:f00::4/128: seen
+2018-10-28 14:07:51 <TRACE> kernel1: fd00:300:4:f00::5/128: seen
+2018-10-28 14:07:51 <TRACE> kernel1: fd00:300:4:f00::6/128: seen
+2018-10-28 14:07:51 <TRACE> kernel1: fd00:300:4:f14::/64: seen
+2018-10-28 14:07:51 <TRACE> kernel1: fd00:300:4:f24::/64: seen
+2018-10-28 14:07:51 <TRACE> kernel1: fd00:300:4:f25::/64: seen
+2018-10-28 14:07:51 <TRACE> kernel1: fd00:300:4:f31::/64: seen
+2018-10-28 14:07:51 <TRACE> kernel1: fd00:300:4:f53::/64: seen
+2018-10-28 14:07:51 <TRACE> kernel1: ::/0: seen
+2018-10-28 14:07:51 <TRACE> kernel1: Pruning table master
+2018-10-28 14:07:51 <TRACE> kernel1: Pruning inherited routes
+2018-10-28 14:07:51 <TRACE> ospf1: HELLO packet received from fe80::685c:8eff:fe4c:fb41 via STEV-eth0
+2018-10-28 14:07:51 <TRACE> ospf1: HELLO packet received from fe80::685c:8eff:fe4c:fb41 via STEV-eth0
+2018-10-28 14:07:52 <TRACE> ospf1: HELLO packet sent via STEV-lan0
+2018-10-28 14:07:52 <TRACE> ospf1: HELLO packet sent via STEV-eth0
+2018-10-28 14:07:52 <TRACE> ospf1: HELLO packet sent via STEV-eth1
+2018-10-28 14:07:52 <TRACE> ospf1: HELLO packet received from fe80::20f8:84ff:fe47:b8b5 via STEV-eth1
+2018-10-28 14:07:53 <TRACE> ospf1: HELLO packet sent via STEV-eth1
+2018-10-28 14:07:53 <TRACE> ospf1: HELLO packet sent via STEV-eth0
+2018-10-28 14:07:53 <TRACE> ospf1: HELLO packet sent via STEV-lan0
+2018-10-28 14:07:53 <TRACE> ospf1: HELLO packet received from fe80::20f8:84ff:fe47:b8b5 via STEV-eth1
+2018-10-28 14:07:53 <TRACE> ospf1: HELLO packet received from fe80::685c:8eff:fe4c:fb41 via STEV-eth0
+2018-10-28 14:07:54 <TRACE> ospf1: HELLO packet sent via STEV-lan0
+2018-10-28 14:07:54 <TRACE> ospf1: HELLO packet sent via STEV-eth0
+2018-10-28 14:07:54 <TRACE> ospf1: HELLO packet sent via STEV-eth1
+2018-10-28 14:07:54 <TRACE> ospf1: HELLO packet received from fe80::20f8:84ff:fe47:b8b5 via STEV-eth1
+2018-10-28 14:07:54 <TRACE> ospf1: HELLO packet received from fe80::685c:8eff:fe4c:fb41 via STEV-eth0
+2018-10-28 14:07:55 <TRACE> ospf1: HELLO packet sent via STEV-eth1
+2018-10-28 14:07:55 <TRACE> ospf1: HELLO packet sent via STEV-eth0
+2018-10-28 14:07:55 <TRACE> ospf1: HELLO packet sent via STEV-lan0
+2018-10-28 14:07:55 <TRACE> ospf1: HELLO packet received from fe80::20f8:84ff:fe47:b8b5 via STEV-eth1
+2018-10-28 14:07:55 <TRACE> ospf1: HELLO packet received from fe80::685c:8eff:fe4c:fb41 via STEV-eth0
+2018-10-28 14:07:55 <TRACE> ospf1: HELLO packet received from fe80::685c:8eff:fe4c:fb41 via STEV-eth0
+2018-10-28 14:07:56 <TRACE> ospf1: HELLO packet sent via STEV-lan0
+2018-10-28 14:07:56 <TRACE> ospf1: HELLO packet sent via STEV-eth0
+2018-10-28 14:07:56 <TRACE> ospf1: HELLO packet sent via STEV-eth1
+2018-10-28 14:07:56 <TRACE> ospf1: HELLO packet received from fe80::20f8:84ff:fe47:b8b5 via STEV-eth1
+2018-10-28 14:07:56 <TRACE> ospf1: HELLO packet received from fe80::20f8:84ff:fe47:b8b5 via STEV-eth1
+2018-10-28 14:07:57 <TRACE> ospf1: HELLO packet sent via STEV-eth1
+2018-10-28 14:07:57 <TRACE> ospf1: HELLO packet sent via STEV-eth0
+2018-10-28 14:07:57 <TRACE> ospf1: HELLO packet sent via STEV-lan0
+2018-10-28 14:07:57 <TRACE> ospf1: HELLO packet received from fe80::685c:8eff:fe4c:fb41 via STEV-eth0
+2018-10-28 14:07:57 <TRACE> ospf1: HELLO packet received from fe80::20f8:84ff:fe47:b8b5 via STEV-eth1
+2018-10-28 14:07:58 <TRACE> ospf1: HELLO packet sent via STEV-lan0
+2018-10-28 14:07:58 <TRACE> ospf1: HELLO packet sent via STEV-eth0
+2018-10-28 14:07:58 <TRACE> ospf1: HELLO packet sent via STEV-eth1
+2018-10-28 14:07:58 <TRACE> ospf1: HELLO packet received from fe80::685c:8eff:fe4c:fb41 via STEV-eth0
+2018-10-28 14:07:59 <TRACE> ospf1: HELLO packet sent via STEV-eth1
+2018-10-28 14:07:59 <TRACE> ospf1: HELLO packet sent via STEV-eth0
+2018-10-28 14:07:59 <TRACE> ospf1: HELLO packet sent via STEV-lan0
+2018-10-28 14:07:59 <TRACE> ospf1: HELLO packet received from fe80::20f8:84ff:fe47:b8b5 via STEV-eth1
+2018-10-28 14:07:59 <TRACE> ospf1: HELLO packet received from fe80::685c:8eff:fe4c:fb41 via STEV-eth0
+2018-10-28 14:08:00 <TRACE> ospf1: HELLO packet sent via STEV-lan0
+2018-10-28 14:08:00 <TRACE> ospf1: HELLO packet sent via STEV-eth0
+2018-10-28 14:08:00 <TRACE> ospf1: HELLO packet sent via STEV-eth1
+2018-10-28 14:08:00 <TRACE> ospf1: HELLO packet received from fe80::20f8:84ff:fe47:b8b5 via STEV-eth1
+2018-10-28 14:08:00 <TRACE> ospf1: HELLO packet received from fe80::685c:8eff:fe4c:fb41 via STEV-eth0
+2018-10-28 14:08:00 <TRACE> ospf1: HELLO packet received from fe80::685c:8eff:fe4c:fb41 via STEV-eth0
+2018-10-28 14:08:01 <TRACE> ospf1: HELLO packet sent via STEV-eth1
+2018-10-28 14:08:01 <TRACE> ospf1: HELLO packet sent via STEV-eth0
+2018-10-28 14:08:01 <TRACE> ospf1: HELLO packet sent via STEV-lan0
+2018-10-28 14:08:01 <TRACE> device1: Scanning interfaces
+2018-10-28 14:08:01 <TRACE> ospf1: HELLO packet received from fe80::20f8:84ff:fe47:b8b5 via STEV-eth1
+2018-10-28 14:08:01 <TRACE> ospf1: HELLO packet received from fe80::20f8:84ff:fe47:b8b5 via STEV-eth1
+2018-10-28 14:08:02 <TRACE> ospf1: HELLO packet sent via STEV-lan0
+2018-10-28 14:08:02 <TRACE> ospf1: HELLO packet sent via STEV-eth0
+2018-10-28 14:08:02 <TRACE> ospf1: HELLO packet sent via STEV-eth1
+2018-10-28 14:08:02 <TRACE> ospf1: HELLO packet received from fe80::685c:8eff:fe4c:fb41 via STEV-eth0
+2018-10-28 14:08:03 <TRACE> ospf1: HELLO packet sent via STEV-eth1
+2018-10-28 14:08:03 <TRACE> ospf1: HELLO packet sent via STEV-eth0
+2018-10-28 14:08:03 <TRACE> ospf1: HELLO packet sent via STEV-lan0
+2018-10-28 14:08:03 <TRACE> ospf1: HELLO packet received from fe80::20f8:84ff:fe47:b8b5 via STEV-eth1
+2018-10-28 14:08:03 <TRACE> ospf1: HELLO packet received from fe80::685c:8eff:fe4c:fb41 via STEV-eth0
+2018-10-28 14:08:04 <TRACE> ospf1: HELLO packet sent via STEV-lan0
+2018-10-28 14:08:04 <TRACE> ospf1: HELLO packet sent via STEV-eth0
+2018-10-28 14:08:04 <TRACE> ospf1: HELLO packet sent via STEV-eth1
+2018-10-28 14:08:04 <TRACE> ospf1: HELLO packet received from fe80::20f8:84ff:fe47:b8b5 via STEV-eth1
+2018-10-28 14:08:04 <TRACE> ospf1: HELLO packet received from fe80::685c:8eff:fe4c:fb41 via STEV-eth0
+2018-10-28 14:08:05 <TRACE> ospf1: HELLO packet sent via STEV-eth1
+2018-10-28 14:08:05 <TRACE> ospf1: HELLO packet sent via STEV-eth0
+2018-10-28 14:08:05 <TRACE> ospf1: HELLO packet sent via STEV-lan0
+2018-10-28 14:08:05 <TRACE> ospf1: HELLO packet received from fe80::20f8:84ff:fe47:b8b5 via STEV-eth1
+2018-10-28 14:08:05 <TRACE> ospf1: HELLO packet received from fe80::685c:8eff:fe4c:fb41 via STEV-eth0
+2018-10-28 14:08:05 <TRACE> ospf1: HELLO packet received from fe80::685c:8eff:fe4c:fb41 via STEV-eth0
+2018-10-28 14:08:06 <TRACE> ospf1: HELLO packet sent via STEV-lan0
+2018-10-28 14:08:06 <TRACE> ospf1: HELLO packet sent via STEV-eth0
+2018-10-28 14:08:06 <TRACE> ospf1: HELLO packet sent via STEV-eth1
+2018-10-28 14:08:06 <TRACE> ospf1: HELLO packet received from fe80::20f8:84ff:fe47:b8b5 via STEV-eth1
+2018-10-28 14:08:07 <TRACE> ospf1: HELLO packet sent via STEV-eth1
+2018-10-28 14:08:07 <TRACE> ospf1: HELLO packet sent via STEV-eth0
+2018-10-28 14:08:07 <TRACE> ospf1: HELLO packet sent via STEV-lan0
+2018-10-28 14:08:07 <TRACE> ospf1: HELLO packet received from fe80::20f8:84ff:fe47:b8b5 via STEV-eth1
+2018-10-28 14:08:07 <TRACE> ospf1: HELLO packet received from fe80::685c:8eff:fe4c:fb41 via STEV-eth0
+2018-10-28 14:08:08 <TRACE> ospf1: HELLO packet sent via STEV-lan0
+2018-10-28 14:08:08 <TRACE> ospf1: HELLO packet sent via STEV-eth0
+2018-10-28 14:08:08 <TRACE> ospf1: HELLO packet sent via STEV-eth1
+2018-10-28 14:08:08 <TRACE> ospf1: HELLO packet received from fe80::20f8:84ff:fe47:b8b5 via STEV-eth1
+2018-10-28 14:08:08 <TRACE> ospf1: HELLO packet received from fe80::685c:8eff:fe4c:fb41 via STEV-eth0
+2018-10-28 14:08:09 <TRACE> ospf1: HELLO packet sent via STEV-eth1
+2018-10-28 14:08:09 <TRACE> ospf1: HELLO packet sent via STEV-eth0
+2018-10-28 14:08:09 <TRACE> ospf1: HELLO packet sent via STEV-lan0
+2018-10-28 14:08:09 <TRACE> ospf1: HELLO packet received from fe80::20f8:84ff:fe47:b8b5 via STEV-eth1
+2018-10-28 14:08:09 <TRACE> ospf1: HELLO packet received from fe80::685c:8eff:fe4c:fb41 via STEV-eth0
+2018-10-28 14:08:10 <TRACE> ospf1: HELLO packet sent via STEV-lan0
+2018-10-28 14:08:10 <TRACE> ospf1: HELLO packet sent via STEV-eth0
+2018-10-28 14:08:10 <TRACE> ospf1: HELLO packet sent via STEV-eth1
+2018-10-28 14:08:10 <TRACE> ospf1: HELLO packet received from fe80::20f8:84ff:fe47:b8b5 via STEV-eth1
+2018-10-28 14:08:10 <TRACE> ospf1: HELLO packet received from fe80::685c:8eff:fe4c:fb41 via STEV-eth0
+2018-10-28 14:08:10 <TRACE> ospf1: HELLO packet received from fe80::20f8:84ff:fe47:b8b5 via STEV-eth1
+2018-10-28 14:08:11 <TRACE> ospf1: HELLO packet sent via STEV-eth1
+2018-10-28 14:08:11 <TRACE> ospf1: HELLO packet sent via STEV-eth0
+2018-10-28 14:08:11 <TRACE> ospf1: HELLO packet sent via STEV-lan0
+2018-10-28 14:08:11 <TRACE> device1: Scanning interfaces
+2018-10-28 14:08:11 <TRACE> kernel1: Scanning routing table
+2018-10-28 14:08:11 <TRACE> kernel1: fd00:200:4:2::/64: seen
+2018-10-28 14:08:11 <TRACE> kernel1: fd00:200:4:a20::/64: seen
+2018-10-28 14:08:11 <TRACE> kernel1: fd00:200:4:b30::/64: seen
+2018-10-28 14:08:11 <TRACE> kernel1: fd00:200:4:b40::/64: seen
+2018-10-28 14:08:11 <TRACE> kernel1: fd00:200:4:e11::/64: seen
+2018-10-28 14:08:11 <TRACE> kernel1: fd00:200:4:e31::/64: seen
+2018-10-28 14:08:11 <TRACE> kernel1: fd00:200:4:f14::/64: seen
+2018-10-28 14:08:11 <TRACE> kernel1: fd00:200:4:f24::/64: seen
+2018-10-28 14:08:11 <TRACE> kernel1: fd00:200:4:f25::/64: seen
+2018-10-28 14:08:11 <TRACE> kernel1: fd00:200:4:f31::/64: seen
+2018-10-28 14:08:11 <TRACE> kernel1: fd00:200:4:f53::/64: seen
+2018-10-28 14:08:11 <TRACE> kernel1: fd00:300:4:2::/64: seen
+2018-10-28 14:08:11 <TRACE> kernel1: fd00:300:4:a20::/64: seen
+2018-10-28 14:08:11 <TRACE> kernel1: fd00:300:4:b30::/64: seen
+2018-10-28 14:08:11 <TRACE> kernel1: fd00:300:4:b40::/64: seen
+2018-10-28 14:08:11 <TRACE> kernel1: fd00:300:4:e11::/64: seen
+2018-10-28 14:08:11 <TRACE> kernel1: fd00:300:4:e31::/64: seen
+2018-10-28 14:08:11 <TRACE> kernel1: fd00:300:4:e33::/64: seen
+2018-10-28 14:08:11 <TRACE> kernel1: fd00:300:4:f00::1/128: seen
+2018-10-28 14:08:11 <TRACE> kernel1: fd00:300:4:f00::2/128: seen
+2018-10-28 14:08:11 <TRACE> kernel1: fd00:300:4:f00::3/128: seen
+2018-10-28 14:08:11 <TRACE> kernel1: fd00:300:4:f00::4/128: seen
+2018-10-28 14:08:11 <TRACE> kernel1: fd00:300:4:f00::5/128: seen
+2018-10-28 14:08:11 <TRACE> kernel1: fd00:300:4:f00::6/128: seen
+2018-10-28 14:08:11 <TRACE> kernel1: fd00:300:4:f14::/64: seen
+2018-10-28 14:08:11 <TRACE> kernel1: fd00:300:4:f24::/64: seen
+2018-10-28 14:08:11 <TRACE> kernel1: fd00:300:4:f25::/64: seen
+2018-10-28 14:08:11 <TRACE> kernel1: fd00:300:4:f31::/64: seen
+2018-10-28 14:08:11 <TRACE> kernel1: fd00:300:4:f53::/64: seen
+2018-10-28 14:08:11 <TRACE> kernel1: ::/0: seen
+2018-10-28 14:08:11 <TRACE> kernel1: Pruning table master
+2018-10-28 14:08:11 <TRACE> kernel1: Pruning inherited routes
+2018-10-28 14:08:11 <TRACE> ospf1: HELLO packet received from fe80::685c:8eff:fe4c:fb41 via STEV-eth0
+2018-10-28 14:08:11 <TRACE> ospf1: HELLO packet received from fe80::20f8:84ff:fe47:b8b5 via STEV-eth1
+2018-10-28 14:08:11 <TRACE> ospf1: HELLO packet received from fe80::685c:8eff:fe4c:fb41 via STEV-eth0
+2018-10-28 14:08:12 <TRACE> ospf1: HELLO packet sent via STEV-lan0
+2018-10-28 14:08:12 <TRACE> ospf1: HELLO packet sent via STEV-eth0
+2018-10-28 14:08:12 <TRACE> ospf1: HELLO packet sent via STEV-eth1
+2018-10-28 14:08:12 <TRACE> ospf1: HELLO packet received from fe80::20f8:84ff:fe47:b8b5 via STEV-eth1
+2018-10-28 14:08:13 <TRACE> ospf1: HELLO packet sent via STEV-eth1
+2018-10-28 14:08:13 <TRACE> ospf1: HELLO packet sent via STEV-eth0
+2018-10-28 14:08:13 <TRACE> ospf1: HELLO packet sent via STEV-lan0
+2018-10-28 14:08:13 <TRACE> ospf1: HELLO packet received from fe80::685c:8eff:fe4c:fb41 via STEV-eth0
+2018-10-28 14:08:14 <TRACE> ospf1: HELLO packet sent via STEV-lan0
+2018-10-28 14:08:14 <TRACE> ospf1: HELLO packet sent via STEV-eth0
+2018-10-28 14:08:14 <TRACE> ospf1: HELLO packet sent via STEV-eth1
+2018-10-28 14:08:14 <TRACE> ospf1: HELLO packet received from fe80::20f8:84ff:fe47:b8b5 via STEV-eth1
+2018-10-28 14:08:14 <TRACE> ospf1: HELLO packet received from fe80::685c:8eff:fe4c:fb41 via STEV-eth0
+2018-10-28 14:08:15 <TRACE> ospf1: HELLO packet sent via STEV-eth1
+2018-10-28 14:08:15 <TRACE> ospf1: HELLO packet sent via STEV-eth0
+2018-10-28 14:08:15 <TRACE> ospf1: HELLO packet sent via STEV-lan0
+2018-10-28 14:08:15 <TRACE> ospf1: HELLO packet received from fe80::20f8:84ff:fe47:b8b5 via STEV-eth1
+2018-10-28 14:08:15 <TRACE> ospf1: HELLO packet received from fe80::685c:8eff:fe4c:fb41 via STEV-eth0
+2018-10-28 14:08:15 <TRACE> ospf1: HELLO packet received from fe80::685c:8eff:fe4c:fb41 via STEV-eth0
+2018-10-28 14:08:16 <TRACE> ospf1: HELLO packet sent via STEV-lan0
+2018-10-28 14:08:16 <TRACE> ospf1: HELLO packet sent via STEV-eth0
+2018-10-28 14:08:16 <TRACE> ospf1: HELLO packet sent via STEV-eth1
+2018-10-28 14:08:16 <TRACE> ospf1: HELLO packet received from fe80::20f8:84ff:fe47:b8b5 via STEV-eth1
+2018-10-28 14:08:16 <TRACE> ospf1: HELLO packet received from fe80::20f8:84ff:fe47:b8b5 via STEV-eth1
+2018-10-28 14:08:17 <TRACE> ospf1: HELLO packet sent via STEV-eth1
+2018-10-28 14:08:17 <TRACE> ospf1: HELLO packet sent via STEV-eth0
+2018-10-28 14:08:17 <TRACE> ospf1: HELLO packet sent via STEV-lan0
+2018-10-28 14:08:17 <TRACE> ospf1: HELLO packet received from fe80::685c:8eff:fe4c:fb41 via STEV-eth0
+2018-10-28 14:08:17 <TRACE> ospf1: HELLO packet received from fe80::20f8:84ff:fe47:b8b5 via STEV-eth1
+2018-10-28 14:08:18 <TRACE> ospf1: HELLO packet sent via STEV-lan0
+2018-10-28 14:08:18 <TRACE> ospf1: HELLO packet sent via STEV-eth0
+2018-10-28 14:08:18 <TRACE> ospf1: HELLO packet sent via STEV-eth1
+2018-10-28 14:08:18 <TRACE> ospf1: HELLO packet received from fe80::685c:8eff:fe4c:fb41 via STEV-eth0
+2018-10-28 14:08:19 <TRACE> ospf1: HELLO packet sent via STEV-eth1
+2018-10-28 14:08:19 <TRACE> ospf1: HELLO packet sent via STEV-eth0
+2018-10-28 14:08:19 <TRACE> ospf1: HELLO packet sent via STEV-lan0
+2018-10-28 14:08:19 <TRACE> ospf1: HELLO packet received from fe80::20f8:84ff:fe47:b8b5 via STEV-eth1
+2018-10-28 14:08:19 <TRACE> ospf1: HELLO packet received from fe80::685c:8eff:fe4c:fb41 via STEV-eth0
+2018-10-28 14:08:20 <TRACE> ospf1: HELLO packet sent via STEV-lan0
+2018-10-28 14:08:20 <TRACE> ospf1: HELLO packet sent via STEV-eth0
+2018-10-28 14:08:20 <TRACE> ospf1: HELLO packet sent via STEV-eth1
+2018-10-28 14:08:20 <TRACE> ospf1: HELLO packet received from fe80::685c:8eff:fe4c:fb41 via STEV-eth0
+2018-10-28 14:08:20 <TRACE> ospf1: HELLO packet received from fe80::20f8:84ff:fe47:b8b5 via STEV-eth1
+2018-10-28 14:08:20 <TRACE> ospf1: HELLO packet received from fe80::20f8:84ff:fe47:b8b5 via STEV-eth1
+2018-10-28 14:08:20 <TRACE> ospf1: HELLO packet received from fe80::685c:8eff:fe4c:fb41 via STEV-eth0
+2018-10-28 14:08:21 <TRACE> ospf1: HELLO packet sent via STEV-eth1
+2018-10-28 14:08:21 <TRACE> ospf1: HELLO packet sent via STEV-eth0
+2018-10-28 14:08:21 <TRACE> ospf1: HELLO packet sent via STEV-lan0
+2018-10-28 14:08:21 <TRACE> device1: Scanning interfaces
+2018-10-28 14:08:22 <TRACE> ospf1: HELLO packet sent via STEV-lan0
+2018-10-28 14:08:22 <TRACE> ospf1: HELLO packet sent via STEV-eth0
+2018-10-28 14:08:22 <TRACE> ospf1: HELLO packet sent via STEV-eth1
+2018-10-28 14:08:22 <TRACE> ospf1: HELLO packet received from fe80::20f8:84ff:fe47:b8b5 via STEV-eth1
+2018-10-28 14:08:22 <TRACE> ospf1: HELLO packet received from fe80::685c:8eff:fe4c:fb41 via STEV-eth0
+2018-10-28 14:08:22 <TRACE> ospf1: HELLO packet received from fe80::20f8:84ff:fe47:b8b5 via STEV-eth1
+2018-10-28 14:08:22 <TRACE> ospf1: HELLO packet received from fe80::685c:8eff:fe4c:fb41 via STEV-eth0
+2018-10-28 14:08:23 <TRACE> ospf1: HELLO packet sent via STEV-eth1
+2018-10-28 14:08:23 <TRACE> ospf1: HELLO packet sent via STEV-eth0
+2018-10-28 14:08:23 <TRACE> ospf1: HELLO packet sent via STEV-lan0
+2018-10-28 14:08:23 <TRACE> ospf1: HELLO packet received from fe80::20f8:84ff:fe47:b8b5 via STEV-eth1
+2018-10-28 14:08:24 <TRACE> ospf1: HELLO packet sent via STEV-lan0
+2018-10-28 14:08:24 <TRACE> ospf1: HELLO packet sent via STEV-eth0
+2018-10-28 14:08:24 <TRACE> ospf1: HELLO packet sent via STEV-eth1
+2018-10-28 14:08:24 <TRACE> ospf1: HELLO packet received from fe80::685c:8eff:fe4c:fb41 via STEV-eth0
+2018-10-28 14:08:24 <TRACE> ospf1: HELLO packet received from fe80::20f8:84ff:fe47:b8b5 via STEV-eth1
+2018-10-28 14:08:25 <TRACE> ospf1: HELLO packet sent via STEV-eth1
+2018-10-28 14:08:25 <TRACE> ospf1: HELLO packet sent via STEV-eth0
+2018-10-28 14:08:25 <TRACE> ospf1: HELLO packet sent via STEV-lan0
+2018-10-28 14:08:25 <TRACE> ospf1: HELLO packet received from fe80::685c:8eff:fe4c:fb41 via STEV-eth0
+2018-10-28 14:08:25 <TRACE> ospf1: HELLO packet received from fe80::685c:8eff:fe4c:fb41 via STEV-eth0
+2018-10-28 14:08:26 <TRACE> ospf1: HELLO packet sent via STEV-lan0
+2018-10-28 14:08:26 <TRACE> ospf1: HELLO packet sent via STEV-eth0
+2018-10-28 14:08:26 <TRACE> ospf1: HELLO packet sent via STEV-eth1
+2018-10-28 14:08:26 <TRACE> ospf1: HELLO packet received from fe80::20f8:84ff:fe47:b8b5 via STEV-eth1
+2018-10-28 14:08:27 <TRACE> ospf1: HELLO packet sent via STEV-eth1
+2018-10-28 14:08:27 <TRACE> ospf1: HELLO packet sent via STEV-eth0
+2018-10-28 14:08:27 <TRACE> ospf1: HELLO packet sent via STEV-lan0
+2018-10-28 14:08:27 <TRACE> ospf1: HELLO packet received from fe80::20f8:84ff:fe47:b8b5 via STEV-eth1
+2018-10-28 14:08:27 <TRACE> ospf1: HELLO packet received from fe80::685c:8eff:fe4c:fb41 via STEV-eth0
+2018-10-28 14:08:28 <TRACE> ospf1: HELLO packet sent via STEV-lan0
+2018-10-28 14:08:28 <TRACE> ospf1: HELLO packet sent via STEV-eth0
+2018-10-28 14:08:28 <TRACE> ospf1: HELLO packet sent via STEV-eth1
+2018-10-28 14:08:28 <TRACE> ospf1: HELLO packet received from fe80::20f8:84ff:fe47:b8b5 via STEV-eth1
+2018-10-28 14:08:28 <TRACE> ospf1: HELLO packet received from fe80::685c:8eff:fe4c:fb41 via STEV-eth0
+2018-10-28 14:08:29 <TRACE> ospf1: HELLO packet sent via STEV-eth1
+2018-10-28 14:08:29 <TRACE> ospf1: HELLO packet sent via STEV-eth0
+2018-10-28 14:08:29 <TRACE> ospf1: HELLO packet sent via STEV-lan0
+2018-10-28 14:08:29 <TRACE> ospf1: HELLO packet received from fe80::20f8:84ff:fe47:b8b5 via STEV-eth1
+2018-10-28 14:08:29 <TRACE> ospf1: HELLO packet received from fe80::685c:8eff:fe4c:fb41 via STEV-eth0
+2018-10-28 14:08:29 <TRACE> ospf1: HELLO packet received from fe80::20f8:84ff:fe47:b8b5 via STEV-eth1
+2018-10-28 14:08:30 <TRACE> ospf1: HELLO packet sent via STEV-lan0
+2018-10-28 14:08:30 <TRACE> ospf1: HELLO packet sent via STEV-eth0
+2018-10-28 14:08:30 <TRACE> ospf1: HELLO packet sent via STEV-eth1
+2018-10-28 14:08:30 <TRACE> ospf1: HELLO packet received from fe80::685c:8eff:fe4c:fb41 via STEV-eth0
+2018-10-28 14:08:31 <TRACE> ospf1: HELLO packet sent via STEV-eth1
+2018-10-28 14:08:31 <TRACE> ospf1: HELLO packet sent via STEV-eth0
+2018-10-28 14:08:31 <TRACE> ospf1: HELLO packet sent via STEV-lan0
+2018-10-28 14:08:31 <TRACE> device1: Scanning interfaces
+2018-10-28 14:08:31 <TRACE> kernel1: Scanning routing table
+2018-10-28 14:08:31 <TRACE> kernel1: fd00:200:4:2::/64: seen
+2018-10-28 14:08:31 <TRACE> kernel1: fd00:200:4:a20::/64: seen
+2018-10-28 14:08:31 <TRACE> kernel1: fd00:200:4:b30::/64: seen
+2018-10-28 14:08:31 <TRACE> kernel1: fd00:200:4:b40::/64: seen
+2018-10-28 14:08:31 <TRACE> kernel1: fd00:200:4:e11::/64: seen
+2018-10-28 14:08:31 <TRACE> kernel1: fd00:200:4:e31::/64: seen
+2018-10-28 14:08:31 <TRACE> kernel1: fd00:200:4:f14::/64: seen
+2018-10-28 14:08:31 <TRACE> kernel1: fd00:200:4:f24::/64: seen
+2018-10-28 14:08:31 <TRACE> kernel1: fd00:200:4:f25::/64: seen
+2018-10-28 14:08:31 <TRACE> kernel1: fd00:200:4:f31::/64: seen
+2018-10-28 14:08:31 <TRACE> kernel1: fd00:200:4:f53::/64: seen
+2018-10-28 14:08:31 <TRACE> kernel1: fd00:300:4:2::/64: seen
+2018-10-28 14:08:31 <TRACE> kernel1: fd00:300:4:a20::/64: seen
+2018-10-28 14:08:31 <TRACE> kernel1: fd00:300:4:b30::/64: seen
+2018-10-28 14:08:31 <TRACE> kernel1: fd00:300:4:b40::/64: seen
+2018-10-28 14:08:31 <TRACE> kernel1: fd00:300:4:e11::/64: seen
+2018-10-28 14:08:31 <TRACE> kernel1: fd00:300:4:e31::/64: seen
+2018-10-28 14:08:31 <TRACE> kernel1: fd00:300:4:e33::/64: seen
+2018-10-28 14:08:31 <TRACE> kernel1: fd00:300:4:f00::1/128: seen
+2018-10-28 14:08:31 <TRACE> kernel1: fd00:300:4:f00::2/128: seen
+2018-10-28 14:08:31 <TRACE> kernel1: fd00:300:4:f00::3/128: seen
+2018-10-28 14:08:31 <TRACE> kernel1: fd00:300:4:f00::4/128: seen
+2018-10-28 14:08:31 <TRACE> kernel1: fd00:300:4:f00::5/128: seen
+2018-10-28 14:08:31 <TRACE> kernel1: fd00:300:4:f00::6/128: seen
+2018-10-28 14:08:31 <TRACE> kernel1: fd00:300:4:f14::/64: seen
+2018-10-28 14:08:31 <TRACE> kernel1: fd00:300:4:f24::/64: seen
+2018-10-28 14:08:31 <TRACE> kernel1: fd00:300:4:f25::/64: seen
+2018-10-28 14:08:31 <TRACE> kernel1: fd00:300:4:f31::/64: seen
+2018-10-28 14:08:31 <TRACE> kernel1: fd00:300:4:f53::/64: seen
+2018-10-28 14:08:31 <TRACE> kernel1: ::/0: seen
+2018-10-28 14:08:31 <TRACE> kernel1: Pruning table master
+2018-10-28 14:08:31 <TRACE> kernel1: Pruning inherited routes
+2018-10-28 14:08:31 <TRACE> ospf1: HELLO packet received from fe80::20f8:84ff:fe47:b8b5 via STEV-eth1
+2018-10-28 14:08:31 <TRACE> ospf1: HELLO packet received from fe80::685c:8eff:fe4c:fb41 via STEV-eth0
+2018-10-28 14:08:31 <TRACE> ospf1: HELLO packet received from fe80::20f8:84ff:fe47:b8b5 via STEV-eth1
+2018-10-28 14:08:31 <TRACE> ospf1: HELLO packet received from fe80::685c:8eff:fe4c:fb41 via STEV-eth0
+2018-10-28 14:08:32 <TRACE> ospf1: HELLO packet sent via STEV-lan0
+2018-10-28 14:08:32 <TRACE> ospf1: HELLO packet sent via STEV-eth0
+2018-10-28 14:08:32 <TRACE> ospf1: HELLO packet sent via STEV-eth1
+2018-10-28 14:08:32 <TRACE> ospf1: HELLO packet received from fe80::20f8:84ff:fe47:b8b5 via STEV-eth1
+2018-10-28 14:08:33 <TRACE> ospf1: HELLO packet sent via STEV-eth1
+2018-10-28 14:08:33 <TRACE> ospf1: HELLO packet sent via STEV-eth0
+2018-10-28 14:08:33 <TRACE> ospf1: HELLO packet sent via STEV-lan0
+2018-10-28 14:08:33 <TRACE> ospf1: HELLO packet received from fe80::685c:8eff:fe4c:fb41 via STEV-eth0
+2018-10-28 14:08:34 <TRACE> ospf1: HELLO packet sent via STEV-lan0
+2018-10-28 14:08:34 <TRACE> ospf1: HELLO packet sent via STEV-eth0
+2018-10-28 14:08:34 <TRACE> ospf1: HELLO packet sent via STEV-eth1
+2018-10-28 14:08:34 <TRACE> ospf1: HELLO packet received from fe80::20f8:84ff:fe47:b8b5 via STEV-eth1
+2018-10-28 14:08:34 <TRACE> ospf1: HELLO packet received from fe80::685c:8eff:fe4c:fb41 via STEV-eth0
+2018-10-28 14:08:35 <TRACE> ospf1: HELLO packet sent via STEV-eth1
+2018-10-28 14:08:35 <TRACE> ospf1: HELLO packet sent via STEV-eth0
+2018-10-28 14:08:35 <TRACE> ospf1: HELLO packet sent via STEV-lan0
+2018-10-28 14:08:35 <TRACE> ospf1: HELLO packet received from fe80::20f8:84ff:fe47:b8b5 via STEV-eth1
+2018-10-28 14:08:35 <TRACE> ospf1: HELLO packet received from fe80::685c:8eff:fe4c:fb41 via STEV-eth0
+2018-10-28 14:08:35 <TRACE> ospf1: HELLO packet received from fe80::20f8:84ff:fe47:b8b5 via STEV-eth1
+2018-10-28 14:08:36 <TRACE> ospf1: HELLO packet sent via STEV-lan0
+2018-10-28 14:08:36 <TRACE> ospf1: HELLO packet sent via STEV-eth0
+2018-10-28 14:08:36 <TRACE> ospf1: HELLO packet sent via STEV-eth1
+2018-10-28 14:08:36 <TRACE> ospf1: HELLO packet received from fe80::685c:8eff:fe4c:fb41 via STEV-eth0
+2018-10-28 14:08:37 <TRACE> ospf1: HELLO packet sent via STEV-eth1
+2018-10-28 14:08:37 <TRACE> ospf1: HELLO packet sent via STEV-eth0
+2018-10-28 14:08:37 <TRACE> ospf1: HELLO packet sent via STEV-lan0
+2018-10-28 14:08:37 <TRACE> ospf1: HELLO packet received from fe80::20f8:84ff:fe47:b8b5 via STEV-eth1
+2018-10-28 14:08:37 <TRACE> ospf1: HELLO packet received from fe80::685c:8eff:fe4c:fb41 via STEV-eth0
+2018-10-28 14:08:38 <TRACE> ospf1: HELLO packet sent via STEV-lan0
+2018-10-28 14:08:38 <TRACE> ospf1: HELLO packet sent via STEV-eth0
+2018-10-28 14:08:38 <TRACE> ospf1: HELLO packet sent via STEV-eth1
+2018-10-28 14:08:38 <TRACE> ospf1: HELLO packet received from fe80::20f8:84ff:fe47:b8b5 via STEV-eth1
+2018-10-28 14:08:38 <TRACE> ospf1: HELLO packet received from fe80::685c:8eff:fe4c:fb41 via STEV-eth0
+2018-10-28 14:08:39 <TRACE> ospf1: HELLO packet sent via STEV-eth1
+2018-10-28 14:08:39 <TRACE> ospf1: HELLO packet sent via STEV-eth0
+2018-10-28 14:08:39 <TRACE> ospf1: HELLO packet sent via STEV-lan0
+2018-10-28 14:08:39 <TRACE> ospf1: HELLO packet received from fe80::20f8:84ff:fe47:b8b5 via STEV-eth1
+2018-10-28 14:08:39 <TRACE> ospf1: HELLO packet received from fe80::685c:8eff:fe4c:fb41 via STEV-eth0
+2018-10-28 14:08:40 <TRACE> ospf1: HELLO packet sent via STEV-lan0
+2018-10-28 14:08:40 <TRACE> ospf1: HELLO packet sent via STEV-eth0
+2018-10-28 14:08:40 <TRACE> ospf1: HELLO packet sent via STEV-eth1
+2018-10-28 14:08:40 <TRACE> ospf1: HELLO packet received from fe80::20f8:84ff:fe47:b8b5 via STEV-eth1
+2018-10-28 14:08:40 <TRACE> ospf1: HELLO packet received from fe80::685c:8eff:fe4c:fb41 via STEV-eth0
+2018-10-28 14:08:40 <TRACE> ospf1: HELLO packet received from fe80::20f8:84ff:fe47:b8b5 via STEV-eth1
+2018-10-28 14:08:40 <TRACE> ospf1: HELLO packet received from fe80::685c:8eff:fe4c:fb41 via STEV-eth0
+2018-10-28 14:08:41 <TRACE> ospf1: HELLO packet sent via STEV-eth1
+2018-10-28 14:08:41 <TRACE> ospf1: HELLO packet sent via STEV-eth0
+2018-10-28 14:08:41 <TRACE> ospf1: HELLO packet sent via STEV-lan0
+2018-10-28 14:08:41 <TRACE> device1: Scanning interfaces
+2018-10-28 14:08:42 <TRACE> ospf1: HELLO packet sent via STEV-lan0
+2018-10-28 14:08:42 <TRACE> ospf1: HELLO packet sent via STEV-eth0
+2018-10-28 14:08:42 <TRACE> ospf1: HELLO packet sent via STEV-eth1
+2018-10-28 14:08:42 <TRACE> ospf1: HELLO packet received from fe80::20f8:84ff:fe47:b8b5 via STEV-eth1
+2018-10-28 14:08:42 <TRACE> ospf1: HELLO packet received from fe80::685c:8eff:fe4c:fb41 via STEV-eth0
+2018-10-28 14:08:42 <TRACE> ospf1: HELLO packet received from fe80::685c:8eff:fe4c:fb41 via STEV-eth0
+2018-10-28 14:08:43 <TRACE> ospf1: HELLO packet sent via STEV-eth1
+2018-10-28 14:08:43 <TRACE> ospf1: HELLO packet sent via STEV-eth0
+2018-10-28 14:08:43 <TRACE> ospf1: HELLO packet sent via STEV-lan0
+2018-10-28 14:08:43 <TRACE> ospf1: HELLO packet received from fe80::20f8:84ff:fe47:b8b5 via STEV-eth1
+2018-10-28 14:08:43 <TRACE> ospf1: HELLO packet received from fe80::20f8:84ff:fe47:b8b5 via STEV-eth1
+2018-10-28 14:08:44 <TRACE> ospf1: HELLO packet sent via STEV-lan0
+2018-10-28 14:08:44 <TRACE> ospf1: HELLO packet sent via STEV-eth0
+2018-10-28 14:08:44 <TRACE> ospf1: HELLO packet sent via STEV-eth1
+2018-10-28 14:08:44 <TRACE> ospf1: HELLO packet received from fe80::685c:8eff:fe4c:fb41 via STEV-eth0
+2018-10-28 14:08:44 <TRACE> ospf1: HELLO packet received from fe80::685c:8eff:fe4c:fb41 via STEV-eth0
+2018-10-28 14:08:45 <TRACE> ospf1: HELLO packet sent via STEV-eth1
+2018-10-28 14:08:45 <TRACE> ospf1: HELLO packet sent via STEV-eth0
+2018-10-28 14:08:45 <TRACE> ospf1: HELLO packet sent via STEV-lan0
+2018-10-28 14:08:45 <TRACE> ospf1: HELLO packet received from fe80::20f8:84ff:fe47:b8b5 via STEV-eth1
+2018-10-28 14:08:45 <TRACE> ospf1: HELLO packet received from fe80::20f8:84ff:fe47:b8b5 via STEV-eth1
+2018-10-28 14:08:46 <TRACE> ospf1: HELLO packet sent via STEV-lan0
+2018-10-28 14:08:46 <TRACE> ospf1: HELLO packet sent via STEV-eth0
+2018-10-28 14:08:46 <TRACE> ospf1: HELLO packet sent via STEV-eth1
+2018-10-28 14:08:46 <TRACE> ospf1: HELLO packet received from fe80::685c:8eff:fe4c:fb41 via STEV-eth0
+2018-10-28 14:08:47 <TRACE> ospf1: HELLO packet sent via STEV-eth1
+2018-10-28 14:08:47 <TRACE> ospf1: HELLO packet sent via STEV-eth0
+2018-10-28 14:08:47 <TRACE> ospf1: HELLO packet sent via STEV-lan0
+2018-10-28 14:08:47 <TRACE> ospf1: HELLO packet received from fe80::20f8:84ff:fe47:b8b5 via STEV-eth1
+2018-10-28 14:08:47 <TRACE> ospf1: HELLO packet received from fe80::685c:8eff:fe4c:fb41 via STEV-eth0
+2018-10-28 14:08:47 <TRACE> ospf1: HELLO packet received from fe80::20f8:84ff:fe47:b8b5 via STEV-eth1
+2018-10-28 14:08:47 <TRACE> ospf1: HELLO packet received from fe80::685c:8eff:fe4c:fb41 via STEV-eth0
+2018-10-28 14:08:48 <TRACE> ospf1: HELLO packet sent via STEV-lan0
+2018-10-28 14:08:48 <TRACE> ospf1: HELLO packet sent via STEV-eth0
+2018-10-28 14:08:48 <TRACE> ospf1: HELLO packet sent via STEV-eth1
+2018-10-28 14:08:48 <TRACE> ospf1: HELLO packet received from fe80::20f8:84ff:fe47:b8b5 via STEV-eth1
+2018-10-28 14:08:48 <TRACE> ospf1: HELLO packet received from fe80::685c:8eff:fe4c:fb41 via STEV-eth0
+2018-10-28 14:08:49 <TRACE> ospf1: HELLO packet sent via STEV-eth1
+2018-10-28 14:08:49 <TRACE> ospf1: HELLO packet sent via STEV-eth0
+2018-10-28 14:08:49 <TRACE> ospf1: HELLO packet sent via STEV-lan0
+2018-10-28 14:08:50 <TRACE> ospf1: HELLO packet sent via STEV-lan0
+2018-10-28 14:08:50 <TRACE> ospf1: HELLO packet sent via STEV-eth0
+2018-10-28 14:08:50 <TRACE> ospf1: HELLO packet sent via STEV-eth1
+2018-10-28 14:08:50 <TRACE> ospf1: HELLO packet received from fe80::20f8:84ff:fe47:b8b5 via STEV-eth1
+2018-10-28 14:08:50 <TRACE> ospf1: HELLO packet received from fe80::685c:8eff:fe4c:fb41 via STEV-eth0
+2018-10-28 14:08:51 <TRACE> ospf1: HELLO packet sent via STEV-eth1
+2018-10-28 14:08:51 <TRACE> ospf1: HELLO packet sent via STEV-eth0
+2018-10-28 14:08:51 <TRACE> ospf1: HELLO packet sent via STEV-lan0
+2018-10-28 14:08:51 <TRACE> device1: Scanning interfaces
+2018-10-28 14:08:51 <TRACE> kernel1: Scanning routing table
+2018-10-28 14:08:51 <TRACE> kernel1: fd00:200:4:2::/64: seen
+2018-10-28 14:08:51 <TRACE> kernel1: fd00:200:4:a20::/64: seen
+2018-10-28 14:08:51 <TRACE> kernel1: fd00:200:4:b30::/64: seen
+2018-10-28 14:08:51 <TRACE> kernel1: fd00:200:4:b40::/64: seen
+2018-10-28 14:08:51 <TRACE> kernel1: fd00:200:4:e11::/64: seen
+2018-10-28 14:08:51 <TRACE> kernel1: fd00:200:4:e31::/64: seen
+2018-10-28 14:08:51 <TRACE> kernel1: fd00:200:4:f14::/64: seen
+2018-10-28 14:08:51 <TRACE> kernel1: fd00:200:4:f24::/64: seen
+2018-10-28 14:08:51 <TRACE> kernel1: fd00:200:4:f25::/64: seen
+2018-10-28 14:08:51 <TRACE> kernel1: fd00:200:4:f31::/64: seen
+2018-10-28 14:08:51 <TRACE> kernel1: fd00:200:4:f53::/64: seen
+2018-10-28 14:08:51 <TRACE> kernel1: fd00:300:4:2::/64: seen
+2018-10-28 14:08:51 <TRACE> kernel1: fd00:300:4:a20::/64: seen
+2018-10-28 14:08:51 <TRACE> kernel1: fd00:300:4:b30::/64: seen
+2018-10-28 14:08:51 <TRACE> kernel1: fd00:300:4:b40::/64: seen
+2018-10-28 14:08:51 <TRACE> kernel1: fd00:300:4:e11::/64: seen
+2018-10-28 14:08:51 <TRACE> kernel1: fd00:300:4:e31::/64: seen
+2018-10-28 14:08:51 <TRACE> kernel1: fd00:300:4:e33::/64: seen
+2018-10-28 14:08:51 <TRACE> kernel1: fd00:300:4:f00::1/128: seen
+2018-10-28 14:08:51 <TRACE> kernel1: fd00:300:4:f00::2/128: seen
+2018-10-28 14:08:51 <TRACE> kernel1: fd00:300:4:f00::3/128: seen
+2018-10-28 14:08:51 <TRACE> kernel1: fd00:300:4:f00::4/128: seen
+2018-10-28 14:08:51 <TRACE> kernel1: fd00:300:4:f00::5/128: seen
+2018-10-28 14:08:51 <TRACE> kernel1: fd00:300:4:f00::6/128: seen
+2018-10-28 14:08:51 <TRACE> kernel1: fd00:300:4:f14::/64: seen
+2018-10-28 14:08:51 <TRACE> kernel1: fd00:300:4:f24::/64: seen
+2018-10-28 14:08:51 <TRACE> kernel1: fd00:300:4:f25::/64: seen
+2018-10-28 14:08:51 <TRACE> kernel1: fd00:300:4:f31::/64: seen
+2018-10-28 14:08:51 <TRACE> kernel1: fd00:300:4:f53::/64: seen
+2018-10-28 14:08:51 <TRACE> kernel1: ::/0: seen
+2018-10-28 14:08:51 <TRACE> kernel1: Pruning table master
+2018-10-28 14:08:51 <TRACE> kernel1: Pruning inherited routes
+2018-10-28 14:08:51 <TRACE> ospf1: HELLO packet received from fe80::685c:8eff:fe4c:fb41 via STEV-eth0
+2018-10-28 14:08:51 <TRACE> ospf1: HELLO packet received from fe80::20f8:84ff:fe47:b8b5 via STEV-eth1
+2018-10-28 14:08:52 <TRACE> ospf1: HELLO packet sent via STEV-lan0
+2018-10-28 14:08:52 <TRACE> ospf1: HELLO packet sent via STEV-eth0
+2018-10-28 14:08:52 <TRACE> ospf1: HELLO packet sent via STEV-eth1
+2018-10-28 14:08:52 <TRACE> ospf1: HELLO packet received from fe80::20f8:84ff:fe47:b8b5 via STEV-eth1
+2018-10-28 14:08:52 <TRACE> ospf1: HELLO packet received from fe80::685c:8eff:fe4c:fb41 via STEV-eth0
+2018-10-28 14:08:53 <TRACE> ospf1: HELLO packet sent via STEV-eth1
+2018-10-28 14:08:53 <TRACE> ospf1: HELLO packet sent via STEV-eth0
+2018-10-28 14:08:53 <TRACE> ospf1: HELLO packet sent via STEV-lan0
+2018-10-28 14:08:53 <TRACE> ospf1: HELLO packet received from fe80::685c:8eff:fe4c:fb41 via STEV-eth0
+2018-10-28 14:08:53 <TRACE> ospf1: HELLO packet received from fe80::20f8:84ff:fe47:b8b5 via STEV-eth1
+2018-10-28 14:08:54 <TRACE> ospf1: HELLO packet sent via STEV-lan0
+2018-10-28 14:08:54 <TRACE> ospf1: HELLO packet sent via STEV-eth0
+2018-10-28 14:08:54 <TRACE> ospf1: HELLO packet sent via STEV-eth1
+2018-10-28 14:08:54 <TRACE> ospf1: HELLO packet received from fe80::685c:8eff:fe4c:fb41 via STEV-eth0
+2018-10-28 14:08:54 <TRACE> ospf1: HELLO packet received from fe80::20f8:84ff:fe47:b8b5 via STEV-eth1
+2018-10-28 14:08:54 <TRACE> ospf1: HELLO packet received from fe80::685c:8eff:fe4c:fb41 via STEV-eth0
+2018-10-28 14:08:55 <TRACE> ospf1: HELLO packet sent via STEV-eth1
+2018-10-28 14:08:55 <TRACE> ospf1: HELLO packet sent via STEV-eth0
+2018-10-28 14:08:55 <TRACE> ospf1: HELLO packet sent via STEV-lan0
+2018-10-28 14:08:55 <TRACE> ospf1: HELLO packet received from fe80::20f8:84ff:fe47:b8b5 via STEV-eth1
+2018-10-28 14:08:55 <TRACE> ospf1: HELLO packet received from fe80::685c:8eff:fe4c:fb41 via STEV-eth0
+2018-10-28 14:08:56 <TRACE> ospf1: HELLO packet sent via STEV-lan0
+2018-10-28 14:08:56 <TRACE> ospf1: HELLO packet sent via STEV-eth0
+2018-10-28 14:08:56 <TRACE> ospf1: HELLO packet sent via STEV-eth1
+2018-10-28 14:08:56 <TRACE> ospf1: HELLO packet received from fe80::20f8:84ff:fe47:b8b5 via STEV-eth1
+2018-10-28 14:08:56 <TRACE> ospf1: HELLO packet received from fe80::20f8:84ff:fe47:b8b5 via STEV-eth1
+2018-10-28 14:08:56 <TRACE> ospf1: HELLO packet received from fe80::685c:8eff:fe4c:fb41 via STEV-eth0
+2018-10-28 14:08:57 <TRACE> ospf1: HELLO packet sent via STEV-eth1
+2018-10-28 14:08:57 <TRACE> ospf1: HELLO packet sent via STEV-eth0
+2018-10-28 14:08:57 <TRACE> ospf1: HELLO packet sent via STEV-lan0
+2018-10-28 14:08:57 <TRACE> ospf1: HELLO packet received from fe80::20f8:84ff:fe47:b8b5 via STEV-eth1
+2018-10-28 14:08:58 <TRACE> ospf1: HELLO packet sent via STEV-lan0
+2018-10-28 14:08:58 <TRACE> ospf1: HELLO packet sent via STEV-eth0
+2018-10-28 14:08:58 <TRACE> ospf1: HELLO packet sent via STEV-eth1
+2018-10-28 14:08:58 <TRACE> ospf1: HELLO packet received from fe80::685c:8eff:fe4c:fb41 via STEV-eth0
+2018-10-28 14:08:59 <TRACE> ospf1: HELLO packet sent via STEV-eth1
+2018-10-28 14:08:59 <TRACE> ospf1: HELLO packet sent via STEV-eth0
+2018-10-28 14:08:59 <TRACE> ospf1: HELLO packet sent via STEV-lan0
+2018-10-28 14:08:59 <TRACE> ospf1: HELLO packet received from fe80::20f8:84ff:fe47:b8b5 via STEV-eth1
+2018-10-28 14:08:59 <TRACE> ospf1: HELLO packet received from fe80::685c:8eff:fe4c:fb41 via STEV-eth0
+2018-10-28 14:09:00 <TRACE> ospf1: HELLO packet sent via STEV-lan0
+2018-10-28 14:09:00 <TRACE> ospf1: HELLO packet sent via STEV-eth0
+2018-10-28 14:09:00 <TRACE> ospf1: HELLO packet sent via STEV-eth1
+2018-10-28 14:09:00 <TRACE> ospf1: HELLO packet received from fe80::20f8:84ff:fe47:b8b5 via STEV-eth1
+2018-10-28 14:09:00 <TRACE> ospf1: HELLO packet received from fe80::685c:8eff:fe4c:fb41 via STEV-eth0
+2018-10-28 14:09:00 <TRACE> ospf1: HELLO packet received from fe80::20f8:84ff:fe47:b8b5 via STEV-eth1
+2018-10-28 14:09:01 <TRACE> ospf1: HELLO packet sent via STEV-eth1
+2018-10-28 14:09:01 <TRACE> ospf1: HELLO packet sent via STEV-eth0
+2018-10-28 14:09:01 <TRACE> ospf1: HELLO packet sent via STEV-lan0
+2018-10-28 14:09:01 <TRACE> device1: Scanning interfaces
+2018-10-28 14:09:01 <TRACE> ospf1: HELLO packet received from fe80::685c:8eff:fe4c:fb41 via STEV-eth0
+2018-10-28 14:09:01 <TRACE> ospf1: HELLO packet received from fe80::685c:8eff:fe4c:fb41 via STEV-eth0
+2018-10-28 14:09:02 <TRACE> ospf1: HELLO packet sent via STEV-lan0
+2018-10-28 14:09:02 <TRACE> ospf1: HELLO packet sent via STEV-eth0
+2018-10-28 14:09:02 <TRACE> ospf1: HELLO packet sent via STEV-eth1
+2018-10-28 14:09:02 <TRACE> ospf1: HELLO packet received from fe80::20f8:84ff:fe47:b8b5 via STEV-eth1
+2018-10-28 14:09:03 <TRACE> ospf1: HELLO packet sent via STEV-eth1
+2018-10-28 14:09:03 <TRACE> ospf1: HELLO packet sent via STEV-eth0
+2018-10-28 14:09:03 <TRACE> ospf1: HELLO packet sent via STEV-lan0
+2018-10-28 14:09:03 <TRACE> ospf1: HELLO packet received from fe80::20f8:84ff:fe47:b8b5 via STEV-eth1
+2018-10-28 14:09:03 <TRACE> ospf1: HELLO packet received from fe80::685c:8eff:fe4c:fb41 via STEV-eth0
+2018-10-28 14:09:04 <TRACE> ospf1: HELLO packet sent via STEV-lan0
+2018-10-28 14:09:04 <TRACE> ospf1: HELLO packet sent via STEV-eth0
+2018-10-28 14:09:04 <TRACE> ospf1: HELLO packet sent via STEV-eth1
+2018-10-28 14:09:04 <TRACE> ospf1: HELLO packet received from fe80::685c:8eff:fe4c:fb41 via STEV-eth0
+2018-10-28 14:09:04 <TRACE> ospf1: HELLO packet received from fe80::20f8:84ff:fe47:b8b5 via STEV-eth1
+2018-10-28 14:09:05 <TRACE> ospf1: HELLO packet sent via STEV-eth1
+2018-10-28 14:09:05 <TRACE> ospf1: HELLO packet sent via STEV-eth0
+2018-10-28 14:09:05 <TRACE> ospf1: HELLO packet sent via STEV-lan0
+2018-10-28 14:09:05 <TRACE> ospf1: HELLO packet received from fe80::20f8:84ff:fe47:b8b5 via STEV-eth1
+2018-10-28 14:09:05 <TRACE> ospf1: HELLO packet received from fe80::685c:8eff:fe4c:fb41 via STEV-eth0
+2018-10-28 14:09:06 <TRACE> ospf1: HELLO packet sent via STEV-lan0
+2018-10-28 14:09:06 <TRACE> ospf1: HELLO packet sent via STEV-eth0
+2018-10-28 14:09:06 <TRACE> ospf1: HELLO packet sent via STEV-eth1
+2018-10-28 14:09:06 <TRACE> ospf1: HELLO packet received from fe80::20f8:84ff:fe47:b8b5 via STEV-eth1
+2018-10-28 14:09:06 <TRACE> ospf1: HELLO packet received from fe80::685c:8eff:fe4c:fb41 via STEV-eth0
+2018-10-28 14:09:06 <TRACE> ospf1: HELLO packet received from fe80::685c:8eff:fe4c:fb41 via STEV-eth0
+2018-10-28 14:09:07 <TRACE> ospf1: HELLO packet sent via STEV-eth1
+2018-10-28 14:09:07 <TRACE> ospf1: HELLO packet sent via STEV-eth0
+2018-10-28 14:09:07 <TRACE> ospf1: HELLO packet sent via STEV-lan0
+2018-10-28 14:09:07 <TRACE> ospf1: HELLO packet received from fe80::20f8:84ff:fe47:b8b5 via STEV-eth1
+2018-10-28 14:09:07 <TRACE> ospf1: HELLO packet received from fe80::20f8:84ff:fe47:b8b5 via STEV-eth1
+2018-10-28 14:09:08 <TRACE> ospf1: HELLO packet sent via STEV-lan0
+2018-10-28 14:09:08 <TRACE> ospf1: HELLO packet sent via STEV-eth0
+2018-10-28 14:09:08 <TRACE> ospf1: HELLO packet sent via STEV-eth1
+2018-10-28 14:09:08 <TRACE> ospf1: HELLO packet received from fe80::685c:8eff:fe4c:fb41 via STEV-eth0
+2018-10-28 14:09:09 <TRACE> ospf1: HELLO packet sent via STEV-eth1
+2018-10-28 14:09:09 <TRACE> ospf1: HELLO packet sent via STEV-eth0
+2018-10-28 14:09:09 <TRACE> ospf1: HELLO packet sent via STEV-lan0
+2018-10-28 14:09:09 <TRACE> ospf1: HELLO packet received from fe80::20f8:84ff:fe47:b8b5 via STEV-eth1
+2018-10-28 14:09:09 <TRACE> ospf1: HELLO packet received from fe80::685c:8eff:fe4c:fb41 via STEV-eth0
+2018-10-28 14:09:10 <TRACE> ospf1: HELLO packet sent via STEV-lan0
+2018-10-28 14:09:10 <TRACE> ospf1: HELLO packet sent via STEV-eth0
+2018-10-28 14:09:10 <TRACE> ospf1: HELLO packet sent via STEV-eth1
+2018-10-28 14:09:10 <TRACE> ospf1: HELLO packet received from fe80::20f8:84ff:fe47:b8b5 via STEV-eth1
+2018-10-28 14:09:10 <TRACE> ospf1: HELLO packet received from fe80::685c:8eff:fe4c:fb41 via STEV-eth0
+2018-10-28 14:09:11 <TRACE> ospf1: HELLO packet sent via STEV-eth1
+2018-10-28 14:09:11 <TRACE> ospf1: HELLO packet sent via STEV-eth0
+2018-10-28 14:09:11 <TRACE> ospf1: HELLO packet sent via STEV-lan0
+2018-10-28 14:09:11 <TRACE> device1: Scanning interfaces
+2018-10-28 14:09:11 <TRACE> kernel1: Scanning routing table
+2018-10-28 14:09:11 <TRACE> kernel1: fd00:200:4:2::/64: seen
+2018-10-28 14:09:11 <TRACE> kernel1: fd00:200:4:a20::/64: seen
+2018-10-28 14:09:11 <TRACE> kernel1: fd00:200:4:b30::/64: seen
+2018-10-28 14:09:11 <TRACE> kernel1: fd00:200:4:b40::/64: seen
+2018-10-28 14:09:11 <TRACE> kernel1: fd00:200:4:e11::/64: seen
+2018-10-28 14:09:11 <TRACE> kernel1: fd00:200:4:e31::/64: seen
+2018-10-28 14:09:11 <TRACE> kernel1: fd00:200:4:f14::/64: seen
+2018-10-28 14:09:11 <TRACE> kernel1: fd00:200:4:f24::/64: seen
+2018-10-28 14:09:11 <TRACE> kernel1: fd00:200:4:f25::/64: seen
+2018-10-28 14:09:11 <TRACE> kernel1: fd00:200:4:f31::/64: seen
+2018-10-28 14:09:11 <TRACE> kernel1: fd00:200:4:f53::/64: seen
+2018-10-28 14:09:11 <TRACE> kernel1: fd00:300:4:2::/64: seen
+2018-10-28 14:09:11 <TRACE> kernel1: fd00:300:4:a20::/64: seen
+2018-10-28 14:09:11 <TRACE> kernel1: fd00:300:4:b30::/64: seen
+2018-10-28 14:09:11 <TRACE> kernel1: fd00:300:4:b40::/64: seen
+2018-10-28 14:09:11 <TRACE> kernel1: fd00:300:4:e11::/64: seen
+2018-10-28 14:09:11 <TRACE> kernel1: fd00:300:4:e31::/64: seen
+2018-10-28 14:09:11 <TRACE> kernel1: fd00:300:4:e33::/64: seen
+2018-10-28 14:09:11 <TRACE> kernel1: fd00:300:4:f00::1/128: seen
+2018-10-28 14:09:11 <TRACE> kernel1: fd00:300:4:f00::2/128: seen
+2018-10-28 14:09:11 <TRACE> kernel1: fd00:300:4:f00::3/128: seen
+2018-10-28 14:09:11 <TRACE> kernel1: fd00:300:4:f00::4/128: seen
+2018-10-28 14:09:11 <TRACE> kernel1: fd00:300:4:f00::5/128: seen
+2018-10-28 14:09:11 <TRACE> kernel1: fd00:300:4:f00::6/128: seen
+2018-10-28 14:09:11 <TRACE> kernel1: fd00:300:4:f14::/64: seen
+2018-10-28 14:09:11 <TRACE> kernel1: fd00:300:4:f24::/64: seen
+2018-10-28 14:09:11 <TRACE> kernel1: fd00:300:4:f25::/64: seen
+2018-10-28 14:09:11 <TRACE> kernel1: fd00:300:4:f31::/64: seen
+2018-10-28 14:09:11 <TRACE> kernel1: fd00:300:4:f53::/64: seen
+2018-10-28 14:09:11 <TRACE> kernel1: ::/0: seen
+2018-10-28 14:09:11 <TRACE> kernel1: Pruning table master
+2018-10-28 14:09:11 <TRACE> kernel1: Pruning inherited routes
+2018-10-28 14:09:11 <TRACE> ospf1: HELLO packet received from fe80::20f8:84ff:fe47:b8b5 via STEV-eth1
+2018-10-28 14:09:11 <TRACE> ospf1: HELLO packet received from fe80::685c:8eff:fe4c:fb41 via STEV-eth0
+2018-10-28 14:09:11 <TRACE> ospf1: HELLO packet received from fe80::20f8:84ff:fe47:b8b5 via STEV-eth1
+2018-10-28 14:09:12 <TRACE> ospf1: HELLO packet sent via STEV-lan0
+2018-10-28 14:09:12 <TRACE> ospf1: HELLO packet sent via STEV-eth0
+2018-10-28 14:09:12 <TRACE> ospf1: HELLO packet sent via STEV-eth1
+2018-10-28 14:09:12 <TRACE> ospf1: HELLO packet received from fe80::685c:8eff:fe4c:fb41 via STEV-eth0
+2018-10-28 14:09:13 <TRACE> ospf1: HELLO packet sent via STEV-eth1
+2018-10-28 14:09:13 <TRACE> ospf1: HELLO packet sent via STEV-eth0
+2018-10-28 14:09:13 <TRACE> ospf1: HELLO packet sent via STEV-lan0
+2018-10-28 14:09:13 <TRACE> ospf1: HELLO packet received from fe80::685c:8eff:fe4c:fb41 via STEV-eth0
+2018-10-28 14:09:13 <TRACE> ospf1: HELLO packet received from fe80::20f8:84ff:fe47:b8b5 via STEV-eth1
+2018-10-28 14:09:13 <TRACE> ospf1: HELLO packet received from fe80::685c:8eff:fe4c:fb41 via STEV-eth0
+2018-10-28 14:09:14 <TRACE> ospf1: HELLO packet sent via STEV-lan0
+2018-10-28 14:09:14 <TRACE> ospf1: HELLO packet sent via STEV-eth0
+2018-10-28 14:09:14 <TRACE> ospf1: HELLO packet sent via STEV-eth1
+2018-10-28 14:09:14 <TRACE> ospf1: HELLO packet received from fe80::20f8:84ff:fe47:b8b5 via STEV-eth1
+2018-10-28 14:09:15 <TRACE> ospf1: HELLO packet sent via STEV-eth1
+2018-10-28 14:09:15 <TRACE> ospf1: HELLO packet sent via STEV-eth0
+2018-10-28 14:09:15 <TRACE> ospf1: HELLO packet sent via STEV-lan0
+2018-10-28 14:09:15 <TRACE> ospf1: HELLO packet received from fe80::685c:8eff:fe4c:fb41 via STEV-eth0
+2018-10-28 14:09:15 <TRACE> ospf1: HELLO packet received from fe80::20f8:84ff:fe47:b8b5 via STEV-eth1
+2018-10-28 14:09:16 <TRACE> ospf1: HELLO packet sent via STEV-lan0
+2018-10-28 14:09:16 <TRACE> ospf1: HELLO packet sent via STEV-eth0
+2018-10-28 14:09:16 <TRACE> ospf1: HELLO packet sent via STEV-eth1
+2018-10-28 14:09:16 <TRACE> ospf1: HELLO packet received from fe80::685c:8eff:fe4c:fb41 via STEV-eth0
+2018-10-28 14:09:16 <TRACE> ospf1: HELLO packet received from fe80::20f8:84ff:fe47:b8b5 via STEV-eth1
+2018-10-28 14:09:16 <TRACE> ospf1: HELLO packet received from fe80::20f8:84ff:fe47:b8b5 via STEV-eth1
+2018-10-28 14:09:17 <TRACE> ospf1: HELLO packet sent via STEV-eth1
+2018-10-28 14:09:17 <TRACE> ospf1: HELLO packet sent via STEV-eth0
+2018-10-28 14:09:17 <TRACE> ospf1: HELLO packet sent via STEV-lan0
+2018-10-28 14:09:17 <TRACE> ospf1: HELLO packet received from fe80::685c:8eff:fe4c:fb41 via STEV-eth0
+2018-10-28 14:09:18 <TRACE> ospf1: HELLO packet sent via STEV-lan0
+2018-10-28 14:09:18 <TRACE> ospf1: HELLO packet sent via STEV-eth0
+2018-10-28 14:09:18 <TRACE> ospf1: HELLO packet sent via STEV-eth1
+2018-10-28 14:09:18 <TRACE> ospf1: HELLO packet received from fe80::20f8:84ff:fe47:b8b5 via STEV-eth1
+2018-10-28 14:09:18 <TRACE> ospf1: HELLO packet received from fe80::685c:8eff:fe4c:fb41 via STEV-eth0
+2018-10-28 14:09:19 <TRACE> ospf1: HELLO packet sent via STEV-eth1
+2018-10-28 14:09:19 <TRACE> ospf1: HELLO packet sent via STEV-eth0
+2018-10-28 14:09:19 <TRACE> ospf1: HELLO packet sent via STEV-lan0
+2018-10-28 14:09:19 <TRACE> ospf1: HELLO packet received from fe80::20f8:84ff:fe47:b8b5 via STEV-eth1
+2018-10-28 14:09:19 <TRACE> ospf1: HELLO packet received from fe80::685c:8eff:fe4c:fb41 via STEV-eth0
+2018-10-28 14:09:20 <TRACE> ospf1: HELLO packet sent via STEV-lan0
+2018-10-28 14:09:20 <TRACE> ospf1: HELLO packet sent via STEV-eth0
+2018-10-28 14:09:20 <TRACE> ospf1: HELLO packet sent via STEV-eth1
+2018-10-28 14:09:20 <TRACE> ospf1: HELLO packet received from fe80::20f8:84ff:fe47:b8b5 via STEV-eth1
+2018-10-28 14:09:20 <TRACE> ospf1: HELLO packet received from fe80::685c:8eff:fe4c:fb41 via STEV-eth0
+2018-10-28 14:09:21 <TRACE> ospf1: HELLO packet sent via STEV-eth1
+2018-10-28 14:09:21 <TRACE> ospf1: HELLO packet sent via STEV-eth0
+2018-10-28 14:09:21 <TRACE> ospf1: HELLO packet sent via STEV-lan0
+2018-10-28 14:09:21 <TRACE> device1: Scanning interfaces
+2018-10-28 14:09:21 <TRACE> ospf1: HELLO packet received from fe80::20f8:84ff:fe47:b8b5 via STEV-eth1
+2018-10-28 14:09:21 <TRACE> ospf1: HELLO packet received from fe80::685c:8eff:fe4c:fb41 via STEV-eth0
+2018-10-28 14:09:21 <TRACE> ospf1: HELLO packet received from fe80::685c:8eff:fe4c:fb41 via STEV-eth0
+2018-10-28 14:09:22 <TRACE> ospf1: HELLO packet sent via STEV-lan0
+2018-10-28 14:09:22 <TRACE> ospf1: HELLO packet sent via STEV-eth0
+2018-10-28 14:09:22 <TRACE> ospf1: HELLO packet sent via STEV-eth1
+2018-10-28 14:09:22 <TRACE> ospf1: HELLO packet received from fe80::20f8:84ff:fe47:b8b5 via STEV-eth1
+2018-10-28 14:09:23 <TRACE> ospf1: HELLO packet sent via STEV-eth1
+2018-10-28 14:09:23 <TRACE> ospf1: HELLO packet sent via STEV-eth0
+2018-10-28 14:09:23 <TRACE> ospf1: HELLO packet sent via STEV-lan0
+2018-10-28 14:09:23 <TRACE> ospf1: HELLO packet received from fe80::20f8:84ff:fe47:b8b5 via STEV-eth1
+2018-10-28 14:09:23 <TRACE> ospf1: HELLO packet received from fe80::685c:8eff:fe4c:fb41 via STEV-eth0
+2018-10-28 14:09:24 <TRACE> ospf1: HELLO packet sent via STEV-lan0
+2018-10-28 14:09:24 <TRACE> ospf1: HELLO packet sent via STEV-eth0
+2018-10-28 14:09:24 <TRACE> ospf1: HELLO packet sent via STEV-eth1
+2018-10-28 14:09:24 <TRACE> ospf1: HELLO packet received from fe80::20f8:84ff:fe47:b8b5 via STEV-eth1
+2018-10-28 14:09:24 <TRACE> ospf1: HELLO packet received from fe80::685c:8eff:fe4c:fb41 via STEV-eth0
+2018-10-28 14:09:25 <TRACE> ospf1: HELLO packet sent via STEV-eth1
+2018-10-28 14:09:25 <TRACE> ospf1: HELLO packet sent via STEV-eth0
+2018-10-28 14:09:25 <TRACE> ospf1: HELLO packet sent via STEV-lan0
+2018-10-28 14:09:25 <TRACE> ospf1: HELLO packet received from fe80::685c:8eff:fe4c:fb41 via STEV-eth0
+2018-10-28 14:09:25 <TRACE> ospf1: HELLO packet received from fe80::20f8:84ff:fe47:b8b5 via STEV-eth1
+2018-10-28 14:09:25 <TRACE> ospf1: HELLO packet received from fe80::20f8:84ff:fe47:b8b5 via STEV-eth1
+2018-10-28 14:09:26 <TRACE> ospf1: HELLO packet sent via STEV-lan0
+2018-10-28 14:09:26 <TRACE> ospf1: HELLO packet sent via STEV-eth0
+2018-10-28 14:09:26 <TRACE> ospf1: HELLO packet sent via STEV-eth1
+2018-10-28 14:09:26 <TRACE> ospf1: HELLO packet received from fe80::685c:8eff:fe4c:fb41 via STEV-eth0
+2018-10-28 14:09:27 <TRACE> ospf1: HELLO packet sent via STEV-eth1
+2018-10-28 14:09:27 <TRACE> ospf1: HELLO packet sent via STEV-eth0
+2018-10-28 14:09:27 <TRACE> ospf1: HELLO packet sent via STEV-lan0
+2018-10-28 14:09:27 <TRACE> ospf1: HELLO packet received from fe80::685c:8eff:fe4c:fb41 via STEV-eth0
+2018-10-28 14:09:27 <TRACE> ospf1: HELLO packet received from fe80::20f8:84ff:fe47:b8b5 via STEV-eth1
+2018-10-28 14:09:27 <TRACE> ospf1: HELLO packet received from fe80::20f8:84ff:fe47:b8b5 via STEV-eth1
+2018-10-28 14:09:27 <TRACE> ospf1: HELLO packet received from fe80::685c:8eff:fe4c:fb41 via STEV-eth0
+2018-10-28 14:09:28 <TRACE> ospf1: HELLO packet sent via STEV-lan0
+2018-10-28 14:09:28 <TRACE> ospf1: HELLO packet sent via STEV-eth0
+2018-10-28 14:09:28 <TRACE> ospf1: HELLO packet sent via STEV-eth1
+2018-10-28 14:09:28 <TRACE> ospf1: HELLO packet received from fe80::20f8:84ff:fe47:b8b5 via STEV-eth1
+2018-10-28 14:09:28 <TRACE> ospf1: HELLO packet received from fe80::685c:8eff:fe4c:fb41 via STEV-eth0
+2018-10-28 14:09:29 <TRACE> ospf1: HELLO packet sent via STEV-eth1
+2018-10-28 14:09:29 <TRACE> ospf1: HELLO packet sent via STEV-eth0
+2018-10-28 14:09:29 <TRACE> ospf1: HELLO packet sent via STEV-lan0
+2018-10-28 14:09:29 <TRACE> ospf1: HELLO packet received from fe80::20f8:84ff:fe47:b8b5 via STEV-eth1
+2018-10-28 14:09:29 <TRACE> ospf1: HELLO packet received from fe80::685c:8eff:fe4c:fb41 via STEV-eth0
+2018-10-28 14:09:30 <TRACE> ospf1: HELLO packet sent via STEV-lan0
+2018-10-28 14:09:30 <TRACE> ospf1: HELLO packet sent via STEV-eth0
+2018-10-28 14:09:30 <TRACE> ospf1: HELLO packet sent via STEV-eth1
+2018-10-28 14:09:31 <TRACE> ospf1: HELLO packet sent via STEV-eth1
+2018-10-28 14:09:31 <TRACE> ospf1: HELLO packet sent via STEV-eth0
+2018-10-28 14:09:31 <TRACE> ospf1: HELLO packet sent via STEV-lan0
+2018-10-28 14:09:31 <TRACE> device1: Scanning interfaces
+2018-10-28 14:09:31 <TRACE> kernel1: Scanning routing table
+2018-10-28 14:09:31 <TRACE> kernel1: fd00:200:4:2::/64: seen
+2018-10-28 14:09:31 <TRACE> kernel1: fd00:200:4:a20::/64: seen
+2018-10-28 14:09:31 <TRACE> kernel1: fd00:200:4:b30::/64: seen
+2018-10-28 14:09:31 <TRACE> kernel1: fd00:200:4:b40::/64: seen
+2018-10-28 14:09:31 <TRACE> kernel1: fd00:200:4:e11::/64: seen
+2018-10-28 14:09:31 <TRACE> kernel1: fd00:200:4:e31::/64: seen
+2018-10-28 14:09:31 <TRACE> kernel1: fd00:200:4:f14::/64: seen
+2018-10-28 14:09:31 <TRACE> kernel1: fd00:200:4:f24::/64: seen
+2018-10-28 14:09:31 <TRACE> kernel1: fd00:200:4:f25::/64: seen
+2018-10-28 14:09:31 <TRACE> kernel1: fd00:200:4:f31::/64: seen
+2018-10-28 14:09:31 <TRACE> kernel1: fd00:200:4:f53::/64: seen
+2018-10-28 14:09:31 <TRACE> kernel1: fd00:300:4:2::/64: seen
+2018-10-28 14:09:31 <TRACE> kernel1: fd00:300:4:a20::/64: seen
+2018-10-28 14:09:31 <TRACE> kernel1: fd00:300:4:b30::/64: seen
+2018-10-28 14:09:31 <TRACE> kernel1: fd00:300:4:b40::/64: seen
+2018-10-28 14:09:31 <TRACE> kernel1: fd00:300:4:e11::/64: seen
+2018-10-28 14:09:31 <TRACE> kernel1: fd00:300:4:e31::/64: seen
+2018-10-28 14:09:31 <TRACE> kernel1: fd00:300:4:e33::/64: seen
+2018-10-28 14:09:31 <TRACE> kernel1: fd00:300:4:f00::1/128: seen
+2018-10-28 14:09:31 <TRACE> kernel1: fd00:300:4:f00::2/128: seen
+2018-10-28 14:09:31 <TRACE> kernel1: fd00:300:4:f00::3/128: seen
+2018-10-28 14:09:31 <TRACE> kernel1: fd00:300:4:f00::4/128: seen
+2018-10-28 14:09:31 <TRACE> kernel1: fd00:300:4:f00::5/128: seen
+2018-10-28 14:09:31 <TRACE> kernel1: fd00:300:4:f00::6/128: seen
+2018-10-28 14:09:31 <TRACE> kernel1: fd00:300:4:f14::/64: seen
+2018-10-28 14:09:31 <TRACE> kernel1: fd00:300:4:f24::/64: seen
+2018-10-28 14:09:31 <TRACE> kernel1: fd00:300:4:f25::/64: seen
+2018-10-28 14:09:31 <TRACE> kernel1: fd00:300:4:f31::/64: seen
+2018-10-28 14:09:31 <TRACE> kernel1: fd00:300:4:f53::/64: seen
+2018-10-28 14:09:31 <TRACE> kernel1: ::/0: seen
+2018-10-28 14:09:31 <TRACE> kernel1: Pruning table master
+2018-10-28 14:09:31 <TRACE> kernel1: Pruning inherited routes
+2018-10-28 14:09:31 <TRACE> ospf1: HELLO packet received from fe80::20f8:84ff:fe47:b8b5 via STEV-eth1
+2018-10-28 14:09:31 <TRACE> ospf1: HELLO packet received from fe80::685c:8eff:fe4c:fb41 via STEV-eth0
+2018-10-28 14:09:31 <TRACE> ospf1: HELLO packet received from fe80::685c:8eff:fe4c:fb41 via STEV-eth0
+2018-10-28 14:09:32 <TRACE> ospf1: HELLO packet sent via STEV-lan0
+2018-10-28 14:09:32 <TRACE> ospf1: HELLO packet sent via STEV-eth0
+2018-10-28 14:09:32 <TRACE> ospf1: HELLO packet sent via STEV-eth1
+2018-10-28 14:09:32 <TRACE> ospf1: HELLO packet received from fe80::20f8:84ff:fe47:b8b5 via STEV-eth1
+2018-10-28 14:09:33 <TRACE> ospf1: HELLO packet sent via STEV-eth1
+2018-10-28 14:09:33 <TRACE> ospf1: HELLO packet sent via STEV-eth0
+2018-10-28 14:09:33 <TRACE> ospf1: HELLO packet sent via STEV-lan0
+2018-10-28 14:09:33 <TRACE> ospf1: HELLO packet received from fe80::685c:8eff:fe4c:fb41 via STEV-eth0
+2018-10-28 14:09:33 <TRACE> ospf1: HELLO packet received from fe80::20f8:84ff:fe47:b8b5 via STEV-eth1
+2018-10-28 14:09:33 <TRACE> ospf1: HELLO packet received from fe80::20f8:84ff:fe47:b8b5 via STEV-eth1
+2018-10-28 14:09:34 <TRACE> ospf1: HELLO packet sent via STEV-lan0
+2018-10-28 14:09:34 <TRACE> ospf1: HELLO packet sent via STEV-eth0
+2018-10-28 14:09:34 <TRACE> ospf1: HELLO packet sent via STEV-eth1
+2018-10-28 14:09:34 <TRACE> ospf1: HELLO packet received from fe80::685c:8eff:fe4c:fb41 via STEV-eth0
+2018-10-28 14:09:35 <TRACE> ospf1: HELLO packet sent via STEV-eth1
+2018-10-28 14:09:35 <TRACE> ospf1: HELLO packet sent via STEV-eth0
+2018-10-28 14:09:35 <TRACE> ospf1: HELLO packet sent via STEV-lan0
+2018-10-28 14:09:35 <TRACE> ospf1: HELLO packet received from fe80::685c:8eff:fe4c:fb41 via STEV-eth0
+2018-10-28 14:09:35 <TRACE> ospf1: HELLO packet received from fe80::20f8:84ff:fe47:b8b5 via STEV-eth1
+2018-10-28 14:09:36 <TRACE> ospf1: HELLO packet sent via STEV-lan0
+2018-10-28 14:09:36 <TRACE> ospf1: HELLO packet sent via STEV-eth0
+2018-10-28 14:09:36 <TRACE> ospf1: HELLO packet sent via STEV-eth1
+2018-10-28 14:09:36 <TRACE> ospf1: HELLO packet received from fe80::20f8:84ff:fe47:b8b5 via STEV-eth1
+2018-10-28 14:09:36 <TRACE> ospf1: HELLO packet received from fe80::685c:8eff:fe4c:fb41 via STEV-eth0
+2018-10-28 14:09:36 <TRACE> ospf1: HELLO packet received from fe80::685c:8eff:fe4c:fb41 via STEV-eth0
+2018-10-28 14:09:37 <TRACE> ospf1: HELLO packet sent via STEV-eth1
+2018-10-28 14:09:37 <TRACE> ospf1: HELLO packet sent via STEV-eth0
+2018-10-28 14:09:37 <TRACE> ospf1: HELLO packet sent via STEV-lan0
+2018-10-28 14:09:37 <TRACE> ospf1: HELLO packet received from fe80::20f8:84ff:fe47:b8b5 via STEV-eth1
+2018-10-28 14:09:38 <TRACE> ospf1: HELLO packet sent via STEV-lan0
+2018-10-28 14:09:38 <TRACE> ospf1: HELLO packet sent via STEV-eth0
+2018-10-28 14:09:38 <TRACE> ospf1: HELLO packet sent via STEV-eth1
+2018-10-28 14:09:38 <TRACE> ospf1: HELLO packet received from fe80::20f8:84ff:fe47:b8b5 via STEV-eth1
+2018-10-28 14:09:38 <TRACE> ospf1: HELLO packet received from fe80::685c:8eff:fe4c:fb41 via STEV-eth0
+2018-10-28 14:09:39 <TRACE> ospf1: HELLO packet sent via STEV-eth1
+2018-10-28 14:09:39 <TRACE> ospf1: HELLO packet sent via STEV-eth0
+2018-10-28 14:09:39 <TRACE> ospf1: HELLO packet sent via STEV-lan0
+2018-10-28 14:09:39 <TRACE> ospf1: HELLO packet received from fe80::20f8:84ff:fe47:b8b5 via STEV-eth1
+2018-10-28 14:09:39 <TRACE> ospf1: HELLO packet received from fe80::685c:8eff:fe4c:fb41 via STEV-eth0
+2018-10-28 14:09:40 <TRACE> ospf1: HELLO packet sent via STEV-lan0
+2018-10-28 14:09:40 <TRACE> ospf1: HELLO packet sent via STEV-eth0
+2018-10-28 14:09:40 <TRACE> ospf1: HELLO packet sent via STEV-eth1
+2018-10-28 14:09:40 <TRACE> ospf1: HELLO packet received from fe80::20f8:84ff:fe47:b8b5 via STEV-eth1
+2018-10-28 14:09:40 <TRACE> ospf1: HELLO packet received from fe80::685c:8eff:fe4c:fb41 via STEV-eth0
+2018-10-28 14:09:41 <TRACE> ospf1: HELLO packet sent via STEV-eth1
+2018-10-28 14:09:41 <TRACE> ospf1: HELLO packet sent via STEV-eth0
+2018-10-28 14:09:41 <TRACE> ospf1: HELLO packet sent via STEV-lan0
+2018-10-28 14:09:41 <TRACE> device1: Scanning interfaces
+2018-10-28 14:09:41 <TRACE> ospf1: HELLO packet received from fe80::20f8:84ff:fe47:b8b5 via STEV-eth1
+2018-10-28 14:09:41 <TRACE> ospf1: HELLO packet received from fe80::685c:8eff:fe4c:fb41 via STEV-eth0
+2018-10-28 14:09:41 <TRACE> ospf1: HELLO packet received from fe80::685c:8eff:fe4c:fb41 via STEV-eth0
+2018-10-28 14:09:42 <TRACE> ospf1: HELLO packet sent via STEV-lan0
+2018-10-28 14:09:42 <TRACE> ospf1: HELLO packet sent via STEV-eth0
+2018-10-28 14:09:42 <TRACE> ospf1: HELLO packet sent via STEV-eth1
+2018-10-28 14:09:42 <TRACE> ospf1: HELLO packet received from fe80::20f8:84ff:fe47:b8b5 via STEV-eth1
+2018-10-28 14:09:43 <TRACE> ospf1: HELLO packet sent via STEV-eth1
+2018-10-28 14:09:43 <TRACE> ospf1: HELLO packet sent via STEV-eth0
+2018-10-28 14:09:43 <TRACE> ospf1: HELLO packet sent via STEV-lan0
+2018-10-28 14:09:43 <TRACE> ospf1: HELLO packet received from fe80::20f8:84ff:fe47:b8b5 via STEV-eth1
+2018-10-28 14:09:43 <TRACE> ospf1: HELLO packet received from fe80::685c:8eff:fe4c:fb41 via STEV-eth0
+2018-10-28 14:09:44 <TRACE> ospf1: HELLO packet sent via STEV-lan0
+2018-10-28 14:09:44 <TRACE> ospf1: HELLO packet sent via STEV-eth0
+2018-10-28 14:09:44 <TRACE> ospf1: HELLO packet sent via STEV-eth1
+2018-10-28 14:09:44 <TRACE> ospf1: HELLO packet received from fe80::20f8:84ff:fe47:b8b5 via STEV-eth1
+2018-10-28 14:09:44 <TRACE> ospf1: HELLO packet received from fe80::685c:8eff:fe4c:fb41 via STEV-eth0
+2018-10-28 14:09:45 <TRACE> ospf1: HELLO packet sent via STEV-eth1
+2018-10-28 14:09:45 <TRACE> ospf1: HELLO packet sent via STEV-eth0
+2018-10-28 14:09:45 <TRACE> ospf1: HELLO packet sent via STEV-lan0
+2018-10-28 14:09:45 <TRACE> ospf1: HELLO packet received from fe80::20f8:84ff:fe47:b8b5 via STEV-eth1
+2018-10-28 14:09:45 <TRACE> ospf1: HELLO packet received from fe80::685c:8eff:fe4c:fb41 via STEV-eth0
+2018-10-28 14:09:46 <TRACE> ospf1: HELLO packet sent via STEV-lan0
+2018-10-28 14:09:46 <TRACE> ospf1: HELLO packet sent via STEV-eth0
+2018-10-28 14:09:46 <TRACE> ospf1: HELLO packet sent via STEV-eth1
+2018-10-28 14:09:46 <TRACE> ospf1: HELLO packet received from fe80::20f8:84ff:fe47:b8b5 via STEV-eth1
+2018-10-28 14:09:46 <TRACE> ospf1: HELLO packet received from fe80::685c:8eff:fe4c:fb41 via STEV-eth0
+2018-10-28 14:09:46 <TRACE> ospf1: HELLO packet received from fe80::685c:8eff:fe4c:fb41 via STEV-eth0
+2018-10-28 14:09:47 <TRACE> ospf1: HELLO packet sent via STEV-eth1
+2018-10-28 14:09:47 <TRACE> ospf1: HELLO packet sent via STEV-eth0
+2018-10-28 14:09:47 <TRACE> ospf1: HELLO packet sent via STEV-lan0
+2018-10-28 14:09:47 <TRACE> ospf1: HELLO packet received from fe80::20f8:84ff:fe47:b8b5 via STEV-eth1
+2018-10-28 14:09:47 <TRACE> ospf1: HELLO packet received from fe80::20f8:84ff:fe47:b8b5 via STEV-eth1
+2018-10-28 14:09:48 <TRACE> ospf1: HELLO packet sent via STEV-lan0
+2018-10-28 14:09:48 <TRACE> ospf1: HELLO packet sent via STEV-eth0
+2018-10-28 14:09:48 <TRACE> ospf1: HELLO packet sent via STEV-eth1
+2018-10-28 14:09:48 <TRACE> ospf1: HELLO packet received from fe80::685c:8eff:fe4c:fb41 via STEV-eth0
+2018-10-28 14:09:49 <TRACE> ospf1: HELLO packet sent via STEV-eth1
+2018-10-28 14:09:49 <TRACE> ospf1: HELLO packet sent via STEV-eth0
+2018-10-28 14:09:49 <TRACE> ospf1: HELLO packet sent via STEV-lan0
+2018-10-28 14:09:49 <TRACE> ospf1: HELLO packet received from fe80::20f8:84ff:fe47:b8b5 via STEV-eth1
+2018-10-28 14:09:49 <TRACE> ospf1: HELLO packet received from fe80::685c:8eff:fe4c:fb41 via STEV-eth0
+2018-10-28 14:09:50 <TRACE> ospf1: HELLO packet sent via STEV-lan0
+2018-10-28 14:09:50 <TRACE> ospf1: HELLO packet sent via STEV-eth0
+2018-10-28 14:09:50 <TRACE> ospf1: HELLO packet sent via STEV-eth1
+2018-10-28 14:09:50 <TRACE> ospf1: HELLO packet received from fe80::20f8:84ff:fe47:b8b5 via STEV-eth1
+2018-10-28 14:09:50 <TRACE> ospf1: HELLO packet received from fe80::685c:8eff:fe4c:fb41 via STEV-eth0
+2018-10-28 14:09:50 <TRACE> ospf1: HELLO packet received from fe80::20f8:84ff:fe47:b8b5 via STEV-eth1
+2018-10-28 14:09:51 <TRACE> ospf1: HELLO packet sent via STEV-eth1
+2018-10-28 14:09:51 <TRACE> ospf1: HELLO packet sent via STEV-eth0
+2018-10-28 14:09:51 <TRACE> ospf1: HELLO packet sent via STEV-lan0
+2018-10-28 14:09:51 <TRACE> device1: Scanning interfaces
+2018-10-28 14:09:51 <TRACE> kernel1: Scanning routing table
+2018-10-28 14:09:51 <TRACE> kernel1: fd00:200:4:2::/64: seen
+2018-10-28 14:09:51 <TRACE> kernel1: fd00:200:4:a20::/64: seen
+2018-10-28 14:09:51 <TRACE> kernel1: fd00:200:4:b30::/64: seen
+2018-10-28 14:09:51 <TRACE> kernel1: fd00:200:4:b40::/64: seen
+2018-10-28 14:09:51 <TRACE> kernel1: fd00:200:4:e11::/64: seen
+2018-10-28 14:09:51 <TRACE> kernel1: fd00:200:4:e31::/64: seen
+2018-10-28 14:09:51 <TRACE> kernel1: fd00:200:4:f14::/64: seen
+2018-10-28 14:09:51 <TRACE> kernel1: fd00:200:4:f24::/64: seen
+2018-10-28 14:09:51 <TRACE> kernel1: fd00:200:4:f25::/64: seen
+2018-10-28 14:09:51 <TRACE> kernel1: fd00:200:4:f31::/64: seen
+2018-10-28 14:09:51 <TRACE> kernel1: fd00:200:4:f53::/64: seen
+2018-10-28 14:09:51 <TRACE> kernel1: fd00:300:4:2::/64: seen
+2018-10-28 14:09:51 <TRACE> kernel1: fd00:300:4:a20::/64: seen
+2018-10-28 14:09:51 <TRACE> kernel1: fd00:300:4:b30::/64: seen
+2018-10-28 14:09:51 <TRACE> kernel1: fd00:300:4:b40::/64: seen
+2018-10-28 14:09:51 <TRACE> kernel1: fd00:300:4:e11::/64: seen
+2018-10-28 14:09:51 <TRACE> kernel1: fd00:300:4:e31::/64: seen
+2018-10-28 14:09:51 <TRACE> kernel1: fd00:300:4:e33::/64: seen
+2018-10-28 14:09:51 <TRACE> kernel1: fd00:300:4:f00::1/128: seen
+2018-10-28 14:09:51 <TRACE> kernel1: fd00:300:4:f00::2/128: seen
+2018-10-28 14:09:51 <TRACE> kernel1: fd00:300:4:f00::3/128: seen
+2018-10-28 14:09:51 <TRACE> kernel1: fd00:300:4:f00::4/128: seen
+2018-10-28 14:09:51 <TRACE> kernel1: fd00:300:4:f00::5/128: seen
+2018-10-28 14:09:51 <TRACE> kernel1: fd00:300:4:f00::6/128: seen
+2018-10-28 14:09:51 <TRACE> kernel1: fd00:300:4:f14::/64: seen
+2018-10-28 14:09:51 <TRACE> kernel1: fd00:300:4:f24::/64: seen
+2018-10-28 14:09:51 <TRACE> kernel1: fd00:300:4:f25::/64: seen
+2018-10-28 14:09:51 <TRACE> kernel1: fd00:300:4:f31::/64: seen
+2018-10-28 14:09:51 <TRACE> kernel1: fd00:300:4:f53::/64: seen
+2018-10-28 14:09:51 <TRACE> kernel1: ::/0: seen
+2018-10-28 14:09:51 <TRACE> kernel1: Pruning table master
+2018-10-28 14:09:51 <TRACE> kernel1: Pruning inherited routes
+2018-10-28 14:09:51 <TRACE> ospf1: HELLO packet received from fe80::685c:8eff:fe4c:fb41 via STEV-eth0
+2018-10-28 14:09:52 <TRACE> ospf1: HELLO packet sent via STEV-lan0
+2018-10-28 14:09:52 <TRACE> ospf1: HELLO packet sent via STEV-eth0
+2018-10-28 14:09:52 <TRACE> ospf1: HELLO packet sent via STEV-eth1
+2018-10-28 14:09:52 <TRACE> ospf1: HELLO packet received from fe80::20f8:84ff:fe47:b8b5 via STEV-eth1
+2018-10-28 14:09:52 <TRACE> ospf1: HELLO packet received from fe80::685c:8eff:fe4c:fb41 via STEV-eth0
+2018-10-28 14:09:52 <TRACE> ospf1: HELLO packet received from fe80::20f8:84ff:fe47:b8b5 via STEV-eth1
+2018-10-28 14:09:53 <TRACE> ospf1: HELLO packet sent via STEV-eth1
+2018-10-28 14:09:53 <TRACE> ospf1: HELLO packet sent via STEV-eth0
+2018-10-28 14:09:53 <TRACE> ospf1: HELLO packet sent via STEV-lan0
+2018-10-28 14:09:53 <TRACE> ospf1: HELLO packet received from fe80::685c:8eff:fe4c:fb41 via STEV-eth0
+2018-10-28 14:09:53 <TRACE> ospf1: HELLO packet received from fe80::20f8:84ff:fe47:b8b5 via STEV-eth1
+2018-10-28 14:09:54 <TRACE> ospf1: HELLO packet sent via STEV-lan0
+2018-10-28 14:09:54 <TRACE> ospf1: HELLO packet sent via STEV-eth0
+2018-10-28 14:09:54 <TRACE> ospf1: HELLO packet sent via STEV-eth1
+2018-10-28 14:09:54 <TRACE> ospf1: HELLO packet received from fe80::685c:8eff:fe4c:fb41 via STEV-eth0
+2018-10-28 14:09:54 <TRACE> ospf1: HELLO packet received from fe80::20f8:84ff:fe47:b8b5 via STEV-eth1
+2018-10-28 14:09:55 <TRACE> ospf1: HELLO packet sent via STEV-eth1
+2018-10-28 14:09:55 <TRACE> ospf1: HELLO packet sent via STEV-eth0
+2018-10-28 14:09:55 <TRACE> ospf1: HELLO packet sent via STEV-lan0
+2018-10-28 14:09:55 <TRACE> ospf1: HELLO packet received from fe80::685c:8eff:fe4c:fb41 via STEV-eth0
+2018-10-28 14:09:56 <TRACE> ospf1: HELLO packet sent via STEV-lan0
+2018-10-28 14:09:56 <TRACE> ospf1: HELLO packet sent via STEV-eth0
+2018-10-28 14:09:56 <TRACE> ospf1: HELLO packet sent via STEV-eth1
+2018-10-28 14:09:56 <TRACE> ospf1: HELLO packet received from fe80::20f8:84ff:fe47:b8b5 via STEV-eth1
+2018-10-28 14:09:56 <TRACE> ospf1: HELLO packet received from fe80::685c:8eff:fe4c:fb41 via STEV-eth0
+2018-10-28 14:09:56 <TRACE> ospf1: HELLO packet received from fe80::685c:8eff:fe4c:fb41 via STEV-eth0
+2018-10-28 14:09:57 <TRACE> ospf1: HELLO packet sent via STEV-eth1
+2018-10-28 14:09:57 <TRACE> ospf1: HELLO packet sent via STEV-eth0
+2018-10-28 14:09:57 <TRACE> ospf1: HELLO packet sent via STEV-lan0
+2018-10-28 14:09:57 <TRACE> ospf1: HELLO packet received from fe80::20f8:84ff:fe47:b8b5 via STEV-eth1
+2018-10-28 14:09:58 <TRACE> ospf1: HELLO packet sent via STEV-lan0
+2018-10-28 14:09:58 <TRACE> ospf1: HELLO packet sent via STEV-eth0
+2018-10-28 14:09:58 <TRACE> ospf1: HELLO packet sent via STEV-eth1
+2018-10-28 14:09:58 <TRACE> ospf1: HELLO packet received from fe80::20f8:84ff:fe47:b8b5 via STEV-eth1
+2018-10-28 14:09:58 <TRACE> ospf1: HELLO packet received from fe80::685c:8eff:fe4c:fb41 via STEV-eth0
+2018-10-28 14:09:58 <TRACE> ospf1: HELLO packet received from fe80::20f8:84ff:fe47:b8b5 via STEV-eth1
+2018-10-28 14:09:59 <TRACE> ospf1: HELLO packet sent via STEV-eth1
+2018-10-28 14:09:59 <TRACE> ospf1: HELLO packet sent via STEV-eth0
+2018-10-28 14:09:59 <TRACE> ospf1: HELLO packet sent via STEV-lan0
+2018-10-28 14:09:59 <TRACE> ospf1: HELLO packet received from fe80::685c:8eff:fe4c:fb41 via STEV-eth0
+2018-10-28 14:10:00 <TRACE> ospf1: HELLO packet sent via STEV-lan0
+2018-10-28 14:10:00 <TRACE> ospf1: HELLO packet sent via STEV-eth0
+2018-10-28 14:10:00 <TRACE> ospf1: HELLO packet sent via STEV-eth1
+2018-10-28 14:10:00 <TRACE> ospf1: HELLO packet received from fe80::20f8:84ff:fe47:b8b5 via STEV-eth1
+2018-10-28 14:10:00 <TRACE> ospf1: HELLO packet received from fe80::685c:8eff:fe4c:fb41 via STEV-eth0
+2018-10-28 14:10:00 <TRACE> ospf1: HELLO packet received from fe80::685c:8eff:fe4c:fb41 via STEV-eth0
+2018-10-28 14:10:01 <TRACE> ospf1: HELLO packet sent via STEV-eth1
+2018-10-28 14:10:01 <TRACE> ospf1: HELLO packet sent via STEV-eth0
+2018-10-28 14:10:01 <TRACE> ospf1: HELLO packet sent via STEV-lan0
+2018-10-28 14:10:01 <TRACE> device1: Scanning interfaces
+2018-10-28 14:10:01 <TRACE> ospf1: HELLO packet received from fe80::20f8:84ff:fe47:b8b5 via STEV-eth1
+2018-10-28 14:10:01 <TRACE> ospf1: HELLO packet received from fe80::20f8:84ff:fe47:b8b5 via STEV-eth1
+2018-10-28 14:10:01 <TRACE> ospf1: HELLO packet received from fe80::685c:8eff:fe4c:fb41 via STEV-eth0
+2018-10-28 14:10:02 <TRACE> ospf1: HELLO packet sent via STEV-lan0
+2018-10-28 14:10:02 <TRACE> ospf1: HELLO packet sent via STEV-eth0
+2018-10-28 14:10:02 <TRACE> ospf1: HELLO packet sent via STEV-eth1
+2018-10-28 14:10:03 <TRACE> ospf1: HELLO packet sent via STEV-eth1
+2018-10-28 14:10:03 <TRACE> ospf1: HELLO packet sent via STEV-eth0
+2018-10-28 14:10:03 <TRACE> ospf1: HELLO packet sent via STEV-lan0
+2018-10-28 14:10:03 <TRACE> ospf1: HELLO packet received from fe80::20f8:84ff:fe47:b8b5 via STEV-eth1
+2018-10-28 14:10:03 <TRACE> ospf1: HELLO packet received from fe80::685c:8eff:fe4c:fb41 via STEV-eth0
+2018-10-28 14:10:04 <TRACE> ospf1: HELLO packet sent via STEV-lan0
+2018-10-28 14:10:04 <TRACE> ospf1: HELLO packet sent via STEV-eth0
+2018-10-28 14:10:04 <TRACE> ospf1: HELLO packet sent via STEV-eth1
+2018-10-28 14:10:04 <TRACE> ospf1: HELLO packet received from fe80::20f8:84ff:fe47:b8b5 via STEV-eth1
+2018-10-28 14:10:04 <TRACE> ospf1: HELLO packet received from fe80::685c:8eff:fe4c:fb41 via STEV-eth0
+2018-10-28 14:10:05 <TRACE> ospf1: HELLO packet sent via STEV-eth1
+2018-10-28 14:10:05 <TRACE> ospf1: HELLO packet sent via STEV-eth0
+2018-10-28 14:10:05 <TRACE> ospf1: HELLO packet sent via STEV-lan0
+2018-10-28 14:10:05 <TRACE> ospf1: HELLO packet received from fe80::20f8:84ff:fe47:b8b5 via STEV-eth1
+2018-10-28 14:10:05 <TRACE> ospf1: HELLO packet received from fe80::685c:8eff:fe4c:fb41 via STEV-eth0
+2018-10-28 14:10:05 <TRACE> ospf1: HELLO packet received from fe80::685c:8eff:fe4c:fb41 via STEV-eth0
+2018-10-28 14:10:06 <TRACE> ospf1: HELLO packet sent via STEV-lan0
+2018-10-28 14:10:06 <TRACE> ospf1: HELLO packet sent via STEV-eth0
+2018-10-28 14:10:06 <TRACE> ospf1: HELLO packet sent via STEV-eth1
+2018-10-28 14:10:06 <TRACE> ospf1: HELLO packet received from fe80::20f8:84ff:fe47:b8b5 via STEV-eth1
+2018-10-28 14:10:06 <TRACE> ospf1: HELLO packet received from fe80::20f8:84ff:fe47:b8b5 via STEV-eth1
+2018-10-28 14:10:07 <TRACE> ospf1: HELLO packet sent via STEV-eth1
+2018-10-28 14:10:07 <TRACE> ospf1: HELLO packet sent via STEV-eth0
+2018-10-28 14:10:07 <TRACE> ospf1: HELLO packet sent via STEV-lan0
+2018-10-28 14:10:07 <TRACE> ospf1: HELLO packet received from fe80::685c:8eff:fe4c:fb41 via STEV-eth0
+2018-10-28 14:10:08 <TRACE> ospf1: HELLO packet sent via STEV-lan0
+2018-10-28 14:10:08 <TRACE> ospf1: HELLO packet sent via STEV-eth0
+2018-10-28 14:10:08 <TRACE> ospf1: HELLO packet sent via STEV-eth1
+2018-10-28 14:10:08 <TRACE> ospf1: HELLO packet received from fe80::20f8:84ff:fe47:b8b5 via STEV-eth1
+2018-10-28 14:10:08 <TRACE> ospf1: HELLO packet received from fe80::685c:8eff:fe4c:fb41 via STEV-eth0
+2018-10-28 14:10:09 <TRACE> ospf1: HELLO packet sent via STEV-eth1
+2018-10-28 14:10:09 <TRACE> ospf1: HELLO packet sent via STEV-eth0
+2018-10-28 14:10:09 <TRACE> ospf1: HELLO packet sent via STEV-lan0
+2018-10-28 14:10:09 <TRACE> ospf1: HELLO packet received from fe80::20f8:84ff:fe47:b8b5 via STEV-eth1
+2018-10-28 14:10:09 <TRACE> ospf1: HELLO packet received from fe80::685c:8eff:fe4c:fb41 via STEV-eth0
+2018-10-28 14:10:10 <TRACE> ospf1: HELLO packet sent via STEV-lan0
+2018-10-28 14:10:10 <TRACE> ospf1: HELLO packet sent via STEV-eth0
+2018-10-28 14:10:10 <TRACE> ospf1: HELLO packet sent via STEV-eth1
+2018-10-28 14:10:10 <TRACE> ospf1: HELLO packet received from fe80::20f8:84ff:fe47:b8b5 via STEV-eth1
+2018-10-28 14:10:10 <TRACE> ospf1: HELLO packet received from fe80::685c:8eff:fe4c:fb41 via STEV-eth0
+2018-10-28 14:10:11 <TRACE> ospf1: HELLO packet sent via STEV-eth1
+2018-10-28 14:10:11 <TRACE> ospf1: HELLO packet sent via STEV-eth0
+2018-10-28 14:10:11 <TRACE> ospf1: HELLO packet sent via STEV-lan0
+2018-10-28 14:10:11 <TRACE> device1: Scanning interfaces
+2018-10-28 14:10:11 <TRACE> kernel1: Scanning routing table
+2018-10-28 14:10:11 <TRACE> kernel1: fd00:200:4:2::/64: seen
+2018-10-28 14:10:11 <TRACE> kernel1: fd00:200:4:a20::/64: seen
+2018-10-28 14:10:11 <TRACE> kernel1: fd00:200:4:b30::/64: seen
+2018-10-28 14:10:11 <TRACE> kernel1: fd00:200:4:b40::/64: seen
+2018-10-28 14:10:11 <TRACE> kernel1: fd00:200:4:e11::/64: seen
+2018-10-28 14:10:11 <TRACE> kernel1: fd00:200:4:e31::/64: seen
+2018-10-28 14:10:11 <TRACE> kernel1: fd00:200:4:f14::/64: seen
+2018-10-28 14:10:11 <TRACE> kernel1: fd00:200:4:f24::/64: seen
+2018-10-28 14:10:11 <TRACE> kernel1: fd00:200:4:f25::/64: seen
+2018-10-28 14:10:11 <TRACE> kernel1: fd00:200:4:f31::/64: seen
+2018-10-28 14:10:11 <TRACE> kernel1: fd00:200:4:f53::/64: seen
+2018-10-28 14:10:11 <TRACE> kernel1: fd00:300:4:2::/64: seen
+2018-10-28 14:10:11 <TRACE> kernel1: fd00:300:4:a20::/64: seen
+2018-10-28 14:10:11 <TRACE> kernel1: fd00:300:4:b30::/64: seen
+2018-10-28 14:10:11 <TRACE> kernel1: fd00:300:4:b40::/64: seen
+2018-10-28 14:10:11 <TRACE> kernel1: fd00:300:4:e11::/64: seen
+2018-10-28 14:10:11 <TRACE> kernel1: fd00:300:4:e31::/64: seen
+2018-10-28 14:10:11 <TRACE> kernel1: fd00:300:4:e33::/64: seen
+2018-10-28 14:10:11 <TRACE> kernel1: fd00:300:4:f00::1/128: seen
+2018-10-28 14:10:11 <TRACE> kernel1: fd00:300:4:f00::2/128: seen
+2018-10-28 14:10:11 <TRACE> kernel1: fd00:300:4:f00::3/128: seen
+2018-10-28 14:10:11 <TRACE> kernel1: fd00:300:4:f00::4/128: seen
+2018-10-28 14:10:11 <TRACE> kernel1: fd00:300:4:f00::5/128: seen
+2018-10-28 14:10:11 <TRACE> kernel1: fd00:300:4:f00::6/128: seen
+2018-10-28 14:10:11 <TRACE> kernel1: fd00:300:4:f14::/64: seen
+2018-10-28 14:10:11 <TRACE> kernel1: fd00:300:4:f24::/64: seen
+2018-10-28 14:10:11 <TRACE> kernel1: fd00:300:4:f25::/64: seen
+2018-10-28 14:10:11 <TRACE> kernel1: fd00:300:4:f31::/64: seen
+2018-10-28 14:10:11 <TRACE> kernel1: fd00:300:4:f53::/64: seen
+2018-10-28 14:10:11 <TRACE> kernel1: ::/0: seen
+2018-10-28 14:10:11 <TRACE> kernel1: Pruning table master
+2018-10-28 14:10:11 <TRACE> kernel1: Pruning inherited routes
+2018-10-28 14:10:11 <TRACE> ospf1: HELLO packet received from fe80::20f8:84ff:fe47:b8b5 via STEV-eth1
+2018-10-28 14:10:11 <TRACE> ospf1: HELLO packet received from fe80::685c:8eff:fe4c:fb41 via STEV-eth0
+2018-10-28 14:10:11 <TRACE> ospf1: HELLO packet received from fe80::20f8:84ff:fe47:b8b5 via STEV-eth1
+2018-10-28 14:10:11 <TRACE> ospf1: HELLO packet received from fe80::685c:8eff:fe4c:fb41 via STEV-eth0
+2018-10-28 14:10:12 <TRACE> ospf1: HELLO packet sent via STEV-lan0
+2018-10-28 14:10:12 <TRACE> ospf1: HELLO packet sent via STEV-eth0
+2018-10-28 14:10:12 <TRACE> ospf1: HELLO packet sent via STEV-eth1
+2018-10-28 14:10:13 <TRACE> ospf1: HELLO packet sent via STEV-eth1
+2018-10-28 14:10:13 <TRACE> ospf1: HELLO packet sent via STEV-eth0
+2018-10-28 14:10:13 <TRACE> ospf1: HELLO packet sent via STEV-lan0
+2018-10-28 14:10:13 <TRACE> ospf1: HELLO packet received from fe80::20f8:84ff:fe47:b8b5 via STEV-eth1
+2018-10-28 14:10:13 <TRACE> ospf1: HELLO packet received from fe80::685c:8eff:fe4c:fb41 via STEV-eth0
+2018-10-28 14:10:14 <TRACE> ospf1: HELLO packet sent via STEV-lan0
+2018-10-28 14:10:14 <TRACE> ospf1: HELLO packet sent via STEV-eth0
+2018-10-28 14:10:14 <TRACE> ospf1: HELLO packet sent via STEV-eth1
+2018-10-28 14:10:14 <TRACE> ospf1: HELLO packet received from fe80::20f8:84ff:fe47:b8b5 via STEV-eth1
+2018-10-28 14:10:14 <TRACE> ospf1: HELLO packet received from fe80::685c:8eff:fe4c:fb41 via STEV-eth0
+2018-10-28 14:10:15 <TRACE> ospf1: HELLO packet sent via STEV-eth1
+2018-10-28 14:10:15 <TRACE> ospf1: HELLO packet sent via STEV-eth0
+2018-10-28 14:10:15 <TRACE> ospf1: HELLO packet sent via STEV-lan0
+2018-10-28 14:10:15 <TRACE> ospf1: HELLO packet received from fe80::20f8:84ff:fe47:b8b5 via STEV-eth1
+2018-10-28 14:10:15 <TRACE> ospf1: HELLO packet received from fe80::685c:8eff:fe4c:fb41 via STEV-eth0
+2018-10-28 14:10:16 <TRACE> ospf1: HELLO packet sent via STEV-lan0
+2018-10-28 14:10:16 <TRACE> ospf1: HELLO packet sent via STEV-eth0
+2018-10-28 14:10:16 <TRACE> ospf1: HELLO packet sent via STEV-eth1
+2018-10-28 14:10:16 <TRACE> ospf1: HELLO packet received from fe80::685c:8eff:fe4c:fb41 via STEV-eth0
+2018-10-28 14:10:16 <TRACE> ospf1: HELLO packet received from fe80::20f8:84ff:fe47:b8b5 via STEV-eth1
+2018-10-28 14:10:17 <TRACE> ospf1: HELLO packet sent via STEV-eth1
+2018-10-28 14:10:17 <TRACE> ospf1: HELLO packet sent via STEV-eth0
+2018-10-28 14:10:17 <TRACE> ospf1: HELLO packet sent via STEV-lan0
+2018-10-28 14:10:17 <TRACE> ospf1: HELLO packet received from fe80::20f8:84ff:fe47:b8b5 via STEV-eth1
+2018-10-28 14:10:17 <TRACE> ospf1: HELLO packet received from fe80::685c:8eff:fe4c:fb41 via STEV-eth0
+2018-10-28 14:10:17 <TRACE> ospf1: HELLO packet received from fe80::20f8:84ff:fe47:b8b5 via STEV-eth1
+2018-10-28 14:10:17 <TRACE> ospf1: HELLO packet received from fe80::685c:8eff:fe4c:fb41 via STEV-eth0
+2018-10-28 14:10:18 <TRACE> ospf1: HELLO packet sent via STEV-lan0
+2018-10-28 14:10:18 <TRACE> ospf1: HELLO packet sent via STEV-eth0
+2018-10-28 14:10:18 <TRACE> ospf1: HELLO packet sent via STEV-eth1
+2018-10-28 14:10:19 <TRACE> ospf1: HELLO packet sent via STEV-eth1
+2018-10-28 14:10:19 <TRACE> ospf1: HELLO packet sent via STEV-eth0
+2018-10-28 14:10:19 <TRACE> ospf1: HELLO packet sent via STEV-lan0
+2018-10-28 14:10:19 <TRACE> ospf1: HELLO packet received from fe80::20f8:84ff:fe47:b8b5 via STEV-eth1
+2018-10-28 14:10:19 <TRACE> ospf1: HELLO packet received from fe80::685c:8eff:fe4c:fb41 via STEV-eth0
+2018-10-28 14:10:19 <TRACE> ospf1: HELLO packet received from fe80::20f8:84ff:fe47:b8b5 via STEV-eth1
+2018-10-28 14:10:19 <TRACE> ospf1: HELLO packet received from fe80::685c:8eff:fe4c:fb41 via STEV-eth0
+2018-10-28 14:10:20 <TRACE> ospf1: HELLO packet sent via STEV-lan0
+2018-10-28 14:10:20 <TRACE> ospf1: HELLO packet sent via STEV-eth0
+2018-10-28 14:10:20 <TRACE> ospf1: HELLO packet sent via STEV-eth1
+2018-10-28 14:10:21 <TRACE> ospf1: HELLO packet sent via STEV-eth1
+2018-10-28 14:10:21 <TRACE> ospf1: HELLO packet sent via STEV-eth0
+2018-10-28 14:10:21 <TRACE> ospf1: HELLO packet sent via STEV-lan0
+2018-10-28 14:10:21 <TRACE> device1: Scanning interfaces
+2018-10-28 14:10:21 <TRACE> ospf1: HELLO packet received from fe80::20f8:84ff:fe47:b8b5 via STEV-eth1
+2018-10-28 14:10:21 <TRACE> ospf1: HELLO packet received from fe80::685c:8eff:fe4c:fb41 via STEV-eth0
+2018-10-28 14:10:21 <TRACE> ospf1: HELLO packet received from fe80::20f8:84ff:fe47:b8b5 via STEV-eth1
+2018-10-28 14:10:21 <TRACE> ospf1: HELLO packet received from fe80::685c:8eff:fe4c:fb41 via STEV-eth0
+2018-10-28 14:10:22 <TRACE> ospf1: HELLO packet sent via STEV-lan0
+2018-10-28 14:10:22 <TRACE> ospf1: HELLO packet sent via STEV-eth0
+2018-10-28 14:10:22 <TRACE> ospf1: HELLO packet sent via STEV-eth1
+2018-10-28 14:10:22 <TRACE> ospf1: HELLO packet received from fe80::20f8:84ff:fe47:b8b5 via STEV-eth1
+2018-10-28 14:10:23 <TRACE> ospf1: HELLO packet sent via STEV-eth1
+2018-10-28 14:10:23 <TRACE> ospf1: HELLO packet sent via STEV-eth0
+2018-10-28 14:10:23 <TRACE> ospf1: HELLO packet sent via STEV-lan0
+2018-10-28 14:10:23 <TRACE> ospf1: HELLO packet received from fe80::685c:8eff:fe4c:fb41 via STEV-eth0
+2018-10-28 14:10:24 <TRACE> ospf1: HELLO packet sent via STEV-lan0
+2018-10-28 14:10:24 <TRACE> ospf1: HELLO packet sent via STEV-eth0
+2018-10-28 14:10:24 <TRACE> ospf1: HELLO packet sent via STEV-eth1
+2018-10-28 14:10:24 <TRACE> ospf1: HELLO packet received from fe80::20f8:84ff:fe47:b8b5 via STEV-eth1
+2018-10-28 14:10:24 <TRACE> ospf1: HELLO packet received from fe80::685c:8eff:fe4c:fb41 via STEV-eth0
+2018-10-28 14:10:25 <TRACE> ospf1: HELLO packet sent via STEV-eth1
+2018-10-28 14:10:25 <TRACE> ospf1: HELLO packet sent via STEV-eth0
+2018-10-28 14:10:25 <TRACE> ospf1: HELLO packet sent via STEV-lan0
+2018-10-28 14:10:25 <TRACE> ospf1: HELLO packet received from fe80::20f8:84ff:fe47:b8b5 via STEV-eth1
+2018-10-28 14:10:25 <TRACE> ospf1: HELLO packet received from fe80::685c:8eff:fe4c:fb41 via STEV-eth0
+2018-10-28 14:10:26 <TRACE> ospf1: HELLO packet sent via STEV-lan0
+2018-10-28 14:10:26 <TRACE> ospf1: HELLO packet sent via STEV-eth0
+2018-10-28 14:10:26 <TRACE> ospf1: HELLO packet sent via STEV-eth1
+2018-10-28 14:10:26 <TRACE> ospf1: HELLO packet received from fe80::20f8:84ff:fe47:b8b5 via STEV-eth1
+2018-10-28 14:10:26 <TRACE> ospf1: HELLO packet received from fe80::685c:8eff:fe4c:fb41 via STEV-eth0
+2018-10-28 14:10:26 <TRACE> ospf1: HELLO packet received from fe80::685c:8eff:fe4c:fb41 via STEV-eth0
+2018-10-28 14:10:27 <TRACE> ospf1: HELLO packet sent via STEV-eth1
+2018-10-28 14:10:27 <TRACE> ospf1: HELLO packet sent via STEV-eth0
+2018-10-28 14:10:27 <TRACE> ospf1: HELLO packet sent via STEV-lan0
+2018-10-28 14:10:27 <TRACE> ospf1: HELLO packet received from fe80::20f8:84ff:fe47:b8b5 via STEV-eth1
+2018-10-28 14:10:27 <TRACE> ospf1: HELLO packet received from fe80::20f8:84ff:fe47:b8b5 via STEV-eth1
+2018-10-28 14:10:28 <TRACE> ospf1: HELLO packet sent via STEV-lan0
+2018-10-28 14:10:28 <TRACE> ospf1: HELLO packet sent via STEV-eth0
+2018-10-28 14:10:28 <TRACE> ospf1: HELLO packet sent via STEV-eth1
+2018-10-28 14:10:28 <TRACE> ospf1: HELLO packet received from fe80::685c:8eff:fe4c:fb41 via STEV-eth0
+2018-10-28 14:10:29 <TRACE> ospf1: HELLO packet sent via STEV-eth1
+2018-10-28 14:10:29 <TRACE> ospf1: HELLO packet sent via STEV-eth0
+2018-10-28 14:10:29 <TRACE> ospf1: HELLO packet sent via STEV-lan0
+2018-10-28 14:10:29 <TRACE> ospf1: HELLO packet received from fe80::20f8:84ff:fe47:b8b5 via STEV-eth1
+2018-10-28 14:10:29 <TRACE> ospf1: HELLO packet received from fe80::685c:8eff:fe4c:fb41 via STEV-eth0
+2018-10-28 14:10:29 <TRACE> ospf1: HELLO packet received from fe80::20f8:84ff:fe47:b8b5 via STEV-eth1
+2018-10-28 14:10:30 <TRACE> ospf1: HELLO packet sent via STEV-lan0
+2018-10-28 14:10:30 <TRACE> ospf1: HELLO packet sent via STEV-eth0
+2018-10-28 14:10:30 <TRACE> ospf1: HELLO packet sent via STEV-eth1
+2018-10-28 14:10:30 <TRACE> ospf1: HELLO packet received from fe80::685c:8eff:fe4c:fb41 via STEV-eth0
+2018-10-28 14:10:30 <TRACE> ospf1: HELLO packet received from fe80::20f8:84ff:fe47:b8b5 via STEV-eth1
+2018-10-28 14:10:31 <TRACE> ospf1: HELLO packet sent via STEV-eth1
+2018-10-28 14:10:31 <TRACE> ospf1: HELLO packet sent via STEV-eth0
+2018-10-28 14:10:31 <TRACE> ospf1: HELLO packet sent via STEV-lan0
+2018-10-28 14:10:31 <TRACE> device1: Scanning interfaces
+2018-10-28 14:10:31 <TRACE> kernel1: Scanning routing table
+2018-10-28 14:10:31 <TRACE> kernel1: fd00:200:4:2::/64: seen
+2018-10-28 14:10:31 <TRACE> kernel1: fd00:200:4:a20::/64: seen
+2018-10-28 14:10:31 <TRACE> kernel1: fd00:200:4:b30::/64: seen
+2018-10-28 14:10:31 <TRACE> kernel1: fd00:200:4:b40::/64: seen
+2018-10-28 14:10:31 <TRACE> kernel1: fd00:200:4:e11::/64: seen
+2018-10-28 14:10:31 <TRACE> kernel1: fd00:200:4:e31::/64: seen
+2018-10-28 14:10:31 <TRACE> kernel1: fd00:200:4:f14::/64: seen
+2018-10-28 14:10:31 <TRACE> kernel1: fd00:200:4:f24::/64: seen
+2018-10-28 14:10:31 <TRACE> kernel1: fd00:200:4:f25::/64: seen
+2018-10-28 14:10:31 <TRACE> kernel1: fd00:200:4:f31::/64: seen
+2018-10-28 14:10:31 <TRACE> kernel1: fd00:200:4:f53::/64: seen
+2018-10-28 14:10:31 <TRACE> kernel1: fd00:300:4:2::/64: seen
+2018-10-28 14:10:31 <TRACE> kernel1: fd00:300:4:a20::/64: seen
+2018-10-28 14:10:31 <TRACE> kernel1: fd00:300:4:b30::/64: seen
+2018-10-28 14:10:31 <TRACE> kernel1: fd00:300:4:b40::/64: seen
+2018-10-28 14:10:31 <TRACE> kernel1: fd00:300:4:e11::/64: seen
+2018-10-28 14:10:31 <TRACE> kernel1: fd00:300:4:e31::/64: seen
+2018-10-28 14:10:31 <TRACE> kernel1: fd00:300:4:e33::/64: seen
+2018-10-28 14:10:31 <TRACE> kernel1: fd00:300:4:f00::1/128: seen
+2018-10-28 14:10:31 <TRACE> kernel1: fd00:300:4:f00::2/128: seen
+2018-10-28 14:10:31 <TRACE> kernel1: fd00:300:4:f00::3/128: seen
+2018-10-28 14:10:31 <TRACE> kernel1: fd00:300:4:f00::4/128: seen
+2018-10-28 14:10:31 <TRACE> kernel1: fd00:300:4:f00::5/128: seen
+2018-10-28 14:10:31 <TRACE> kernel1: fd00:300:4:f00::6/128: seen
+2018-10-28 14:10:31 <TRACE> kernel1: fd00:300:4:f14::/64: seen
+2018-10-28 14:10:31 <TRACE> kernel1: fd00:300:4:f24::/64: seen
+2018-10-28 14:10:31 <TRACE> kernel1: fd00:300:4:f25::/64: seen
+2018-10-28 14:10:31 <TRACE> kernel1: fd00:300:4:f31::/64: seen
+2018-10-28 14:10:31 <TRACE> kernel1: fd00:300:4:f53::/64: seen
+2018-10-28 14:10:31 <TRACE> kernel1: ::/0: seen
+2018-10-28 14:10:31 <TRACE> kernel1: Pruning table master
+2018-10-28 14:10:31 <TRACE> kernel1: Pruning inherited routes
+2018-10-28 14:10:31 <TRACE> ospf1: HELLO packet received from fe80::685c:8eff:fe4c:fb41 via STEV-eth0
+2018-10-28 14:10:31 <TRACE> ospf1: HELLO packet received from fe80::20f8:84ff:fe47:b8b5 via STEV-eth1
+2018-10-28 14:10:31 <TRACE> ospf1: HELLO packet received from fe80::685c:8eff:fe4c:fb41 via STEV-eth0
+2018-10-28 14:10:32 <TRACE> ospf1: HELLO packet sent via STEV-lan0
+2018-10-28 14:10:32 <TRACE> ospf1: HELLO packet sent via STEV-eth0
+2018-10-28 14:10:32 <TRACE> ospf1: HELLO packet sent via STEV-eth1
+2018-10-28 14:10:33 <TRACE> ospf1: HELLO packet sent via STEV-eth1
+2018-10-28 14:10:33 <TRACE> ospf1: HELLO packet sent via STEV-eth0
+2018-10-28 14:10:33 <TRACE> ospf1: HELLO packet sent via STEV-lan0
+2018-10-28 14:10:33 <TRACE> ospf1: HELLO packet received from fe80::20f8:84ff:fe47:b8b5 via STEV-eth1
+2018-10-28 14:10:33 <TRACE> ospf1: HELLO packet received from fe80::685c:8eff:fe4c:fb41 via STEV-eth0
+2018-10-28 14:10:34 <TRACE> ospf1: HELLO packet sent via STEV-lan0
+2018-10-28 14:10:34 <TRACE> ospf1: HELLO packet sent via STEV-eth0
+2018-10-28 14:10:34 <TRACE> ospf1: HELLO packet sent via STEV-eth1
+2018-10-28 14:10:34 <TRACE> ospf1: HELLO packet received from fe80::20f8:84ff:fe47:b8b5 via STEV-eth1
+2018-10-28 14:10:34 <TRACE> ospf1: HELLO packet received from fe80::685c:8eff:fe4c:fb41 via STEV-eth0
+2018-10-28 14:10:35 <TRACE> ospf1: HELLO packet sent via STEV-eth1
+2018-10-28 14:10:35 <TRACE> ospf1: HELLO packet sent via STEV-eth0
+2018-10-28 14:10:35 <TRACE> ospf1: HELLO packet sent via STEV-lan0
+2018-10-28 14:10:35 <TRACE> ospf1: HELLO packet received from fe80::20f8:84ff:fe47:b8b5 via STEV-eth1
+2018-10-28 14:10:35 <TRACE> ospf1: HELLO packet received from fe80::685c:8eff:fe4c:fb41 via STEV-eth0
+2018-10-28 14:10:35 <TRACE> ospf1: HELLO packet received from fe80::20f8:84ff:fe47:b8b5 via STEV-eth1
+2018-10-28 14:10:36 <TRACE> ospf1: HELLO packet sent via STEV-lan0
+2018-10-28 14:10:36 <TRACE> ospf1: HELLO packet sent via STEV-eth0
+2018-10-28 14:10:36 <TRACE> ospf1: HELLO packet sent via STEV-eth1
+2018-10-28 14:10:36 <TRACE> ospf1: HELLO packet received from fe80::685c:8eff:fe4c:fb41 via STEV-eth0
+2018-10-28 14:10:36 <TRACE> ospf1: HELLO packet received from fe80::685c:8eff:fe4c:fb41 via STEV-eth0
+2018-10-28 14:10:37 <TRACE> ospf1: HELLO packet sent via STEV-eth1
+2018-10-28 14:10:37 <TRACE> ospf1: HELLO packet sent via STEV-eth0
+2018-10-28 14:10:37 <TRACE> ospf1: HELLO packet sent via STEV-lan0
+2018-10-28 14:10:37 <TRACE> ospf1: HELLO packet received from fe80::20f8:84ff:fe47:b8b5 via STEV-eth1
+2018-10-28 14:10:38 <TRACE> ospf1: HELLO packet sent via STEV-lan0
+2018-10-28 14:10:38 <TRACE> ospf1: HELLO packet sent via STEV-eth0
+2018-10-28 14:10:38 <TRACE> ospf1: HELLO packet sent via STEV-eth1
+2018-10-28 14:10:38 <TRACE> ospf1: HELLO packet received from fe80::20f8:84ff:fe47:b8b5 via STEV-eth1
+2018-10-28 14:10:38 <TRACE> ospf1: HELLO packet received from fe80::685c:8eff:fe4c:fb41 via STEV-eth0
+2018-10-28 14:10:39 <TRACE> ospf1: HELLO packet sent via STEV-eth1
+2018-10-28 14:10:39 <TRACE> ospf1: HELLO packet sent via STEV-eth0
+2018-10-28 14:10:39 <TRACE> ospf1: HELLO packet sent via STEV-lan0
+2018-10-28 14:10:39 <TRACE> ospf1: HELLO packet received from fe80::20f8:84ff:fe47:b8b5 via STEV-eth1
+2018-10-28 14:10:39 <TRACE> ospf1: HELLO packet received from fe80::685c:8eff:fe4c:fb41 via STEV-eth0
+2018-10-28 14:10:40 <TRACE> ospf1: HELLO packet sent via STEV-lan0
+2018-10-28 14:10:40 <TRACE> ospf1: HELLO packet sent via STEV-eth0
+2018-10-28 14:10:40 <TRACE> ospf1: HELLO packet sent via STEV-eth1
+2018-10-28 14:10:40 <TRACE> ospf1: HELLO packet received from fe80::685c:8eff:fe4c:fb41 via STEV-eth0
+2018-10-28 14:10:40 <TRACE> ospf1: HELLO packet received from fe80::20f8:84ff:fe47:b8b5 via STEV-eth1
+2018-10-28 14:10:40 <TRACE> ospf1: HELLO packet received from fe80::20f8:84ff:fe47:b8b5 via STEV-eth1
+2018-10-28 14:10:41 <TRACE> ospf1: HELLO packet sent via STEV-eth1
+2018-10-28 14:10:41 <TRACE> ospf1: HELLO packet sent via STEV-eth0
+2018-10-28 14:10:41 <TRACE> ospf1: HELLO packet sent via STEV-lan0
+2018-10-28 14:10:41 <TRACE> device1: Scanning interfaces
+2018-10-28 14:10:41 <TRACE> ospf1: HELLO packet received from fe80::685c:8eff:fe4c:fb41 via STEV-eth0
+2018-10-28 14:10:41 <TRACE> ospf1: HELLO packet received from fe80::20f8:84ff:fe47:b8b5 via STEV-eth1
+2018-10-28 14:10:41 <TRACE> ospf1: HELLO packet received from fe80::685c:8eff:fe4c:fb41 via STEV-eth0
+2018-10-28 14:10:42 <TRACE> ospf1: HELLO packet sent via STEV-lan0
+2018-10-28 14:10:42 <TRACE> ospf1: HELLO packet sent via STEV-eth0
+2018-10-28 14:10:42 <TRACE> ospf1: HELLO packet sent via STEV-eth1
+2018-10-28 14:10:43 <TRACE> ospf1: HELLO packet sent via STEV-eth1
+2018-10-28 14:10:43 <TRACE> ospf1: HELLO packet sent via STEV-eth0
+2018-10-28 14:10:43 <TRACE> ospf1: HELLO packet sent via STEV-lan0
+2018-10-28 14:10:43 <TRACE> ospf1: HELLO packet received from fe80::685c:8eff:fe4c:fb41 via STEV-eth0
+2018-10-28 14:10:43 <TRACE> ospf1: HELLO packet received from fe80::20f8:84ff:fe47:b8b5 via STEV-eth1
+2018-10-28 14:10:44 <TRACE> ospf1: HELLO packet sent via STEV-lan0
+2018-10-28 14:10:44 <TRACE> ospf1: HELLO packet sent via STEV-eth0
+2018-10-28 14:10:44 <TRACE> ospf1: HELLO packet sent via STEV-eth1
+2018-10-28 14:10:44 <TRACE> ospf1: HELLO packet received from fe80::685c:8eff:fe4c:fb41 via STEV-eth0
+2018-10-28 14:10:44 <TRACE> ospf1: HELLO packet received from fe80::20f8:84ff:fe47:b8b5 via STEV-eth1
