@@ -16,3 +16,4 @@ static_routes::interfaces:
   - {interface: CARN-eth2, route: 0f16}
   - {interface: CARN-lan0, route: 0b10}
 script::id: 1
+redirection::id: 1

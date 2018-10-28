@@ -230,6 +230,7 @@ ip6tables -A FORWARD -p udp --dport 33434:33534 -j ACCEPT
 ################################################################################
 
 ip6tables -A FORWARD --dst <%= @prefix_a %>::/48 -p udp --dport 53 -j ACCEPT -m \
+  comment --comment "Allow DNS"
 ip6tables -A FORWARD --dst <%= @prefix_a %>::/48 -p udp --dport 53 -j ACCEPT -m \
   comment --comment "Allow DNS"
 ip6tables -A FORWARD --dst <%= @prefix_b %>::/48 -p udp --dport 53 -j ACCEPT -m \
