@@ -26,3 +26,4 @@ static_routes::interfaces:
   - {interface: PYTH-lan0, route: 0b40}
 script::id: 4
 bgp_script::id: 4
+redirection::id: 4

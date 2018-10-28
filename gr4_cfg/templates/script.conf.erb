@@ -1,0 +1,235 @@
+#!/bin/sh
+######################################################################
+#              Making Script Inter-routeur Ping                      #
+######################################################################
+
+<%- if @id != 1 -%>
+
+<%- @carn_link.each do |val| -%>
+
+ping6 -q -c1 <%= @prefix_b %>:0004:<%= val %>::<%= @carn %> > /dev/null
+if [ $? -ne 0 ]
+then
+        echo "ERREUR PING From <%= @id %> to <%= @prefix_b %>:0004:<%= val %>::<%= @carn %>"
+fi
+
+ping6 -q -c1 <%= @prefix_a %>:0004:<%= val %>::<%= @carn %> > /dev/null
+if [ $? -ne 0 ]
+then
+        echo "ERREUR PING From <%= @id %> to <%= @prefix_a %>:0004:<%= val %>::<%= @carn %>"
+fi
+
+<%- end -%>
+<%- end -%>
+
+<%- if @id != 2 -%>
+
+<%- @hall_link.each do |val| -%>
+
+ping6 -q -c1 <%= @prefix_b %>:0004:<%= val %>::<%= @hall %> > /dev/null
+if [ $? -ne 0 ]
+then
+        echo "ERREUR PING From <%= @id %> to <%= @prefix_b %>:0004:<%= val %>::<%= @hall %>"
+fi
+
+ping6 -q -c1 <%= @prefix_a %>:0004:<%= val %>::<%= @hall %> > /dev/null
+if [ $? -ne 0 ]
+then
+        echo "ERREUR PING From <%= @id %> to <%= @prefix_a %>:0004:<%= val %>::<%= @hall %>"
+fi
+
+<%- end -%>
+<%- end -%>
+
+
+<%- if @id != 3 -%>
+
+<%- @mich_link.each do |val| -%>
+
+ping6 -q -c1 <%= @prefix_b %>:0004:<%= val %>::<%= @mich %> > /dev/null
+if [ $? -ne 0 ]
+then
+        echo "ERREUR PING From <%= @id %> to <%= @prefix_b %>:0004:<%= val %>::<%= @mich %>"
+fi
+
+ping6 -q -c1 <%= @prefix_a %>:0004:<%= val %>::<%= @mich %> > /dev/null
+if [ $? -ne 0 ]
+then
+        echo "ERREUR PING From <%= @id %> to <%= @prefix_a %>:0004:<%= val %>::<%= @mich %>"
+fi
+
+<%- end -%>
+<%- end -%>
+
+
+<%- if @id != 4 -%>
+
+<%- @pyth_link.each do |val| -%>
+
+ping6 -q -c1 <%= @prefix_b %>:0004:<%= val %>::<%= @pyth %> > /dev/null
+if [ $? -ne 0 ]
+then
+        echo "ERREUR PING From <%= @id %> to <%= @prefix_b %>:0004:<%= val %>::<%= @pyth %>"
+fi
+
+ping6 -q -c1 <%= @prefix_a %>:0004:<%= val %>::<%= @pyth %> > /dev/null
+if [ $? -ne 0 ]
+then
+        echo "ERREUR PING From <%= @id %> to <%= @prefix_a %>:0004:<%= val %>::<%= @pyth %>"
+fi
+
+<%- end -%>
+<%- end -%>
+
+<%- if @id != 5 -%>
+
+<%- @sh1c_link.each do |val| -%>
+
+ping6 -q -c1 <%= @prefix_b %>:0004:<%= val %>::<%= @sh1c %> > /dev/null
+if [ $? -ne 0 ]
+then
+        echo "ERREUR PING From <%= @id %> to <%= @prefix_b %>:0004:<%= val %>::<%= @sh1c %>"
+fi
+
+ping6 -q -c1 <%= @prefix_a %>:0004:<%= val %>::<%= @sh1c %> > /dev/null
+if [ $? -ne 0 ]
+then
+        echo "ERREUR PING From <%= @id %> to <%= @prefix_a %>:0004:<%= val %>::<%= @sh1c %>"
+fi
+
+<%- end -%>
+<%- end -%>
+
+<%- if @id != 6 -%>
+
+<%- @stev_link.each do |val| -%>
+
+ping6 -q -c1 <%= @prefix_b %>:0004:<%= val %>::<%= @stev %> > /dev/null
+if [ $? -ne 0 ]
+then
+        echo "ERREUR PING From <%= @id %> to <%= @prefix_b %>:0004:<%= val %>::<%= @stev %>"
+fi
+
+ping6 -q -c1 <%= @prefix_a %>:0004:<%= val %>::<%= @stev %> > /dev/null
+if [ $? -ne 0 ]
+then
+        echo "ERREUR PING From <%= @id %> to <%= @prefix_a %>:0004:<%= val %>::<%= @stev %>"
+fi
+
+<%- end -%>
+<%- end -%>
+
+################################################################################################
+#Ping Router address
+
+ping6 -q -c1 <%= @prefix_a %>:0004:f00::1 > /dev/null
+if [ $? -ne 0 ]
+then
+        echo "ERREUR PING From <%= @id %> to <%= @prefix_a %>:0004:f00::1"
+fi
+
+ping6 -q -c1 <%= @prefix_a %>:0004:f00::2 > /dev/null
+if [ $? -ne 0 ]
+then
+        echo "ERREUR PING From <%= @id %> to <%= @prefix_a %>:0004:f00::2"
+fi
+
+ping6 -q -c1 <%= @prefix_a %>:0004:f00::3 > /dev/null
+if [ $? -ne 0 ]
+then
+        echo "ERREUR PING From <%= @id %> to <%= @prefix_a %>:0004:f00::3"
+fi
+
+ping6 -q -c1 <%= @prefix_a %>:0004:f00::4 > /dev/null
+if [ $? -ne 0 ]
+then
+        echo "ERREUR PING From <%= @id %> to <%= @prefix_a %>:0004:f00::4"
+fi
+
+ping6 -q -c1 <%= @prefix_a %>:0004:f00::5 > /dev/null
+if [ $? -ne 0 ]
+then
+        echo "ERREUR PING From <%= @id %> to <%= @prefix_a %>:0004:f00::5"
+fi
+
+ping6 -q -c1 <%= @prefix_a %>:0004:f00::6 > /dev/null
+if [ $? -ne 0 ]
+then
+        echo "ERREUR PING From <%= @id %> to <%= @prefix_a %>:0004:f00::6"
+fi
+
+################################################################################################
+#Ping fd00:200::b and fd00:300::b
+
+<%- if @id == 1 -%>
+ping6 -q -c1 -I fd00:200:4:f14::1 fd00:200::b > /dev/null
+if [ $? -ne 0 ]
+then
+        echo "ERREUR PING From fd00:200:4:f14::1 to fd00:200::b"
+fi
+ping6 -q -c1 -I fd00:300:4:f14::1 fd00:300::b > /dev/null
+if [ $? -ne 0 ]
+then
+        echo "ERREUR PING From fd00:300:4:f14::1 to fd00:300::b"
+fi
+<%- end -%>
+<%- if @id == 2 -%>
+ping6 -q -c1 -I fd00:200:4:f25::2 fd00:200::b > /dev/null
+if [ $? -ne 0 ]
+then
+        echo "ERREUR PING From fd00:200:4:f25::2 to fd00:200::b"
+fi
+ping6 -q -c1 -I fd00:300:4:f25::2 fd00:300::b > /dev/null
+if [ $? -ne 0 ]
+then
+        echo "ERREUR PING From fd00:300:4:f25::2 to fd00:300::b"
+fi
+<%- end -%>
+<%- if @id == 3 -%>
+ping6 -q -c1 -I fd00:200:4:f53::3 fd00:200::b > /dev/null
+if [ $? -ne 0 ]
+then
+        echo "ERREUR PING From fd00:200:4:f53::3 to fd00:200::b"
+fi
+ping6 -q -c1 -I fd00:300:4:f53::3 fd00:300::b > /dev/null
+if [ $? -ne 0 ]
+then
+        echo "ERREUR PING From fd00:300:4:f53::3 to fd00:300::b"
+fi
+<%- end -%>
+<%- if @id == 4 -%>
+ping6 -q -c1 -I fd00:200:4:f14::4 fd00:200::b > /dev/null
+if [ $? -ne 0 ]
+then
+        echo "ERREUR PING From fd00:200:4:f14::4 to fd00:200::b"
+fi
+ping6 -q -c1 -I fd00:300:4:f14::4 fd00:300::b > /dev/null
+if [ $? -ne 0 ]
+then
+        echo "ERREUR PING From fd00:300:4:f14::4 to fd00:300::b"
+fi
+<%- end -%>
+<%- if @id == 5 -%>
+ping6 -q -c1 -I fd00:200:4:f25::5 fd00:200::b > /dev/null
+if [ $? -ne 0 ]
+then
+        echo "ERREUR PING From fd00:200:4:f25::5 to fd00:200::b"
+fi
+ping6 -q -c1 -I fd00:300:4:f25::5 fd00:300::b > /dev/null
+if [ $? -ne 0 ]
+then
+        echo "ERREUR PING From fd00:300:4:f25::5 to fd00:300::b"
+fi
+<%- end -%>
+<%- if @id == 6 -%>
+ping6 -q -c1 -I fd00:200:4:f64::6 fd00:200::b > /dev/null
+if [ $? -ne 0 ]
+then
+        echo "ERREUR PING From fd00:200:4:f64::6 to fd00:200::b"
+fi
+ping6 -q -c1 -I fd00:300:4:f64::6 fd00:300::b > /dev/null
+if [ $? -ne 0 ]
+then
+        echo "ERREUR PING From fd00:300:4:f64::6 to fd00:300::b"
+fi
+<%- end -%>

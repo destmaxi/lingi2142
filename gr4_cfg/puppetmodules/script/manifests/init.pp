@@ -34,6 +34,15 @@ class script(
     owner  => bird,
     group  => bird,
   }
+
+  file {"/etc/script/script.sh":
+    require => File["/etc/script"],
+    ensure => file,
+    content => template("/templates/script.conf.erb"),
+    owner  => bird,
+    group  => bird,
+    mode   => 'a+x',
+  }
   
   file {"/etc/script/check_OSPF.sh":
     require => File["/etc/script"],
@@ -55,7 +64,7 @@ class script(
 
   #Start command  when the template is created
   #exec { "script-launch":
-  #  require => File[["/etc/script/check_OSPF.sh"], ["/etc/script/check_DNS.sh"]] # Force to execute the command after
+  #  require => File[["/etc/script/script.sh"],["/etc/script/check_OSPF.sh"], ["/etc/script/check_DNS.sh"]] # Force to execute the command after
   #  command => "/home/vagrant/lingi2142/monit_tests/script_launcher.sh",
   #}
 }
