@@ -13,7 +13,6 @@ def usage():
     print("Please select one target in")
     print("     all_tests")
     print("     " + ",".join(targets))
-    sys.exit(1)
 
 
 def test(file):
@@ -21,7 +20,7 @@ def test(file):
 
 
 
-if __name__ == __main__:
+if __name__ == "__main__":
     if len(sys.argv) <= 1:
         usage()
 
