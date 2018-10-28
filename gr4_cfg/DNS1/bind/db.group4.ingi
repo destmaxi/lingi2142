@@ -9,7 +9,8 @@ $TTL	604800
 			2419200		; Expire
 			 604800 )	; Negative Cache TTL
 ;
-@	IN	NS	ns.group4.ingi.
+@	IN	NS	ns1.group4.ingi.
+@	IN	NS	ns2.group4.ingi.
 ns1	IN	AAAA	fd00:300:4:e11::2
 ns2	IN	AAAA	fd00:300:4:e31::2
 carn 	IN 	AAAA 	fd00:300:4:f00::1
