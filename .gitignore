@@ -17,6 +17,7 @@ bird/
 firewall/
 static_routes/
 script/
+snmp/
 bgp_script/
 !**/puppetmodules/*
 !**/templates/*
