@@ -18,7 +18,7 @@ RMT_HOST = [
            ]
 
 PORT_NBR = [161,161,161,161,161,161] 
-TIME_IN_SEC = 300 #delta of 5 min for calculations
+TIME_IN_SEC = 3 #delta of 5 min for calculations
 
 #equivalent to snmpget
 def get(host, port, mibs, oids, itfs):
@@ -108,7 +108,7 @@ def get_data_of_itf(host, port, itf):
     isUp = str(get(host, port, [mib], ['ifOperStatus'], [itf])[0])
     if isUp != 'up':
         lastChange = str(get(host, port, [mib], ['ifLastChange'], [itf])[0])
-        strRes = "Interface ", itf, " from ", host, " is ", isUp, " since ", lastChange
+        strRes = "Interface "+str(itf)+" from "+str(host)+" is "+str(isUp)+" since "+str(lastChange)
         return strRes
 
     mib_tab = [mib, mib, mib, mib, mib, mib, mib]
@@ -122,6 +122,7 @@ def compute_results(old_values, new_values, inIndex, outIndex):
     return apply_formula(deltas)
 
 def compute_deltas(old_values, new_values, inIndex, outIndex):
+    #print("old_values", old_values)
     list_of_res = {}
     for host in new_values.keys():
         list_of_for_one_itf = {}
