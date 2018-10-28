@@ -1,5 +1,6 @@
 ---
 name: PYTH
+id: 4
 bird6::routing_id: 4.0.0.4
 bird6::ospfv3:
   hello_itfs:  # Activate OSPFv3 only on these interfaces
@@ -13,16 +14,12 @@ bird6::bgp:
   local_as: 4
   neighbor_ip: fd00:300::b
   neighbor_as: 300
-bird6::id: 4
 firewall::interface: belneta
 firewall::wrong_prefix: fd00:200:4
 firewall::type: border
 firewall::prefix: fd00:300:4
-static_routes::id: 4
 static_routes::interfaces:
   - {interface: PYTH-eth0, route: 0f24}
   - {interface: PYTH-eth1, route: 0f14}
   - {interface: PYTH-eth2, route: 0f64}
   - {interface: PYTH-lan0, route: 0b40}
-script::id: 4
-redirection::id: 4

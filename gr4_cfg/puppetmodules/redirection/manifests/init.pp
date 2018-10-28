@@ -1,11 +1,10 @@
 # Puppet looks in data/node.yaml for firewall::interface, firewall::state and firewall::prefix automatically
 # These variables are now accessible in the template
 class redirection(
-  Integer $id
 )
 {
 
-
+  $id = lookup("id")  
   # Create directory with correct permissions
   file {"/etc/redirection":
     ensure => directory,

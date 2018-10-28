@@ -3,11 +3,11 @@
 class bird6 (
   String $routing_id,
   Hash $ospfv3,
-  Hash $bgp,
-  Integer $id
+  Hash $bgp
 ) {
   # Get name of the node (lookup in data/node.yaml
   $node_name = lookup("name")
+  $id = lookup("id")
 
   # Create directory with correct permissions
   file {"/etc/bird":
