@@ -12,6 +12,8 @@ ADM1   = "fd00:300:4:a20::1"
 ADM2   = "fd00:300:4:a60::1"
 MICH   = "fd00:300:4:f00::3"
 CARN   = "fd00:300:4:f00::6"
+GST1   = "fd00:300:4:c60::1"
+TCH1   = "fd00:300:4:960::1"
 
 
 class TestFirewall(unittest.TestCase):

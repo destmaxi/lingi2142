@@ -19,23 +19,26 @@ def usage():
 def test(file):
     os.system("python " + file)
 
-if len(sys.argv) <= 1:
-    usage()
-
-target = sys.argv[1]
 
 
-if target == "all_tests":
-    print("Target " + str(target) + " selected")
-    for x in targets:
-        helpers.title(x)
-        test(target_files[targets.index(x)])
-elif target =="help":
-    usage()
-elif target in targets:
-    print("Target " + str(target) + " selected")
-    helpers.title(target)
-    test(target_files[targets.index(target)])
-else:
-    print("Invalid target: ", target)
-    usage()
+if __name__ == __main__:
+    if len(sys.argv) <= 1:
+        usage()
+
+    target = sys.argv[1]
+
+
+    if target == "all_tests":
+        print("Target " + str(target) + " selected")
+        for x in targets:
+            helpers.title(x)
+            test(target_files[targets.index(x)])
+    elif target =="help":
+        usage()
+    elif target in targets:
+        print("Target " + str(target) + " selected")
+        helpers.title(target)
+        test(target_files[targets.index(target)])
+    else:
+        print("Invalid target: ", target)
+        usage()
