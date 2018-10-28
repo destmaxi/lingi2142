@@ -14,3 +14,4 @@ static_routes::interfaces:
   - {interface: STEV-eth1, route: 0f64}
   - {interface: STEV-lan0, route: 0a60}
 script::id: 6
+redirection::id: 6

@@ -14,3 +14,4 @@ static_routes::interfaces:
   - {interface: MICH-eth1, route: 0f31}
   - {interface: MICH-lan0, route: 0b30}
 script::id: 3
+redirection::id: 3

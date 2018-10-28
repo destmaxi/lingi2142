@@ -17,3 +17,4 @@ static_routes::interfaces:
   - {interface: CARN-lan0, route: 0e10} #LAN with DNS1 and MONI
   - {interface: CARN-lan0, route: 0b10} #??
 script::id: 1
+redirection::id: 1
