@@ -7,9 +7,18 @@ from itertools import izip as zip
 USER = 'adminUser'
 AUTH_PWD = 'safe_password'
 PRIV_PWD = 'safe_password'
-RMT_HOST = ['fd00:300:4:f16::6','localhost','fd00:300:4:f53::5'] #changer par tableau avec (adresses des) routeurs
-PORT_NBR = [161,161,161] #attention en faire un tableau de la meme taille que RMT_HOST
-TIME_IN_SEC = 3 #delta of 5 min for calculations MUST BE CHANGED !!!!!
+#Sending SNMP requests to each router
+RMT_HOST = [
+            'fd00:300:4:f14::4', #pyth
+            'fd00:300:4:f24::2',  #hall
+            'fd00:300:4:f16::6', #stev
+            'fd00:300:4:e10::', #carn
+            'fd00:300:4:f53::5', #sh1c
+            'fd00:300:4:f31::3' #mich
+           ]
+
+PORT_NBR = [161,161,161,161,161,161] 
+TIME_IN_SEC = 300 #delta of 5 min for calculations
 
 #equivalent to snmpget
 def get(host, port, mibs, oids, itfs):
@@ -63,7 +72,6 @@ def walk(host, port, mib, oid):
             return None
         else:
             for varBind in varBinds:
-		#print("value of varBind : ", str(varBind[1]))
                 list_of_res.append(str(varBind[1]))
     return list_of_res
 
@@ -74,41 +82,32 @@ def get_list_of_itfs(hosts, ports):
     descr_oid = 'ifDescr'
 
     for h, p in zip(hosts, ports):
-        #print(h,p)
         oid_list = {}
         for x, y in zip(walk(h, p, mib, ind_oid),walk(h, p, mib, descr_oid)):
             oid_list[x] = y
         list_of_res[h] = oid_list
-    #print(str(list_of_res))
     return list_of_res
 
 def get_list_of_itfs_nbr(itfs):
     list_of_res = []
-    for host_values in itfs.values():
-        #print(host_values.keys())
-        list_of_res.append(host_values.keys())
-    #print(str(list_of_res))
+    for host in RMT_HOST:
+        list_of_res.append(itfs[host].keys())
     return list_of_res
 
 def get_list_of_datas(hosts, ports, itfs):
-    #print(hosts, ports, itfs)
     list_of_res = {}
     for i in range(0, len(hosts)):
         list_of_res_for_one_router = {}
         for j in itfs[i]:
-	    #print('hosts[i],ports[i],itfs[i],j', hosts[i],ports[i],itfs[i],j)
             list_of_res_for_one_router[j] = get_data_of_itf(hosts[i],ports[i],j)
         list_of_res[hosts[i]] = list_of_res_for_one_router
-    #print(str(list_of_res))
     return list_of_res
 
 def get_data_of_itf(host, port, itf):
-    #print('in get_Data_for_itf and value host,port,itf are :',host,port,itf)
-
     mib = 'IF-MIB'
     isUp = str(get(host, port, [mib], ['ifOperStatus'], [itf])[0])
     if isUp != 'up':
-        lastChange = str(get(host, port, [mib], ['ifLastChange'], [itf])[0]) #voir ce que ca donne le str ici
+        lastChange = str(get(host, port, [mib], ['ifLastChange'], [itf])[0])
         strRes = "Interface ", itf, " from ", host, " is ", isUp, " since ", lastChange
         return strRes
 
@@ -150,7 +149,10 @@ def apply_formula(results):
                 if type(itf_values) is str: #could be a string if interface is not up (see get_data_of_itf)
                     in_and_out.append(itf_values)
                 else:
-                    cal = (itf_values[i]*8*100)/(TIME_IN_SEC*itf_values[len(itf_values)-1])
+		    if itf_values[len(itf_values)-1]==0.0:
+		        cal = "Speed problem"
+                    else:
+                        cal = (itf_values[i]*8*100)/(TIME_IN_SEC*itf_values[len(itf_values)-1])
                     in_and_out.append(cal)
             list_of_for_one_itf[itf] = in_and_out
         list_of_res[host] = list_of_for_one_itf
@@ -163,34 +165,26 @@ def printer(tab):
 
 
 if __name__ == '__main__':
-    #test = walk('localhost', 161, 'IF-MIB', 'ifIndex')
-    #print(test)
     list_of_itfs = get_list_of_itfs(RMT_HOST, PORT_NBR)
-    #print(str(list_of_itfs))
     list_of_itfs_nbr = get_list_of_itfs_nbr(list_of_itfs)
-    #print(str(list_of_itfs_nbr))
     first_datas = get_list_of_datas(RMT_HOST, PORT_NBR, list_of_itfs_nbr)
-    #print(str(first_datas))
     time.sleep(TIME_IN_SEC)
     second_data = get_list_of_datas(RMT_HOST, PORT_NBR, list_of_itfs_nbr)
-    #print(str(second_data))
 
     #printing the different results
 
     #legend
     print("----------LEGEND----------")
-    print(str(list_of_itfs))
+    printer(str(list_of_itfs).split('}, '))
 
     #bandwith
     print("----------BANDWITH----------")
-    print(str(compute_results(first_datas, second_data, 0, 1)))
+    printer(str(compute_results(first_datas, second_data, 0, 1)).split('}, '))
 
     #errors
     print("----------ERRORS----------")
-    print(str(compute_results(first_datas, second_data, 2, 3)))
+    printer(str(compute_results(first_datas, second_data, 2, 3)).split('}, '))
 
     #discarded packets
     print("----------DISCARDED PACKETS----------")
-    print(str(compute_results(first_datas, second_data, 4, 5)))
-
-
+    printer(str(compute_results(first_datas, second_data, 4, 5)).split('}, '))

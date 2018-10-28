@@ -1,9 +1,5 @@
 #!/bin/bash
 
-echo "Waiting 40 sec for network creation"
-
-sleep 40 #time for network creation
-
 sudo ip netns exec PYTH /home/vagrant/lingi2142/gr4_cfg/PYTH/script/check_OSPF.sh
 
 sudo ip netns exec HALL /home/vagrant/lingi2142/gr4_cfg/HALL/script/check_OSPF.sh
