@@ -6,8 +6,5 @@ start="#!/bin/bash\n\npuppet apply --verbose --parser future --hiera_config=/etc
 
 
 for r in $routers; do
-  mkdir -p gr4_cfg/$r/log
-  sudo echo > gr4_cfg/$r/log/bird_log
-  sudo echo > gr4_cfg/$r/log/nmap.result
   cp /etc/protocols gr4_cfg/$r/protocols
 done

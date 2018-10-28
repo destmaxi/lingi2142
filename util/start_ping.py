@@ -6,7 +6,7 @@ from tests import helpers
 
 #Testing if network is set by pinging from STEV to HALL during 5 min, after that we estimate than there's an error in the network creation
 
-echo("Please wait while the network is being set up. This might take a few seconds...")
+print("Please wait while the network is being set up. This might take a few seconds...")
 
 starttime = int(round(time.time()))
 
