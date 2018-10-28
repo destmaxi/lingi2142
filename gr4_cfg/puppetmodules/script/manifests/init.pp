@@ -36,10 +36,4 @@ class script(
     group  => bird,
     mode   => 'a+x',
   }
-
-  # Start bird6 when the template is created
-  exec { "script-launch":
-    require => File["/etc/script/script.sh"], # Force to execute the command after
-    command => "/etc/script/script.sh",
-  }
 }
