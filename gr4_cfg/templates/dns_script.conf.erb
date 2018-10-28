@@ -64,8 +64,13 @@ echo "From <%= @node_name %> digging stev.group4.ingi : $res"
 <%- end -%>
 
 
-res=$(dig ns.group4.ingi)
+res=$(dig ns1.group4.ingi)
 
 echo "From <%= @node_name %> digging ns.group4.ingi : $res"
+
+res=$(dig ns2.group4.ingi)
+
+echo "From <%= @node_name %> digging ns.group4.ingi : $res"
+
 
 echo "################################################"
