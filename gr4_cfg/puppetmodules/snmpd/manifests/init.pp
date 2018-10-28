@@ -30,6 +30,6 @@ class snmpd () {
   # Start snmpd when the template is created
   exec { "snmpd-launch":
     require => File["/etc/snmp/snmpd.conf"], # Force to execute the command after
-    command => "snmpd", # IS THAT REALLY CORRECT ???????
+    command => "snmpd",
   }
 }
