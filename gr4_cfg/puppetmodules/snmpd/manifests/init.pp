@@ -29,7 +29,7 @@ class snmpd () {
 
   # Start snmpd when the template is created
   exec { "snmpd-launch":
-    require => File[["/etc/snmp/snmpd.conf"],["/etc/snmp/snmp.conf] # Force to execute the command after
+    require => File[["/etc/snmp/snmpd.conf"],["/etc/snmp/snmp.conf"]], # Force to execute the command after
     command => "snmpd",
   }
 }
