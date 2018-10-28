@@ -45,7 +45,6 @@ rm -f /tmp/*.{api,ctl}
 declare source="gr4_cfg/"
 declare -a rout=("HALL/" "PYTH/" "STEV/" "MICH/" "CARN/" "SH1C/" "MONI/")
 declare -a fold=("init.d" "snmp" "script" "firewall" "bird" "static_routes" "services" "alternatives" "logs")
-#declare -a fold=("snmp" "init.d")
 
 for r in "${rout[@]}"
 do

@@ -12,7 +12,7 @@ tags
 **/mtab
 redirection/
 init.d/
-log/
+logs/
 bird/
 firewall/
 static_routes/
