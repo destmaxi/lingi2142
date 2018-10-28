@@ -51,6 +51,8 @@ function mk_topo {
     mk_LAN PYTH STUD1
     mk_LAN HALL ADM1
     mk_LAN STEV ADM2
+    mk_LAN STEV TCH1
+    mk_LAN STEV GST1
 
     echo "@@ Bridging the network"
     # Connect to belneta and belnetb
