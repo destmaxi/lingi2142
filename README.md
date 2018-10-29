@@ -1,17 +1,17 @@
 ################################################################################
-#                              Building the vm                                 #
+#                              Building the VM                                 #
 ################################################################################
 
-To build the vm you need to install virtualbox, vagrant and the plugin vargant-vbguest on your computer. Open a terminal and execute the following command:
+To build the VM you need to install virtualbox, vagrant and the plugin vargant-vbguest on your computer. Open a terminal and execute the following command:
 
   $ vagrant up --provision
 
 The --provision is important, without that the dependencies won't be installed 
-To create the vm and then you can log in the vm with ssh like this:
+To create the VM and then you can log in the VM with ssh like this:
 
   $ vagrant ssh
 
-Normally all dependencies and tools are installed but if they don't you can (again) refer to the @dependdencies section.
+Normally all dependencies and tools are installed but if they don't you can (again) refer to the @dependencies section.
 
 
 ################################################################################
@@ -23,13 +23,13 @@ You will need to install manually snmp-mibs-downloader so please follow the foll
   1. go to /etc/apt/
   2. open the file sources.list
   3. add the following lines at the end of the file:
-  deb http://ftp.br.debian.org/debian/ jessie main contrib non-free
-  deb-src http://ftp.br.debian.org/debian/ jessie main contrib non-free
-  4. update the vm: $ sudo apt-get update
+    - deb http://ftp.br.debian.org/debian/ jessie main contrib non-free
+    - deb-src http://ftp.br.debian.org/debian/ jessie main contrib non-free
+  4. update the VM: $ sudo apt-get update
   5. now we can install the package
     $ sudo apt-get install snmp-mibs-downloader
 
-Normally all other dependencies are well installed but if they don't (error while launching the network) you can refer to the @dependdencies section.
+Normally all other dependencies are well installed but if they don't (error while launching the network) you can refer to the @dependencies section.
 
 
 
@@ -54,24 +54,24 @@ To connect to a particular server, router or lan you can use the following comma
 
   $ make connect NODE
 
-once inside a router, server or lan you can run any command that you want.
+Once inside a router, server or lan you can run any command that you want.
 
 
 ################################################################################
 #                               Test the network                               #
 ################################################################################
 
-Before testing the network make shure you wait enough time (+- 1min), the network has to configure itselfs.
+Before testing the network make sure you wait enough time (+- 1min), the network has to configure itselfs.
 
-To test the all network you can just run:
+To test the whole network you can just run:
 
   $ make test all_tests
 
-You can also spécify a target (ex: firewall), if you are not shure about which targets exists please run:
+You can also specify a target (ex: firewall). If you are not sure about which targets exist, please run:
 
   $ make test help
 
-Or refer to the README.md in the tests/ repository
+or refer to the README.md in the tests/ repository
 
 
 ################################################################################
