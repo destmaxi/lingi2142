@@ -179,7 +179,7 @@ if __name__ == '__main__':
     printer(str(list_of_itfs).split('}, '))
 
     #bandwith
-    print("----------BANDWITH----------")
+    print("----------BANDWIDTH----------")
     printer(str(compute_results(first_datas, second_data, 0, 1)).split('}, '))
 
     #errors
