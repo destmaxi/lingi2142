@@ -44,7 +44,7 @@ rm -f /tmp/*.{api,ctl}
 # Removing generated files from routers
 declare source="gr4_cfg/"
 declare -a rout=("HALL/" "PYTH/" "STEV/" "MICH/" "CARN/" "SH1C/" "MONI/")
-declare -a fold=("init.d" "snmp" "script" "firewall" "bird" "static_routes" "services" "alternatives" "logs")
+declare -a fold=("init.d" "snmp" "bgp_script" "script" "firewall" "bird" "static_routes" "services" "alternatives" "logs")
 
 for r in "${rout[@]}"
 do

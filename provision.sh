@@ -16,10 +16,10 @@ apt-get -y -qq --force-yes update
 apt-get -y -qq --force-yes install git bash vim-nox tcpdump nano\
                                         bird6 quagga inotify-tools\
                                     	iperf bind9 radvd\
-										snmp\
-										snmp-mibs-downloader\
-										python\
-										python-pip\
+					snmp snmpd\
+					snmp-mibs-downloader\
+					python\
+					python-pip\
 
 pip install pysnmp
 # dependencies for puppet
