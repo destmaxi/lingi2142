@@ -49,7 +49,7 @@ class Testrouting(unittest.TestCase):
         self.test_ping_everything_from_SH1C
         self.test_ping_everything_from_STEV
         helpers.entete("Set inteface HALL-eth1 up")
-        output = execute("sudo ip netns exec HALL ./etc/static_routes.conf/static_routes.sh")
+        output = execute("sudo ip netns exec HALL /etc/static_routes.conf/static_routes.sh 2> /dev/null")
 
 if __name__ == '__main__':
 	unittest.main(verbosity=2)
