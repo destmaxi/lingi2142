@@ -307,18 +307,18 @@ ip6tables -A FORWARD --dst <%= @prefix_b %>::/52 -p udp --match multiport \
 # Only administrators have the right to access the monitoring server
 #
 
-ip6tables -A FORWARD --dst <%= @prefix_a %>:e10::1/128 --src <%= @prefix_a %>:a00::/56 \
+ip6tables -A FORWARD --dst <%= @prefix_a %>:e11::3/128 --src <%= @prefix_a %>:a00::/56 \
   -j ACCEPT -m comment --comment "Admin access monitoring server"
-ip6tables -A FORWARD --dst <%= @prefix_b %>:e10::1/128 --src <%= @prefix_b %>:a00::/56 \
+ip6tables -A FORWARD --dst <%= @prefix_b %>:e11::3/128 --src <%= @prefix_b %>:a00::/56 \
   -j ACCEPT -m comment --comment "Admin access monitoring"
-ip6tables -A FORWARD --dst <%= @prefix_a %>:e10::1/128 --src <%= @prefix_b %>:a00::/56 \
+ip6tables -A FORWARD --dst <%= @prefix_a %>:e11::3/128 --src <%= @prefix_b %>:a00::/56 \
   -j ACCEPT -m comment --comment "Admin access monitoring server"
-ip6tables -A FORWARD --dst <%= @prefix_b %>:e10::1/128 --src <%= @prefix_a %>:a00::/56 \
+ip6tables -A FORWARD --dst <%= @prefix_b %>:e11::3/128 --src <%= @prefix_a %>:a00::/56 \
   -j ACCEPT -m comment --comment "Admin access monitoring"
 
-ip6tables -A FORWARD --dst <%= @prefix_a %>:e10::1/128 -j DROP -m comment \
+ip6tables -A FORWARD --dst <%= @prefix_a %>:e11::3/128 -j DROP -m comment \
   --comment "only administrators have access to monitoring servers"
-ip6tables -A FORWARD --dst <%= @prefix_b %>:e10::1/128 -j DROP -m comment \
+ip6tables -A FORWARD --dst <%= @prefix_b %>:e11::3/128 -j DROP -m comment \
   --comment "only administrators have access to monitoring servers"
 
 
