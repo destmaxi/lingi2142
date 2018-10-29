@@ -12,7 +12,8 @@ target_files = [main_dir + "/" + x + ".py" for x in targets]
 def usage():
     print("Please select one target in")
     print("     all_tests")
-    print("     " + ",".join(targets))
+    for target in targets:
+    	print("     " + target)
 
 
 def test(file):
