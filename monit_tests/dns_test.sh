@@ -12,4 +12,4 @@ sudo ip netns exec SH1C /home/vagrant/lingi2142/gr4_cfg/SH1C/script/check_DNS.sh
 
 sudo ip netns exec MICH /home/vagrant/lingi2142/gr4_cfg/MICH/script/check_DNS.sh
 
-echo "OSPF script terminated"
+echo "DNS script terminated"
