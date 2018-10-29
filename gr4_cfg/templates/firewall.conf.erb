@@ -192,7 +192,7 @@ ip6tables -A FORWARD -p icmpv6 --icmpv6-type 134/0 -j ACCEPT -m comment \
 
 
 ################################################################################
-#               Neighbor Solicitation limitation to avoid DoS                  #
+#               Neighbour Solicitation limitation to avoid DoS                  #
 ################################################################################
 
 ip6tables -A INPUT -p icmpv6 --icmpv6-type 135/0 -j ACCEPT --match limit \
@@ -291,7 +291,7 @@ j ACCEPT -m comment --comment "Allow router Solicitation"
 
 
 ################################################################################
-#                    Allow router to send SNMP requests                        #
+#                              Allow SNMP requests                             #
 ################################################################################
 
 ip6tables -A INPUT --dst <%= @prefix_a %>::/52 -p udp --match multiport \
@@ -303,7 +303,23 @@ ip6tables -A FORWARD --dst <%= @prefix_a %>::/52 -p udp --match multiport \
 ip6tables -A FORWARD --dst <%= @prefix_b %>::/52 -p udp --match multiport \
   --dports 161,162 -j ACCEPT
 
+#
+# Only administrators have the right to access the monitoring server
+#
 
+ip6tables -A FORWARD --dst <%= @prefix_a %>:e10::1/128 --src <%= @prefix_a %>:a00::/56 \
+  -j ACCEPT -m comment --comment "Admin access monitoring server"
+ip6tables -A FORWARD --dst <%= @prefix_b %>:e10::1/128 --src <%= @prefix_b %>:a00::/56 \
+  -j ACCEPT -m comment --comment "Admin access monitoring"
+ip6tables -A FORWARD --dst <%= @prefix_a %>:e10::1/128 --src <%= @prefix_b %>:a00::/56 \
+  -j ACCEPT -m comment --comment "Admin access monitoring server"
+ip6tables -A FORWARD --dst <%= @prefix_b %>:e10::1/128 --src <%= @prefix_a %>:a00::/56 \
+  -j ACCEPT -m comment --comment "Admin access monitoring"
+
+ip6tables -A FORWARD --dst <%= @prefix_a %>:e10::1/128 -j DROP -m comment \
+  --comment "only administrators have access to monitoring servers"
+ip6tables -A FORWARD --dst <%= @prefix_b %>:e10::1/128 -j DROP -m comment \
+  --comment "only administrators have access to monitoring servers"
 
 
 ################################################################################
@@ -416,7 +432,7 @@ ip6tables -A FORWARD --src <%= @prefix_b %>:0e00::/56 -p upd --dport 53 -j ACCEP
 #
 
 ip6tables -A FORWARD --src <%= @prefix_a %>:0d00::/56 -p tcp --match multiport \
-  --dports 53,2302,5001,5060,5061 -j ACCEPT -m comment --comment "User type: d"
+  --dports 53,5001,5060,5061 -j ACCEPT -m comment --comment "User type: d"
 ip6tables -A FORWARD --src <%= @prefix_b %>:0d00::/56 -p tcp --match multiport \
   --dports 53,2302,5001,5060,5061 -j ACCEPT -m comment --comment "User type: d"
 ip6tables -A FORWARD --src <%= @prefix_a %>:0d00::/56 -p udp --match multiport \
@@ -445,10 +461,10 @@ ip6tables -A FORWARD --dst <%= @prefix_b %>:0c00::/56 -j DROP -m comment \
 #
 
 ip6tables -A FORWARD --src <%= @prefix_a %>:0c00::/56 -p tcp --match multiport \
-  --dports 25,53,80,109,110,143,220,443,993,995,5001 -j ACCEPT -m comment \
+  --dports 25,53,80,443 -j ACCEPT -m comment \
   --comment "User type: b"
 ip6tables -A FORWARD --src <%= @prefix_b %>:0c00::/56 -p tcp --match multiport \
-  --dports 25,53,80,109,110,143,220,443,993,995,5001 -j ACCEPT -m comment \
+  --dports 25,53,80,443 -j ACCEPT -m comment \
   --comment "User type: b"
 ip6tables -A FORWARD --src <%= @prefix_a %>:0c00::/56 -p udp --dport 53 -j ACCEPT \
   -m comment --comment "User type: b"
