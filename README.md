@@ -1,4 +1,20 @@
 ################################################################################
+#                              Building the vm                                 #
+################################################################################
+
+To build the vm you need to install virtualbox, vagrant and the plugin vargant-vbguest on your computer. Open a terminal and execute the following command:
+
+  $ vagrant up --provision
+
+The --provision is important, without that the dependencies won't be installed 
+To create the vm and then you can log in the vm with ssh like this:
+
+  $ vagrant ssh
+
+Normally all dependencies and tools are installed but if they don't you can (again) refer to the @dependdencies section.
+
+
+################################################################################
 #                         How to run this network                              #
 ################################################################################
 
@@ -12,23 +28,9 @@ You will need to install manually snmp-mibs-downloader so please follow the foll
   4. update the vm: $ sudo apt-get update
   5. now we can install the package
     $ sudo apt-get install snmp-mibs-downloader
-  
+
 Normally all other dependencies are well installed but if they don't (error while launching the network) you can refer to the @dependdencies section.
 
-
-################################################################################
-#                              Building the vm                                 #
-################################################################################
-
-To build the vm you need to install virtualbox, vagrant and the plugin vargant-vbguest on your computer. Open a terminal and execute the following command:
-
-  $ vagrant up
-
-To create the vm and then you can log in the vm with ssh like this:
-
-  $ vagrant ssh
-
-Normally all dependencies and tools are installed but if they don't you can (again) refer to the @dependdencies section.
 
 
 ################################################################################
