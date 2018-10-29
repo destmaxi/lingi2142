@@ -12,13 +12,13 @@ RMT_HOST = [
             'fd00:300:4:f14::4', #pyth
             'fd00:300:4:f24::2',  #hall
             'fd00:300:4:f16::6', #stev
-            'fd00:300:4:e10::', #carn
+            #'fd00:300:4:f31::1', #carn
             'fd00:300:4:f53::5', #sh1c
             'fd00:300:4:f31::3' #mich
            ]
 
 PORT_NBR = [161,161,161,161,161,161] 
-TIME_IN_SEC = 300 #delta of 5 min for calculations
+TIME_IN_SEC = 3 #delta of 5 min for calculations
 
 #equivalent to snmpget
 def get(host, port, mibs, oids, itfs):
@@ -82,6 +82,7 @@ def get_list_of_itfs(hosts, ports):
     descr_oid = 'ifDescr'
 
     for h, p in zip(hosts, ports):
+        print(h,p)
         oid_list = {}
         for x, y in zip(walk(h, p, mib, ind_oid),walk(h, p, mib, descr_oid)):
             oid_list[x] = y
