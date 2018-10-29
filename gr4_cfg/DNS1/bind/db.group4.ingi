@@ -2,14 +2,15 @@
 ; BIND data file for local loopback interface
 ;
 $TTL	604800
-@	IN	SOA	group4.ingi. root.group4.ingi. (
-			      5		; Serial
+@	IN	SOA	ns1.group4.ingi. root.group4.ingi. (
+			      7		; Serial
 			 604800		; Refresh
 			  86400		; Retry
 			2419200		; Expire
 			 604800 )	; Negative Cache TTL
 ;
-@	IN	NS	ns.group4.ingi.
+@	IN	NS	ns1.group4.ingi.
+@	IN	NS	ns2.group4.ingi.
 ns1	IN	AAAA	fd00:300:4:e11::2
 ns2	IN	AAAA	fd00:300:4:e31::2
 carn 	IN 	AAAA 	fd00:300:4:f00::1

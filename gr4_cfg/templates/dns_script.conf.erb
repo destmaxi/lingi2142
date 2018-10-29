@@ -12,7 +12,7 @@ echo "################################################"
 
 <%- if @id != 1 -%>
 
-res=$(dig carn.group4.ingi)
+res=$(dig carn.group4.ingi @fd00:300:4:e11::2)
 
 echo "From <%= @node_name %> digging carn.group4.ingi : $res"
 
@@ -21,7 +21,7 @@ echo "From <%= @node_name %> digging carn.group4.ingi : $res"
 
 <%- if @id != 2 -%>
 
-res2=$(dig hall.group4.ingi)
+res2=$(dig hall.group4.ingi @fd00:300:4:e11::2)
 
 echo "From <%= @node_name %> digging hall.group4.ingi : $res"
 
@@ -30,7 +30,7 @@ echo "From <%= @node_name %> digging hall.group4.ingi : $res"
 
 <%- if @id != 3 -%>
 
-res=$(dig mich.group4.ingi)
+res=$(dig mich.group4.ingi @fd00:300:4:e11::2)
 
 echo "From <%= @node_name %> digging mich.group4.ingi : $res"
 
@@ -39,7 +39,7 @@ echo "From <%= @node_name %> digging mich.group4.ingi : $res"
 
 <%- if @id != 4 -%>
 
-res=$(dig pyth.group4.ingi)
+res=$(dig pyth.group4.ingi @fd00:300:4:e11::2)
 
 echo "From <%= @node_name %> digging pyth.group4.ingi : $res"
 
@@ -48,7 +48,7 @@ echo "From <%= @node_name %> digging pyth.group4.ingi : $res"
 
 <%- if @id != 5 -%>
 
-res=$(dig sh1c.group4.ingi)
+res=$(dig sh1c.group4.ingi @fd00:300:4:e11::2)
 
 echo "From <%= @node_name %> digging sh1c.group4.ingi : $res"
 
@@ -57,18 +57,18 @@ echo "From <%= @node_name %> digging sh1c.group4.ingi : $res"
 
 <%- if @id != 6 -%>
 
-res=$(dig stev.group4.ingi)
+res=$(dig stev.group4.ingi @fd00:300:4:e11::2)
 
 echo "From <%= @node_name %> digging stev.group4.ingi : $res"
 
 <%- end -%>
 
 
-res=$(dig ns1.group4.ingi)
+res=$(dig ns1.group4.ingi @fd00:300:4:e11::2)
 
 echo "From <%= @node_name %> digging ns.group4.ingi : $res"
 
-res=$(dig ns2.group4.ingi)
+res=$(dig ns2.group4.ingi @fd00:300:4:e11::2)
 
 echo "From <%= @node_name %> digging ns.group4.ingi : $res"
 
