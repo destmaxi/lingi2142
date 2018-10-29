@@ -12,8 +12,6 @@ do
 
     /home/vagrant/lingi2142/monit_tests/launch_snmp.sh >> /home/vagrant/lingi2142/gr4_cfg/MONI/logs/snmp_logs.txt
 
-    /home/vagrant/lingi2142/monit_tests/check_link_failure.sh >> /home/vagrant/lingi2142/gr4_cfg/MONI/logs/interfaces_logs.txt
-
     /home/vagrant/lingi2142/monit_tests/dns_test.sh >> /home/vagrant/lingi2142/gr4_cfg/MONI/logs/dns_logs.txt
 
     sleep 300 #Launching all the scripts every 5 min

@@ -27,7 +27,7 @@ fi
 
 echo "Setting HALL-eth1 up"
 
-sudo ip netns exec HALL /home/vagrant/lingi2142/gr4_cfg/HALL/static_routes/static_routes.sh
+sudo ip netns exec HALL /home/vagrant/lingi2142/gr4_cfg/HALL/static_routes/static_routes.sh >/dev/null 2>&1
 
 echo "Waiting stabilization"
 
@@ -71,7 +71,7 @@ fi
 
 echo "Setting PYTH-eth0 up"
 
-sudo ip netns exec PYTH /home/vagrant/lingi2142/gr4_cfg/PYTH/static_routes/static_routes.sh
+sudo ip netns exec PYTH /home/vagrant/lingi2142/gr4_cfg/PYTH/static_routes/static_routes.sh >/dev/null 2>&1
 
 echo "Waiting stabilization"
 
