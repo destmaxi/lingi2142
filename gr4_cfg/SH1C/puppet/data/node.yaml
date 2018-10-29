@@ -6,7 +6,15 @@ bird6::ospfv3:
   hello_itfs:  # Activate OSPFv3 only on these interfaces
     - SH1C-eth0
     - SH1C-eth1
+    - SH1C-lan0
+    - SH1C-lan1
+    - SH1C-lan2
+    - SH1C-lan3
   stub_itfs: [] # Passive interfaces (e.g., LANs)
 static_routes::interfaces:
   - {interface: SH1C-eth0, route: 0f53}
   - {interface: SH1C-eth1, route: 0f25}
+  - {interface: SH1C-lan0, route: 0c50}
+  - {interface: SH1C-lan1, route: 0b51}
+  - {interface: SH1C-lan2, route: 0a52}
+  - {interface: SH1C-lan3, route: 0953}
