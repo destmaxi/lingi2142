@@ -46,17 +46,17 @@ class Testrouting(unittest.TestCase):
         time.sleep(30)
         helpers.entete("We ping every routers and pop from every routers")
         output = execute("sudo ip netns exec CARN /etc/script/script.sh ")
-        self.assertEqual(output.count('\n'),2) #2 because they will be 2 error to ping the 2 addresses of HALL-eth1
+        self.assertEqual(output.count('\n'),0) #2 because they will be 2 error to ping the 2 addresses of HALL-eth1
         output = execute("sudo ip netns exec HALL /etc/script/script.sh ")
-        self.assertEqual(output.count('\n'),2)
+        self.assertEqual(output.count('\n'),0)
         output = execute("sudo ip netns exec MICH /etc/script/script.sh")
-        self.assertEqual(output.count('\n'),2)
+        self.assertEqual(output.count('\n'),0)
         output = execute("sudo ip netns exec PYTH /etc/script/script.sh ")
-        self.assertEqual(output.count('\n'),2)
+        self.assertEqual(output.count('\n'),0)
         output = execute("sudo ip netns exec SH1C /etc/script/script.sh")
-        self.assertEqual(output.count('\n'),2)
+        self.assertEqual(output.count('\n'),0)
         output = execute("sudo ip netns exec STEV /etc/script/script.sh ")
-        self.assertEqual(output.count('\n'),2)
+        self.assertEqual(output.count('\n'),0)
         helpers.entete("Set inteface HALL-eth1 up")
         output = execute("sudo ip netns exec HALL /etc/static_routes/static_routes.sh 2> /dev/null")
 
