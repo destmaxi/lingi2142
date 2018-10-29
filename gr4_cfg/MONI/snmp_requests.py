@@ -18,7 +18,7 @@ RMT_HOST = [
            ]
 
 PORT_NBR = [161,161,161,161,161,161] 
-TIME_IN_SEC = 3 #delta of 5 min for calculations
+TIME_IN_SEC = 300 #delta of 5 min for calculations
 
 #equivalent to snmpget
 def get(host, port, mibs, oids, itfs):
