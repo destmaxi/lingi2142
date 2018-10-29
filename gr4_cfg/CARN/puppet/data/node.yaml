@@ -14,5 +14,6 @@ static_routes::interfaces:
   - {interface: CARN-eth0, route: 0f31}
   - {interface: CARN-eth1, route: 0f14}
   - {interface: CARN-eth2, route: 0f16}
+  - {interface: CARN-lan0, route: 0e10} #LAN with DNS1 and MONI
   - {interface: CARN-lan0, route: 0b10}
   - {interface: CARN-lan1, route: 0e11}

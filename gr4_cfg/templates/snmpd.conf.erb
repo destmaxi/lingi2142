@@ -1,0 +1,18 @@
+<%# ERB template https://puppet.com/docs/puppet/5.3/lang_template_erb.html -%>
+
+#
+#  AGENT BEHAVIOUR
+#
+
+agentAddress udp:161,udp6:[::]:161
+createUser adminUser MD5 safe_password DES
+rwuser adminUser auth
+
+#
+#  SYSTEM INFORMATION
+#
+
+sysName <%=@location%> router
+sysLocation <%=@location%>
+sysContact Jeremy <jeremy.minet@student.uclouvain.be>
+sysServices    72

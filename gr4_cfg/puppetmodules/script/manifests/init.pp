@@ -1,9 +1,11 @@
-# Puppet looks in data/node.yaml for firewall::interface, firewall::state and firewall::prefix automatically
 # These variables are now accessible in the template
 class script(
 )
 {
+
+  $node_name = lookup("name")
   $id = lookup("id")
+
   $prefix_a = "fd00:300"
   $prefix_b = "fd00:200"
   $hall = 2
@@ -26,7 +28,13 @@ class script(
     owner  => bird,
     group  => bird,
   }
-  # Fill the template file and place the result in "/etc/firewall/firewall.conf"
+
+  file {"/etc/logs":
+    ensure => directory,
+    owner  => bird,
+    group  => bird,
+  }
+
   file {"/etc/script/script.sh":
     require => File["/etc/script"],
     ensure => file,
@@ -35,4 +43,28 @@ class script(
     group  => bird,
     mode   => 'a+x',
   }
+  
+  file {"/etc/script/check_OSPF.sh":
+    require => File["/etc/script"],
+    ensure => file,
+    content => template("/templates/ospf_script.conf.erb"),
+    owner  => bird,
+    group  => bird,
+    mode   => 'a+x',
+  }
+
+  file {"/etc/script/check_DNS.sh":
+    require => File["/etc/script"],
+    ensure => file,
+    content => template("/templates/dns_script.conf.erb"),
+    owner  => bird,
+    group  => bird,
+    mode   => 'a+x',
+  }
+
+  #Start command  when the template is created
+  #exec { "script-launch":
+  #  require => File[["/etc/script/script.sh"],["/etc/script/check_OSPF.sh"], ["/etc/script/check_DNS.sh"]] # Force to execute the command after
+  #  command => "/home/vagrant/lingi2142/monit_tests/script_launcher.sh",
+  #}
 }
