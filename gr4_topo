@@ -53,6 +53,10 @@ function mk_topo {
     mk_LAN STEV ADM2
     mk_LAN STEV TCH1
     mk_LAN STEV GST1
+    mk_LAN SH1C Guest
+    mk_LAN SH1C Stud
+    mk_LAN SH1C Admin
+    mk_LAN SH1C Teach
 
     echo "@@ Bridging the network"
     # Connect to belneta and belnetb
