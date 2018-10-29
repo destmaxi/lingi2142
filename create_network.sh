@@ -241,8 +241,3 @@ for node in "${!PORTCOUNT[@]}"; do
 done
 
 info "The network has been started!"
-
-# HERE CHECK THAT NETWORK IF CORRECTLY SET (AFTER START.SH OF ALL ROUTERS) THEN LAUNCH SCRIPT
-# LAUNCHER HERE
-
-# /home/vagrant/lingi2142/monit_tests/script_launcher.sh
