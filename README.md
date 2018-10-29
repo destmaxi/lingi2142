@@ -3,7 +3,17 @@
 ################################################################################
 
 This file explains how to run this network.
-Normally all the dependencies are well installed but if they don't (error while launching the network) you can refer to the @dependdencies section.
+You will need to install manually snmp-mibs-downloader so please follow the following steps:
+  1. go to /etc/apt/
+  2. open the file sources.list
+  3. add the following lines at the end of the file:
+  deb http://ftp.br.debian.org/debian/ jessie main contrib non-free
+  deb-src http://ftp.br.debian.org/debian/ jessie main contrib non-free
+  4. update the vm: $ sudo apt-get update
+  5. now we can install the package
+    $ sudo apt-get install snmp-mibs-downloader
+  
+Normally all other dependencies are well installed but if they don't (error while launching the network) you can refer to the @dependdencies section.
 
 
 ################################################################################
