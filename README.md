@@ -2,12 +2,12 @@
 #                              Building the vm                                 #
 ################################################################################
 
-To build the vm you need to install virtualbox, vagrant and the plugin vargant-vbguest on your computer. Open a terminal and execute the following command:
+To build the vm you need to install virtualbox, vagrant and the plugin vargant-vbguest on your computer. Open a terminal and execute the following command to create the vm:
 
   $ vagrant up --provision
 
-The --provision is important, without that the dependencies won't be installed 
-To create the vm and then you can log in the vm with ssh like this:
+The --provision is important, without that the dependencies won't be installed.
+Now you can log into the vm with ssh like this:
 
   $ vagrant ssh
 
