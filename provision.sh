@@ -14,7 +14,7 @@ apt-get -y -qq --force-yes update
 #apt-get -y -qq --force-yes update
 
 apt-get -y -qq --force-yes install git bash vim-nox tcpdump nano bird6 quagga inotify-tools iperf bind9 radvd snmp snmpd
-apt-get -y -qq --force-yes install python python-pip
+apt-get -y -qq --force-yes install python python3 python-pip
 
 pip install pysnmp
 # dependencies for puppet

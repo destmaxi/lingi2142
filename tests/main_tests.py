@@ -17,7 +17,7 @@ def usage():
 
 
 def test(file):
-    os.system("python " + file)
+    os.system("python3 " + file)
 
 
 
