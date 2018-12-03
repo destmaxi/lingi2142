@@ -278,14 +278,14 @@ ip6tables -A OUTPUT --dst <%= @prefix_b %>::/48 -p tcp --sport 53 -j ACCEPT -m \
 ################################################################################
 
 ip6tables -A FORWARD --dst <%= @prefix_a %>::/48 -p icmpv6 --icmpv6-type 133/0 \
-j ACCEPT -m comment --comment "Allow router Solicitation"
+-j ACCEPT -m comment --comment "Allow router Solicitation"
 ip6tables -A FORWARD --dst <%= @prefix_b %>::/48 -p icmpv6 --icmpv6-type 133/0 \
-j ACCEPT -m comment --comment "Allow router Solicitation"
+-j ACCEPT -m comment --comment "Allow router Solicitation"
 
 ip6tables -A OUTPUT --dst <%= @prefix_a %>::/48 -p icmpv6 --icmpv6-type 133/0 \
-j ACCEPT -m comment --comment "Allow router Solicitation"
+-j ACCEPT -m comment --comment "Allow router Solicitation"
 ip6tables -A OUTPUT --dst <%= @prefix_b %>::/48 -p icmpv6 --icmpv6-type 133/0 \
-j ACCEPT -m comment --comment "Allow router Solicitation"
+-j ACCEPT -m comment --comment "Allow router Solicitation"
 
 
 
@@ -436,10 +436,12 @@ ip6tables -A FORWARD --src <%= @prefix_a %>:0d00::/56 -p tcp --match multiport \
 ip6tables -A FORWARD --src <%= @prefix_b %>:0d00::/56 -p tcp --match multiport \
   --dports 53,2302,5001,5060,5061 -j ACCEPT -m comment --comment "User type: d"
 ip6tables -A FORWARD --src <%= @prefix_a %>:0d00::/56 -p udp --match multiport \
-  --dports 53,5060,5061 -j ACCEPT -m commen --comment "User type: d"
+  --dports 53,5060,5061 -j ACCEPT -m comment --comment "User type: d"
 ip6tables -A FORWARD --src <%= @prefix_b %>:0d00::/56 -p udp --match multiport \
-  --dports 53,5060,5061 -j ACCEPT -m commen --comment "User type: d"
+  --dports 53,5060,5061 -j ACCEPT -m comment --comment "User type: d"
 ip6tables -A FORWARD --src <%= @prefix_a %>:0d00::/56 -p udp --dport 16384:16472 \
+  -j ACCEPT -m comment --comment "User type: d"
+ip6tables -A FORWARD --src <%= @prefix_b %>:0d00::/56 -p udp --dport 16384:16472 \
   -j ACCEPT -m comment --comment "User type: d"
 
 
@@ -462,14 +464,14 @@ ip6tables -A FORWARD --dst <%= @prefix_b %>:0c00::/56 -j DROP -m comment \
 
 ip6tables -A FORWARD --src <%= @prefix_a %>:0c00::/56 -p tcp --match multiport \
   --dports 25,53,80,443 -j ACCEPT -m comment \
-  --comment "User type: b"
+  --comment "User type: c"
 ip6tables -A FORWARD --src <%= @prefix_b %>:0c00::/56 -p tcp --match multiport \
   --dports 25,53,80,443 -j ACCEPT -m comment \
-  --comment "User type: b"
+  --comment "User type: c"
 ip6tables -A FORWARD --src <%= @prefix_a %>:0c00::/56 -p udp --dport 53 -j ACCEPT \
-  -m comment --comment "User type: b"
+  -m comment --comment "User type: c"
 ip6tables -A FORWARD --src <%= @prefix_b %>:0c00::/56 -p udp --dport 53 -j ACCEPT \
-  -m comment --comment "User type: b"
+  -m comment --comment "User type: c"
 
 
 
@@ -483,9 +485,9 @@ ip6tables -A FORWARD --dst <%= @prefix_a %>::/48 -p tcp --match multiport \
 ip6tables -A FORWARD --dst <%= @prefix_b %>::/48 -p tcp --match multiport \
   --dports 22,25,53,80,443 -j ACCEPT -m comment --comment "comming from outside"
 ip6tables -A FORWARD --dst <%= @prefix_a %>::/48 -p udp --dport 53 -j ACCEPT \
-  -m comment --comments "comming from outside"
+  -m comment --comment "comming from outside"
 ip6tables -A FORWARD --dst <%= @prefix_b %>::/48 -p udp --dport 53 -j ACCEPT \
-  -m comment --comments "comming from outside"
+  -m comment --comment "comming from outside"
 
 
 
