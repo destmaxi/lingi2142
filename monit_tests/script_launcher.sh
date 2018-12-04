@@ -14,6 +14,6 @@ do
 
     /home/vagrant/lingi2142/monit_tests/dns_test.sh >> /home/vagrant/lingi2142/gr4_cfg/MONI/logs/dns_logs.log 2>&1
 
-    sleep 300 #Launching all the scripts every 5 min
+    sleep 300
 
 done
