@@ -15,8 +15,8 @@ kword = "100%"
 
 while kword == "100%"  and (int(round(time.time())) - starttime < 300):
 	cmd = helpers.execute("sudo ip netns exec STEV ping6 -w 2 -q fd00:300:4:f24::2") #Try to ping HALL
-        if not cmd == "":
-        	lines = cmd.split("\n")
+	if not cmd == "":
+		lines = cmd.split("\n")
 		line = lines[3].split(" ")
 		kword = line[7]
 

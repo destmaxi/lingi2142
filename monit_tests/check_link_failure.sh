@@ -10,7 +10,7 @@ sudo ip netns exec HALL ip link set HALL-eth1 down
 
 echo "Waiting stabilization"
 
-sleep 30
+sleep 20
 
 echo "Checking if PYTH-HALL link fails [$DATE]"
 
@@ -31,7 +31,7 @@ sudo ip netns exec HALL /home/vagrant/lingi2142/gr4_cfg/HALL/static_routes/stati
 
 echo "Waiting stabilization"
 
-sleep 30
+sleep 20
 
 echo "Checking if PYTH-HALL link fails [$DATE]"
 
