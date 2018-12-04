@@ -54,7 +54,7 @@ sudo ip netns exec PYTH ip link set PYTH-eth0 down
 
 echo "Waiting stabilization"
 
-sleep 30
+sleep 20
 
 echo "Checking if PYTH-HALL link fails [$DATE]"
 
@@ -75,7 +75,7 @@ sudo ip netns exec PYTH /home/vagrant/lingi2142/gr4_cfg/PYTH/static_routes/stati
 
 echo "Waiting stabilization"
 
-sleep 30
+sleep 20
 
 echo "Checking if PYTH-HALL link fails [$DATE]"
 
