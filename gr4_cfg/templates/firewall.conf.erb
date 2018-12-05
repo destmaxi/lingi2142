@@ -360,9 +360,9 @@ ip6tables -A FORWARD --src <%= @prefix_b %>:0a00::/56 -j ACCEPT -m comment \
 # A student should not host a service so we DROP all traffic going to a student
 #
 
-ip6tables -A FORWARD --dst <%= @prefix_a %>:0b00::/56 -j DROP -m comment \
+ip6tables -A FORWARD --dst <%= @prefix_a %>:0b00::/56 -j REJECT -m comment \
   --comment "Student should not host services"
-ip6tables -A FORWARD --dst <%= @prefix_b %>:0b00::/56 -j DROP -m comment \
+ip6tables -A FORWARD --dst <%= @prefix_b %>:0b00::/56 -j REJECT -m comment \
   --comment "Student should not host services"
 
 #
