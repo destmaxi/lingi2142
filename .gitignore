@@ -1,4 +1,5 @@
 .vagrant
+__pycache__
 tags
 .idea/
 **/alternatives/
