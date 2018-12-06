@@ -53,6 +53,9 @@ protocol ospf {
 		<%- @ospfv3["hello_itfs"].each do |val| -%>
 			interface "<%= val %>" {
 				hello 1;
+			<%- if val == "PYTH-eth0" or val == "HALL-eth1" -%>
+				cost 11;
+			<%- end -%>
 				dead 3;
 			};
 		<%- end -%>

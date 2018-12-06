@@ -41,8 +41,6 @@ done
 # Destroy bird/zebra temp files
 rm -f /tmp/*.{api,ctl}
 
-pkill -f script_launcher.sh
-
 # Removing generated files from routers
 declare source="gr4_cfg/"
 declare -a rout=("HALL/" "PYTH/" "STEV/" "MICH/" "CARN/" "SH1C/" "MONI/")
@@ -56,3 +54,6 @@ do
 		rm -rf "$source$r$f"
 	done
 done
+
+# Kill all remaining processes
+./util/kill_all_processes.sh
