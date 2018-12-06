@@ -18,7 +18,7 @@ RMT_HOST = [
            ]
 
 PORT_NBR = [161,161,161,161,161,161] 
-TIME_IN_SEC = 300 #delta of 5 min for calculations
+TIME_IN_SEC = 120 #delta of 2 min for calculations
 
 #equivalent to snmpget
 def get(host, port, mibs, oids, itfs):
@@ -150,8 +150,8 @@ def apply_formula(results):
                 if type(itf_values) is str: #could be a string if interface is not up (see get_data_of_itf)
                     in_and_out.append(itf_values)
                 else:
-		    if itf_values[len(itf_values)-1]==0.0:
-		        cal = "Speed problem"
+                    if itf_values[len(itf_values)-1]==0.0:
+                        cal = "Speed problem"
                     else:
                         cal = (itf_values[i]*8*100)/(TIME_IN_SEC*itf_values[len(itf_values)-1])
                     in_and_out.append(cal)
@@ -159,9 +159,27 @@ def apply_formula(results):
         list_of_res[host] = list_of_for_one_itf
     return list_of_res
 
+def improve_display(mapping,first_datas,second_datas,inIndex,outIndex):
+    dico = {
+            'fd00:300:4:f14::4':'Pythagore',
+            'fd00:300:4:f24::2':'Halles',
+            'fd00:300:4:f16::6':'Stevin',
+            'fd00:300:4:e11::1':'Carnoy',
+            'fd00:300:4:f53::5':'SH1C',
+            'fd00:300:4:f31::3':'Michotte'
+    }
+    old_display = compute_results(first_datas, second_datas, inIndex, outIndex)
+    list_of_hosts = {}
+    for host in old_display.keys():
+        list_of_itf = {}
+        for itf in old_display[host].keys():
+            list_of_itf[mapping[host][itf]] = old_display[host][itf]
+        list_of_hosts[dico[host]] = list_of_itf
+    return list_of_hosts
+
 def printer(tab):
     for i in range(0,len(tab)):
-	print(tab[i])
+        print(tab[i])
         print("\n")
 
 
@@ -170,22 +188,18 @@ if __name__ == '__main__':
     list_of_itfs_nbr = get_list_of_itfs_nbr(list_of_itfs)
     first_datas = get_list_of_datas(RMT_HOST, PORT_NBR, list_of_itfs_nbr)
     time.sleep(TIME_IN_SEC)
-    second_data = get_list_of_datas(RMT_HOST, PORT_NBR, list_of_itfs_nbr)
+    second_datas = get_list_of_datas(RMT_HOST, PORT_NBR, list_of_itfs_nbr)
 
     #printing the different results
 
-    #legend
-    print("----------LEGEND----------")
-    printer(str(list_of_itfs).split('}, '))
-
     #bandwith
     print("----------BANDWIDTH----------")
-    printer(str(compute_results(first_datas, second_data, 0, 1)).split('}, '))
+    printer(str(improve_display(list_of_itfs,first_datas, second_datas, 0, 1)).split('}, '))
 
     #errors
     print("----------ERRORS----------")
-    printer(str(compute_results(first_datas, second_data, 2, 3)).split('}, '))
+    printer(str(improve_display(list_of_itfs,first_datas, second_datas, 2, 3)).split('}, '))
 
     #discarded packets
     print("----------DISCARDED PACKETS----------")
-    printer(str(compute_results(first_datas, second_data, 4, 5)).split('}, '))
+    printer(str(improve_display(list_of_itfs,first_datas, second_datas, 4, 5)).split('}, '))
